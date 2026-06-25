@@ -1,0 +1,22 @@
+{
+  "updated_at": "2026-06-26",
+  "generated_at": "2026-06-26T00:00:00Z",
+  "hype_score": null,
+  "zone": {
+    "label": "Зарежда...",
+    "icon": "⏳",
+    "color": "#64748b",
+    "range": [0, 100]
+  },
+  "components": {
+    "market_momentum": { "score": null, "weight": 0.40 },
+    "rhetoric":        { "score": null, "weight": 0.40, "source": "placeholder" },
+    "valuation":       { "score": null, "weight": 0.20 }
+  },
+  "history": [],
+  "full_history_length": 0,
+  "interpretation": {
+    "zone_description": "Данните ще бъдат налични след първото стартиране на pipeline-а.",
+    "key_signals": []
+  }
+}

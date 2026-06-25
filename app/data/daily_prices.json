@@ -1,0 +1,14 @@
+{
+  "updated_at": "2026-06-26",
+  "generated_at": "2026-06-26T00:00:00Z",
+  "benchmark": null,
+  "etfs": [],
+  "stocks": [],
+  "layers": {},
+  "meta": {
+    "stock_count": 0,
+    "etf_count": 0,
+    "stocks_ok": 0,
+    "etfs_ok": 0
+  }
+}

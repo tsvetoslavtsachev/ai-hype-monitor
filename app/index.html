@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Hype Monitor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── HEADER ─────────────────────────────────────────────────────────────── -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-left">
+      <span class="logo-icon">⚡</span>
+      <div>
+        <h1 class="site-title">AI Hype Monitor</h1>
+        <p class="site-subtitle">Измерител на еуфорията в AI сектора · Пълна верига от чипове до хиперскейлъри</p>
+      </div>
+    </div>
+    <div class="header-right">
+      <span class="update-badge" id="last-updated">Зарежда...</span>
+    </div>
+  </div>
+</header>
+
+<!-- ── HYPE SCORE HERO ────────────────────────────────────────────────────── -->
+<section class="hero-section">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- Gauge -->
+      <div class="gauge-card">
+        <div class="gauge-wrapper">
+          <canvas id="gaugeChart" width="280" height="160"></canvas>
+          <div class="gauge-center">
+            <div class="gauge-score" id="hype-score">--</div>
+            <div class="gauge-label" id="hype-zone">Зарежда...</div>
+          </div>
+        </div>
+        <div class="zone-legend">
+          <span class="zone-dot" style="background:#3b82f6"></span><span>AI Winter</span>
+          <span class="zone-dot" style="background:#22c55e"></span><span>Балансиран</span>
+          <span class="zone-dot" style="background:#eab308"></span><span>Повишен</span>
+          <span class="zone-dot" style="background:#f97316"></span><span>Hype</span>
+          <span class="zone-dot" style="background:#ef4444"></span><span>Балон</span>
+        </div>
+      </div>
+
+      <!-- Components -->
+      <div class="components-card">
+        <h3 class="card-title">Компоненти на Индекса</h3>
+        <div class="component-list" id="components-list">
+          <div class="component-item">
+            <div class="component-header">
+              <span class="component-name">📈 Пазарен Momentum</span>
+              <span class="component-weight">40%</span>
+            </div>
+            <div class="component-bar-wrap">
+              <div class="component-bar" id="bar-momentum" style="width:0%"></div>
+            </div>
+            <div class="component-value" id="val-momentum">--</div>
+          </div>
+          <div class="component-item">
+            <div class="component-header">
+              <span class="component-name">🗣️ Rhetoric (Отчети)</span>
+              <span class="component-weight">40%</span>
+            </div>
+            <div class="component-bar-wrap">
+              <div class="component-bar" id="bar-rhetoric" style="width:0%"></div>
+            </div>
+            <div class="component-value" id="val-rhetoric">--</div>
+          </div>
+          <div class="component-item">
+            <div class="component-header">
+              <span class="component-name">💰 Оценки (P/E)</span>
+              <span class="component-weight">20%</span>
+            </div>
+            <div class="component-bar-wrap">
+              <div class="component-bar" id="bar-valuation" style="width:0%"></div>
+            </div>
+            <div class="component-value" id="val-valuation">--</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interpretation -->
+      <div class="interpretation-card">
+        <h3 class="card-title">Интерпретация</h3>
+        <p class="zone-description" id="zone-description">Зарежда...</p>
+        <ul class="signals-list" id="signals-list"></ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── HISTORY CHART ──────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">История на AI Hype Score</h2>
+      <div class="period-tabs" id="period-tabs">
+        <button class="tab active" data-period="90">3М</button>
+        <button class="tab" data-period="180">6М</button>
+        <button class="tab" data-period="365">1Г</button>
+        <button class="tab" data-period="9999">Всичко</button>
+      </div>
+    </div>
+    <div class="chart-card">
+      <canvas id="historyChart" height="80"></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ── AI VALUE CHAIN HEATMAP ─────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">AI Value Chain — Представяне по Слоеве</h2>
+    <p class="section-desc">Цветът показва 1-годишния процентил на цената (0 = близо до дъното, 100 = близо до върха)</p>
+    <div id="layer-tabs" class="layer-tabs"></div>
+    <div id="heatmap-container" class="heatmap-grid"></div>
+  </div>
+</section>
+
+<!-- ── ETF PERFORMANCE ────────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">AI ETF-и — Представяне</h2>
+    <div class="table-card">
+      <table class="data-table" id="etf-table">
+        <thead>
+          <tr>
+            <th>Тикър</th>
+            <th>Наименование</th>
+            <th>Цена</th>
+            <th>1Д %</th>
+            <th>1М %</th>
+            <th>3М %</th>
+            <th>1Г %</th>
+            <th>Процентил 1Г</th>
+            <th>Drawdown от Връх</th>
+          </tr>
+        </thead>
+        <tbody id="etf-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── STOCKS HEATMAP TABLE ───────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Акции от AI Веригата</h2>
+    <div class="table-controls">
+      <input type="text" id="stock-search" placeholder="Търси тикър или компания..." class="search-input" />
+      <select id="layer-filter" class="filter-select">
+        <option value="">Всички слоеве</option>
+      </select>
+      <select id="sort-select" class="filter-select">
+        <option value="percentile_1y">Сортирай по Процентил</option>
+        <option value="return_1y">Сортирай по 1Г Доходност</option>
+        <option value="return_1d">Сортирай по 1Д Промяна</option>
+        <option value="symbol">Сортирай по Тикър</option>
+      </select>
+    </div>
+    <div class="table-card">
+      <table class="data-table" id="stocks-table">
+        <thead>
+          <tr>
+            <th>Тикър</th>
+            <th>Компания</th>
+            <th>Слой</th>
+            <th>Цена</th>
+            <th>1Д %</th>
+            <th>1М %</th>
+            <th>3М %</th>
+            <th>1Г %</th>
+            <th>Процентил 1Г</th>
+            <th>Drawdown</th>
+          </tr>
+        </thead>
+        <tbody id="stocks-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── RHETORIC SECTION ───────────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Rhetoric Monitor — AI Термини в Отчетите</h2>
+    <p class="section-desc">Анализ на 8-K filings от SEC EDGAR. По-висок score = повече AI buzz, по-малко финансова конкретика.</p>
+    <div id="rhetoric-container">
+      <div class="chart-card">
+        <canvas id="rhetoricChart" height="80"></canvas>
+      </div>
+      <div id="rhetoric-companies" class="rhetoric-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="container">
+    <p>AI Hype Monitor · Данните се обновяват автоматично всеки работен ден · Изграден от <strong>Цветослав Цачев</strong></p>
+    <p class="footer-disclaimer">Информацията е само за аналитични цели и не представлява инвестиционен съвет.</p>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

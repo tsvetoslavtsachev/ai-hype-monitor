@@ -1,0 +1,37 @@
+symbol,name,layer,layer_order,layer_weight,cik,enabled
+ASML,ASML Holding,Semiconductor Equipment,1,0.10,,1
+AMAT,Applied Materials,Semiconductor Equipment,1,0.10,6951,1
+LRCX,Lam Research,Semiconductor Equipment,1,0.10,707549,1
+KLAC,KLA Corporation,Semiconductor Equipment,1,0.10,319201,1
+ONTO,Onto Innovation,Semiconductor Equipment,1,0.10,,1
+NVDA,Nvidia,Chip Design,2,0.25,1045810,1
+AMD,Advanced Micro Devices,Chip Design,2,0.25,2488,1
+AVGO,Broadcom,Chip Design,2,0.25,1730168,1
+MRVL,Marvell Technology,Chip Design,2,0.25,,1
+ARM,Arm Holdings,Chip Design,2,0.25,,1
+QCOM,Qualcomm,Chip Design,2,0.25,804328,1
+SNPS,Synopsys,Chip Design,2,0.25,883241,1
+CDNS,Cadence Design Systems,Chip Design,2,0.25,813672,1
+MU,Micron Technology,Memory & Storage,3,0.10,723125,1
+WDC,Western Digital,Memory & Storage,3,0.10,106040,1
+STX,Seagate Technology,Memory & Storage,3,0.10,1137789,1
+ANET,Arista Networks,Networking & Optics,4,0.10,1596532,1
+CIEN,Ciena,Networking & Optics,4,0.10,936395,1
+COHR,Coherent Corp.,Networking & Optics,4,0.10,820318,1
+LITE,Lumentum,Networking & Optics,4,0.10,1633978,1
+FN,Fabrinet,Networking & Optics,4,0.10,,1
+VRT,Vertiv,Infrastructure & Power,5,0.15,1674101,1
+ETN,Eaton Corporation,Infrastructure & Power,5,0.15,1551182,1
+DELL,Dell Technologies,Infrastructure & Power,5,0.15,1571996,1
+SMCI,Supermicro,Infrastructure & Power,5,0.15,1375365,1
+PWR,Quanta Services,Infrastructure & Power,5,0.15,1050606,1
+MSFT,Microsoft,Hyperscalers,6,0.20,789019,1
+GOOGL,Alphabet Inc.,Hyperscalers,6,0.20,1652044,1
+AMZN,Amazon,Hyperscalers,6,0.20,1018724,1
+META,Meta Platforms,Hyperscalers,6,0.20,1326801,1
+ORCL,Oracle Corporation,Hyperscalers,6,0.20,1341439,1
+PLTR,Palantir Technologies,AI Software,7,0.10,1321655,1
+CRM,Salesforce,AI Software,7,0.10,1108524,1
+NOW,ServiceNow,AI Software,7,0.10,1373715,1
+SNOW,Snowflake,AI Software,7,0.10,,1
+AI,C3.ai,AI Software,7,0.10,,1

@@ -1,0 +1,36 @@
+{
+  "ai_hype_terms": [
+    "artificial intelligence", "AI", "generative AI", "gen AI", "genAI",
+    "large language model", "LLM", "GPT", "ChatGPT", "Copilot",
+    "machine learning", "deep learning", "neural network",
+    "inference", "training workload", "AI workload",
+    "foundation model", "transformer", "diffusion model",
+    "AI-powered", "AI-driven", "AI-enabled", "AI-first",
+    "intelligent", "automation", "agentic", "AI agent",
+    "GPU", "accelerated computing", "AI accelerator",
+    "data center AI", "AI infrastructure", "AI platform",
+    "AI opportunity", "AI revolution", "AI transformation",
+    "AI momentum", "AI demand", "AI cycle", "AI supercycle",
+    "AI investment", "AI monetization", "AI adoption",
+    "AI tailwind", "AI wave", "AI era"
+  ],
+  "substance_terms": [
+    "revenue", "operating income", "gross margin", "net income",
+    "earnings per share", "EPS", "free cash flow", "FCF",
+    "capital expenditure", "capex", "return on investment", "ROI",
+    "payback period", "break-even", "profitability",
+    "customer", "contract", "deal", "deployment",
+    "annual recurring revenue", "ARR", "bookings", "backlog",
+    "guidance", "outlook", "forecast", "target",
+    "cost savings", "efficiency", "productivity gain",
+    "percentage", "basis points", "million", "billion"
+  ],
+  "uncertainty_terms": [
+    "exploring", "evaluating", "considering", "potential",
+    "may", "might", "could", "expect to", "plan to",
+    "opportunity", "believe", "excited about",
+    "early stages", "beginning to", "starting to",
+    "long-term", "eventually", "over time",
+    "transformative", "unprecedented", "game-changing"
+  ]
+}
