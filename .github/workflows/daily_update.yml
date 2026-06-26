@@ -1,0 +1,64 @@
+name: Daily Update — Цени и Hype Index
+
+on:
+  schedule:
+    # Всеки работен ден в 22:30 UTC (01:30 EET) — след затваряне на US пазарите
+    - cron: '30 22 * * 1-5'
+  workflow_dispatch:   # Позволява ръчно стартиране
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # 1. Checkout на ai-hype-monitor
+      - name: Checkout ai-hype-monitor
+        uses: actions/checkout@v4
+        with:
+          path: ai-hype-monitor
+
+      # 2. Checkout на price-archive (за ETF данните)
+      - name: Checkout price-archive
+        uses: actions/checkout@v4
+        with:
+          repository: tsvetoslavtsachev/price-archive
+          path: price-archive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 3. Python setup
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      # 4. Инсталиране на зависимости
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance pandas requests
+
+      # 5. Стартиране на daily pipeline
+      - name: Run Daily Pipeline
+        run: |
+          cd ai-hype-monitor
+          python src/run_pipeline.py --daily \
+            --price-archive-root ../price-archive
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      # 6. Commit и push на обновените JSON файлове
+      - name: Commit updated data
+        run: |
+          cd ai-hype-monitor
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app/data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: daily update $(date -u +%Y-%m-%d)"
+            git push
+          fi
