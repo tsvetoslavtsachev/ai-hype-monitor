@@ -1,22 +1,55 @@
 {
   "updated_at": "2026-06-26",
-  "generated_at": "2026-06-26T00:00:00Z",
-  "hype_score": null,
+  "generated_at": "2026-06-26T22:28:09Z",
+  "hype_score": 57.0,
   "zone": {
-    "label": "Зарежда...",
-    "icon": "⏳",
-    "color": "#64748b",
-    "range": [0, 100]
+    "label": "Повишен",
+    "icon": "📈",
+    "color": "#eab308",
+    "range": [
+      50,
+      70
+    ]
   },
   "components": {
-    "market_momentum": { "score": null, "weight": 0.40 },
-    "rhetoric":        { "score": null, "weight": 0.40, "source": "placeholder" },
-    "valuation":       { "score": null, "weight": 0.20 }
+    "market_momentum": {
+      "score": 68.5,
+      "avg_percentile_1y": 69.2,
+      "avg_ai_etf_return_1y": 54.6,
+      "spy_return_1y": 21.0,
+      "rel_strength_vs_spy": 33.6,
+      "stocks_in_sample": 36,
+      "weight": 0.4
+    },
+    "rhetoric": {
+      "score": 50.0,
+      "source": "sec_edgar_nlp",
+      "sector_avg_rhetoric": null,
+      "companies_with_data": 0,
+      "latest_quarter": null,
+      "weight": 0.4
+    },
+    "valuation": {
+      "score": 48.2,
+      "source": "yfinance_forward_pe",
+      "median_forward_pe": 21.2,
+      "historical_pe_norm": 22.0,
+      "pe_stretch_pct": -3.5,
+      "weight": 0.2
+    }
   },
-  "history": [],
-  "full_history_length": 0,
+  "history": [
+    {
+      "date": "2026-06-26",
+      "score": 57.0
+    }
+  ],
+  "full_history_length": 1,
   "interpretation": {
-    "zone_description": "Данните ще бъдат налични след първото стартиране на pipeline-а.",
-    "key_signals": []
+    "zone_description": "Оптимизмът расте. Внимавайте за разминаване между очаквания и резултати.",
+    "key_signals": [
+      "AI секторът изпреварва S&P 500 с 33.6% за последната година",
+      "Оценките са под историческата норма — потенциална корекция"
+    ]
   }
 }
