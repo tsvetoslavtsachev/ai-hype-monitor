@@ -1,0 +1,63 @@
+name: Quarterly NLP — SEC Filings Analysis
+
+on:
+  schedule:
+    # Всеки понеделник в 06:00 UTC — проверява дали има нови filings
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Принудително стартиране на NLP анализа'
+        required: false
+        default: 'false'
+
+jobs:
+  nlp-analysis:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout ai-hype-monitor
+        uses: actions/checkout@v4
+        with:
+          path: ai-hype-monitor
+
+      - name: Checkout price-archive
+        uses: actions/checkout@v4
+        with:
+          repository: tsvetoslavtsachev/price-archive
+          path: price-archive
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install yfinance pandas requests
+
+      - name: Run Quarterly Pipeline
+        run: |
+          cd ai-hype-monitor
+          python src/run_pipeline.py --quarterly \
+            --price-archive-root ../price-archive
+        env:
+          PYTHONUNBUFFERED: "1"
+
+      - name: Commit updated data
+        run: |
+          cd ai-hype-monitor
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app/data/
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: quarterly NLP update $(date -u +%Y-%m-%d)"
+            git push
+          fi
