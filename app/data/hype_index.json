@@ -1,21 +1,42 @@
 {
-  "generated_at": "2026-06-26T23:32:25.229402Z",
-  "current_score": 49.3,
-  "zone": "Neutral",
-  "quarter": "Q2 2026",
-  "date": "2026-06-30",
-  "components": {
-    "momentum": 69.5,
-    "rhetoric": 0.0,
-    "valuation": 85.9
+  "hype_score": 49.3,
+  "zone": {
+    "label": "Балансиран",
+    "color": "#eab308",
+    "icon": "⚖️"
   },
+  "components": {
+    "market_momentum": {
+      "score": 69.5,
+      "label": "Пазарен Momentum",
+      "description": "Среден 1Y процентил на AI акциите",
+      "weight": 40
+    },
+    "rhetoric": {
+      "score": 0.0,
+      "label": "Rhetoric (Отчети)",
+      "description": "AI keyword density в SEC 8-K filings",
+      "weight": 40
+    },
+    "valuation": {
+      "score": 85.9,
+      "label": "Оценки (P/E)",
+      "description": "Среден 1Y процентил на AI ETF-ите",
+      "weight": 20
+    }
+  },
+  "interpretation": {
+    "zone_description": "Балансирано състояние — реалистични очаквания, умерен растеж, без крайности.",
+    "key_signals": [
+      "CIEN — AI rhetoric ↑ (11/100)",
+      "PLTR — AI rhetoric ↑ (11/100)",
+      "AMAT — AI rhetoric ↑ (10/100)"
+    ]
+  },
+  "quarter": "Q2 2026",
   "prev_score": 37.4,
   "change": 11.9,
-  "signals": [
-    "CIEN rhetoric ↑ (11)",
-    "PLTR rhetoric ↑ (11)",
-    "AMAT rhetoric ↑ (10)"
-  ],
+  "updated_at": "26.06.2026 23:59",
   "history": [
     {
       "date": "2022-12-31",

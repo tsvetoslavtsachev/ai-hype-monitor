@@ -1,459 +1,595 @@
 {
-  "generated_at": "2026-06-26T23:32:25.231755Z",
-  "stocks": {
-    "NVDA": {
+  "generated_at": "2026-06-26T23:59:16.155233Z",
+  "stocks": [
+    {
       "symbol": "NVDA",
       "name": "Nvidia",
       "layer": "Chip Design",
-      "close": 195.74,
-      "date": "2026-06-25",
+      "price": 195.74,
+      "return_1d": -1.64,
+      "return_1m": -8.79,
+      "return_3m": 9.68,
+      "return_1y": 32.52,
       "percentile_1y": 77.5,
-      "change_1y_pct": 27.0,
-      "high_52w": 235.47,
-      "low_52w": 153.1
+      "drawdown_1y": -16.87,
+      "date": "2026-06-25"
     },
-    "AMD": {
+    {
       "symbol": "AMD",
       "name": "AMD",
       "layer": "Chip Design",
-      "close": 532.57,
-      "date": "2026-06-25",
+      "price": 532.57,
+      "return_1d": 2.47,
+      "return_1m": 5.69,
+      "return_3m": 141.78,
+      "return_1y": 284.72,
       "percentile_1y": 98.4,
-      "change_1y_pct": 271.4,
-      "high_52w": 551.63,
-      "low_52w": 134.8
+      "drawdown_1y": -3.46,
+      "date": "2026-06-25"
     },
-    "AVGO": {
+    {
       "symbol": "AVGO",
       "name": "Broadcom",
       "layer": "Chip Design",
-      "close": 378.91,
-      "date": "2026-06-25",
+      "price": 378.91,
+      "return_1d": -0.83,
+      "return_1m": -10.07,
+      "return_3m": 19.04,
+      "return_1y": 44.7,
       "percentile_1y": 76.3,
-      "change_1y_pct": 44.2,
-      "high_52w": 480.81,
-      "low_52w": 262.73
+      "drawdown_1y": -21.19,
+      "date": "2026-06-25"
     },
-    "MRVL": {
+    {
       "symbol": "MRVL",
       "name": "Marvell Technology",
       "layer": "Chip Design",
-      "close": 281.26,
-      "date": "2026-06-25",
+      "price": 281.26,
+      "return_1d": 1.65,
+      "return_1m": 35.05,
+      "return_3m": 185.83,
+      "return_1y": 274.98,
       "percentile_1y": 96.8,
-      "change_1y_pct": 271.4,
-      "high_52w": 316.43,
-      "low_52w": 62.19
+      "drawdown_1y": -11.11,
+      "date": "2026-06-25"
     },
-    "ARM": {
+    {
       "symbol": "ARM",
       "name": "ARM Holdings",
       "layer": "Chip Design",
-      "close": 347.71,
-      "date": "2026-06-25",
+      "price": 347.71,
+      "return_1d": -3.17,
+      "return_1m": 8.25,
+      "return_3m": 121.37,
+      "return_1y": 122.31,
       "percentile_1y": 94.9,
-      "change_1y_pct": 121.0,
-      "high_52w": 439.46,
-      "low_52w": 104.55
+      "drawdown_1y": -20.88,
+      "date": "2026-06-25"
     },
-    "QCOM": {
+    {
       "symbol": "QCOM",
       "name": "Qualcomm",
       "layer": "Chip Design",
-      "close": 204.9,
-      "date": "2026-06-25",
+      "price": 204.9,
+      "return_1d": 3.79,
+      "return_1m": -17.35,
+      "return_3m": 57.77,
+      "return_1y": 34.36,
       "percentile_1y": 90.9,
-      "change_1y_pct": 34.2,
-      "high_52w": 250.1,
-      "low_52w": 123.61
+      "drawdown_1y": -18.07,
+      "date": "2026-06-25"
     },
-    "ASML": {
+    {
       "symbol": "ASML",
       "name": "ASML Holding",
       "layer": "Semicon Equipment",
-      "close": 1841.1801,
-      "date": "2026-06-25",
+      "price": 1841.18,
+      "return_1d": 4.45,
+      "return_1m": 12.82,
+      "return_3m": 32.38,
+      "return_1y": 128.14,
       "percentile_1y": 97.6,
-      "change_1y_pct": 127.6,
-      "high_52w": 1929.68,
-      "low_52w": 686.0
+      "drawdown_1y": -4.59,
+      "date": "2026-06-25"
     },
-    "AMAT": {
+    {
       "symbol": "AMAT",
       "name": "Applied Materials",
       "layer": "Semicon Equipment",
-      "close": 668.0,
-      "date": "2026-06-25",
+      "price": 668.0,
+      "return_1d": 13.42,
+      "return_1m": 46.85,
+      "return_3m": 81.09,
+      "return_1y": 273.46,
       "percentile_1y": 100.0,
-      "change_1y_pct": 267.6,
-      "high_52w": 668.0,
-      "low_52w": 155.56
+      "drawdown_1y": 0.0,
+      "date": "2026-06-25"
     },
-    "LRCX": {
+    {
       "symbol": "LRCX",
       "name": "Lam Research",
       "layer": "Semicon Equipment",
-      "close": 401.82,
-      "date": "2026-06-25",
+      "price": 401.82,
+      "return_1d": 7.21,
+      "return_1m": 24.61,
+      "return_3m": 72.24,
+      "return_1y": 322.51,
       "percentile_1y": 99.6,
-      "change_1y_pct": 320.8,
-      "high_52w": 409.54,
-      "low_52w": 94.32
+      "drawdown_1y": -1.89,
+      "date": "2026-06-25"
     },
-    "KLAC": {
+    {
       "symbol": "KLAC",
       "name": "KLA Corp",
       "layer": "Semicon Equipment",
-      "close": 258.8,
-      "date": "2026-06-25",
+      "price": 258.8,
+      "return_1d": 7.62,
+      "return_1m": 28.67,
+      "return_3m": 67.85,
+      "return_1y": 192.98,
       "percentile_1y": 99.2,
-      "change_1y_pct": 191.5,
-      "high_52w": 269.16,
-      "low_52w": 84.03
+      "drawdown_1y": -3.85,
+      "date": "2026-06-25"
     },
-    "SNPS": {
+    {
       "symbol": "SNPS",
       "name": "Synopsys",
       "layer": "Semicon Equipment",
-      "close": 455.02,
-      "date": "2026-06-25",
+      "price": 455.02,
+      "return_1d": -1.92,
+      "return_1m": -14.88,
+      "return_3m": 10.95,
+      "return_1y": -5.0,
       "percentile_1y": 37.9,
-      "change_1y_pct": -6.6,
-      "high_52w": 645.35,
-      "low_52w": 380.47
+      "drawdown_1y": -29.49,
+      "date": "2026-06-25"
     },
-    "CDNS": {
+    {
       "symbol": "CDNS",
       "name": "Cadence Design",
       "layer": "Semicon Equipment",
-      "close": 368.23,
-      "date": "2026-06-25",
+      "price": 368.23,
+      "return_1d": -1.12,
+      "return_1m": -3.54,
+      "return_3m": 30.86,
+      "return_1y": 24.07,
       "percentile_1y": 90.1,
-      "change_1y_pct": 23.8,
-      "high_52w": 416.39,
-      "low_52w": 265.66
+      "drawdown_1y": -11.57,
+      "date": "2026-06-25"
     },
-    "MU": {
+    {
       "symbol": "MU",
       "name": "Micron Technology",
       "layer": "Memory",
-      "close": 1213.5601,
-      "date": "2026-06-25",
+      "price": 1213.56,
+      "return_1d": 15.74,
+      "return_1m": 35.46,
+      "return_3m": 217.74,
+      "return_1y": 851.03,
       "percentile_1y": 100.0,
-      "change_1y_pct": 856.0,
-      "high_52w": 1213.56,
-      "low_52w": 104.73
+      "drawdown_1y": 0.0,
+      "date": "2026-06-25"
     },
-    "WDC": {
+    {
       "symbol": "WDC",
       "name": "Western Digital",
       "layer": "Memory",
-      "close": 675.39,
-      "date": "2026-06-25",
+      "price": 675.39,
+      "return_1d": 4.9,
+      "return_1m": 28.77,
+      "return_3m": 128.12,
+      "return_1y": 991.06,
       "percentile_1y": 98.4,
-      "change_1y_pct": 982.7,
-      "high_52w": 746.23,
-      "low_52w": 62.38
+      "drawdown_1y": -9.49,
+      "date": "2026-06-25"
     },
-    "STX": {
+    {
       "symbol": "STX",
       "name": "Seagate Technology",
       "layer": "Memory",
-      "close": 1025.36,
-      "date": "2026-06-25",
+      "price": 1025.36,
+      "return_1d": 3.23,
+      "return_1m": 21.32,
+      "return_3m": 148.32,
+      "return_1y": 662.47,
       "percentile_1y": 98.0,
-      "change_1y_pct": 646.2,
-      "high_52w": 1093.26,
-      "low_52w": 137.41
+      "drawdown_1y": -6.21,
+      "date": "2026-06-25"
     },
-    "ANET": {
+    {
       "symbol": "ANET",
       "name": "Arista Networks",
       "layer": "Networking/Optics",
-      "close": 165.45,
-      "date": "2026-06-25",
+      "price": 165.45,
+      "return_1d": 2.29,
+      "return_1m": 4.71,
+      "return_3m": 22.55,
+      "return_1y": 74.21,
       "percentile_1y": 92.5,
-      "change_1y_pct": 71.8,
-      "high_52w": 177.73,
-      "low_52w": 96.31
+      "drawdown_1y": -6.91,
+      "date": "2026-06-25"
     },
-    "CIEN": {
+    {
       "symbol": "CIEN",
       "name": "Ciena",
       "layer": "Networking/Optics",
-      "close": 484.69,
-      "date": "2026-06-25",
+      "price": 484.69,
+      "return_1d": 4.57,
+      "return_1m": -19.54,
+      "return_3m": 10.74,
+      "return_1y": 510.83,
       "percentile_1y": 85.4,
-      "change_1y_pct": 510.2,
-      "high_52w": 627.0,
-      "low_52w": 77.75
+      "drawdown_1y": -22.7,
+      "date": "2026-06-25"
     },
-    "COHR": {
+    {
       "symbol": "COHR",
       "name": "Coherent",
       "layer": "Networking/Optics",
-      "close": 407.25,
-      "date": "2026-06-25",
+      "price": 407.25,
+      "return_1d": 3.76,
+      "return_1m": 6.79,
+      "return_3m": 49.7,
+      "return_1y": 403.03,
       "percentile_1y": 98.0,
-      "change_1y_pct": 375.6,
-      "high_52w": 426.89,
-      "low_52w": 85.63
+      "drawdown_1y": -4.6,
+      "date": "2026-06-25"
     },
-    "LITE": {
+    {
       "symbol": "LITE",
       "name": "Lumentum",
       "layer": "Networking/Optics",
-      "close": 861.97,
-      "date": "2026-06-25",
+      "price": 861.97,
+      "return_1d": 2.31,
+      "return_1m": -5.36,
+      "return_3m": 10.91,
+      "return_1y": 838.86,
       "percentile_1y": 84.2,
-      "change_1y_pct": 839.3,
-      "high_52w": 1053.09,
-      "low_52w": 90.44
+      "drawdown_1y": -18.15,
+      "date": "2026-06-25"
     },
-    "FN": {
+    {
       "symbol": "FN",
       "name": "Fabrinet",
       "layer": "Networking/Optics",
-      "close": 567.79,
-      "date": "2026-06-25",
+      "price": 567.79,
+      "return_1d": -0.07,
+      "return_1m": -16.6,
+      "return_3m": -7.23,
+      "return_1y": 105.35,
       "percentile_1y": 76.3,
-      "change_1y_pct": 98.6,
-      "high_52w": 746.47,
-      "low_52w": 277.04
+      "drawdown_1y": -23.94,
+      "date": "2026-06-25"
     },
-    "VRT": {
+    {
       "symbol": "VRT",
       "name": "Vertiv Holdings",
       "layer": "Infrastructure",
-      "close": 325.57,
-      "date": "2026-06-25",
+      "price": 325.57,
+      "return_1d": 2.89,
+      "return_1m": 0.53,
+      "return_3m": 17.92,
+      "return_1y": 166.46,
       "percentile_1y": 92.9,
-      "change_1y_pct": 167.9,
-      "high_52w": 376.15,
-      "low_52w": 120.59
+      "drawdown_1y": -13.45,
+      "date": "2026-06-25"
     },
-    "ETN": {
+    {
       "symbol": "ETN",
       "name": "Eaton Corp",
       "layer": "Infrastructure",
-      "close": 419.87,
-      "date": "2026-06-25",
+      "price": 419.87,
+      "return_1d": 3.78,
+      "return_1m": 4.15,
+      "return_3m": 12.27,
+      "return_1y": 23.74,
       "percentile_1y": 96.4,
-      "change_1y_pct": 24.1,
-      "high_52w": 435.78,
-      "low_52w": 313.97
+      "drawdown_1y": -3.65,
+      "date": "2026-06-25"
     },
-    "DELL": {
+    {
       "symbol": "DELL",
       "name": "Dell Technologies",
       "layer": "Infrastructure",
-      "close": 409.45,
-      "date": "2026-06-25",
+      "price": 409.45,
+      "return_1d": -5.67,
+      "return_1m": 34.21,
+      "return_3m": 123.2,
+      "return_1y": 244.7,
       "percentile_1y": 96.0,
-      "change_1y_pct": 245.1,
-      "high_52w": 465.96,
-      "low_52w": 110.73
+      "drawdown_1y": -12.13,
+      "date": "2026-06-25"
     },
-    "SMCI": {
+    {
       "symbol": "SMCI",
       "name": "Super Micro Computer",
       "layer": "Infrastructure",
-      "close": 31.68,
-      "date": "2026-06-25",
+      "price": 31.68,
+      "return_1d": -2.37,
+      "return_1m": -14.61,
+      "return_3m": 31.73,
+      "return_1y": -26.05,
       "percentile_1y": 34.4,
-      "change_1y_pct": -32.0,
-      "high_52w": 60.71,
-      "low_52w": 20.53
+      "drawdown_1y": -47.82,
+      "date": "2026-06-25"
     },
-    "PWR": {
+    {
       "symbol": "PWR",
       "name": "Quanta Services",
       "layer": "Infrastructure",
-      "close": 718.59,
-      "date": "2026-06-25",
+      "price": 718.59,
+      "return_1d": 2.38,
+      "return_1m": -3.18,
+      "return_3m": 25.32,
+      "return_1y": 93.22,
       "percentile_1y": 91.7,
-      "change_1y_pct": 92.3,
-      "high_52w": 785.24,
-      "low_52w": 372.03
+      "drawdown_1y": -8.49,
+      "date": "2026-06-25"
     },
-    "MSFT": {
+    {
       "symbol": "MSFT",
       "name": "Microsoft",
       "layer": "Hyperscalers",
-      "close": 352.83,
-      "date": "2026-06-25",
+      "price": 352.83,
+      "return_1d": -3.46,
+      "return_1m": -15.19,
+      "return_3m": -4.7,
+      "return_1y": -27.44,
       "percentile_1y": 0.4,
-      "change_1y_pct": -27.8,
-      "high_52w": 538.66,
-      "low_52w": 352.83
+      "drawdown_1y": -34.5,
+      "date": "2026-06-25"
     },
-    "GOOGL": {
+    {
       "symbol": "GOOGL",
       "name": "Alphabet",
       "layer": "Hyperscalers",
-      "close": 343.71,
-      "date": "2026-06-25",
+      "price": 343.71,
+      "return_1d": -0.46,
+      "return_1m": -11.56,
+      "return_3m": 18.21,
+      "return_1y": 106.69,
       "percentile_1y": 83.4,
-      "change_1y_pct": 102.0,
-      "high_52w": 402.38,
-      "low_52w": 170.19
+      "drawdown_1y": -14.58,
+      "date": "2026-06-25"
     },
-    "AMZN": {
+    {
       "symbol": "AMZN",
       "name": "Amazon",
       "layer": "Hyperscalers",
-      "close": 227.01,
-      "date": "2026-06-25",
+      "price": 227.01,
+      "return_1d": -3.1,
+      "return_1m": -14.43,
+      "return_3m": 7.23,
+      "return_1y": 6.69,
       "percentile_1y": 44.3,
-      "change_1y_pct": 7.1,
-      "high_52w": 274.99,
-      "low_52w": 198.79
+      "drawdown_1y": -17.45,
+      "date": "2026-06-25"
     },
-    "META": {
+    {
       "symbol": "META",
       "name": "Meta Platforms",
       "layer": "Hyperscalers",
-      "close": 542.87,
-      "date": "2026-06-25",
+      "price": 542.87,
+      "return_1d": -2.65,
+      "return_1m": -11.26,
+      "return_3m": -8.66,
+      "return_1y": -23.53,
       "percentile_1y": 1.2,
-      "change_1y_pct": -23.1,
-      "high_52w": 787.42,
-      "low_52w": 525.23
+      "drawdown_1y": -31.06,
+      "date": "2026-06-25"
     },
-    "ORCL": {
+    {
       "symbol": "ORCL",
       "name": "Oracle",
       "layer": "Hyperscalers",
-      "close": 152.46,
-      "date": "2026-06-25",
+      "price": 152.46,
+      "return_1d": -3.22,
+      "return_1m": -21.03,
+      "return_3m": 4.78,
+      "return_1y": -28.47,
       "percentile_1y": 12.3,
-      "change_1y_pct": -26.9,
-      "high_52w": 325.76,
-      "low_52w": 136.0
+      "drawdown_1y": -53.2,
+      "date": "2026-06-25"
     },
-    "PLTR": {
+    {
       "symbol": "PLTR",
       "name": "Palantir",
       "layer": "AI Software",
-      "close": 107.27,
-      "date": "2026-06-25",
+      "price": 107.27,
+      "return_1d": -5.49,
+      "return_1m": -21.47,
+      "return_3m": -30.78,
+      "return_1y": -25.11,
       "percentile_1y": 0.4,
-      "change_1y_pct": -24.9,
-      "high_52w": 207.18,
-      "low_52w": 107.27
+      "drawdown_1y": -48.22,
+      "date": "2026-06-25"
     },
-    "CRM": {
+    {
       "symbol": "CRM",
       "name": "Salesforce",
       "layer": "AI Software",
-      "close": 150.19,
-      "date": "2026-06-25",
+      "price": 150.19,
+      "return_1d": -1.68,
+      "return_1m": -15.92,
+      "return_3m": -17.04,
+      "return_1y": -44.15,
       "percentile_1y": 0.8,
-      "change_1y_pct": -43.4,
-      "high_52w": 271.35,
-      "low_52w": 150.12
+      "drawdown_1y": -44.65,
+      "date": "2026-06-25"
     },
-    "NOW": {
+    {
       "symbol": "NOW",
       "name": "ServiceNow",
       "layer": "AI Software",
-      "close": 89.52,
-      "date": "2026-06-25",
+      "price": 89.52,
+      "return_1d": -4.56,
+      "return_1m": -10.41,
+      "return_3m": -13.14,
+      "return_1y": -55.07,
       "percentile_1y": 4.0,
-      "change_1y_pct": -55.5,
-      "high_52w": 208.94,
-      "low_52w": 83.0
+      "drawdown_1y": -57.15,
+      "date": "2026-06-25"
     },
-    "SNOW": {
+    {
       "symbol": "SNOW",
       "name": "Snowflake",
       "layer": "AI Software",
-      "close": 227.06,
-      "date": "2026-06-25",
+      "price": 227.06,
+      "return_1d": 0.49,
+      "return_1m": 27.85,
+      "return_3m": 41.37,
+      "return_1y": 1.76,
       "percentile_1y": 71.5,
-      "change_1y_pct": 2.5,
-      "high_52w": 280.16,
-      "low_52w": 121.11
+      "drawdown_1y": -18.95,
+      "date": "2026-06-25"
     },
-    "AI": {
+    {
       "symbol": "AI",
       "name": "C3.ai",
       "layer": "AI Software",
-      "close": 8.75,
-      "date": "2026-06-25",
+      "price": 8.75,
+      "return_1d": -6.12,
+      "return_1m": -8.76,
+      "return_3m": 5.68,
+      "return_1y": -63.8,
       "percentile_1y": 10.3,
-      "change_1y_pct": -63.0,
-      "high_52w": 29.16,
-      "low_52w": 7.76
+      "drawdown_1y": -69.99,
+      "date": "2026-06-25"
     }
-  },
-  "etfs": {
-    "SMH": {
+  ],
+  "etfs": [
+    {
       "symbol": "SMH",
-      "close": 638.47998,
-      "date": "2026-06-25",
-      "percentile_1y": 98.8
+      "name": "VanEck Semiconductor ETF",
+      "price": 638.48,
+      "return_1d": 3.16,
+      "return_1m": 6.04,
+      "return_3m": 60.01,
+      "return_1y": 135.13,
+      "percentile_1y": 98.8,
+      "drawdown_1y": -4.55,
+      "date": "2026-06-25"
     },
-    "SOXX": {
+    {
       "symbol": "SOXX",
-      "close": 627.059998,
-      "date": "2026-06-25",
-      "percentile_1y": 98.8
+      "name": "iShares Semiconductor ETF",
+      "price": 627.06,
+      "return_1d": 4.25,
+      "return_1m": 9.99,
+      "return_3m": 81.62,
+      "return_1y": 166.72,
+      "percentile_1y": 98.8,
+      "drawdown_1y": -4.27,
+      "date": "2026-06-25"
     },
-    "AIQ": {
+    {
       "symbol": "AIQ",
-      "close": 64.375,
-      "date": "2026-06-25",
-      "percentile_1y": 94.9
+      "name": "Global X AI & Technology ETF",
+      "price": 64.38,
+      "return_1d": 1.55,
+      "return_1m": -1.27,
+      "return_3m": 34.39,
+      "return_1y": 49.36,
+      "percentile_1y": 94.9,
+      "drawdown_1y": -8.22,
+      "date": "2026-06-25"
     },
-    "BOTZ": {
+    {
       "symbol": "BOTZ",
-      "close": 36.540001,
-      "date": "2026-06-25",
-      "percentile_1y": 51.0
+      "name": "Global X Robotics & AI ETF",
+      "price": 36.54,
+      "return_1d": -0.11,
+      "return_1m": -10.66,
+      "return_3m": 6.28,
+      "return_1y": 16.22,
+      "percentile_1y": 51.0,
+      "drawdown_1y": -12.23,
+      "date": "2026-06-25"
     },
-    "ROBO": {
+    {
       "symbol": "ROBO",
-      "close": 83.440002,
-      "date": "2026-06-25",
-      "percentile_1y": 89.7
+      "name": "ROBO Global Robotics ETF",
+      "price": 83.44,
+      "return_1d": 1.32,
+      "return_1m": -7.28,
+      "return_3m": 17.41,
+      "return_1y": 44.21,
+      "percentile_1y": 89.7,
+      "drawdown_1y": -7.64,
+      "date": "2026-06-25"
     },
-    "WCLD": {
+    {
       "symbol": "WCLD",
-      "close": 28.98,
-      "date": "2026-06-25",
-      "percentile_1y": 26.5
+      "name": "WisdomTree Cloud Computing ETF",
+      "price": 28.98,
+      "return_1d": -1.73,
+      "return_1m": -3.88,
+      "return_3m": 6.84,
+      "return_1y": -19.07,
+      "percentile_1y": 26.5,
+      "drawdown_1y": -21.42,
+      "date": "2026-06-25"
     },
-    "CLOU": {
+    {
       "symbol": "CLOU",
-      "close": 21.120001,
-      "date": "2026-06-25",
-      "percentile_1y": 26.9
+      "name": "Global X Cloud Computing ETF",
+      "price": 21.12,
+      "return_1d": -2.0,
+      "return_1m": -7.85,
+      "return_3m": 8.03,
+      "return_1y": -8.57,
+      "percentile_1y": 26.9,
+      "drawdown_1y": -19.94,
+      "date": "2026-06-25"
     },
-    "ARKK": {
+    {
       "symbol": "ARKK",
-      "close": 76.614998,
-      "date": "2026-06-25",
-      "percentile_1y": 47.4
+      "name": "ARK Innovation ETF",
+      "price": 76.61,
+      "return_1d": -0.14,
+      "return_1m": -0.8,
+      "return_3m": 9.61,
+      "return_1y": 8.98,
+      "percentile_1y": 47.4,
+      "drawdown_1y": -17.2,
+      "date": "2026-06-25"
     },
-    "SPY": {
-      "symbol": "SPY",
-      "close": 733.280029,
-      "date": "2026-06-25",
-      "percentile_1y": 87.7
-    },
-    "QQQ": {
+    {
       "symbol": "QQQ",
-      "close": 716.585022,
-      "date": "2026-06-25",
-      "percentile_1y": 93.3
+      "name": "Invesco QQQ Trust",
+      "price": 716.59,
+      "return_1d": 0.84,
+      "return_1m": -1.88,
+      "return_3m": 21.91,
+      "return_1y": 32.76,
+      "percentile_1y": 93.3,
+      "drawdown_1y": -3.96,
+      "date": "2026-06-25"
     },
-    "XLK": {
+    {
       "symbol": "XLK",
-      "close": 184.5,
-      "date": "2026-06-25",
-      "percentile_1y": 94.9
+      "name": "Technology Select Sector SPDR",
+      "price": 184.5,
+      "return_1d": 0.79,
+      "return_1m": -0.35,
+      "return_3m": 34.91,
+      "return_1y": 49.25,
+      "percentile_1y": 94.9,
+      "drawdown_1y": -6.92,
+      "date": "2026-06-25"
     }
+  ],
+  "benchmark": {
+    "symbol": "SPY",
+    "name": "SPDR S&P 500 ETF",
+    "price": 733.28,
+    "return_1d": 0.01,
+    "return_1m": -2.31,
+    "return_3m": 11.64,
+    "return_1y": 20.85,
+    "percentile_1y": 87.7,
+    "drawdown_1y": -3.46,
+    "date": "2026-06-25"
   },
   "layers": {
     "Chip Design": [
