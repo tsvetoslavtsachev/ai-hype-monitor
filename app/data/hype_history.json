@@ -1,1 +1,169 @@
-[{"date": "2026-06-26", "score": 57.0}]
+{
+  "history": [
+    {
+      "quarter": "Q4 2022",
+      "date": "2022-12-31",
+      "hype_index": 29.7,
+      "zone": "AI Winter",
+      "components": {
+        "momentum": 43.4,
+        "rhetoric": 0.2,
+        "valuation": 49.2
+      }
+    },
+    {
+      "quarter": "Q1 2023",
+      "date": "2023-03-31",
+      "hype_index": 60.2,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 86.0,
+        "rhetoric": 2.2,
+        "valuation": 100.0
+      }
+    },
+    {
+      "quarter": "Q2 2023",
+      "date": "2023-06-30",
+      "hype_index": 61.0,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 89.2,
+        "rhetoric": 2.8,
+        "valuation": 97.3
+      }
+    },
+    {
+      "quarter": "Q3 2023",
+      "date": "2023-09-30",
+      "hype_index": 45.3,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 71.6,
+        "rhetoric": 0.6,
+        "valuation": 65.7
+      }
+    },
+    {
+      "quarter": "Q4 2023",
+      "date": "2023-12-31",
+      "hype_index": 60.8,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 90.8,
+        "rhetoric": 1.4,
+        "valuation": 95.8
+      }
+    },
+    {
+      "quarter": "Q1 2024",
+      "date": "2024-03-31",
+      "hype_index": 60.5,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 89.3,
+        "rhetoric": 1.7,
+        "valuation": 96.6
+      }
+    },
+    {
+      "quarter": "Q2 2024",
+      "date": "2024-06-30",
+      "hype_index": 59.0,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 86.7,
+        "rhetoric": 3.7,
+        "valuation": 92.2
+      }
+    },
+    {
+      "quarter": "Q3 2024",
+      "date": "2024-09-30",
+      "hype_index": 52.5,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 74.3,
+        "rhetoric": 1.5,
+        "valuation": 88.9
+      }
+    },
+    {
+      "quarter": "Q4 2024",
+      "date": "2024-12-31",
+      "hype_index": 39.6,
+      "zone": "Cooling",
+      "components": {
+        "momentum": 56.9,
+        "rhetoric": 3.5,
+        "valuation": 62.6
+      }
+    },
+    {
+      "quarter": "Q1 2025",
+      "date": "2025-03-31",
+      "hype_index": 12.8,
+      "zone": "AI Winter",
+      "components": {
+        "momentum": 20.5,
+        "rhetoric": 4.1,
+        "valuation": 12.8
+      }
+    },
+    {
+      "quarter": "Q2 2025",
+      "date": "2025-06-30",
+      "hype_index": 58.1,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 83.0,
+        "rhetoric": 5.1,
+        "valuation": 92.3
+      }
+    },
+    {
+      "quarter": "Q3 2025",
+      "date": "2025-09-30",
+      "hype_index": 59.5,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 84.0,
+        "rhetoric": 2.8,
+        "valuation": 99.7
+      }
+    },
+    {
+      "quarter": "Q4 2025",
+      "date": "2025-12-31",
+      "hype_index": 50.7,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 68.2,
+        "rhetoric": 3.1,
+        "valuation": 89.3
+      }
+    },
+    {
+      "quarter": "Q1 2026",
+      "date": "2026-03-31",
+      "hype_index": 37.4,
+      "zone": "Cooling",
+      "components": {
+        "momentum": 53.7,
+        "rhetoric": 2.6,
+        "valuation": 60.0
+      }
+    },
+    {
+      "quarter": "Q2 2026",
+      "date": "2026-06-30",
+      "hype_index": 49.3,
+      "zone": "Neutral",
+      "components": {
+        "momentum": 69.5,
+        "rhetoric": 0.0,
+        "valuation": 85.9
+      }
+    }
+  ]
+}

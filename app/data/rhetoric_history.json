@@ -1,9 +1,14 @@
 {
-  "generated_at": "2026-06-26T23:32:25.232566Z",
+  "generated_at": "2026-06-26T22:59:54.306840Z",
+  "start_date": "2022-10-01",
+  "end_date": "2026-06-26",
+  "source": "SEC EDGAR 8-K Exhibits (EX-99.1/EX-99.2)",
+  "methodology": "Lexicon-based AI keyword density + financial substance ratio",
   "companies": {
     "NVDA": {
       "symbol": "NVDA",
       "name": "Nvidia",
+      "cik": "1045810",
       "latest_rhetoric_score": 8.7,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -127,11 +132,13 @@
           "filing_count": 1,
           "filing_date": "2025-11-19"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "AMD": {
       "symbol": "AMD",
       "name": "AMD",
+      "cik": "2488",
       "latest_rhetoric_score": 7.9,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -215,11 +222,13 @@
           "filing_count": 1,
           "filing_date": "2024-10-29"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "AVGO": {
       "symbol": "AVGO",
       "name": "Broadcom",
+      "cik": "1730168",
       "latest_rhetoric_score": 1.2,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -319,11 +328,13 @@
           "filing_count": 1,
           "filing_date": "2024-12-12"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "QCOM": {
       "symbol": "QCOM",
       "name": "Qualcomm",
+      "cik": "804328",
       "latest_rhetoric_score": 0.2,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -423,11 +434,13 @@
           "filing_count": 2,
           "filing_date": "2025-12-16"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "AMAT": {
       "symbol": "AMAT",
       "name": "Applied Materials",
+      "cik": "796343",
       "latest_rhetoric_score": 10.3,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -495,11 +508,13 @@
           "filing_count": 3,
           "filing_date": "2023-12-18"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "LRCX": {
       "symbol": "LRCX",
       "name": "Lam Research",
+      "cik": "707549",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -567,11 +582,13 @@
           "filing_count": 2,
           "filing_date": "2023-11-09"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "KLAC": {
       "symbol": "KLAC",
       "name": "KLA Corp",
+      "cik": "319201",
       "latest_rhetoric_score": 3.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -663,11 +680,13 @@
           "filing_count": 2,
           "filing_date": "2024-12-03"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "SNPS": {
       "symbol": "SNPS",
       "name": "Synopsys",
+      "cik": "883241",
       "latest_rhetoric_score": 0.2,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -775,11 +794,13 @@
           "filing_count": 2,
           "filing_date": "2025-12-10"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "CDNS": {
       "symbol": "CDNS",
       "name": "Cadence Design",
+      "cik": "813672",
       "latest_rhetoric_score": 0.3,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -887,11 +908,13 @@
           "filing_count": 1,
           "filing_date": "2025-10-27"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "MU": {
       "symbol": "MU",
       "name": "Micron Technology",
+      "cik": "723125",
       "latest_rhetoric_score": 1.5,
       "rhetoric_trend": "falling",
       "quarters": [
@@ -999,11 +1022,13 @@
           "filing_count": 1,
           "filing_date": "2025-12-17"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "WDC": {
       "symbol": "WDC",
       "name": "Western Digital",
+      "cik": "106040",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1103,11 +1128,13 @@
           "filing_count": 1,
           "filing_date": "2025-11-03"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "CIEN": {
       "symbol": "CIEN",
       "name": "Ciena",
+      "cik": "936395",
       "latest_rhetoric_score": 11.2,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -1215,11 +1242,13 @@
           "filing_count": 2,
           "filing_date": "2025-12-11"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "COHR": {
       "symbol": "COHR",
       "name": "Coherent",
+      "cik": "820318",
       "latest_rhetoric_score": 10.1,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -1319,11 +1348,13 @@
           "filing_count": 2,
           "filing_date": "2025-12-16"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "VRT": {
       "symbol": "VRT",
       "name": "Vertiv Holdings",
+      "cik": "1779128",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1391,11 +1422,13 @@
           "filing_count": 1,
           "filing_date": "2023-11-08"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "ETN": {
       "symbol": "ETN",
       "name": "Eaton Corp",
+      "cik": "1551182",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1487,11 +1520,13 @@
           "filing_count": 1,
           "filing_date": "2024-10-22"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "DELL": {
       "symbol": "DELL",
       "name": "Dell Technologies",
+      "cik": "1571996",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1591,11 +1626,13 @@
           "filing_count": 1,
           "filing_date": "2024-10-08"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "SMCI": {
       "symbol": "SMCI",
       "name": "Super Micro Computer",
+      "cik": "893691",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1647,11 +1684,13 @@
           "filing_count": 4,
           "filing_date": "2023-12-18"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "MSFT": {
       "symbol": "MSFT",
       "name": "Microsoft",
+      "cik": "789019",
       "latest_rhetoric_score": 5.7,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -1759,11 +1798,13 @@
           "filing_count": 1,
           "filing_date": "2024-12-03"
         }
-      ]
+      ],
+      "filings_analyzed": 15
     },
     "GOOGL": {
       "symbol": "GOOGL",
       "name": "Alphabet",
+      "cik": "1652044",
       "latest_rhetoric_score": 2.4,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1855,11 +1896,13 @@
           "filing_count": 1,
           "filing_date": "2025-10-29"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "AMZN": {
       "symbol": "AMZN",
       "name": "Amazon",
+      "cik": "1018724",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1943,11 +1986,13 @@
           "filing_count": 1,
           "filing_date": "2025-10-30"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "META": {
       "symbol": "META",
       "name": "Meta Platforms",
+      "cik": "1326801",
       "latest_rhetoric_score": 0.5,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -2007,11 +2052,13 @@
           "filing_count": 4,
           "filing_date": "2025-12-19"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "ORCL": {
       "symbol": "ORCL",
       "name": "Oracle",
+      "cik": "1341439",
       "latest_rhetoric_score": 5.1,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -2111,11 +2158,13 @@
           "filing_count": 1,
           "filing_date": "2025-12-10"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "PLTR": {
       "symbol": "PLTR",
       "name": "Palantir",
+      "cik": "1321655",
       "latest_rhetoric_score": 10.8,
       "rhetoric_trend": "rising",
       "quarters": [
@@ -2199,11 +2248,13 @@
           "filing_count": 2,
           "filing_date": "2024-11-14"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "CRM": {
       "symbol": "CRM",
       "name": "Salesforce",
+      "cik": "1108524",
       "latest_rhetoric_score": 0.5,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -2271,11 +2322,13 @@
           "filing_count": 3,
           "filing_date": "2024-12-10"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "NOW": {
       "symbol": "NOW",
       "name": "ServiceNow",
+      "cik": "1373715",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "falling",
       "quarters": [
@@ -2375,11 +2428,13 @@
           "filing_count": 2,
           "filing_date": "2025-12-23"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     },
     "SNOW": {
       "symbol": "SNOW",
       "name": "Snowflake",
+      "cik": "1640147",
       "latest_rhetoric_score": 1.8,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -2463,7 +2518,8 @@
           "filing_count": 1,
           "filing_date": "2024-11-20"
         }
-      ]
+      ],
+      "filings_analyzed": 16
     }
   },
   "sector_trend": [
