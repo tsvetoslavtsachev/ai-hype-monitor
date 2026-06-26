@@ -1,0 +1,2359 @@
+{
+  "updated_at": "2026-06-26",
+  "generated_at": "2026-06-26T22:31:46Z",
+  "companies": {
+    "AMAT": {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "layer": "Semiconductor Equipment",
+      "cik": "6951",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2026-05-14",
+          "accession": "0001628280-26-035071",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2026-03-13",
+          "accession": "0001193125-26-106339",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2026-02-12",
+          "accession": "0001628280-26-007661",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2026-02-12",
+          "accession": "0001628280-26-007444",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2025-11-13",
+          "accession": "0001628280-25-051998",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2025-10-23",
+          "accession": "0001628280-25-046107",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2025-10-02",
+          "accession": "0001628280-25-043753",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMAT",
+          "form": "8-K",
+          "date": "2025-09-26",
+          "accession": "0001628280-25-042933",
+          "cik": "6951",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "LRCX": {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "layer": "Semiconductor Equipment",
+      "cik": "707549",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2026-04-22",
+          "accession": "0000707549-26-000020",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2026-02-03",
+          "accession": "0000707549-26-000012",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2026-01-28",
+          "accession": "0000707549-26-000006",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2025-11-06",
+          "accession": "0000707549-25-000094",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2025-10-22",
+          "accession": "0000707549-25-000082",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2025-09-11",
+          "accession": "0000707549-25-000078",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2025-07-30",
+          "accession": "0000707549-25-000068",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LRCX",
+          "form": "8-K",
+          "date": "2025-05-21",
+          "accession": "0000707549-25-000060",
+          "cik": "707549",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "KLAC": {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "layer": "Semiconductor Equipment",
+      "cik": "319201",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001193125-26-269375",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-05-07",
+          "accession": "0001193125-26-212093",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0000319201-26-000014",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-03-12",
+          "accession": "0001193125-26-102999",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-02-05",
+          "accession": "0001193125-26-039637",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2026-01-29",
+          "accession": "0000319201-26-000006",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2025-11-07",
+          "accession": "0001193125-25-272448",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "KLAC",
+          "form": "8-K",
+          "date": "2025-10-29",
+          "accession": "0000319201-25-000031",
+          "cik": "319201",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "layer": "Chip Design",
+      "cik": "1045810",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-06-18",
+          "accession": "0001193125-26-275783",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-05-20",
+          "accession": "0001045810-26-000051",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-05-08",
+          "accession": "0001045810-26-000028",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-04-27",
+          "accession": "0001045810-26-000026",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-03-06",
+          "accession": "0001045810-26-000024",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-02-25",
+          "accession": "0001045810-26-000019",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2026-01-23",
+          "accession": "0001045810-26-000003",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NVDA",
+          "form": "8-K",
+          "date": "2025-11-19",
+          "accession": "0001045810-25-000228",
+          "cik": "1045810",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "layer": "Chip Design",
+      "cik": "2488",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-05-15",
+          "accession": "0001193125-26-226746",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-05-05",
+          "accession": "0000002488-26-000072",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-02-24",
+          "accession": "0000002488-26-000045",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-02-17",
+          "accession": "0000002488-26-000029",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-02-03",
+          "accession": "0000002488-26-000014",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2026-01-20",
+          "accession": "0000002488-26-000002",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2025-12-15",
+          "accession": "0000002488-25-000182",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMD",
+          "form": "8-K",
+          "date": "2025-11-04",
+          "accession": "0000002488-25-000163",
+          "cik": "2488",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "layer": "Chip Design",
+      "cik": "1730168",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-06-18",
+          "accession": "0001193125-26-275077",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-06-11",
+          "accession": "0001193125-26-266777",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-06-03",
+          "accession": "0001730168-26-000051",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-04-21",
+          "accession": "0001730168-26-000039",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-04-06",
+          "accession": "0001193125-26-144028",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-04-02",
+          "accession": "0001193125-26-140574",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-03-04",
+          "accession": "0001730168-26-000011",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AVGO",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001193125-26-085656",
+          "cik": "1730168",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "QCOM": {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "layer": "Chip Design",
+      "cik": "804328",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2026-06-24",
+          "accession": "0001104659-26-077071",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0000804328-26-000060",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2026-03-19",
+          "accession": "0000804328-26-000041",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2026-02-04",
+          "accession": "0000804328-26-000016",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2026-01-16",
+          "accession": "0000804328-26-000008",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2025-12-16",
+          "accession": "0000804328-25-000098",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2025-12-10",
+          "accession": "0000804328-25-000096",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "QCOM",
+          "form": "8-K",
+          "date": "2025-11-05",
+          "accession": "0000804328-25-000084",
+          "cik": "804328",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "SNPS": {
+      "symbol": "SNPS",
+      "name": "Synopsys",
+      "layer": "Chip Design",
+      "cik": "883241",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-05-27",
+          "accession": "0001193125-26-241920",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-05-27",
+          "accession": "0001193125-26-241911",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-04-20",
+          "accession": "0001193125-26-164085",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001193125-26-084396",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-02-25",
+          "accession": "0001193125-26-071601",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2026-02-19",
+          "accession": "0001193125-26-059438",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2025-12-10",
+          "accession": "0001193125-25-314200",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SNPS",
+          "form": "8-K",
+          "date": "2025-12-01",
+          "accession": "0001193125-25-303209",
+          "cik": "883241",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "CDNS": {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems",
+      "layer": "Chip Design",
+      "cik": "813672",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2026-05-12",
+          "accession": "0000813672-26-000067",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2026-04-27",
+          "accession": "0000813672-26-000044",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2026-02-23",
+          "accession": "0000813672-26-000019",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2026-02-17",
+          "accession": "0000813672-26-000013",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2025-11-17",
+          "accession": "0000813672-25-000157",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2025-10-27",
+          "accession": "0000813672-25-000144",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2025-09-04",
+          "accession": "0000813672-25-000126",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CDNS",
+          "form": "8-K",
+          "date": "2025-07-28",
+          "accession": "0000813672-25-000109",
+          "cik": "813672",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "MU": {
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "layer": "Memory & Storage",
+      "cik": "723125",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-06-24",
+          "accession": "0000723125-26-000013",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-06-09",
+          "accession": "0001104659-26-071845",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-04-01",
+          "accession": "0001104659-26-038249",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-03-25",
+          "accession": "0001104659-26-034174",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-03-18",
+          "accession": "0000723125-26-000004",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2026-01-21",
+          "accession": "0001104659-26-005366",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2025-12-17",
+          "accession": "0000723125-25-000044",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MU",
+          "form": "8-K",
+          "date": "2025-10-21",
+          "accession": "0001104659-25-101237",
+          "cik": "723125",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "WDC": {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "layer": "Memory & Storage",
+      "cik": "106040",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-06-11",
+          "accession": "0001193125-26-267514",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-06-03",
+          "accession": "0001193125-26-254621",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-05-28",
+          "accession": "0001628280-26-038632",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-04-30",
+          "accession": "0001628280-26-028878",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-02-24",
+          "accession": "0001193125-26-067035",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-02-18",
+          "accession": "0001193125-26-055920",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-02-09",
+          "accession": "0001193125-26-041896",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "WDC",
+          "form": "8-K",
+          "date": "2026-01-29",
+          "accession": "0001628280-26-004131",
+          "cik": "106040",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "STX": {
+      "symbol": "STX",
+      "name": "Seagate Technology",
+      "layer": "Memory & Storage",
+      "cik": "1137789",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001193125-26-268170",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-05-28",
+          "accession": "0001193125-26-243110",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-05-21",
+          "accession": "0001193125-26-233588",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-05-06",
+          "accession": "0001137789-26-000093",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-04-28",
+          "accession": "0001137789-26-000084",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-02-19",
+          "accession": "0001193125-26-059681",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-02-12",
+          "accession": "0001193125-26-047755",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "STX",
+          "form": "8-K",
+          "date": "2026-01-27",
+          "accession": "0001137789-26-000016",
+          "cik": "1137789",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "ANET": {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "layer": "Networking & Optics",
+      "cik": "1596532",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2026-06-02",
+          "accession": "0001596532-26-000118",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2026-05-05",
+          "accession": "0001596532-26-000074",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2026-02-12",
+          "accession": "0001596532-26-000010",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2025-11-04",
+          "accession": "0001596532-25-000284",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2025-09-08",
+          "accession": "0001596532-25-000258",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2025-08-05",
+          "accession": "0001596532-25-000214",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2025-06-16",
+          "accession": "0001596532-25-000170",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ANET",
+          "form": "8-K",
+          "date": "2025-06-03",
+          "accession": "0001596532-25-000148",
+          "cik": "1596532",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "CIEN": {
+      "symbol": "CIEN",
+      "name": "Ciena",
+      "layer": "Networking & Optics",
+      "cik": "936395",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2026-06-11",
+          "accession": "0001193125-26-267607",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2026-06-08",
+          "accession": "0001193125-26-260665",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2026-06-04",
+          "accession": "0001628280-26-040614",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2026-03-31",
+          "accession": "0001628280-26-022342",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2026-03-05",
+          "accession": "0001628280-26-015006",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2025-12-11",
+          "accession": "0001628280-25-056425",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2025-12-04",
+          "accession": "0001628280-25-055133",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CIEN",
+          "form": "8-K",
+          "date": "2025-10-07",
+          "accession": "0001628280-25-044494",
+          "cik": "936395",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "COHR": {
+      "symbol": "COHR",
+      "name": "Coherent Corp.",
+      "layer": "Networking & Optics",
+      "cik": "820318",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2026-05-06",
+          "accession": "0001193125-26-208972",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2026-04-28",
+          "accession": "0001193125-26-187297",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001193125-26-084366",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2026-02-04",
+          "accession": "0001193125-26-037556",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2025-12-16",
+          "accession": "0000820318-25-000024",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2025-11-21",
+          "accession": "0001193125-25-290249",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2025-11-17",
+          "accession": "0001193125-25-284011",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "COHR",
+          "form": "8-K",
+          "date": "2025-11-05",
+          "accession": "0001193125-25-266951",
+          "cik": "820318",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "LITE": {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "layer": "Networking & Optics",
+      "cik": "1633978",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-06-01",
+          "accession": "0001193125-26-249535",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-05-05",
+          "accession": "0001628280-26-030530",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-04-08",
+          "accession": "0001193125-26-146256",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001193125-26-085412",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-02-03",
+          "accession": "0001628280-26-005005",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2026-01-05",
+          "accession": "0001193125-26-002602",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2025-12-22",
+          "accession": "0001193125-25-328691",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "LITE",
+          "form": "8-K",
+          "date": "2025-12-15",
+          "accession": "0001628280-25-057025",
+          "cik": "1633978",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "VRT": {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "layer": "Infrastructure & Power",
+      "cik": "1674101",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-06-18",
+          "accession": "0001628280-26-044317",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001628280-26-042641",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-06-03",
+          "accession": "0001628280-26-040031",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-04-27",
+          "accession": "0001628280-26-027297",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-04-22",
+          "accession": "0001628280-26-026379",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-04-13",
+          "accession": "0001628280-26-024824",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-03-24",
+          "accession": "0001193125-26-120863",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "VRT",
+          "form": "8-K",
+          "date": "2026-03-06",
+          "accession": "0001628280-26-015494",
+          "cik": "1674101",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "ETN": {
+      "symbol": "ETN",
+      "name": "Eaton Corporation",
+      "layer": "Infrastructure & Power",
+      "cik": "1551182",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-06-11",
+          "accession": "0000950142-26-001733",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-05-05",
+          "accession": "0001551182-26-000010",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-04-23",
+          "accession": "0001140361-26-016399",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-03-10",
+          "accession": "0001140361-26-008836",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001140361-26-007362",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-03-02",
+          "accession": "0001140361-26-007206",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-02-06",
+          "accession": "0001140361-26-004227",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ETN",
+          "form": "8-K",
+          "date": "2026-02-03",
+          "accession": "0001551182-26-000002",
+          "cik": "1551182",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "DELL": {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "layer": "Infrastructure & Power",
+      "cik": "1571996",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-06-17",
+          "accession": "0001571996-26-000032",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-06-16",
+          "accession": "0001193125-26-272720",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001193125-26-269594",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-06-10",
+          "accession": "0001193125-26-265877",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-05-28",
+          "accession": "0001571996-26-000021",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-04-20",
+          "accession": "0001571996-26-000013",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2026-02-26",
+          "accession": "0001571996-26-000003",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "DELL",
+          "form": "8-K",
+          "date": "2025-11-25",
+          "accession": "0001571996-25-000118",
+          "cik": "1571996",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "SMCI": {
+      "symbol": "SMCI",
+      "name": "Supermicro",
+      "layer": "Infrastructure & Power",
+      "cik": "1375365",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-06-15",
+          "accession": "0001193125-26-270430",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001193125-26-269703",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-06-09",
+          "accession": "0001193125-26-263942",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-05-18",
+          "accession": "0001375365-26-000015",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-05-05",
+          "accession": "0001375365-26-000013",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-04-20",
+          "accession": "0001375365-26-000012",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-03-20",
+          "accession": "0001375365-26-000011",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "SMCI",
+          "form": "8-K",
+          "date": "2026-02-03",
+          "accession": "0001375365-26-000006",
+          "cik": "1375365",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "PWR": {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "layer": "Infrastructure & Power",
+      "cik": "1050606",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2024-01-25",
+          "accession": "0001193125-24-015453",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-12-29",
+          "accession": "0001193125-23-305906",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-12-27",
+          "accession": "0001193125-23-303756",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-12-01",
+          "accession": "0001193125-23-287578",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-11-13",
+          "accession": "0001193125-23-276041",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-11-03",
+          "accession": "0001193125-23-270512",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-10-04",
+          "accession": "0001193125-23-250383",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PWR",
+          "form": "8-K",
+          "date": "2023-09-29",
+          "accession": "0001193125-23-247394",
+          "cik": "1050606",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "layer": "Hyperscalers",
+      "cik": "789019",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2026-06-05",
+          "accession": "0001193125-26-258667",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2026-05-14",
+          "accession": "0001193125-26-224155",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0001193125-26-191457",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2026-01-28",
+          "accession": "0001193125-26-027198",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2025-12-08",
+          "accession": "0001193125-25-311196",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2025-10-29",
+          "accession": "0001193125-25-256310",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2025-09-30",
+          "accession": "0001193125-25-225125",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "MSFT",
+          "form": "8-K",
+          "date": "2025-07-30",
+          "accession": "0000950170-25-100226",
+          "cik": "789019",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "layer": "Hyperscalers",
+      "cik": "1652044",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-06-11",
+          "accession": "0001193125-26-267578",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-06-05",
+          "accession": "0001193125-26-259830",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-06-05",
+          "accession": "0001652044-26-000059",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-06-04",
+          "accession": "0001193125-26-257724",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-05-21",
+          "accession": "0001193125-26-234488",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-05-11",
+          "accession": "0001193125-26-216986",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0001652044-26-000043",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "GOOGL",
+          "form": "8-K",
+          "date": "2026-04-10",
+          "accession": "0001652044-26-000034",
+          "cik": "1652044",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "layer": "Hyperscalers",
+      "cik": "1018724",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-06-12",
+          "accession": "0001104659-26-073562",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-06-10",
+          "accession": "0001104659-26-072140",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-05-22",
+          "accession": "0001104659-26-065717",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0001018724-26-000012",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-04-14",
+          "accession": "0001104659-26-042880",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-04-09",
+          "accession": "0001104659-26-041034",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-03-16",
+          "accession": "0001104659-26-028556",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "AMZN",
+          "form": "8-K",
+          "date": "2026-03-13",
+          "accession": "0001104659-26-027729",
+          "cik": "1018724",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "META": {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "layer": "Hyperscalers",
+      "cik": "1326801",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-05-29",
+          "accession": "0001628280-26-039193",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-05-04",
+          "accession": "0001193125-26-204128",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-04-29",
+          "accession": "0001628280-26-028364",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-04-14",
+          "accession": "0001628280-26-025108",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-01-28",
+          "accession": "0001628280-26-003832",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2026-01-16",
+          "accession": "0001628280-26-002429",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2025-12-19",
+          "accession": "0001628280-25-058337",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "META",
+          "form": "8-K",
+          "date": "2025-12-12",
+          "accession": "0001628280-25-056768",
+          "cik": "1326801",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "ORCL": {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "layer": "Hyperscalers",
+      "cik": "1341439",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-06-10",
+          "accession": "0001193125-26-265848",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-05-12",
+          "accession": "0001193125-26-219708",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-04-06",
+          "accession": "0001193125-26-142939",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-03-10",
+          "accession": "0001193125-26-100148",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-02-05",
+          "accession": "0001193125-26-039344",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-02-04",
+          "accession": "0001193125-26-037840",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2026-01-09",
+          "accession": "0001193125-26-009002",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "ORCL",
+          "form": "8-K",
+          "date": "2025-12-10",
+          "accession": "0001193125-25-314207",
+          "cik": "1341439",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "PLTR": {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "layer": "AI Software",
+      "cik": "1321655",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2026-06-09",
+          "accession": "0001321655-26-000033",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2026-05-04",
+          "accession": "0001321655-26-000026",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2026-02-02",
+          "accession": "0001321655-26-000004",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2025-11-03",
+          "accession": "0001321655-25-000130",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2025-08-04",
+          "accession": "0001321655-25-000105",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2025-06-09",
+          "accession": "0001321655-25-000084",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2025-05-05",
+          "accession": "0001321655-25-000063",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "PLTR",
+          "form": "8-K",
+          "date": "2025-02-28",
+          "accession": "0001321655-25-000033",
+          "cik": "1321655",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "CRM": {
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "layer": "AI Software",
+      "cik": "1108524",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-06-02",
+          "accession": "0001108524-26-000138",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-06-01",
+          "accession": "0001108524-26-000131",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-05-27",
+          "accession": "0001108524-26-000125",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-03-16",
+          "accession": "0001193125-26-107403",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-03-13",
+          "accession": "0001193125-26-106356",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-03-12",
+          "accession": "0001193125-26-104282",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-03-06",
+          "accession": "0001108524-26-000062",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "CRM",
+          "form": "8-K",
+          "date": "2026-02-25",
+          "accession": "0001108524-26-000056",
+          "cik": "1108524",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    },
+    "NOW": {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "layer": "AI Software",
+      "cik": "1373715",
+      "filings_count": 8,
+      "filings": [
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-05-22",
+          "accession": "0001373715-26-000065",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-05-15",
+          "accession": "0001193125-26-226644",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-04-22",
+          "accession": "0001373715-26-000054",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-04-01",
+          "accession": "0001373715-26-000030",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-02-17",
+          "accession": "0001373715-26-000014",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-02-11",
+          "accession": "0001373715-26-000012",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2026-01-28",
+          "accession": "0001373715-26-000005",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        },
+        {
+          "symbol": "NOW",
+          "form": "8-K",
+          "date": "2025-12-23",
+          "accession": "0001373715-25-000335",
+          "cik": "1373715",
+          "text_length": 0,
+          "text_fetched": false
+        }
+      ]
+    }
+  },
+  "meta": {
+    "total_companies": 29,
+    "total_filings": 232
+  }
+}

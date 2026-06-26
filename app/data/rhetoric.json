@@ -1,10 +1,243 @@
 {
   "updated_at": "2026-06-26",
-  "generated_at": "2026-06-26T00:00:00Z",
-  "companies": {},
+  "generated_at": "2026-06-26T22:31:46Z",
+  "companies": {
+    "AMAT": {
+      "symbol": "AMAT",
+      "name": "Applied Materials",
+      "layer": "Semiconductor Equipment",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "LRCX": {
+      "symbol": "LRCX",
+      "name": "Lam Research",
+      "layer": "Semiconductor Equipment",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "KLAC": {
+      "symbol": "KLAC",
+      "name": "KLA Corporation",
+      "layer": "Semiconductor Equipment",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "QCOM": {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "SNPS": {
+      "symbol": "SNPS",
+      "name": "Synopsys",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "CDNS": {
+      "symbol": "CDNS",
+      "name": "Cadence Design Systems",
+      "layer": "Chip Design",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "MU": {
+      "symbol": "MU",
+      "name": "Micron Technology",
+      "layer": "Memory & Storage",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "WDC": {
+      "symbol": "WDC",
+      "name": "Western Digital",
+      "layer": "Memory & Storage",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "STX": {
+      "symbol": "STX",
+      "name": "Seagate Technology",
+      "layer": "Memory & Storage",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "ANET": {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "layer": "Networking & Optics",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "CIEN": {
+      "symbol": "CIEN",
+      "name": "Ciena",
+      "layer": "Networking & Optics",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "COHR": {
+      "symbol": "COHR",
+      "name": "Coherent Corp.",
+      "layer": "Networking & Optics",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "LITE": {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "layer": "Networking & Optics",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "VRT": {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "layer": "Infrastructure & Power",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "ETN": {
+      "symbol": "ETN",
+      "name": "Eaton Corporation",
+      "layer": "Infrastructure & Power",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "DELL": {
+      "symbol": "DELL",
+      "name": "Dell Technologies",
+      "layer": "Infrastructure & Power",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "SMCI": {
+      "symbol": "SMCI",
+      "name": "Supermicro",
+      "layer": "Infrastructure & Power",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "PWR": {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "layer": "Infrastructure & Power",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "name": "Microsoft",
+      "layer": "Hyperscalers",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "name": "Alphabet Inc.",
+      "layer": "Hyperscalers",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "name": "Amazon",
+      "layer": "Hyperscalers",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "META": {
+      "symbol": "META",
+      "name": "Meta Platforms",
+      "layer": "Hyperscalers",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "ORCL": {
+      "symbol": "ORCL",
+      "name": "Oracle Corporation",
+      "layer": "Hyperscalers",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "PLTR": {
+      "symbol": "PLTR",
+      "name": "Palantir Technologies",
+      "layer": "AI Software",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "CRM": {
+      "symbol": "CRM",
+      "name": "Salesforce",
+      "layer": "AI Software",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    },
+    "NOW": {
+      "symbol": "NOW",
+      "name": "ServiceNow",
+      "layer": "AI Software",
+      "quarterly": [],
+      "latest_rhetoric_score": null,
+      "rhetoric_trend": "unknown"
+    }
+  },
   "sector_trend": [],
   "meta": {
-    "companies_analyzed": 0,
+    "companies_analyzed": 29,
     "companies_with_data": 0
   }
 }
