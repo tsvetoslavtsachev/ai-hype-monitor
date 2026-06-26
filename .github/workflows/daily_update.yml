@@ -25,7 +25,7 @@ jobs:
         with:
           repository: tsvetoslavtsachev/price-archive
           path: price-archive
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PRICE_ARCHIVE_TOKEN }}
 
       # 3. Python setup
       - name: Setup Python
