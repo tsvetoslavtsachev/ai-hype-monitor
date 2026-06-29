@@ -1,0 +1,76 @@
+{
+  "symbol": "PWR",
+  "name": "Quanta Services",
+  "filings": [
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "quarter": "Q4 2023",
+      "filing_date": "2023-11-13",
+      "accession": "0001193125-23-276041",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1050606/000119312523276041/d396232dex991.htm",
+      "raw_file": "PWR__Q4_2023__2023-11-13.txt",
+      "total_words": 4853,
+      "ai_mentions": 1,
+      "ai_density": 0.2061,
+      "substance_ratio": 1.0,
+      "finance_density": 48.2176
+    },
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "quarter": "Q3 2023",
+      "filing_date": "2023-08-08",
+      "accession": "0001193125-23-206218",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1050606/000119312523206218/d457546dex991.htm",
+      "raw_file": "PWR__Q3_2023__2023-08-08.txt",
+      "total_words": 4624,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 48.8754
+    },
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "quarter": "Q2 2023",
+      "filing_date": "2023-05-09",
+      "accession": "0001193125-23-139415",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1050606/000119312523139415/d65454dex991.htm",
+      "raw_file": "PWR__Q2_2023__2023-05-09.txt",
+      "total_words": 3737,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 41.2095
+    },
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "quarter": "Q1 2023",
+      "filing_date": "2023-03-08",
+      "accession": "0001193125-23-064615",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1050606/000119312523064615/d458493dex991.htm",
+      "raw_file": "PWR__Q1_2023__2023-03-08.txt",
+      "total_words": 5050,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 50.297
+    },
+    {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "quarter": "Q4 2022",
+      "filing_date": "2022-11-03",
+      "accession": "0001193125-22-276897",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1050606/000119312522276897/d414340dex991.htm",
+      "raw_file": "PWR__Q4_2022__2022-11-03.txt",
+      "total_words": 4782,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 53.1159
+    }
+  ]
+}

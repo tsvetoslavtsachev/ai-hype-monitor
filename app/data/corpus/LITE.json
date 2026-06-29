@@ -1,0 +1,34 @@
+{
+  "symbol": "LITE",
+  "name": "Lumentum",
+  "filings": [
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "quarter": "Q1 2023",
+      "filing_date": "2023-01-25",
+      "accession": "0001616862-23-000003",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1616862/000161686223000003/a1220228-kyearxendxex991.htm",
+      "raw_file": "LITE__Q1_2023__2023-01-25.txt",
+      "total_words": 6883,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 45.7649
+    },
+    {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "quarter": "Q4 2022",
+      "filing_date": "2022-10-25",
+      "accession": "0001616862-22-000039",
+      "exhibit_url": "https://www.sec.gov/Archives/edgar/data/1616862/000161686222000039/a20229308-kquarterlyxex991.htm",
+      "raw_file": "LITE__Q4_2022__2022-10-25.txt",
+      "total_words": 5898,
+      "ai_mentions": 0,
+      "ai_density": 0.0,
+      "substance_ratio": 0.0,
+      "finance_density": 43.4045
+    }
+  ]
+}

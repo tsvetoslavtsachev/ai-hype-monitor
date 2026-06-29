@@ -3,36 +3,30 @@ calc_hype_history.py
 ====================
 Изчислява историческия AI Hype Index и генерира JSON файловете за дашборда.
 
-Очакван формат от app.js:
-  hype_index.json:
-    { hype_score, zone: {label, color, icon}, components: {market_momentum: {score}, rhetoric: {score}, valuation: {score}},
-      interpretation: {zone_description, key_signals}, updated_at, history: [{date, score, quarter}] }
+Използва:
+  - app/data/price_history.json  (от backfill_prices.py)
+  - app/data/rhetoric.json       (от score_rhetoric.py — новия scorer)
 
-  daily_prices.json:
-    { stocks: [ {symbol, name, layer, price, return_1d, return_1m, return_3m, return_1y, percentile_1y, drawdown_1y} ],
-      etfs:   [ {symbol, name, price, return_1d, return_1m, return_3m, return_1y, percentile_1y, drawdown_1y} ],
-      benchmark: { symbol, name, price, return_1y, percentile_1y },
-      layers: {} }
+Генерира:
+  - app/data/hype_index.json     (текущ score + история)
+  - app/data/daily_prices.json   (цени + percentiles за дашборда)
 
-  rhetoric.json:
-    { companies: { NVDA: {symbol, name, latest_rhetoric_score, rhetoric_trend, quarters:[]} },
-      sector_trend: [{quarter, sector_avg_rhetoric_score}] }
+Fix: Rhetoric score за текущото тримесечие използва ПОСЛЕДНОТО ЗАВЪРШЕНО
+     тримесечие с данни (не нулира при нов Q).
 """
 
 import json
 import statistics
-from datetime import datetime, date, timedelta
+from datetime import datetime, date
 from pathlib import Path
 
 # ── Пътища ───────────────────────────────────────────────────────────────
 
-DATA_DIR        = Path("app/data")
-PRICE_HIST      = DATA_DIR / "price_history.json"
-RHETORIC_HIST   = DATA_DIR / "rhetoric_history.json"
-OUT_HYPE_HIST   = DATA_DIR / "hype_history.json"
-OUT_HYPE_IDX    = DATA_DIR / "hype_index.json"
-OUT_RHETORIC    = DATA_DIR / "rhetoric.json"
-OUT_DAILY       = DATA_DIR / "daily_prices.json"
+DATA_DIR     = Path("app/data")
+PRICE_HIST   = DATA_DIR / "price_history.json"
+RHETORIC_IN  = DATA_DIR / "rhetoric.json"       # новия scorer output
+OUT_HYPE_IDX = DATA_DIR / "hype_index.json"
+OUT_DAILY    = DATA_DIR / "daily_prices.json"
 
 # ── AI Value Chain слоеве ─────────────────────────────────────────────────
 
@@ -46,7 +40,6 @@ LAYERS = {
     "AI Software":       ["PLTR", "CRM", "NOW", "SNOW", "AI"],
 }
 
-# ETF метаданни
 ETF_NAMES = {
     "SMH":  "VanEck Semiconductor ETF",
     "SOXX": "iShares Semiconductor ETF",
@@ -61,23 +54,21 @@ ETF_NAMES = {
     "XLK":  "Technology Select Sector SPDR",
 }
 
-ALL_STOCKS = [s for stocks in LAYERS.values() for s in stocks]
-
-# Символ → слой lookup
+ALL_STOCKS     = [s for stocks in LAYERS.values() for s in stocks]
 SYMBOL_TO_LAYER = {s: layer for layer, symbols in LAYERS.items() for s in symbols}
 
 # ── Зони ─────────────────────────────────────────────────────────────────
 
 ZONES = {
-    "AI Winter":    {"label": "AI Winter",    "color": "#3b82f6", "icon": "❄️"},
-    "Cooling":      {"label": "Охлаждане",    "color": "#22c55e", "icon": "🌡️"},
-    "Neutral":      {"label": "Балансиран",   "color": "#eab308", "icon": "⚖️"},
-    "Hype":         {"label": "Повишен Hype", "color": "#f97316", "icon": "🔥"},
-    "Extreme Hype": {"label": "Балон",        "color": "#ef4444", "icon": "🚨"},
+    "AI Winter":    {"label": "AI Winter",       "color": "#3b82f6", "icon": "❄️"},
+    "Cooling":      {"label": "Охлаждане",       "color": "#22c55e", "icon": "🌡️"},
+    "Neutral":      {"label": "Балансиран",      "color": "#eab308", "icon": "⚖️"},
+    "Hype":         {"label": "Повишен Hype",    "color": "#f97316", "icon": "🔥"},
+    "Extreme Hype": {"label": "Балон",           "color": "#ef4444", "icon": "🚨"},
 }
 
 ZONE_DESCRIPTIONS = {
-    "AI Winter":    "Пазарът е в охлаждане — AI акциите са близо до 52-седмичните си дъна. Инвеститорите са скептични.",
+    "AI Winter":    "Пазарът е в охлаждане — AI акциите са близо до 52-седмичните си дъна.",
     "Cooling":      "Ентусиазмът намалява. Оценките се нормализират, rhetoric в отчетите се успокоява.",
     "Neutral":      "Балансирано състояние — реалистични очаквания, умерен растеж, без крайности.",
     "Hype":         "Повишен ентусиазъм. AI buzz в отчетите расте, оценките са над средните нива.",
@@ -109,15 +100,9 @@ def quarter_to_end_date(q: str) -> str:
     end_day   = {3: 31, 6: 30, 9: 30, 12: 31}[end_month]
     return f"{yr}-{end_month:02d}-{end_day:02d}"
 
-def get_price_at_or_before(prices: list, target_date: str) -> float | None:
-    """Връща close цената на или преди target_date."""
-    result = None
-    for p in prices:
-        if p["date"] <= target_date:
-            result = p["close"]
-        else:
-            break
-    return result
+def quarter_sort_key(q: str) -> tuple:
+    parts = q.split()
+    return (int(parts[1]), int(parts[0][1]))
 
 def get_percentile_at_or_before(prices: list, target_date: str) -> float | None:
     result = None
@@ -129,11 +114,9 @@ def get_percentile_at_or_before(prices: list, target_date: str) -> float | None:
     return result
 
 def calc_return(prices: list, days: int) -> float | None:
-    """Изчислява доходността за последните N дни."""
     if not prices or len(prices) < 2:
         return None
     latest = prices[-1]["close"]
-    # Намери цената преди ~days търговски дни
     idx = max(0, len(prices) - days - 1)
     past = prices[idx]["close"]
     if past and past > 0:
@@ -141,7 +124,6 @@ def calc_return(prices: list, days: int) -> float | None:
     return None
 
 def calc_drawdown(prices: list, lookback: int = 252) -> float | None:
-    """Изчислява drawdown от 52-седмичния връх."""
     if not prices:
         return None
     recent = prices[-lookback:] if len(prices) >= lookback else prices
@@ -164,21 +146,28 @@ def compute_momentum_score(price_data: dict, quarter_end: str) -> float:
             percentiles.append(pct)
     return round(statistics.mean(percentiles), 1) if percentiles else 50.0
 
-# ── Rhetoric Score ────────────────────────────────────────────────────────
+# ── Rhetoric Score (от новия scorer) ─────────────────────────────────────
 
-def compute_rhetoric_score(rhetoric_data: dict, quarter: str) -> float:
-    scores = []
-    for symbol, company in rhetoric_data.get("companies", {}).items():
-        for q in company.get("quarters", []):
-            if q["quarter"] == quarter:
-                scores.append(q["rhetoric_score"])
-                break
-    if not scores:
-        for st in rhetoric_data.get("sector_trend", []):
-            if st["quarter"] == quarter:
-                return st.get("sector_avg_rhetoric_score", 0.0)
-        return 0.0
-    return round(statistics.mean(scores), 1)
+def compute_rhetoric_score_from_new(rhetoric_data: dict, quarter: str) -> float:
+    """
+    Взима rhetoric score за даденото тримесечие от новия scorer.
+    Ако тримесечието няма данни (напр. текущото Q), използва
+    ПОСЛЕДНОТО ЗАВЪРШЕНО тримесечие с поне 5 компании.
+    """
+    sector_quarterly = rhetoric_data.get("sector_quarterly", [])
+
+    # Директно търсене
+    for sq in sector_quarterly:
+        if sq["quarter"] == quarter and sq["doc_count"] >= 5:
+            return sq["mean_score"]
+
+    # Fallback: последното тримесечие с поне 5 компании
+    valid = [sq for sq in sector_quarterly if sq["doc_count"] >= 5]
+    if valid:
+        valid_sorted = sorted(valid, key=lambda x: quarter_sort_key(x["quarter"]))
+        return valid_sorted[-1]["mean_score"]
+
+    return 50.0  # default neutral
 
 # ── Valuation Score ───────────────────────────────────────────────────────
 
@@ -214,7 +203,7 @@ def generate_quarterly_history(price_data: dict, rhetoric_data: dict) -> list[di
     for quarter in quarters:
         qend      = quarter_to_end_date(quarter)
         momentum  = compute_momentum_score(price_data, qend)
-        rhetoric  = compute_rhetoric_score(rhetoric_data, quarter)
+        rhetoric  = compute_rhetoric_score_from_new(rhetoric_data, quarter)
         valuation = compute_valuation_score(price_data, qend)
         composite = compute_composite(momentum, rhetoric, valuation)
         history.append({
@@ -222,7 +211,11 @@ def generate_quarterly_history(price_data: dict, rhetoric_data: dict) -> list[di
             "date":       qend,
             "hype_index": composite,
             "zone":       hype_zone_key(composite),
-            "components": {"momentum": momentum, "rhetoric": rhetoric, "valuation": valuation},
+            "components": {
+                "momentum":  momentum,
+                "rhetoric":  rhetoric,
+                "valuation": valuation,
+            },
         })
     return history
 
@@ -232,26 +225,31 @@ def build_hype_index_json(history: list, rhetoric_data: dict) -> dict:
     latest = history[-1] if history else {}
     prev   = history[-2] if len(history) >= 2 else {}
 
-    score     = latest.get("hype_index", 0)
-    zone_key  = hype_zone_key(score)
-    zone_obj  = ZONES.get(zone_key, ZONES["Neutral"])
-    comps     = latest.get("components", {})
+    score    = latest.get("hype_index", 0)
+    zone_key = hype_zone_key(score)
+    zone_obj = ZONES.get(zone_key, ZONES["Neutral"])
+    comps    = latest.get("components", {})
 
-    # Топ сигнали
+    # Топ сигнали от новия rhetoric scorer
     signals = []
-    companies = rhetoric_data.get("companies", {})
-    rising = [(s, c.get("latest_rhetoric_score", 0)) for s, c in companies.items()
-              if c.get("rhetoric_trend") == "rising"]
-    rising.sort(key=lambda x: x[1], reverse=True)
-    for sym, sc in rising[:3]:
-        signals.append(f"{sym} — AI rhetoric ↑ ({sc:.0f}/100)")
+    companies = rhetoric_data.get("companies", [])
+    # Вземи топ 3 по score с rising trend
+    rising = [c for c in companies if c.get("trend_4q", "").startswith("↑")]
+    rising.sort(key=lambda x: x.get("score", 0), reverse=True)
+    for c in rising[:3]:
+        signals.append(f"{c['symbol']} — AI rhetoric ↑ ({c['score']:.0f}/100)")
 
-    # Добавяме momentum сигнал
+    # Momentum сигнал
     mom = comps.get("momentum", 50)
     if mom >= 75:
         signals.append(f"Пазарен momentum: {mom:.0f}/100 — AI акциите са близо до върховете")
     elif mom <= 30:
         signals.append(f"Пазарен momentum: {mom:.0f}/100 — AI акциите са близо до дъната")
+
+    # Rhetoric сигнал
+    rhet = comps.get("rhetoric", 50)
+    if rhet >= 65:
+        signals.append(f"Sector rhetoric: {rhet:.0f}/100 — AI buzz в отчетите е висок")
 
     return {
         "hype_score": score,
@@ -266,14 +264,14 @@ def build_hype_index_json(history: list, rhetoric_data: dict) -> dict:
             "rhetoric": {
                 "score":       comps.get("rhetoric", 0),
                 "label":       "Rhetoric (Отчети)",
-                "description": "AI keyword density в SEC 8-K filings",
-                "weight":      40,
+                "description": "AI keyword density в SEC 8-K filings (Z-score нормализиран)",
+                "weight":      35,
             },
             "valuation": {
                 "score":       comps.get("valuation", 0),
-                "label":       "Оценки (P/E)",
+                "label":       "Оценки (Percentile)",
                 "description": "Среден 1Y процентил на AI ETF-ите",
-                "weight":      20,
+                "weight":      25,
             },
         },
         "interpretation": {
@@ -300,17 +298,17 @@ def build_daily_prices_json(price_data: dict) -> dict:
             continue
         latest = prices[-1]
         stocks_list.append({
-            "symbol":       symbol,
-            "name":         data.get("name", symbol),
-            "layer":        data.get("layer", SYMBOL_TO_LAYER.get(symbol, "Other")),
-            "price":        round(latest["close"], 2),
-            "return_1d":    calc_return(prices, 1),
-            "return_1m":    calc_return(prices, 21),
-            "return_3m":    calc_return(prices, 63),
-            "return_1y":    calc_return(prices, 252),
+            "symbol":        symbol,
+            "name":          data.get("name", symbol),
+            "layer":         data.get("layer", SYMBOL_TO_LAYER.get(symbol, "Other")),
+            "price":         round(latest["close"], 2),
+            "return_1d":     calc_return(prices, 1),
+            "return_1m":     calc_return(prices, 21),
+            "return_3m":     calc_return(prices, 63),
+            "return_1y":     calc_return(prices, 252),
             "percentile_1y": latest.get("percentile_1y"),
-            "drawdown_1y":  calc_drawdown(prices, 252),
-            "date":         latest["date"],
+            "drawdown_1y":   calc_drawdown(prices, 252),
+            "date":          latest["date"],
         })
 
     etfs_list = []
@@ -320,16 +318,16 @@ def build_daily_prices_json(price_data: dict) -> dict:
             continue
         latest = prices[-1]
         entry = {
-            "symbol":       etf,
-            "name":         ETF_NAMES.get(etf, etf),
-            "price":        round(latest["close"], 2),
-            "return_1d":    calc_return(prices, 1),
-            "return_1m":    calc_return(prices, 21),
-            "return_3m":    calc_return(prices, 63),
-            "return_1y":    calc_return(prices, 252),
+            "symbol":        etf,
+            "name":          ETF_NAMES.get(etf, etf),
+            "price":         round(latest["close"], 2),
+            "return_1d":     calc_return(prices, 1),
+            "return_1m":     calc_return(prices, 21),
+            "return_3m":     calc_return(prices, 63),
+            "return_1y":     calc_return(prices, 252),
             "percentile_1y": latest.get("percentile_1y"),
-            "drawdown_1y":  calc_drawdown(prices, 252),
-            "date":         latest["date"],
+            "drawdown_1y":   calc_drawdown(prices, 252),
+            "date":          latest["date"],
         }
         if etf == "SPY":
             benchmark = entry
@@ -344,67 +342,39 @@ def build_daily_prices_json(price_data: dict) -> dict:
         "layers":    LAYERS,
     }
 
-# ── rhetoric.json (формат за app.js) ─────────────────────────────────────
-
-def build_rhetoric_json(rhetoric_data: dict) -> dict:
-    companies_out = {}
-    for symbol, company in rhetoric_data.get("companies", {}).items():
-        companies_out[symbol] = {
-            "symbol":                symbol,
-            "name":                  company.get("name", symbol),
-            "latest_rhetoric_score": company.get("latest_rhetoric_score", 0),
-            "rhetoric_trend":        company.get("rhetoric_trend", "stable"),
-            "quarters":              company.get("quarters", []),
-        }
-    return {
-        "generated_at": datetime.now().isoformat() + "Z",
-        "companies":    companies_out,
-        "sector_trend": rhetoric_data.get("sector_trend", []),
-        "meta":         rhetoric_data.get("meta", {}),
-    }
-
 # ── Главна функция ────────────────────────────────────────────────────────
 
 def main():
-    print("=== AI Hype Monitor — Historical Index Calculator ===")
+    print("=== AI Hype Monitor — Historical Index Calculator v2 ===", flush=True)
 
     price_data    = load_json(PRICE_HIST)
-    rhetoric_data = load_json(RHETORIC_HIST)
+    rhetoric_data = load_json(RHETORIC_IN)
+
+    print(f"Цени: {len(price_data.get('stocks', {}))} акции, {len(price_data.get('etfs', {}))} ETF-и", flush=True)
+    print(f"Rhetoric: {len(rhetoric_data.get('companies', []))} компании, "
+          f"{len(rhetoric_data.get('sector_quarterly', []))} тримесечия", flush=True)
 
     # Тримесечна история
-    print("Изчисляване на историческия Hype Index...")
+    print("\nИзчисляване на историческия Hype Index...", flush=True)
     history = generate_quarterly_history(price_data, rhetoric_data)
-    save_json(OUT_HYPE_HIST, {"history": history})
-    print(f"  → {OUT_HYPE_HIST} ({len(history)} тримесечия)")
+
+    for h in history:
+        c = h["components"]
+        print(f"  {h['quarter']:10s}  composite={h['hype_index']:.1f}  "
+              f"mom={c['momentum']:.1f}  rhet={c['rhetoric']:.1f}  val={c['valuation']:.1f}  "
+              f"zone={h['zone']}", flush=True)
 
     # hype_index.json
     hype_idx = build_hype_index_json(history, rhetoric_data)
     save_json(OUT_HYPE_IDX, hype_idx)
-    print(f"  → {OUT_HYPE_IDX} (score: {hype_idx['hype_score']}, зона: {hype_idx['zone']['label']})")
+    print(f"\n→ {OUT_HYPE_IDX}: score={hype_idx['hype_score']}, зона={hype_idx['zone']['label']}", flush=True)
 
     # daily_prices.json
-    print("Генериране на daily_prices.json...")
     daily = build_daily_prices_json(price_data)
     save_json(OUT_DAILY, daily)
-    print(f"  → {OUT_DAILY} ({len(daily['stocks'])} акции, {len(daily['etfs'])} ETF-и)")
+    print(f"→ {OUT_DAILY}: {len(daily['stocks'])} акции, {len(daily['etfs'])} ETF-и", flush=True)
 
-    # rhetoric.json
-    print("Генериране на rhetoric.json...")
-    rhetoric = build_rhetoric_json(rhetoric_data)
-    save_json(OUT_RHETORIC, rhetoric)
-    print(f"  → {OUT_RHETORIC} ({len(rhetoric['companies'])} компании)")
-
-    # Резюме
-    print()
-    print("=== Резултат ===")
-    print(f"Период:      {history[0]['quarter']} → {history[-1]['quarter']}")
-    print(f"Текущ score: {hype_idx['hype_score']} ({hype_idx['zone']['label']})")
-    print()
-    print("Тримесечна история:")
-    for h in history:
-        bar = "█" * int(h["hype_index"] / 5)
-        zone_info = ZONES.get(h["zone"], {})
-        print(f"  {h['quarter']:8s}  {h['hype_index']:5.1f}  {bar:<20s}  {zone_info.get('label', h['zone'])}")
+    print("\n✓ Готово!")
 
 
 if __name__ == "__main__":
