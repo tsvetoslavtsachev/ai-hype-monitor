@@ -17,6 +17,21 @@ let allStocks        = [];
 let allRhetoric      = [];
 let priceHistoryData = null;
 let rhetoricData     = null;
+let dataReady        = false;
+
+// ── Зарежда per-symbol ценови файл при отваряне на modal ─────────────────
+async function fetchSymbolPrices(symbol) {
+  try {
+    const url = DATA_BASE + 'prices/' + symbol + '.json';
+    const res = await fetch(url);
+    if (!res.ok) return null;
+    const d = await res.json();
+    return d.prices || null;
+  } catch(e) {
+    console.warn('fetchSymbolPrices error:', symbol, e);
+    return null;
+  }
+}
 
 // ── Помощни функции ───────────────────────────────────────────────────────
 
@@ -509,11 +524,11 @@ function openModal(symbol) {
     });
   }
 
-  // Price chart
-  renderModalPriceChart(symbol);
+  // Price chart — lazy load per-symbol file
+  renderModalPriceChartLazy(symbol);
 
   // Rhetoric history chart
-  renderModalRhetChart(rhet);
+  renderModalRhetChart(rhet, symbol);
 
   // Show modal
   modal.style.display = 'flex';
@@ -528,29 +543,34 @@ function closeModal() {
   if (modalRhetChart)  { modalRhetChart.destroy();  modalRhetChart  = null; }
 }
 
-function renderModalPriceChart(symbol) {
+// Lazy-loading price chart — fetches data/prices/{SYMBOL}.json on demand
+async function renderModalPriceChartLazy(symbol) {
   const ctx = document.getElementById('modal-price-chart');
   if (!ctx) return;
 
   if (modalPriceChart) { modalPriceChart.destroy(); modalPriceChart = null; }
 
-  // Try stocks first, then etfs
-  let prices = null;
-  if (priceHistoryData) {
-    prices = priceHistoryData.stocks?.[symbol]?.prices
-          || priceHistoryData.etfs?.[symbol]?.prices
-          || null;
-  }
+  // Show loading placeholder
+  const wrapper = ctx.parentElement;
+  const origHTML = wrapper.innerHTML;
+  wrapper.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">⏳ Зареждане...</p>';
+
+  const prices = await fetchSymbolPrices(symbol);
+
+  // Restore canvas (it was replaced by the placeholder)
+  wrapper.innerHTML = origHTML;
+  const ctx2 = document.getElementById('modal-price-chart');
+  if (!ctx2) return;
 
   if (!prices || !prices.length) {
-    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Ценова история не е налична</p>';
+    wrapper.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Ценова история не е налична</p>';
     return;
   }
 
   const labels = prices.map(p => p.date);
   const data   = prices.map(p => p.close);
 
-  modalPriceChart = new Chart(ctx, {
+  modalPriceChart = new Chart(ctx2, {
     type: 'line',
     data: {
       labels,
@@ -693,15 +713,14 @@ function renderModalRhetChart(rhet) {
 // ── Главна инициализация ──────────────────────────────────────────────────
 
 async function init() {
-  const [hypeData, pricesData, rhet, priceHist] = await Promise.all([
+  // price_history.json is now loaded lazily per-symbol — NOT included here
+  const [hypeData, pricesData, rhet] = await Promise.all([
     fetchJSON(FILES.hypeIndex),
     fetchJSON(FILES.dailyPrices),
     fetchJSON(FILES.rhetoric),
-    fetchJSON(FILES.priceHistory),
   ]);
 
-  rhetoricData     = rhet;
-  priceHistoryData = priceHist;
+  rhetoricData = rhet;
 
   // ── Hype Index ──
   if (hypeData) {
@@ -796,6 +815,13 @@ async function init() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeModal();
   });
+
+  // Mark data as ready — modals can now open correctly
+  dataReady = true;
 }
+
+// Expose modal functions to global scope (needed for inline onclick handlers)
+window.openModal  = openModal;
+window.closeModal = closeModal;
 
 document.addEventListener('DOMContentLoaded', init);
