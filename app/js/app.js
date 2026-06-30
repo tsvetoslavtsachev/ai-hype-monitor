@@ -6,10 +6,17 @@
 // ── Конфигурация ──────────────────────────────────────────────────────────
 const DATA_BASE = './data/';
 const FILES = {
-  hypeIndex:   DATA_BASE + 'hype_index.json',
-  dailyPrices: DATA_BASE + 'daily_prices.json',
-  rhetoric:    DATA_BASE + 'rhetoric.json',
+  hypeIndex:    DATA_BASE + 'hype_index.json',
+  dailyPrices:  DATA_BASE + 'daily_prices.json',
+  rhetoric:     DATA_BASE + 'rhetoric.json',
+  priceHistory: DATA_BASE + 'price_history.json',
 };
+
+// ── Глобален стейт ────────────────────────────────────────────────────────
+let allStocks        = [];
+let allRhetoric      = [];
+let priceHistoryData = null;
+let rhetoricData     = null;
 
 // ── Помощни функции ───────────────────────────────────────────────────────
 
@@ -97,7 +104,6 @@ function drawGauge(score) {
 
   ctx.clearRect(0, 0, W, H);
 
-  // Draw zone arcs
   zones.forEach(z => {
     const startAngle = Math.PI + (z.lo / 100) * Math.PI;
     const endAngle   = Math.PI + (z.hi / 100) * Math.PI;
@@ -109,7 +115,6 @@ function drawGauge(score) {
     ctx.stroke();
   });
 
-  // Draw needle
   if (score !== null && score !== undefined) {
     const angle = Math.PI + (score / 100) * Math.PI;
     const nx = cx + (r - lineW / 2) * Math.cos(angle);
@@ -122,7 +127,6 @@ function drawGauge(score) {
     ctx.lineCap = 'round';
     ctx.stroke();
 
-    // Center dot
     ctx.beginPath();
     ctx.arc(cx, cy, 5, 0, Math.PI * 2);
     ctx.fillStyle = '#ffffff';
@@ -189,11 +193,6 @@ function renderHistoryChart(history, days) {
       },
     },
   });
-
-  // Zone reference lines (annotations via custom plugin)
-  const zoneLines = [30, 50, 70, 85];
-  const zoneColors = ['#3b82f6', '#22c55e', '#eab308', '#f97316'];
-  // (simplified — full annotation plugin would require extra lib)
 }
 
 // ── Heatmap ───────────────────────────────────────────────────────────────
@@ -214,7 +213,7 @@ function renderHeatmap(stocks, filterLayer) {
     const retSign = r1y > 0 ? '+' : '';
 
     return `
-      <div class="heatmap-cell" style="border-color:${bg}40" title="${s.name}">
+      <div class="heatmap-cell" style="border-color:${bg}40;cursor:pointer" title="${s.name}" onclick="openModal('${s.symbol}')">
         <div style="position:absolute;inset:0;background:${bg};opacity:0.08;pointer-events:none;border-radius:10px;"></div>
         <span class="hm-symbol">${s.symbol}</span>
         <span class="hm-name">${s.name.split(' ').slice(0,2).join(' ')}</span>
@@ -283,7 +282,6 @@ function renderETFTable(etfs, benchmark) {
 
 // ── Stocks Table ──────────────────────────────────────────────────────────
 
-let allStocks = [];
 let currentSort = 'percentile_1y';
 
 function renderStocksTable(stocks) {
@@ -303,7 +301,7 @@ function renderStocksTable(stocks) {
       : '—';
 
     return `
-      <tr>
+      <tr style="cursor:pointer" onclick="openModal('${s.symbol}')">
         <td><strong>${s.symbol}</strong></td>
         <td style="color:#94a3b8;font-size:12px">${s.name}</td>
         <td><span style="font-size:11px;color:#64748b">${s.layer}</span></td>
@@ -356,12 +354,13 @@ function populateLayerFilter(stocks) {
 
 let rhetoricChartInstance = null;
 
-function renderRhetoricChart(sectorTrend) {
+function renderRhetoricChart(sectorQuarterly) {
   const ctx = document.getElementById('rhetoricChart');
-  if (!ctx || !sectorTrend || !sectorTrend.length) return;
+  if (!ctx || !sectorQuarterly || !sectorQuarterly.length) return;
 
-  const labels = sectorTrend.map(t => t.quarter);
-  const data   = sectorTrend.map(t => t.sector_avg_rhetoric_score);
+  // rhetoric.json uses sector_quarterly with mean_score field
+  const labels = sectorQuarterly.map(t => t.quarter);
+  const data   = sectorQuarterly.map(t => t.mean_score);
 
   if (rhetoricChartInstance) rhetoricChartInstance.destroy();
 
@@ -388,6 +387,9 @@ function renderRhetoricChart(sectorTrend) {
           borderWidth: 1,
           titleColor: '#94a3b8',
           bodyColor: '#e2e8f0',
+          callbacks: {
+            label: ctx => `Score: ${ctx.parsed.y.toFixed(1)} | Документи: ${sectorQuarterly[ctx.dataIndex]?.doc_count || '—'}`,
+          },
         },
       },
       scales: {
@@ -410,9 +412,11 @@ function renderRhetoricCompanies(companies) {
   const container = document.getElementById('rhetoric-companies');
   if (!container) return;
 
-  const sorted = Object.values(companies)
-    .filter(c => c.latest_rhetoric_score !== null)
-    .sort((a, b) => (b.latest_rhetoric_score || 0) - (a.latest_rhetoric_score || 0));
+  // companies is an array with: symbol, name, score, trend, ai_density, substance_ratio, history
+  const arr = Array.isArray(companies) ? companies : Object.values(companies);
+  const sorted = arr
+    .filter(c => c.score !== null && c.score !== undefined)
+    .sort((a, b) => (b.score || 0) - (a.score || 0));
 
   if (!sorted.length) {
     container.innerHTML = '<p style="color:#64748b;font-size:13px">Rhetoric данните ще бъдат налични след следващия earnings сезон.</p>';
@@ -420,13 +424,17 @@ function renderRhetoricCompanies(companies) {
   }
 
   container.innerHTML = sorted.map(c => {
-    const score = c.latest_rhetoric_score;
+    const score = c.score;
     const color = scoreColor(score);
-    const trend = c.rhetoric_trend === 'rising' ? '↑' : c.rhetoric_trend === 'falling' ? '↓' : '→';
-    const trendColor = c.rhetoric_trend === 'rising' ? '#ef4444' : c.rhetoric_trend === 'falling' ? '#22c55e' : '#64748b';
+    // trend field is unicode arrow: ↑ ↓ →
+    const trend = c.trend || '→';
+    const trendColor = trend === '↑' ? '#ef4444' : trend === '↓' ? '#22c55e' : '#64748b';
+    const substanceLabel = c.substance_ratio !== undefined
+      ? `Конкретика: ${(c.substance_ratio * 100).toFixed(0)}%`
+      : '';
 
     return `
-      <div class="rhetoric-card">
+      <div class="rhetoric-card" style="cursor:pointer" onclick="openModal('${c.symbol}')">
         <div style="display:flex;justify-content:space-between;align-items:center">
           <span class="rhetoric-symbol">${c.symbol}</span>
           <span style="color:${trendColor};font-size:14px">${trend}</span>
@@ -436,20 +444,264 @@ function renderRhetoricCompanies(companies) {
           <div class="rhetoric-score-fill" style="width:${score}%;background:${color}"></div>
         </div>
         <div class="rhetoric-score-val">Score: <strong style="color:${color}">${score.toFixed(1)}</strong></div>
+        ${substanceLabel ? `<div style="font-size:11px;color:#64748b;margin-top:4px">${substanceLabel}</div>` : ''}
       </div>
     `;
   }).join('');
 }
 
+// ── Company Modal ─────────────────────────────────────────────────────────
+
+let modalPriceChart   = null;
+let modalRhetChart    = null;
+
+function openModal(symbol) {
+  // Find stock data
+  const stock = allStocks.find(s => s.symbol === symbol);
+  const rhet  = allRhetoric.find(c => c.symbol === symbol);
+
+  const modal = document.getElementById('company-modal');
+  if (!modal) return;
+
+  // Header
+  const name  = stock?.name || rhet?.name || symbol;
+  const layer = stock?.layer || rhet?.layer || '';
+  document.getElementById('modal-symbol').textContent = symbol;
+  document.getElementById('modal-name').textContent   = name;
+  document.getElementById('modal-layer').textContent  = layer;
+
+  // Price metrics
+  if (stock) {
+    document.getElementById('modal-price').textContent      = fmtPrice(stock.price);
+    document.getElementById('modal-ret1d').innerHTML        = fmtPct(stock.return_1d);
+    document.getElementById('modal-ret1m').innerHTML        = fmtPct(stock.return_1m);
+    document.getElementById('modal-ret3m').innerHTML        = fmtPct(stock.return_3m);
+    document.getElementById('modal-ret1y').innerHTML        = fmtPct(stock.return_1y);
+    document.getElementById('modal-drawdown').innerHTML     = fmtPct(stock.drawdown_1y);
+    const pct = stock.percentile_1y;
+    const pctEl = document.getElementById('modal-percentile');
+    if (pctEl) {
+      pctEl.textContent = pct !== null ? pct.toFixed(0) : '—';
+      pctEl.style.color = percentileColor(pct);
+    }
+  }
+
+  // Rhetoric metrics
+  if (rhet) {
+    const sc = rhet.score;
+    const scEl = document.getElementById('modal-rhetoric-score');
+    if (scEl) {
+      scEl.textContent = sc !== null ? sc.toFixed(1) : '—';
+      scEl.style.color = scoreColor(sc);
+    }
+    document.getElementById('modal-rhetoric-trend').textContent    = rhet.trend || '→';
+    document.getElementById('modal-rhetoric-trend4q').textContent  = rhet.trend_4q || '—';
+    document.getElementById('modal-ai-density').textContent        = rhet.ai_density !== undefined ? rhet.ai_density.toFixed(2) + '/1000' : '—';
+    document.getElementById('modal-substance').textContent         = rhet.substance_ratio !== undefined ? (rhet.substance_ratio * 100).toFixed(0) + '%' : '—';
+    document.getElementById('modal-doc-count').textContent         = rhet.doc_count !== undefined ? rhet.doc_count + ' filings' : '—';
+    document.getElementById('modal-last-quarter').textContent      = rhet.last_quarter || '—';
+  } else {
+    // No rhetoric data for this symbol
+    ['modal-rhetoric-score','modal-rhetoric-trend','modal-rhetoric-trend4q',
+     'modal-ai-density','modal-substance','modal-doc-count','modal-last-quarter'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = '—';
+    });
+  }
+
+  // Price chart
+  renderModalPriceChart(symbol);
+
+  // Rhetoric history chart
+  renderModalRhetChart(rhet);
+
+  // Show modal
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  const modal = document.getElementById('company-modal');
+  if (modal) modal.style.display = 'none';
+  document.body.style.overflow = '';
+  if (modalPriceChart) { modalPriceChart.destroy(); modalPriceChart = null; }
+  if (modalRhetChart)  { modalRhetChart.destroy();  modalRhetChart  = null; }
+}
+
+function renderModalPriceChart(symbol) {
+  const ctx = document.getElementById('modal-price-chart');
+  if (!ctx) return;
+
+  if (modalPriceChart) { modalPriceChart.destroy(); modalPriceChart = null; }
+
+  // Try stocks first, then etfs
+  let prices = null;
+  if (priceHistoryData) {
+    prices = priceHistoryData.stocks?.[symbol]?.prices
+          || priceHistoryData.etfs?.[symbol]?.prices
+          || null;
+  }
+
+  if (!prices || !prices.length) {
+    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Ценова история не е налична</p>';
+    return;
+  }
+
+  const labels = prices.map(p => p.date);
+  const data   = prices.map(p => p.close);
+
+  modalPriceChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [{
+        label: symbol,
+        data,
+        borderColor: '#3b82f6',
+        backgroundColor: 'rgba(59,130,246,0.06)',
+        borderWidth: 1.5,
+        pointRadius: 0,
+        pointHoverRadius: 4,
+        fill: true,
+        tension: 0.2,
+      }],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: {
+          backgroundColor: '#111827',
+          borderColor: '#1e2d45',
+          borderWidth: 1,
+          titleColor: '#94a3b8',
+          bodyColor: '#e2e8f0',
+          callbacks: {
+            label: ctx => `$${ctx.parsed.y.toFixed(2)}`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: '#64748b', maxTicksLimit: 6, font: { size: 10 } },
+          grid: { color: 'rgba(30,45,69,0.4)' },
+        },
+        y: {
+          ticks: {
+            color: '#64748b',
+            font: { size: 10 },
+            callback: v => '$' + v.toFixed(0),
+          },
+          grid: { color: 'rgba(30,45,69,0.4)' },
+        },
+      },
+    },
+  });
+}
+
+function renderModalRhetChart(rhet) {
+  const ctx = document.getElementById('modal-rhet-chart');
+  if (!ctx) return;
+
+  if (modalRhetChart) { modalRhetChart.destroy(); modalRhetChart = null; }
+
+  if (!rhet || !rhet.history || !rhet.history.length) {
+    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Rhetoric история не е налична (компанията не подава 8-K в SEC)</p>';
+    return;
+  }
+
+  const history = rhet.history.filter(h => h.score > 0);
+  if (!history.length) {
+    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Недостатъчно данни за rhetoric история</p>';
+    return;
+  }
+
+  const labels   = history.map(h => h.quarter);
+  const scores   = history.map(h => h.score);
+  const density  = history.map(h => h.ai_density);
+
+  modalRhetChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: 'Rhetoric Score',
+          data: scores,
+          backgroundColor: scores.map(v => scoreColor(v) + 'bb'),
+          borderColor: scores.map(v => scoreColor(v)),
+          borderWidth: 1,
+          borderRadius: 3,
+          yAxisID: 'y',
+        },
+        {
+          label: 'AI Density (mentions/1000)',
+          data: density,
+          type: 'line',
+          borderColor: '#a78bfa',
+          backgroundColor: 'rgba(167,139,250,0.1)',
+          borderWidth: 2,
+          pointRadius: 3,
+          pointHoverRadius: 5,
+          fill: false,
+          tension: 0.3,
+          yAxisID: 'y2',
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          labels: { color: '#94a3b8', font: { size: 11 } },
+        },
+        tooltip: {
+          backgroundColor: '#111827',
+          borderColor: '#1e2d45',
+          borderWidth: 1,
+          titleColor: '#94a3b8',
+          bodyColor: '#e2e8f0',
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: '#64748b', font: { size: 10 } },
+          grid: { color: 'rgba(30,45,69,0.4)' },
+        },
+        y: {
+          min: 0,
+          max: 100,
+          position: 'left',
+          ticks: { color: '#64748b', font: { size: 10 } },
+          grid: { color: 'rgba(30,45,69,0.4)' },
+          title: { display: true, text: 'Score', color: '#64748b', font: { size: 10 } },
+        },
+        y2: {
+          position: 'right',
+          ticks: { color: '#a78bfa', font: { size: 10 } },
+          grid: { display: false },
+          title: { display: true, text: 'Density', color: '#a78bfa', font: { size: 10 } },
+        },
+      },
+    },
+  });
+}
+
 // ── Главна инициализация ──────────────────────────────────────────────────
 
 async function init() {
-  // Зареждаме всички данни паралелно
-  const [hypeData, pricesData, rhetoricData] = await Promise.all([
+  const [hypeData, pricesData, rhet, priceHist] = await Promise.all([
     fetchJSON(FILES.hypeIndex),
     fetchJSON(FILES.dailyPrices),
     fetchJSON(FILES.rhetoric),
+    fetchJSON(FILES.priceHistory),
   ]);
+
+  rhetoricData     = rhet;
+  priceHistoryData = priceHist;
 
   // ── Hype Index ──
   if (hypeData) {
@@ -462,7 +714,6 @@ async function init() {
 
     drawGauge(score);
 
-    // Components
     const comps = hypeData.components || {};
     const setComp = (key, barId, valId) => {
       const c = comps[key];
@@ -479,28 +730,22 @@ async function init() {
     setComp('rhetoric',        'bar-rhetoric',  'val-rhetoric');
     setComp('valuation',       'bar-valuation', 'val-valuation');
 
-    // Interpretation
     const interp = hypeData.interpretation || {};
     const zoneDesc = document.getElementById('zone-description');
     if (zoneDesc) zoneDesc.textContent = interp.zone_description || '';
 
     const signalsList = document.getElementById('signals-list');
     if (signalsList && interp.key_signals?.length) {
-      signalsList.innerHTML = interp.key_signals
-        .map(s => `<li>${s}</li>`)
-        .join('');
+      signalsList.innerHTML = interp.key_signals.map(s => `<li>${s}</li>`).join('');
     }
 
-    // Last updated
     const upd = document.getElementById('last-updated');
     if (upd) upd.textContent = `Обновено: ${hypeData.updated_at || '—'}`;
 
-    // History chart
     const history = hypeData.history || [];
     if (history.length) {
       renderHistoryChart(history, 90);
 
-      // Period tabs
       document.getElementById('period-tabs')?.querySelectorAll('.tab').forEach(btn => {
         btn.addEventListener('click', () => {
           document.querySelectorAll('#period-tabs .tab').forEach(b => b.classList.remove('active'));
@@ -518,36 +763,39 @@ async function init() {
     const bench  = pricesData.benchmark;
     const layers = pricesData.layers || {};
 
-    // ETF Table
     renderETFTable(etfs, bench);
-
-    // Heatmap
     renderLayerTabs(stocks, layers);
     renderHeatmap(stocks, '');
 
-    // Stocks Table
     allStocks = stocks;
     populateLayerFilter(stocks);
     filterAndSortStocks();
 
-    // Event listeners
     document.getElementById('stock-search')?.addEventListener('input', filterAndSortStocks);
     document.getElementById('layer-filter')?.addEventListener('change', filterAndSortStocks);
     document.getElementById('sort-select')?.addEventListener('change', filterAndSortStocks);
   }
 
   // ── Rhetoric ──
-  if (rhetoricData) {
-    renderRhetoricChart(rhetoricData.sector_trend || []);
-    renderRhetoricCompanies(rhetoricData.companies || {});
+  if (rhet) {
+    renderRhetoricChart(rhet.sector_quarterly || []);
+    allRhetoric = Array.isArray(rhet.companies) ? rhet.companies : Object.values(rhet.companies || {});
+    renderRhetoricCompanies(allRhetoric);
   } else {
-    // Placeholder message
     const container = document.getElementById('rhetoric-companies');
     if (container) {
       container.innerHTML = '<p style="color:#64748b;font-size:13px;padding:20px 0">Rhetoric данните ще бъдат налични след стартиране на quarterly pipeline.</p>';
     }
   }
+
+  // ── Modal close handlers ──
+  document.getElementById('modal-close')?.addEventListener('click', closeModal);
+  document.getElementById('company-modal')?.addEventListener('click', e => {
+    if (e.target === document.getElementById('company-modal')) closeModal();
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeModal();
+  });
 }
 
-// Стартираме при зареждане
 document.addEventListener('DOMContentLoaded', init);
