@@ -20,15 +20,19 @@ let rhetoricData     = null;
 let dataReady        = false;
 
 // ── Зарежда per-symbol ценови файл при отваряне на modal ─────────────────
+const _priceCache = {};
 async function fetchSymbolPrices(symbol) {
+  if (_priceCache[symbol] !== undefined) return _priceCache[symbol];
   try {
     const url = DATA_BASE + 'prices/' + symbol + '.json';
     const res = await fetch(url);
-    if (!res.ok) return null;
+    if (!res.ok) { _priceCache[symbol] = null; return null; }
     const d = await res.json();
-    return d.prices || null;
+    _priceCache[symbol] = d.prices || null;
+    return _priceCache[symbol];
   } catch(e) {
     console.warn('fetchSymbolPrices error:', symbol, e);
+    _priceCache[symbol] = null;
     return null;
   }
 }
@@ -469,6 +473,7 @@ function renderRhetoricCompanies(companies) {
 
 let modalPriceChart   = null;
 let modalRhetChart    = null;
+let _currentModalSym  = null;  // race-condition guard
 
 function openModal(symbol) {
   // Find stock data
@@ -525,6 +530,7 @@ function openModal(symbol) {
   }
 
   // Price chart — lazy load per-symbol file
+  _currentModalSym = symbol;
   renderModalPriceChartLazy(symbol);
 
   // Rhetoric history chart
@@ -536,34 +542,60 @@ function openModal(symbol) {
 }
 
 function closeModal() {
+  _currentModalSym = null;
   const modal = document.getElementById('company-modal');
   if (modal) modal.style.display = 'none';
   document.body.style.overflow = '';
   if (modalPriceChart) { modalPriceChart.destroy(); modalPriceChart = null; }
   if (modalRhetChart)  { modalRhetChart.destroy();  modalRhetChart  = null; }
+  // Restore canvas elements if they were replaced by message text
+  _restoreModalCanvases();
+}
+function _restoreModalCanvases() {
+  const cols = document.querySelectorAll('.modal-chart-col .modal-chart-wrap');
+  if (cols[0] && !cols[0].querySelector('#modal-price-chart')) {
+    cols[0].innerHTML = '<canvas id="modal-price-chart"></canvas>';
+  }
+  if (cols[1] && !cols[1].querySelector('#modal-rhet-chart')) {
+    cols[1].innerHTML = '<canvas id="modal-rhet-chart"></canvas>';
+  }
 }
 
 // Lazy-loading price chart — fetches data/prices/{SYMBOL}.json on demand
 async function renderModalPriceChartLazy(symbol) {
-  const ctx = document.getElementById('modal-price-chart');
-  if (!ctx) return;
-
+  // Destroy previous chart first
   if (modalPriceChart) { modalPriceChart.destroy(); modalPriceChart = null; }
 
-  // Show loading placeholder
-  const wrapper = ctx.parentElement;
-  const origHTML = wrapper.innerHTML;
-  wrapper.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">⏳ Зареждане...</p>';
+  // Ensure canvas exists (may have been replaced by a message on previous open)
+  const wrapper = document.querySelector('.modal-chart-col:first-child .modal-chart-wrap');
+  if (!wrapper) return;
+  if (!wrapper.querySelector('#modal-price-chart')) {
+    wrapper.innerHTML = '<canvas id="modal-price-chart"></canvas>';
+  }
+  // Remove any leftover message paragraphs
+  wrapper.querySelectorAll('p').forEach(p => p.remove());
+
+  const ctx = document.getElementById('modal-price-chart');
+  if (!ctx) return;
+  ctx.style.display = '';
 
   const prices = await fetchSymbolPrices(symbol);
 
-  // Restore canvas (it was replaced by the placeholder)
-  wrapper.innerHTML = origHTML;
+  // Race-condition guard: if user opened a different modal while we were loading, abort
+  if (_currentModalSym !== symbol) return;
+
+  // Remove any loading messages added during fetch
+  wrapper.querySelectorAll('p').forEach(p => p.remove());
+
   const ctx2 = document.getElementById('modal-price-chart');
   if (!ctx2) return;
 
   if (!prices || !prices.length) {
-    wrapper.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Ценова история не е налична</p>';
+    ctx2.style.display = 'none';
+    const msg = document.createElement('p');
+    msg.style.cssText = 'color:#64748b;text-align:center;padding:20px;margin:0';
+    msg.textContent = 'Ценова история не е налична';
+    wrapper.appendChild(msg);
     return;
   }
 
@@ -621,19 +653,38 @@ async function renderModalPriceChartLazy(symbol) {
 }
 
 function renderModalRhetChart(rhet) {
-  const ctx = document.getElementById('modal-rhet-chart');
-  if (!ctx) return;
-
+  // Destroy previous chart first
   if (modalRhetChart) { modalRhetChart.destroy(); modalRhetChart = null; }
 
+  // Ensure canvas exists (may have been replaced by a message on previous open)
+  const wrapper = document.querySelector('.modal-chart-col:last-child .modal-chart-wrap');
+  if (!wrapper) return;
+  if (!wrapper.querySelector('#modal-rhet-chart')) {
+    wrapper.innerHTML = '<canvas id="modal-rhet-chart"></canvas>';
+  }
+  // Remove any leftover message paragraphs
+  wrapper.querySelectorAll('p').forEach(p => p.remove());
+
+  const ctx = document.getElementById('modal-rhet-chart');
+  if (!ctx) return;
+  ctx.style.display = '';
+
   if (!rhet || !rhet.history || !rhet.history.length) {
-    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Rhetoric история не е налична (компанията не подава 8-K в SEC)</p>';
+    ctx.style.display = 'none';
+    const msg = document.createElement('p');
+    msg.style.cssText = 'color:#64748b;text-align:center;padding:20px;margin:0';
+    msg.textContent = 'Rhetoric история не е налична (компанията не подава 8-K в SEC)';
+    wrapper.appendChild(msg);
     return;
   }
 
   const history = rhet.history.filter(h => h.score > 0);
   if (!history.length) {
-    ctx.parentElement.innerHTML = '<p style="color:#64748b;text-align:center;padding:20px">Недостатъчно данни за rhetoric история</p>';
+    ctx.style.display = 'none';
+    const msg = document.createElement('p');
+    msg.style.cssText = 'color:#64748b;text-align:center;padding:20px;margin:0';
+    msg.textContent = 'Недостатъчно данни за rhetoric история';
+    wrapper.appendChild(msg);
     return;
   }
 
