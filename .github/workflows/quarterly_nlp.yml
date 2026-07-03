@@ -1,9 +1,12 @@
 name: Quarterly NLP — SEC Filings Analysis
 
 on:
-  schedule:
-    # Всеки понеделник в 06:00 UTC — проверява дали има нови filings
-    - cron: '0 6 * * 1'
+  # PAUSED until v2 (REVIEW-09 §Д): schedule закоментиран. Спира и латентната бомба —
+  # quarterly би презаписал живия rhetoric.json със СТАРАТА схема (run_pipeline.py:77).
+  # Остава само ръчно пускане.
+  # schedule:
+  #   # Всеки понеделник в 06:00 UTC — проверява дали има нови filings
+  #   - cron: '0 6 * * 1'
   workflow_dispatch:
     inputs:
       force_run:
