@@ -2,8 +2,7 @@
 
 **Измерител на еуфорията в AI сектора** — автоматизиран дашборд, който следи здравословното състояние на AI индустрията от чипове до хиперскейлъри.
 
-[![Daily Update](https://github.com/tsvetoslavtsachev/ai-hype-monitor/actions/workflows/daily_update.yml/badge.svg)](https://github.com/tsvetoslavtsachev/ai-hype-monitor/actions/workflows/daily_update.yml)
-[![Quarterly NLP](https://github.com/tsvetoslavtsachev/ai-hype-monitor/actions/workflows/quarterly_nlp.yml/badge.svg)](https://github.com/tsvetoslavtsachev/ai-hype-monitor/actions/workflows/quarterly_nlp.yml)
+> ⚠️ **Прототип в разработка (v1).** Не е инвестиционен инструмент. CI не е стабилен → числата може да са застояли (последно обновяване: 29.06.2026). Виж «Какво измерва?» за реално деплойнатия модел.
 
 🔗 **Live Dashboard:** [tsvetoslavtsachev.github.io/ai-hype-monitor](https://tsvetoslavtsachev.github.io/ai-hype-monitor)
 
@@ -15,19 +14,21 @@
 
 | Компонент | Тежест | Честота | Описание |
 |-----------|--------|---------|----------|
-| **Пазарен Momentum** | 40% | Дневно | 1Y процентил на цените + relative strength спрямо S&P 500 |
-| **Rhetoric Score** | 40% | Тримесечно | Плътност на AI термини в SEC 8-K filings + substance ratio |
-| **Valuation Stretch** | 20% | Дневно | Forward P/E спрямо историческа норма |
+| **Пазарен Momentum** | 40% | Дневно | Среден 1Y процентил на AI акциите |
+| **Rhetoric Score** | 35% | Тримесечно | Плътност на AI термини в SEC 8-K filings (Z-score нормализиран) |
+| **Valuation** | 25% | Дневно | Среден 1Y процентил на AI ETF-ите (SMH · SOXX · AIQ · BOTZ) |
+
+> **Реално деплойнат модел** (`src/calc_hype_history.py`): тегла .40/.35/.25, valuation = среден 1Y процентил на AI ETF-ите. Кодовата база съдържа и втори, недеплойнат вариант (`src/calc_hype_index.py`, fwd P/E, тегла .40/.40/.20) — двата пътя ще се слеят във v2.
 
 ### AI Hype Score — Скала
 
 | Score | Зона | Интерпретация |
 |-------|------|---------------|
-| 0–30 | ❄️ AI Winter | Охлаждане, разочарование |
-| 30–50 | ⚖️ Балансиран | Рационален растеж |
-| 50–70 | 📈 Повишен | Оптимизмът расте |
-| 70–85 | 🔥 Hype | Еуфория, внимание |
-| 85–100 | 💥 Балон | Прегряване, исторически риск |
+| 0–30 | ❄️ AI Winter | Пазарът охлажда, AI акции близо до дъната |
+| 30–45 | 🌡️ Охлаждане | Ентусиазмът намалява, оценките се нормализират |
+| 45–65 | ⚖️ Балансиран | Реалистични очаквания, умерен растеж |
+| 65–80 | 🔥 Повишен Hype | AI buzz расте, оценките над средните |
+| 80–100 | 🚨 Балон | Оценки исторически високи, rhetoric максимален |
 
 ---
 

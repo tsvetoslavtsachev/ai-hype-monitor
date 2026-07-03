@@ -812,6 +812,9 @@ async function init() {
     const upd = document.getElementById('last-updated');
     if (upd) upd.textContent = `Обновено: ${hypeData.updated_at || '—'}`;
 
+    const bannerUpd = document.getElementById('banner-updated');
+    if (bannerUpd) bannerUpd.textContent = hypeData.updated_at || '—';
+
     const history = hypeData.history || [];
     if (history.length) {
       renderHistoryChart(history, 90);
