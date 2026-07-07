@@ -15,6 +15,7 @@ build_corpus.py
   5. Нормализира по корпусна базова линия (Z-score → 0-100)
 """
 
+import csv
 import json
 import re
 import time
@@ -25,7 +26,8 @@ from datetime import datetime
 
 # ── Конфигурация ──────────────────────────────────────────────────────────
 
-HEADERS  = {"User-Agent": "AI-Hype-Monitor tsvetoslav@example.com"}
+HEADERS  = {"User-Agent": "Tsachev Research tsvetoslav.tsachev@gmail.com",
+            "Accept-Encoding": "gzip, deflate"}
 BASE_SEC  = "https://www.sec.gov"
 BASE_DATA = "https://data.sec.gov"
 RATE      = 0.15   # секунди между заявки
@@ -73,44 +75,60 @@ NUMBER_PATTERN = re.compile(
 )
 
 # ── Компании ──────────────────────────────────────────────────────────────
+# ЕДИНСТВЕН източник на истина: config/universe.csv (колона `cik`).
+# ИСТОРИЧЕСКИ БЪГ (поправен): преди тук имаше hardcoded речник с CIK-ове, който
+# се беше разминал с реалните CIK-ове и замърси корпуса — напр. AMAT сочеше към
+# CIK 796343 (Adobe), DELL→1571123 (SAIC), SMCI→310764 (Stryker),
+# PWR→1050606 (Salem Media), LITE→1616862 (Axalta). Затова тегленето по тикер
+# връщаше earnings press releases на ЧУЖДИ компании. Сега CIK-овете идват само
+# от universe.csv; при празен CIK — резолвим детерминистично през EDGAR
+# company_tickers.json (точен ticker match).
 
-COMPANIES = {
-    "NVDA":  {"name": "Nvidia",              "cik": "1045810"},
-    "AMD":   {"name": "AMD",                 "cik": "2488"},
-    "AVGO":  {"name": "Broadcom",            "cik": "1730168"},
-    "MRVL":  {"name": "Marvell Technology",  "cik": "1058057"},
-    "ARM":   {"name": "ARM Holdings",        "cik": "1973239"},
-    "QCOM":  {"name": "Qualcomm",            "cik": "804328"},
-    "AMAT":  {"name": "Applied Materials",   "cik": "796343"},
-    "LRCX":  {"name": "Lam Research",        "cik": "707549"},
-    "KLAC":  {"name": "KLA Corp",            "cik": "319201"},
-    "SNPS":  {"name": "Synopsys",            "cik": "883241"},
-    "CDNS":  {"name": "Cadence Design",      "cik": "813672"},
-    "MU":    {"name": "Micron Technology",   "cik": "723125"},
-    "WDC":   {"name": "Western Digital",     "cik": "106040"},
-    "STX":   {"name": "Seagate Technology",  "cik": "1137789"},
-    "ANET":  {"name": "Arista Networks",     "cik": "1313925"},
-    "CIEN":  {"name": "Ciena",               "cik": "936395"},
-    "COHR":  {"name": "Coherent",            "cik": "820318"},
-    "LITE":  {"name": "Lumentum",            "cik": "1616862"},
-    "FN":    {"name": "Fabrinet",            "cik": "1108320"},
-    "VRT":   {"name": "Vertiv Holdings",     "cik": "1786286"},
-    "ETN":   {"name": "Eaton Corp",          "cik": "1551182"},
-    "DELL":  {"name": "Dell Technologies",   "cik": "1571123"},
-    "SMCI":  {"name": "Super Micro",         "cik": "310764"},
-    "PWR":   {"name": "Quanta Services",     "cik": "1050606"},
-    "MSFT":  {"name": "Microsoft",           "cik": "789019"},
-    "GOOGL": {"name": "Alphabet",            "cik": "1652044"},
-    "AMZN":  {"name": "Amazon",              "cik": "1018724"},
-    "META":  {"name": "Meta Platforms",      "cik": "1326801"},
-    "ORCL":  {"name": "Oracle",              "cik": "1341439"},
-    "PLTR":  {"name": "Palantir",            "cik": "1321655"},
-    "CRM":   {"name": "Salesforce",          "cik": "1108524"},
-    "NOW":   {"name": "ServiceNow",          "cik": "1373715"},
-    "SNOW":  {"name": "Snowflake",           "cik": "1640147"},
-    "AI":    {"name": "C3.ai",               "cik": "1577552"},
-    "ASML":  {"name": "ASML Holding",        "cik": "937966"},
-}
+CONFIG_UNIVERSE = Path(__file__).resolve().parent.parent / "config" / "universe.csv"
+
+
+def _resolve_missing_ciks(symbols: set) -> dict:
+    """Fallback CIK резолюция през SEC company_tickers.json (точен ticker match)."""
+    if not symbols:
+        return {}
+    r = sec_get("https://www.sec.gov/files/company_tickers.json")
+    out = {}
+    if r is not None and r.status_code == 200:
+        try:
+            for e in r.json().values():
+                tk = str(e.get("ticker", "")).upper()
+                if tk in symbols:
+                    out[tk] = str(e["cik_str"])
+        except Exception as exc:
+            print(f"  [WARN] company_tickers.json parse: {exc}", flush=True)
+    return out
+
+
+def load_companies() -> dict:
+    """Зарежда {symbol: {name, cik}} от universe.csv (source of truth).
+
+    Празен `cik` се резолвира през EDGAR company_tickers.json. Символи без
+    намерен CIK се пропускат (с WARN).
+    """
+    companies: dict = {}
+    missing: set = set()
+    with open(CONFIG_UNIVERSE, encoding="utf-8-sig") as fh:
+        for row in csv.DictReader(fh):
+            if str(row.get("enabled", "1")).strip() not in ("1", "true", "True"):
+                continue
+            sym = row["symbol"].strip()
+            cik = str(row.get("cik", "") or "").strip()
+            companies[sym] = {"name": row["name"].strip(), "cik": cik}
+            if not cik:
+                missing.add(sym.upper())
+    resolved = _resolve_missing_ciks(missing)
+    for sym, info in companies.items():
+        if not info["cik"]:
+            info["cik"] = resolved.get(sym.upper(), "")
+    dropped = [s for s, i in companies.items() if not i["cik"]]
+    if dropped:
+        print(f"  [WARN] CIK не е резолвиран, пропускаме: {dropped}", flush=True)
+    return {s: i for s, i in companies.items() if i["cik"]}
 
 # ── EDGAR функции ─────────────────────────────────────────────────────────
 
@@ -289,8 +307,9 @@ def safe_filename(s: str) -> str:
 # ── Главна функция ────────────────────────────────────────────────────────
 
 def main():
+    COMPANIES = load_companies()
     print("=== AI Hype Monitor — Corpus Builder v2 ===", flush=True)
-    print(f"Компании: {len(COMPANIES)}", flush=True)
+    print(f"Компании: {len(COMPANIES)} (source: config/universe.csv)", flush=True)
     print(f"Период: {START_DATE} → днес", flush=True)
     print(f"Raw текстове: {RAW_DIR}", flush=True)
     print()
