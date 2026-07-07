@@ -78,8 +78,8 @@ NUMBER_PATTERN = re.compile(
 # ЕДИНСТВЕН източник на истина: config/universe.csv (колона `cik`).
 # ИСТОРИЧЕСКИ БЪГ (поправен): преди тук имаше hardcoded речник с CIK-ове, който
 # се беше разминал с реалните CIK-ове и замърси корпуса — напр. AMAT сочеше към
-# CIK 796343 (Adobe), DELL→1571123 (SAIC), SMCI→310764 (Stryker),
-# PWR→1050606 (Salem Media), LITE→1616862 (Axalta). Затова тегленето по тикер
+# CIK-а на Adobe, DELL към този на SAIC, SMCI към Stryker, PWR към Salem Media,
+# LITE към Axalta. Затова тегленето по тикер
 # връщаше earnings press releases на ЧУЖДИ компании. Сега CIK-овете идват само
 # от universe.csv; при празен CIK — резолвим детерминистично през EDGAR
 # company_tickers.json (точен ticker match).
