@@ -1,515 +1,99 @@
 {
-  "generated_at": "2026-06-26T22:59:54.306840Z",
+  "generated_at": "2026-07-08T02:49:28.993359Z",
   "start_date": "2022-10-01",
-  "end_date": "2026-06-26",
+  "end_date": "2026-07-08",
   "source": "SEC EDGAR 8-K Exhibits (EX-99.1/EX-99.2)",
   "methodology": "Lexicon-based AI keyword density + financial substance ratio",
   "companies": {
-    "NVDA": {
-      "symbol": "NVDA",
-      "name": "Nvidia",
-      "cik": "1045810",
-      "latest_rhetoric_score": 8.7,
-      "rhetoric_trend": "rising",
-      "quarters": [
-        {
-          "quarter": "Q1 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-03-08"
-        },
-        {
-          "quarter": "Q1 2024",
-          "rhetoric_score": 2.8,
-          "ai_density": 0.184,
-          "substance_ratio": 0.953,
-          "filing_count": 1,
-          "filing_date": "2024-02-21"
-        },
-        {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 15.3,
-          "ai_density": 0.208,
-          "substance_ratio": 0.643,
-          "filing_count": 2,
-          "filing_date": "2025-03-07"
-        },
-        {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 3.3,
-          "ai_density": 0.224,
-          "substance_ratio": 0.944,
-          "filing_count": 1,
-          "filing_date": "2026-02-25"
-        },
-        {
-          "quarter": "Q2 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-06-27"
-        },
-        {
-          "quarter": "Q2 2024",
-          "rhetoric_score": 2.8,
-          "ai_density": 0.186,
-          "substance_ratio": 0.952,
-          "filing_count": 1,
-          "filing_date": "2024-05-22"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 4.6,
-          "ai_density": 0.322,
-          "substance_ratio": 0.923,
-          "filing_count": 1,
-          "filing_date": "2025-05-28"
-        },
-        {
-          "quarter": "Q2 2026",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2026-04-27"
-        },
-        {
-          "quarter": "Q3 2023",
-          "rhetoric_score": 2.4,
-          "ai_density": 0.15,
-          "substance_ratio": 0.958,
-          "filing_count": 1,
-          "filing_date": "2023-08-23"
-        },
-        {
-          "quarter": "Q3 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-07-02"
-        },
-        {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-08-05"
-        },
-        {
-          "quarter": "Q4 2022",
-          "rhetoric_score": 1.6,
-          "ai_density": 0.097,
-          "substance_ratio": 0.971,
-          "filing_count": 1,
-          "filing_date": "2022-11-16"
-        },
-        {
-          "quarter": "Q4 2023",
-          "rhetoric_score": 10.6,
-          "ai_density": 0.126,
-          "substance_ratio": 0.75,
-          "filing_count": 1,
-          "filing_date": "2023-10-24"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-11-07"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 8.7,
-          "ai_density": 0.597,
-          "substance_ratio": 0.855,
-          "filing_count": 1,
-          "filing_date": "2025-11-19"
-        }
-      ],
-      "filings_analyzed": 16
-    },
-    "AMD": {
-      "symbol": "AMD",
-      "name": "AMD",
-      "cik": "2488",
-      "latest_rhetoric_score": 7.9,
-      "rhetoric_trend": "rising",
-      "quarters": [
-        {
-          "quarter": "Q1 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2023-02-21"
-        },
-        {
-          "quarter": "Q1 2024",
-          "rhetoric_score": 6.5,
-          "ai_density": 0.456,
-          "substance_ratio": 0.893,
-          "filing_count": 1,
-          "filing_date": "2024-01-30"
-        },
-        {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 12.7,
-          "ai_density": 0.512,
-          "substance_ratio": 0.744,
-          "filing_count": 3,
-          "filing_date": "2025-03-31"
-        },
-        {
-          "quarter": "Q2 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-05-23"
-        },
-        {
-          "quarter": "Q2 2024",
-          "rhetoric_score": 7.8,
-          "ai_density": 0.584,
-          "substance_ratio": 0.874,
-          "filing_count": 1,
-          "filing_date": "2024-04-30"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 20.9,
-          "ai_density": 0.653,
-          "substance_ratio": 0.555,
-          "filing_count": 2,
-          "filing_date": "2025-05-19"
-        },
-        {
-          "quarter": "Q3 2023",
-          "rhetoric_score": 3.4,
-          "ai_density": 0.219,
-          "substance_ratio": 0.941,
-          "filing_count": 1,
-          "filing_date": "2023-08-01"
-        },
-        {
-          "quarter": "Q3 2024",
-          "rhetoric_score": 3.0,
-          "ai_density": 0.21,
-          "substance_ratio": 0.951,
-          "filing_count": 2,
-          "filing_date": "2024-07-30"
-        },
-        {
-          "quarter": "Q4 2022",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2022-11-08"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 7.9,
-          "ai_density": 0.562,
-          "substance_ratio": 0.871,
-          "filing_count": 1,
-          "filing_date": "2024-10-29"
-        }
-      ],
-      "filings_analyzed": 16
-    },
-    "AVGO": {
-      "symbol": "AVGO",
-      "name": "Broadcom",
-      "cik": "1730168",
-      "latest_rhetoric_score": 1.2,
-      "rhetoric_trend": "stable",
-      "quarters": [
-        {
-          "quarter": "Q1 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-03-02"
-        },
-        {
-          "quarter": "Q1 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-02-09"
-        },
-        {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-01-13"
-        },
-        {
-          "quarter": "Q2 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-05-23"
-        },
-        {
-          "quarter": "Q2 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-04-24"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-04-22"
-        },
-        {
-          "quarter": "Q3 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-08-16"
-        },
-        {
-          "quarter": "Q3 2024",
-          "rhetoric_score": 0.6,
-          "ai_density": 0.034,
-          "substance_ratio": 0.988,
-          "filing_count": 2,
-          "filing_date": "2024-09-05"
-        },
-        {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 8.7,
-          "ai_density": 0.358,
-          "substance_ratio": 0.825,
-          "filing_count": 3,
-          "filing_date": "2025-09-29"
-        },
-        {
-          "quarter": "Q4 2022",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2022-11-02"
-        },
-        {
-          "quarter": "Q4 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2023-11-22"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 1.2,
-          "ai_density": 0.066,
-          "substance_ratio": 0.979,
-          "filing_count": 1,
-          "filing_date": "2024-12-12"
-        }
-      ],
-      "filings_analyzed": 16
-    },
-    "QCOM": {
-      "symbol": "QCOM",
-      "name": "Qualcomm",
-      "cik": "804328",
-      "latest_rhetoric_score": 0.2,
-      "rhetoric_trend": "stable",
-      "quarters": [
-        {
-          "quarter": "Q1 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-03-09"
-        },
-        {
-          "quarter": "Q1 2024",
-          "rhetoric_score": 0.5,
-          "ai_density": 0.025,
-          "substance_ratio": 0.991,
-          "filing_count": 1,
-          "filing_date": "2024-01-31"
-        },
-        {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-03-20"
-        },
-        {
-          "quarter": "Q2 2024",
-          "rhetoric_score": 0.9,
-          "ai_density": 0.048,
-          "substance_ratio": 0.983,
-          "filing_count": 1,
-          "filing_date": "2024-05-01"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2025-06-09"
-        },
-        {
-          "quarter": "Q3 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-07-21"
-        },
-        {
-          "quarter": "Q3 2024",
-          "rhetoric_score": 0.9,
-          "ai_density": 0.047,
-          "substance_ratio": 0.983,
-          "filing_count": 1,
-          "filing_date": "2024-07-31"
-        },
-        {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-08-25"
-        },
-        {
-          "quarter": "Q4 2022",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2022-12-08"
-        },
-        {
-          "quarter": "Q4 2023",
-          "rhetoric_score": 0.7,
-          "ai_density": 0.039,
-          "substance_ratio": 0.986,
-          "filing_count": 1,
-          "filing_date": "2023-11-01"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2024-12-12"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 0.2,
-          "ai_density": 0.009,
-          "substance_ratio": 0.996,
-          "filing_count": 2,
-          "filing_date": "2025-12-16"
-        }
-      ],
-      "filings_analyzed": 16
-    },
     "AMAT": {
       "symbol": "AMAT",
       "name": "Applied Materials",
-      "cik": "796343",
-      "latest_rhetoric_score": 10.3,
-      "rhetoric_trend": "rising",
+      "cik": "6951",
+      "latest_rhetoric_score": 0.4,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 3,
-          "filing_date": "2023-03-15"
+          "filing_count": 2,
+          "filing_date": "2023-03-13"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 2.4,
-          "ai_density": 0.069,
-          "substance_ratio": 0.95,
-          "filing_count": 2,
-          "filing_date": "2024-03-14"
+          "rhetoric_score": 0.2,
+          "ai_density": 0.011,
+          "substance_ratio": 0.997,
+          "filing_count": 3,
+          "filing_date": "2024-03-11"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.3,
+          "ai_density": 0.021,
+          "substance_ratio": 0.995,
+          "filing_count": 3,
+          "filing_date": "2025-03-10"
         },
         {
           "quarter": "Q2 2023",
-          "rhetoric_score": 0.5,
-          "ai_density": 0.034,
-          "substance_ratio": 0.991,
-          "filing_count": 2,
-          "filing_date": "2023-06-15"
-        },
-        {
-          "quarter": "Q2 2024",
-          "rhetoric_score": 0.3,
-          "ai_density": 0.022,
-          "substance_ratio": 0.994,
-          "filing_count": 3,
-          "filing_date": "2024-06-13"
-        },
-        {
-          "quarter": "Q3 2023",
-          "rhetoric_score": 0.6,
-          "ai_density": 0.038,
-          "substance_ratio": 0.989,
-          "filing_count": 1,
-          "filing_date": "2023-09-14"
-        },
-        {
-          "quarter": "Q3 2024",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-07-18"
+          "filing_date": "2023-05-18"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.2,
+          "ai_density": 0.015,
+          "substance_ratio": 0.996,
+          "filing_count": 2,
+          "filing_date": "2024-06-11"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.029,
+          "substance_ratio": 0.991,
+          "filing_count": 1,
+          "filing_date": "2023-08-17"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.029,
+          "substance_ratio": 0.992,
+          "filing_count": 1,
+          "filing_date": "2024-08-15"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2022-12-15"
+          "filing_count": 4,
+          "filing_date": "2022-12-16"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 10.3,
-          "ai_density": 0.233,
-          "substance_ratio": 0.77,
-          "filing_count": 3,
-          "filing_date": "2023-12-18"
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-12-13"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.4,
+          "ai_density": 0.026,
+          "substance_ratio": 0.993,
+          "filing_count": 1,
+          "filing_date": "2024-11-14"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "LRCX": {
       "symbol": "LRCX",
@@ -563,8 +147,8 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 3,
-          "filing_date": "2024-09-18"
+          "filing_count": 4,
+          "filing_date": "2024-09-25"
         },
         {
           "quarter": "Q4 2022",
@@ -581,15 +165,23 @@
           "substance_ratio": 1.0,
           "filing_count": 2,
           "filing_date": "2023-11-09"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2024-11-07"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "KLAC": {
       "symbol": "KLAC",
-      "name": "KLA Corp",
+      "name": "KLA Corporation",
       "cik": "319201",
-      "latest_rhetoric_score": 3.0,
+      "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
         {
@@ -615,6 +207,14 @@
           "substance_ratio": 1.0,
           "filing_count": 1,
           "filing_date": "2025-02-13"
+        },
+        {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2026-02-05"
         },
         {
           "quarter": "Q2 2023",
@@ -657,6 +257,14 @@
           "filing_date": "2024-09-20"
         },
         {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2025-08-07"
+        },
+        {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
@@ -679,15 +287,643 @@
           "substance_ratio": 0.928,
           "filing_count": 2,
           "filing_date": "2024-12-03"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-11-07"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
+    },
+    "ONTO": {
+      "symbol": "ONTO",
+      "name": "Onto Innovation",
+      "cik": "704532",
+      "latest_rhetoric_score": 0.2,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-02-09"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 3.7,
+          "ai_density": 0.045,
+          "substance_ratio": 0.913,
+          "filing_count": 3,
+          "filing_date": "2024-03-18"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 1.5,
+          "ai_density": 0.097,
+          "substance_ratio": 0.975,
+          "filing_count": 1,
+          "filing_date": "2025-02-06"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2023-05-09"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.09,
+          "substance_ratio": 0.978,
+          "filing_count": 2,
+          "filing_date": "2024-05-22"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-04-01"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.6,
+          "ai_density": 0.033,
+          "substance_ratio": 0.99,
+          "filing_count": 2,
+          "filing_date": "2023-09-15"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 6.2,
+          "ai_density": 0.112,
+          "substance_ratio": 0.857,
+          "filing_count": 2,
+          "filing_date": "2024-08-08"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2022-10-27"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 1.6,
+          "ai_density": 0.1,
+          "substance_ratio": 0.972,
+          "filing_count": 1,
+          "filing_date": "2023-11-09"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.2,
+          "ai_density": 0.017,
+          "substance_ratio": 0.996,
+          "filing_count": 2,
+          "filing_date": "2024-12-02"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "name": "Nvidia",
+      "cik": "1045810",
+      "latest_rhetoric_score": 4.8,
+      "rhetoric_trend": "falling",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.8,
+          "ai_density": 0.054,
+          "substance_ratio": 0.985,
+          "filing_count": 2,
+          "filing_date": "2023-03-08"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.092,
+          "substance_ratio": 0.976,
+          "filing_count": 2,
+          "filing_date": "2024-03-14"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 18.4,
+          "ai_density": 0.426,
+          "substance_ratio": 0.591,
+          "filing_count": 2,
+          "filing_date": "2025-02-26"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 1.9,
+          "ai_density": 0.122,
+          "substance_ratio": 0.969,
+          "filing_count": 2,
+          "filing_date": "2023-06-27"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 11.4,
+          "ai_density": 0.093,
+          "substance_ratio": 0.726,
+          "filing_count": 2,
+          "filing_date": "2024-06-07"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.075,
+          "substance_ratio": 0.979,
+          "filing_count": 2,
+          "filing_date": "2023-08-23"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 5.2,
+          "ai_density": 0.372,
+          "substance_ratio": 0.915,
+          "filing_count": 2,
+          "filing_date": "2024-08-28"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 1.6,
+          "ai_density": 0.097,
+          "substance_ratio": 0.971,
+          "filing_count": 1,
+          "filing_date": "2022-11-16"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 9.4,
+          "ai_density": 0.147,
+          "substance_ratio": 0.783,
+          "filing_count": 3,
+          "filing_date": "2023-11-21"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 4.8,
+          "ai_density": 0.345,
+          "substance_ratio": 0.92,
+          "filing_count": 2,
+          "filing_date": "2024-11-20"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "AMD": {
+      "symbol": "AMD",
+      "name": "Advanced Micro Devices",
+      "cik": "2488",
+      "latest_rhetoric_score": 20.2,
+      "rhetoric_trend": "rising",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-02-21"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 6.5,
+          "ai_density": 0.456,
+          "substance_ratio": 0.893,
+          "filing_count": 1,
+          "filing_date": "2024-01-30"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 12.7,
+          "ai_density": 0.512,
+          "substance_ratio": 0.744,
+          "filing_count": 3,
+          "filing_date": "2025-03-31"
+        },
+        {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 50.4,
+          "ai_density": 2.158,
+          "substance_ratio": 0.0,
+          "filing_count": 1,
+          "filing_date": "2026-01-20"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-05-23"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 7.8,
+          "ai_density": 0.584,
+          "substance_ratio": 0.874,
+          "filing_count": 1,
+          "filing_date": "2024-04-30"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 20.9,
+          "ai_density": 0.653,
+          "substance_ratio": 0.555,
+          "filing_count": 2,
+          "filing_date": "2025-05-19"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 3.4,
+          "ai_density": 0.219,
+          "substance_ratio": 0.941,
+          "filing_count": 1,
+          "filing_date": "2023-08-01"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 3.0,
+          "ai_density": 0.21,
+          "substance_ratio": 0.951,
+          "filing_count": 2,
+          "filing_date": "2024-07-30"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 4.5,
+          "ai_density": 0.301,
+          "substance_ratio": 0.924,
+          "filing_count": 1,
+          "filing_date": "2025-08-05"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2022-11-08"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 7.9,
+          "ai_density": 0.562,
+          "substance_ratio": 0.871,
+          "filing_count": 1,
+          "filing_date": "2024-10-29"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 20.2,
+          "ai_density": 0.808,
+          "substance_ratio": 0.591,
+          "filing_count": 2,
+          "filing_date": "2025-11-04"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "AVGO": {
+      "symbol": "AVGO",
+      "name": "Broadcom",
+      "cik": "1730168",
+      "latest_rhetoric_score": 1.2,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-03-02"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-02-09"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-01-13"
+        },
+        {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.079,
+          "substance_ratio": 0.978,
+          "filing_count": 2,
+          "filing_date": "2026-03-04"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-05-23"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-04-24"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-04-22"
+        },
+        {
+          "quarter": "Q2 2026",
+          "rhetoric_score": 10.8,
+          "ai_density": 0.28,
+          "substance_ratio": 0.764,
+          "filing_count": 2,
+          "filing_date": "2026-06-03"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-08-16"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.6,
+          "ai_density": 0.034,
+          "substance_ratio": 0.988,
+          "filing_count": 2,
+          "filing_date": "2024-09-05"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 8.7,
+          "ai_density": 0.358,
+          "substance_ratio": 0.825,
+          "filing_count": 3,
+          "filing_date": "2025-09-29"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2022-11-02"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-11-22"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.066,
+          "substance_ratio": 0.979,
+          "filing_count": 1,
+          "filing_date": "2024-12-12"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "MRVL": {
+      "symbol": "MRVL",
+      "name": "Marvell Technology",
+      "cik": "1835632",
+      "latest_rhetoric_score": 21.7,
+      "rhetoric_trend": "rising",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-03-15"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 2.7,
+          "ai_density": 0.12,
+          "substance_ratio": 0.946,
+          "filing_count": 1,
+          "filing_date": "2024-03-07"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-03-12"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 2.5,
+          "ai_density": 0.118,
+          "substance_ratio": 0.951,
+          "filing_count": 1,
+          "filing_date": "2023-05-25"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 7.0,
+          "ai_density": 0.074,
+          "substance_ratio": 0.834,
+          "filing_count": 2,
+          "filing_date": "2024-06-21"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 4.0,
+          "ai_density": 0.221,
+          "substance_ratio": 0.925,
+          "filing_count": 4,
+          "filing_date": "2025-06-30"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.054,
+          "substance_ratio": 0.976,
+          "filing_count": 2,
+          "filing_date": "2023-09-18"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-09-13"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 1.1,
+          "ai_density": 0.051,
+          "substance_ratio": 0.978,
+          "filing_count": 2,
+          "filing_date": "2025-08-28"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.022,
+          "substance_ratio": 0.99,
+          "filing_count": 1,
+          "filing_date": "2022-12-01"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-12-08"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 21.7,
+          "ai_density": 0.356,
+          "substance_ratio": 0.5,
+          "filing_count": 2,
+          "filing_date": "2024-12-13"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "QCOM": {
+      "symbol": "QCOM",
+      "name": "Qualcomm",
+      "cik": "804328",
+      "latest_rhetoric_score": 0.1,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-03-09"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.2,
+          "ai_density": 0.008,
+          "substance_ratio": 0.997,
+          "filing_count": 3,
+          "filing_date": "2024-03-07"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.4,
+          "ai_density": 0.025,
+          "substance_ratio": 0.992,
+          "filing_count": 1,
+          "filing_date": "2025-02-05"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-05-03"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.024,
+          "substance_ratio": 0.992,
+          "filing_count": 2,
+          "filing_date": "2024-05-09"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.8,
+          "ai_density": 0.044,
+          "substance_ratio": 0.984,
+          "filing_count": 2,
+          "filing_date": "2023-08-02"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.024,
+          "substance_ratio": 0.992,
+          "filing_count": 2,
+          "filing_date": "2024-08-09"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2022-12-08"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 0.7,
+          "ai_density": 0.039,
+          "substance_ratio": 0.986,
+          "filing_count": 1,
+          "filing_date": "2023-11-01"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.1,
+          "ai_density": 0.007,
+          "substance_ratio": 0.998,
+          "filing_count": 3,
+          "filing_date": "2024-12-12"
+        }
+      ],
+      "filings_analyzed": 20
     },
     "SNPS": {
       "symbol": "SNPS",
       "name": "Synopsys",
       "cik": "883241",
-      "latest_rhetoric_score": 0.2,
+      "latest_rhetoric_score": 0.3,
       "rhetoric_trend": "stable",
       "quarters": [
         {
@@ -700,34 +936,34 @@
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 0.2,
-          "ai_density": 0.009,
-          "substance_ratio": 0.996,
-          "filing_count": 2,
-          "filing_date": "2024-03-25"
+          "rhetoric_score": 5.7,
+          "ai_density": 0.297,
+          "substance_ratio": 0.895,
+          "filing_count": 3,
+          "filing_date": "2024-03-20"
         },
         {
           "quarter": "Q1 2025",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-03-05"
+          "filing_count": 2,
+          "filing_date": "2025-03-17"
         },
         {
           "quarter": "Q2 2023",
-          "rhetoric_score": 20.0,
-          "ai_density": 0.0,
-          "substance_ratio": 0.5,
+          "rhetoric_score": 1.0,
+          "ai_density": 0.044,
+          "substance_ratio": 0.981,
           "filing_count": 1,
-          "filing_date": "2023-05-25"
+          "filing_date": "2023-05-17"
         },
         {
           "quarter": "Q2 2024",
-          "rhetoric_score": 3.3,
-          "ai_density": 0.045,
-          "substance_ratio": 0.923,
-          "filing_count": 1,
+          "rhetoric_score": 1.6,
+          "ai_density": 0.022,
+          "substance_ratio": 0.962,
+          "filing_count": 2,
           "filing_date": "2024-05-16"
         },
         {
@@ -740,68 +976,60 @@
         },
         {
           "quarter": "Q3 2023",
-          "rhetoric_score": 0.5,
-          "ai_density": 0.021,
-          "substance_ratio": 0.991,
-          "filing_count": 1,
+          "rhetoric_score": 10.8,
+          "ai_density": 0.127,
+          "substance_ratio": 0.746,
+          "filing_count": 2,
           "filing_date": "2023-08-16"
         },
         {
           "quarter": "Q3 2024",
-          "rhetoric_score": 0.4,
-          "ai_density": 0.016,
-          "substance_ratio": 0.993,
+          "rhetoric_score": 3.6,
+          "ai_density": 0.049,
+          "substance_ratio": 0.917,
           "filing_count": 1,
-          "filing_date": "2024-08-21"
+          "filing_date": "2024-07-12"
         },
         {
           "quarter": "Q3 2025",
-          "rhetoric_score": 20.6,
-          "ai_density": 0.12,
-          "substance_ratio": 0.5,
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2025-07-14"
+          "filing_date": "2025-07-03"
         },
         {
           "quarter": "Q4 2022",
-          "rhetoric_score": 0.0,
+          "rhetoric_score": 6.7,
           "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2022-12-14"
+          "substance_ratio": 0.833,
+          "filing_count": 3,
+          "filing_date": "2022-12-16"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "rhetoric_score": 0.8,
+          "ai_density": 0.041,
+          "substance_ratio": 0.984,
           "filing_count": 1,
-          "filing_date": "2023-12-13"
+          "filing_date": "2023-11-29"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 0.7,
-          "ai_density": 0.032,
-          "substance_ratio": 0.986,
-          "filing_count": 1,
-          "filing_date": "2024-12-04"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 0.2,
-          "ai_density": 0.008,
-          "substance_ratio": 0.996,
+          "rhetoric_score": 0.3,
+          "ai_density": 0.016,
+          "substance_ratio": 0.993,
           "filing_count": 2,
-          "filing_date": "2025-12-10"
+          "filing_date": "2024-12-04"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "CDNS": {
       "symbol": "CDNS",
-      "name": "Cadence Design",
+      "name": "Cadence Design Systems",
       "cik": "813672",
-      "latest_rhetoric_score": 0.3,
+      "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
         {
@@ -809,72 +1037,48 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
+          "filing_count": 2,
           "filing_date": "2023-02-13"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
+          "rhetoric_score": 0.1,
+          "ai_density": 0.007,
+          "substance_ratio": 0.998,
+          "filing_count": 3,
           "filing_date": "2024-03-05"
         },
         {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 0.3,
-          "ai_density": 0.019,
-          "substance_ratio": 0.995,
-          "filing_count": 1,
-          "filing_date": "2025-02-18"
-        },
-        {
           "quarter": "Q2 2023",
-          "rhetoric_score": 0.0,
+          "rhetoric_score": 6.7,
           "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-05-08"
+          "substance_ratio": 0.833,
+          "filing_count": 3,
+          "filing_date": "2023-06-13"
         },
         {
           "quarter": "Q2 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-05-06"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-05-12"
+          "rhetoric_score": 0.1,
+          "ai_density": 0.008,
+          "substance_ratio": 0.998,
+          "filing_count": 3,
+          "filing_date": "2024-06-03"
         },
         {
           "quarter": "Q3 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-07-24"
+          "filing_count": 2,
+          "filing_date": "2023-08-03"
         },
         {
           "quarter": "Q3 2024",
-          "rhetoric_score": 0.2,
-          "ai_density": 0.011,
-          "substance_ratio": 0.997,
-          "filing_count": 2,
-          "filing_date": "2024-09-05"
-        },
-        {
-          "quarter": "Q3 2025",
           "rhetoric_score": 0.1,
-          "ai_density": 0.011,
-          "substance_ratio": 0.997,
-          "filing_count": 2,
-          "filing_date": "2025-07-28"
+          "ai_density": 0.006,
+          "substance_ratio": 0.998,
+          "filing_count": 4,
+          "filing_date": "2024-09-10"
         },
         {
           "quarter": "Q4 2022",
@@ -889,66 +1093,42 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-10-23"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 0.4,
-          "ai_density": 0.023,
-          "substance_ratio": 0.994,
-          "filing_count": 1,
-          "filing_date": "2024-10-28"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 0.3,
-          "ai_density": 0.021,
-          "substance_ratio": 0.994,
-          "filing_count": 1,
-          "filing_date": "2025-10-27"
+          "filing_count": 2,
+          "filing_date": "2023-11-03"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "MU": {
       "symbol": "MU",
       "name": "Micron Technology",
       "cik": "723125",
-      "latest_rhetoric_score": 1.5,
-      "rhetoric_trend": "falling",
+      "latest_rhetoric_score": 0.0,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-02-09"
+          "rhetoric_score": 0.2,
+          "ai_density": 0.011,
+          "substance_ratio": 0.997,
+          "filing_count": 3,
+          "filing_date": "2023-03-28"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-01-19"
+          "rhetoric_score": 0.6,
+          "ai_density": 0.034,
+          "substance_ratio": 0.99,
+          "filing_count": 2,
+          "filing_date": "2024-03-20"
         },
         {
           "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2025-03-12"
-        },
-        {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 10.4,
-          "ai_density": 0.091,
-          "substance_ratio": 0.75,
-          "filing_count": 1,
-          "filing_date": "2026-03-25"
+          "rhetoric_score": 5.2,
+          "ai_density": 0.116,
+          "substance_ratio": 0.883,
+          "filing_count": 3,
+          "filing_date": "2025-03-20"
         },
         {
           "quarter": "Q2 2023",
@@ -964,7 +1144,7 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-04-11"
+          "filing_date": "2024-04-19"
         },
         {
           "quarter": "Q2 2025",
@@ -975,55 +1155,55 @@
           "filing_date": "2025-06-12"
         },
         {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.032,
+          "substance_ratio": 0.991,
+          "filing_count": 1,
+          "filing_date": "2023-09-27"
+        },
+        {
           "quarter": "Q3 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.032,
+          "substance_ratio": 0.992,
+          "filing_count": 2,
+          "filing_date": "2024-09-25"
+        },
+        {
+          "quarter": "Q3 2025",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-07-19"
-        },
-        {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 1.7,
-          "ai_density": 0.123,
-          "substance_ratio": 0.972,
-          "filing_count": 1,
-          "filing_date": "2025-08-11"
+          "filing_date": "2025-07-18"
         },
         {
           "quarter": "Q4 2022",
-          "rhetoric_score": 0.2,
-          "ai_density": 0.018,
-          "substance_ratio": 0.996,
+          "rhetoric_score": 3.3,
+          "ai_density": 0.086,
+          "substance_ratio": 0.928,
           "filing_count": 2,
-          "filing_date": "2022-12-21"
+          "filing_date": "2022-11-16"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 2.0,
-          "ai_density": 0.126,
-          "substance_ratio": 0.964,
+          "rhetoric_score": 2.4,
+          "ai_density": 0.157,
+          "substance_ratio": 0.958,
           "filing_count": 1,
-          "filing_date": "2023-11-28"
+          "filing_date": "2023-12-20"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 17.3,
-          "ai_density": 0.266,
-          "substance_ratio": 0.6,
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-10-30"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 1.5,
-          "ai_density": 0.113,
-          "substance_ratio": 0.977,
-          "filing_count": 1,
-          "filing_date": "2025-12-17"
+          "filing_date": "2024-12-10"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "WDC": {
       "symbol": "WDC",
@@ -1038,7 +1218,7 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2023-01-31"
+          "filing_date": "2023-02-01"
         },
         {
           "quarter": "Q1 2024",
@@ -1046,38 +1226,30 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 2,
-          "filing_date": "2024-03-05"
+          "filing_date": "2024-03-04"
         },
         {
           "quarter": "Q1 2025",
           "rhetoric_score": 0.0,
-          "ai_density": 0.001,
-          "substance_ratio": 0.999,
-          "filing_count": 3,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 4,
           "filing_date": "2025-03-13"
         },
         {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2026-02-09"
-        },
-        {
           "quarter": "Q2 2023",
-          "rhetoric_score": 20.0,
+          "rhetoric_score": 10.0,
           "ai_density": 0.0,
-          "substance_ratio": 0.5,
-          "filing_count": 1,
-          "filing_date": "2023-05-05"
+          "substance_ratio": 0.75,
+          "filing_count": 2,
+          "filing_date": "2023-06-21"
         },
         {
           "quarter": "Q2 2024",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
+          "filing_count": 2,
           "filing_date": "2024-05-24"
         },
         {
@@ -1086,65 +1258,57 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2025-05-08"
+          "filing_date": "2025-04-30"
         },
         {
-          "quarter": "Q3 2023",
+          "quarter": "Q3 2024",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2023-07-31"
+          "filing_date": "2024-08-27"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2022-10-27"
+          "filing_count": 2,
+          "filing_date": "2022-12-23"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 0.7,
-          "ai_density": 0.024,
-          "substance_ratio": 0.987,
-          "filing_count": 2,
-          "filing_date": "2023-11-03"
+          "rhetoric_score": 0.3,
+          "ai_density": 0.012,
+          "substance_ratio": 0.994,
+          "filing_count": 4,
+          "filing_date": "2023-11-17"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 0.8,
-          "ai_density": 0.045,
-          "substance_ratio": 0.986,
-          "filing_count": 1,
-          "filing_date": "2024-10-24"
-        },
-        {
-          "quarter": "Q4 2025",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2025-11-03"
+          "filing_date": "2024-11-25"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
-    "CIEN": {
-      "symbol": "CIEN",
-      "name": "Ciena",
-      "cik": "936395",
-      "latest_rhetoric_score": 11.2,
-      "rhetoric_trend": "rising",
+    "STX": {
+      "symbol": "STX",
+      "name": "Seagate Technology",
+      "cik": "1137789",
+      "latest_rhetoric_score": 0.0,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 3,
-          "filing_date": "2023-03-06"
+          "filing_count": 1,
+          "filing_date": "2023-03-29"
         },
         {
           "quarter": "Q1 2024",
@@ -1152,39 +1316,211 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-03-07"
+          "filing_date": "2024-01-24"
         },
         {
           "quarter": "Q1 2025",
-          "rhetoric_score": 1.0,
-          "ai_density": 0.056,
-          "substance_ratio": 0.981,
+          "rhetoric_score": 0.4,
+          "ai_density": 0.024,
+          "substance_ratio": 0.993,
           "filing_count": 1,
-          "filing_date": "2025-03-11"
+          "filing_date": "2025-01-21"
         },
         {
           "quarter": "Q2 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-04-06"
+          "filing_count": 2,
+          "filing_date": "2023-05-25"
         },
         {
           "quarter": "Q2 2024",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-04-23"
+          "filing_count": 2,
+          "filing_date": "2024-04-25"
         },
         {
           "quarter": "Q2 2025",
-          "rhetoric_score": 1.1,
-          "ai_density": 0.055,
-          "substance_ratio": 0.98,
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2025-05-22"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2023-09-27"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2025-06-05"
+          "filing_date": "2024-08-29"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 4,
+          "filing_date": "2022-11-30"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-10-26"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-10-22"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "ANET": {
+      "symbol": "ANET",
+      "name": "Arista Networks",
+      "cik": "1596532",
+      "latest_rhetoric_score": 12.5,
+      "rhetoric_trend": "rising",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.063,
+          "substance_ratio": 0.978,
+          "filing_count": 1,
+          "filing_date": "2023-02-13"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 2.0,
+          "ai_density": 0.105,
+          "substance_ratio": 0.963,
+          "filing_count": 2,
+          "filing_date": "2024-02-28"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 7.0,
+          "ai_density": 0.395,
+          "substance_ratio": 0.872,
+          "filing_count": 1,
+          "filing_date": "2025-02-18"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.077,
+          "substance_ratio": 0.976,
+          "filing_count": 2,
+          "filing_date": "2023-06-16"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.081,
+          "substance_ratio": 0.975,
+          "filing_count": 5,
+          "filing_date": "2024-06-10"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 3.3,
+          "ai_density": 0.169,
+          "substance_ratio": 0.939,
+          "filing_count": 1,
+          "filing_date": "2023-07-31"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 8.3,
+          "ai_density": 0.463,
+          "substance_ratio": 0.848,
+          "filing_count": 1,
+          "filing_date": "2024-07-30"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2022-10-31"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 7.9,
+          "ai_density": 0.111,
+          "substance_ratio": 0.817,
+          "filing_count": 3,
+          "filing_date": "2023-12-20"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 12.5,
+          "ai_density": 0.13,
+          "substance_ratio": 0.703,
+          "filing_count": 2,
+          "filing_date": "2024-12-03"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "CIEN": {
+      "symbol": "CIEN",
+      "name": "Ciena",
+      "cik": "936395",
+      "latest_rhetoric_score": 0.0,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 5,
+          "filing_date": "2023-03-06"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2024-03-26"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2023-06-06"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2024-06-06"
         },
         {
           "quarter": "Q3 2023",
@@ -1203,28 +1539,20 @@
           "filing_date": "2024-09-04"
         },
         {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 1.0,
-          "ai_density": 0.052,
-          "substance_ratio": 0.982,
-          "filing_count": 1,
-          "filing_date": "2025-09-04"
-        },
-        {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2022-11-22"
+          "filing_count": 2,
+          "filing_date": "2022-12-08"
         },
         {
           "quarter": "Q4 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-10-25"
+          "filing_count": 3,
+          "filing_date": "2023-12-07"
         },
         {
           "quarter": "Q4 2024",
@@ -1232,41 +1560,33 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-12-12"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 11.2,
-          "ai_density": 0.147,
-          "substance_ratio": 0.738,
-          "filing_count": 2,
-          "filing_date": "2025-12-11"
+          "filing_date": "2024-10-02"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "COHR": {
       "symbol": "COHR",
-      "name": "Coherent",
+      "name": "Coherent Corp.",
       "cik": "820318",
-      "latest_rhetoric_score": 10.1,
-      "rhetoric_trend": "rising",
+      "latest_rhetoric_score": 0.0,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
-          "rhetoric_score": 20.0,
+          "rhetoric_score": 10.0,
           "ai_density": 0.0,
-          "substance_ratio": 0.5,
-          "filing_count": 1,
-          "filing_date": "2023-02-08"
+          "substance_ratio": 0.75,
+          "filing_count": 2,
+          "filing_date": "2023-02-23"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-02-20"
+          "rhetoric_score": 11.2,
+          "ai_density": 0.379,
+          "substance_ratio": 0.768,
+          "filing_count": 2,
+          "filing_date": "2024-03-26"
         },
         {
           "quarter": "Q1 2025",
@@ -1281,40 +1601,40 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-05-10"
+          "filing_count": 2,
+          "filing_date": "2023-06-30"
         },
         {
           "quarter": "Q2 2024",
-          "rhetoric_score": 1.7,
-          "ai_density": 0.084,
-          "substance_ratio": 0.967,
-          "filing_count": 1,
-          "filing_date": "2024-05-06"
+          "rhetoric_score": 0.8,
+          "ai_density": 0.042,
+          "substance_ratio": 0.984,
+          "filing_count": 2,
+          "filing_date": "2024-06-06"
         },
         {
           "quarter": "Q2 2025",
-          "rhetoric_score": 4.4,
-          "ai_density": 0.198,
-          "substance_ratio": 0.914,
+          "rhetoric_score": 1.5,
+          "ai_density": 0.078,
+          "substance_ratio": 0.971,
           "filing_count": 1,
-          "filing_date": "2025-05-28"
+          "filing_date": "2025-05-07"
         },
         {
           "quarter": "Q3 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2023-09-15"
+          "rhetoric_score": 0.7,
+          "ai_density": 0.028,
+          "substance_ratio": 0.986,
+          "filing_count": 3,
+          "filing_date": "2023-09-21"
         },
         {
           "quarter": "Q3 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "rhetoric_score": 2.2,
+          "ai_density": 0.1,
+          "substance_ratio": 0.957,
           "filing_count": 1,
-          "filing_date": "2024-08-08"
+          "filing_date": "2024-08-15"
         },
         {
           "quarter": "Q4 2022",
@@ -1326,35 +1646,117 @@
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "rhetoric_score": 1.0,
+          "ai_density": 0.05,
+          "substance_ratio": 0.981,
           "filing_count": 2,
           "filing_date": "2023-12-04"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 0.8,
-          "ai_density": 0.035,
-          "substance_ratio": 0.985,
-          "filing_count": 2,
-          "filing_date": "2024-11-06"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 10.1,
-          "ai_density": 0.005,
-          "substance_ratio": 0.748,
-          "filing_count": 2,
-          "filing_date": "2025-12-16"
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2024-11-14"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
-    "VRT": {
-      "symbol": "VRT",
-      "name": "Vertiv Holdings",
-      "cik": "1779128",
+    "LITE": {
+      "symbol": "LITE",
+      "name": "Lumentum",
+      "cik": "1633978",
+      "latest_rhetoric_score": 4.1,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-02-24"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.3,
+          "ai_density": 0.011,
+          "substance_ratio": 0.994,
+          "filing_count": 2,
+          "filing_date": "2024-02-27"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 6.4,
+          "ai_density": 0.186,
+          "substance_ratio": 0.862,
+          "filing_count": 1,
+          "filing_date": "2025-02-03"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2023-06-16"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.022,
+          "substance_ratio": 0.989,
+          "filing_count": 1,
+          "filing_date": "2024-05-06"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.021,
+          "substance_ratio": 0.991,
+          "filing_count": 1,
+          "filing_date": "2023-08-17"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.021,
+          "substance_ratio": 0.991,
+          "filing_count": 1,
+          "filing_date": "2024-08-14"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2022-11-21"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 4.8,
+          "ai_density": 0.132,
+          "substance_ratio": 0.897,
+          "filing_count": 4,
+          "filing_date": "2023-11-21"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 4.1,
+          "ai_density": 0.092,
+          "substance_ratio": 0.91,
+          "filing_count": 3,
+          "filing_date": "2024-12-12"
+        }
+      ],
+      "filings_analyzed": 20
+    },
+    "FN": {
+      "symbol": "FN",
+      "name": "Fabrinet",
+      "cik": "1408710",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1363,24 +1765,32 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 5,
-          "filing_date": "2023-03-30"
+          "filing_count": 1,
+          "filing_date": "2023-02-06"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 6.7,
+          "rhetoric_score": 0.0,
           "ai_density": 0.0,
-          "substance_ratio": 0.833,
-          "filing_count": 3,
-          "filing_date": "2024-03-22"
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-02-05"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2025-03-13"
         },
         {
           "quarter": "Q2 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2023-05-11"
+          "filing_count": 1,
+          "filing_date": "2023-05-08"
         },
         {
           "quarter": "Q2 2024",
@@ -1388,15 +1798,23 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 2,
-          "filing_date": "2024-05-07"
+          "filing_date": "2024-06-14"
         },
         {
-          "quarter": "Q3 2023",
+          "quarter": "Q2 2025",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2025-05-27"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.5,
+          "ai_density": 0.031,
+          "substance_ratio": 0.991,
           "filing_count": 1,
-          "filing_date": "2023-08-09"
+          "filing_date": "2023-08-21"
         },
         {
           "quarter": "Q3 2024",
@@ -1404,30 +1822,176 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2024-08-07"
+          "filing_date": "2024-08-19"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-08-18"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2022-11-09"
+          "filing_count": 2,
+          "filing_date": "2022-12-13"
         },
         {
           "quarter": "Q4 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-12-13"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2024-12-20"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2023-11-08"
+          "filing_date": "2025-10-16"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
+    },
+    "VRT": {
+      "symbol": "VRT",
+      "name": "Vertiv",
+      "cik": "1674101",
+      "latest_rhetoric_score": 0.0,
+      "rhetoric_trend": "stable",
+      "quarters": [
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-02-16"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-02-07"
+        },
+        {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2026-03-03"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2023-05-24"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2024-06-13"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.08,
+          "substance_ratio": 0.978,
+          "filing_count": 2,
+          "filing_date": "2025-06-20"
+        },
+        {
+          "quarter": "Q2 2026",
+          "rhetoric_score": 11.1,
+          "ai_density": 0.222,
+          "substance_ratio": 0.75,
+          "filing_count": 2,
+          "filing_date": "2026-06-03"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 0.7,
+          "ai_density": 0.044,
+          "substance_ratio": 0.987,
+          "filing_count": 1,
+          "filing_date": "2023-08-02"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-09-04"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-08-12"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2022-11-21"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.085,
+          "substance_ratio": 0.974,
+          "filing_count": 1,
+          "filing_date": "2023-11-29"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-11-18"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2025-11-14"
+        }
+      ],
+      "filings_analyzed": 20
     },
     "ETN": {
       "symbol": "ETN",
-      "name": "Eaton Corp",
+      "name": "Eaton Corporation",
       "cik": "1551182",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
@@ -1455,6 +2019,14 @@
           "substance_ratio": 1.0,
           "filing_count": 1,
           "filing_date": "2025-01-31"
+        },
+        {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 3,
+          "filing_date": "2026-03-10"
         },
         {
           "quarter": "Q2 2023",
@@ -1519,15 +2091,23 @@
           "substance_ratio": 1.0,
           "filing_count": 1,
           "filing_date": "2024-10-22"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2025-11-20"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "DELL": {
       "symbol": "DELL",
       "name": "Dell Technologies",
       "cik": "1571996",
-      "latest_rhetoric_score": 0.0,
+      "latest_rhetoric_score": 1.4,
       "rhetoric_trend": "stable",
       "quarters": [
         {
@@ -1579,6 +2159,14 @@
           "filing_date": "2025-04-01"
         },
         {
+          "quarter": "Q2 2026",
+          "rhetoric_score": 2.1,
+          "ai_density": 0.161,
+          "substance_ratio": 0.967,
+          "filing_count": 2,
+          "filing_date": "2026-06-16"
+        },
+        {
           "quarter": "Q3 2023",
           "rhetoric_score": 2.8,
           "ai_density": 0.189,
@@ -1625,14 +2213,120 @@
           "substance_ratio": 1.0,
           "filing_count": 1,
           "filing_date": "2024-10-08"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 1.4,
+          "ai_density": 0.094,
+          "substance_ratio": 0.976,
+          "filing_count": 2,
+          "filing_date": "2025-11-25"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "SMCI": {
       "symbol": "SMCI",
-      "name": "Super Micro Computer",
-      "cik": "893691",
+      "name": "Supermicro",
+      "cik": "1375365",
+      "latest_rhetoric_score": 42.4,
+      "rhetoric_trend": "rising",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 14.1,
+          "ai_density": 0.151,
+          "substance_ratio": 0.666,
+          "filing_count": 2,
+          "filing_date": "2023-03-15"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 2,
+          "filing_date": "2024-02-28"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 20.0,
+          "ai_density": 0.0,
+          "substance_ratio": 0.5,
+          "filing_count": 1,
+          "filing_date": "2025-02-21"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2023-05-23"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 3.3,
+          "ai_density": 0.212,
+          "substance_ratio": 0.944,
+          "filing_count": 1,
+          "filing_date": "2024-04-30"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 18.6,
+          "ai_density": 0.242,
+          "substance_ratio": 0.562,
+          "filing_count": 2,
+          "filing_date": "2025-06-23"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 4.4,
+          "ai_density": 0.25,
+          "substance_ratio": 0.92,
+          "filing_count": 1,
+          "filing_date": "2023-08-08"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 14.2,
+          "ai_density": 0.175,
+          "substance_ratio": 0.667,
+          "filing_count": 3,
+          "filing_date": "2024-09-26"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 7.1,
+          "ai_density": 0.295,
+          "substance_ratio": 0.857,
+          "filing_count": 1,
+          "filing_date": "2022-10-19"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 12.3,
+          "ai_density": 0.261,
+          "substance_ratio": 0.724,
+          "filing_count": 2,
+          "filing_date": "2023-12-08"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 42.4,
+          "ai_density": 0.491,
+          "substance_ratio": 0.0,
+          "filing_count": 2,
+          "filing_date": "2024-12-06"
+        }
+      ],
+      "filings_analyzed": 18
+    },
+    "PWR": {
+      "symbol": "PWR",
+      "name": "Quanta Services",
+      "cik": "1050915",
       "latest_rhetoric_score": 0.0,
       "rhetoric_trend": "stable",
       "quarters": [
@@ -1641,16 +2335,16 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2023-02-22"
+          "filing_count": 4,
+          "filing_date": "2023-03-31"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 0.5,
-          "ai_density": 0.013,
-          "substance_ratio": 0.99,
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
           "filing_count": 2,
-          "filing_date": "2024-02-09"
+          "filing_date": "2024-03-08"
         },
         {
           "quarter": "Q2 2023",
@@ -1658,73 +2352,81 @@
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 3,
-          "filing_date": "2023-05-12"
+          "filing_date": "2023-06-30"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 0.1,
+          "ai_density": 0.005,
+          "substance_ratio": 0.998,
+          "filing_count": 2,
+          "filing_date": "2024-05-31"
         },
         {
           "quarter": "Q3 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-08-08"
+          "filing_count": 2,
+          "filing_date": "2023-09-28"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 4,
+          "filing_date": "2024-08-09"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 4,
-          "filing_date": "2022-12-29"
+          "filing_count": 1,
+          "filing_date": "2022-11-03"
         },
         {
           "quarter": "Q4 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 4,
-          "filing_date": "2023-12-18"
+          "filing_count": 1,
+          "filing_date": "2023-11-02"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-10-31"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "MSFT": {
       "symbol": "MSFT",
       "name": "Microsoft",
       "cik": "789019",
-      "latest_rhetoric_score": 5.7,
-      "rhetoric_trend": "rising",
+      "latest_rhetoric_score": 4.2,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
-          "rhetoric_score": 7.4,
-          "ai_density": 0.149,
-          "substance_ratio": 0.833,
-          "filing_count": 1,
-          "filing_date": "2023-01-18"
+          "rhetoric_score": 4.4,
+          "ai_density": 0.104,
+          "substance_ratio": 0.903,
+          "filing_count": 2,
+          "filing_date": "2023-01-24"
         },
         {
           "quarter": "Q1 2024",
-          "rhetoric_score": 14.4,
-          "ai_density": 0.219,
-          "substance_ratio": 0.667,
-          "filing_count": 1,
-          "filing_date": "2024-01-19"
-        },
-        {
-          "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-01-22"
-        },
-        {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 4.5,
-          "ai_density": 0.235,
-          "substance_ratio": 0.916,
-          "filing_count": 1,
-          "filing_date": "2026-01-28"
+          "rhetoric_score": 8.2,
+          "ai_density": 0.153,
+          "substance_ratio": 0.815,
+          "filing_count": 2,
+          "filing_date": "2024-01-30"
         },
         {
           "quarter": "Q2 2023",
@@ -1743,67 +2445,51 @@
           "filing_date": "2024-04-25"
         },
         {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 4.8,
-          "ai_density": 0.226,
-          "substance_ratio": 0.908,
-          "filing_count": 1,
-          "filing_date": "2025-04-30"
-        },
-        {
           "quarter": "Q3 2023",
-          "rhetoric_score": 0.7,
-          "ai_density": 0.041,
-          "substance_ratio": 0.987,
-          "filing_count": 1,
+          "rhetoric_score": 0.3,
+          "ai_density": 0.021,
+          "substance_ratio": 0.994,
+          "filing_count": 2,
           "filing_date": "2023-07-25"
         },
         {
           "quarter": "Q3 2024",
-          "rhetoric_score": 2.0,
-          "ai_density": 0.159,
-          "substance_ratio": 0.97,
-          "filing_count": 1,
+          "rhetoric_score": 2.1,
+          "ai_density": 0.135,
+          "substance_ratio": 0.963,
+          "filing_count": 2,
           "filing_date": "2024-08-21"
         },
         {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 3.8,
-          "ai_density": 0.192,
-          "substance_ratio": 0.929,
-          "filing_count": 1,
-          "filing_date": "2025-07-30"
-        },
-        {
           "quarter": "Q4 2022",
-          "rhetoric_score": 0.6,
-          "ai_density": 0.032,
-          "substance_ratio": 0.988,
-          "filing_count": 1,
-          "filing_date": "2022-10-25"
+          "rhetoric_score": 0.3,
+          "ai_density": 0.016,
+          "substance_ratio": 0.994,
+          "filing_count": 2,
+          "filing_date": "2022-12-16"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 0.5,
-          "ai_density": 0.024,
-          "substance_ratio": 0.991,
-          "filing_count": 3,
-          "filing_date": "2023-11-06"
+          "rhetoric_score": 3.1,
+          "ai_density": 0.02,
+          "substance_ratio": 0.925,
+          "filing_count": 7,
+          "filing_date": "2023-12-08"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 5.7,
-          "ai_density": 0.221,
-          "substance_ratio": 0.883,
+          "rhetoric_score": 4.2,
+          "ai_density": 0.214,
+          "substance_ratio": 0.921,
           "filing_count": 1,
-          "filing_date": "2024-12-03"
+          "filing_date": "2024-10-30"
         }
       ],
-      "filings_analyzed": 15
+      "filings_analyzed": 20
     },
     "GOOGL": {
       "symbol": "GOOGL",
-      "name": "Alphabet",
+      "name": "Alphabet Inc.",
       "cik": "1652044",
       "latest_rhetoric_score": 2.4,
       "rhetoric_trend": "stable",
@@ -1857,6 +2543,14 @@
           "filing_date": "2025-05-06"
         },
         {
+          "quarter": "Q2 2026",
+          "rhetoric_score": 2.6,
+          "ai_density": 0.017,
+          "substance_ratio": 0.938,
+          "filing_count": 4,
+          "filing_date": "2026-06-05"
+        },
+        {
           "quarter": "Q3 2024",
           "rhetoric_score": 1.4,
           "ai_density": 0.084,
@@ -1897,7 +2591,7 @@
           "filing_date": "2025-10-29"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "AMZN": {
       "symbol": "AMZN",
@@ -1911,55 +2605,55 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-01-06"
+          "filing_count": 3,
+          "filing_date": "2023-02-02"
         },
         {
-          "quarter": "Q1 2026",
+          "quarter": "Q1 2024",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2026-03-13"
+          "filing_count": 1,
+          "filing_date": "2024-02-01"
         },
         {
           "quarter": "Q2 2023",
-          "rhetoric_score": 8.2,
-          "ai_density": 0.22,
-          "substance_ratio": 0.822,
-          "filing_count": 2,
+          "rhetoric_score": 5.5,
+          "ai_density": 0.147,
+          "substance_ratio": 0.881,
+          "filing_count": 3,
           "filing_date": "2023-05-26"
         },
         {
           "quarter": "Q2 2024",
-          "rhetoric_score": 6.8,
-          "ai_density": 0.025,
-          "substance_ratio": 0.833,
-          "filing_count": 3,
+          "rhetoric_score": 4.1,
+          "ai_density": 0.015,
+          "substance_ratio": 0.9,
+          "filing_count": 5,
           "filing_date": "2024-05-24"
-        },
-        {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 13.8,
-          "ai_density": 0.091,
-          "substance_ratio": 0.666,
-          "filing_count": 2,
-          "filing_date": "2025-05-22"
         },
         {
           "quarter": "Q3 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
+          "filing_count": 2,
           "filing_date": "2023-09-13"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 0.0,
+          "ai_density": 0.0,
+          "substance_ratio": 1.0,
+          "filing_count": 1,
+          "filing_date": "2024-08-01"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
+          "filing_count": 3,
           "filing_date": "2022-12-01"
         },
         {
@@ -1967,27 +2661,11 @@
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
+          "filing_count": 2,
           "filing_date": "2023-11-01"
-        },
-        {
-          "quarter": "Q4 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-10-31"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-10-30"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "META": {
       "symbol": "META",
@@ -2005,6 +2683,14 @@
           "filing_date": "2025-02-20"
         },
         {
+          "quarter": "Q1 2026",
+          "rhetoric_score": 0.6,
+          "ai_density": 0.03,
+          "substance_ratio": 0.99,
+          "filing_count": 2,
+          "filing_date": "2026-01-28"
+        },
+        {
           "quarter": "Q2 2024",
           "rhetoric_score": 36.0,
           "ai_density": 0.348,
@@ -2019,6 +2705,14 @@
           "substance_ratio": 0.806,
           "filing_count": 3,
           "filing_date": "2025-05-30"
+        },
+        {
+          "quarter": "Q2 2026",
+          "rhetoric_score": 0.6,
+          "ai_density": 0.036,
+          "substance_ratio": 0.99,
+          "filing_count": 2,
+          "filing_date": "2026-04-29"
         },
         {
           "quarter": "Q3 2024",
@@ -2053,22 +2747,22 @@
           "filing_date": "2025-12-19"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "ORCL": {
       "symbol": "ORCL",
-      "name": "Oracle",
+      "name": "Oracle Corporation",
       "cik": "1341439",
-      "latest_rhetoric_score": 5.1,
-      "rhetoric_trend": "rising",
+      "latest_rhetoric_score": 2.4,
+      "rhetoric_trend": "stable",
       "quarters": [
         {
           "quarter": "Q1 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-02-06"
+          "filing_count": 2,
+          "filing_date": "2023-03-09"
         },
         {
           "quarter": "Q1 2024",
@@ -2080,19 +2774,11 @@
         },
         {
           "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2025-02-03"
-        },
-        {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 1.4,
-          "ai_density": 0.074,
-          "substance_ratio": 0.976,
-          "filing_count": 2,
-          "filing_date": "2026-03-10"
+          "rhetoric_score": 0.7,
+          "ai_density": 0.035,
+          "substance_ratio": 0.987,
+          "filing_count": 4,
+          "filing_date": "2025-03-10"
         },
         {
           "quarter": "Q2 2023",
@@ -2103,70 +2789,62 @@
           "filing_date": "2023-06-12"
         },
         {
-          "quarter": "Q2 2025",
-          "rhetoric_score": 0.4,
-          "ai_density": 0.018,
-          "substance_ratio": 0.993,
+          "quarter": "Q2 2024",
+          "rhetoric_score": 2.1,
+          "ai_density": 0.106,
+          "substance_ratio": 0.961,
           "filing_count": 1,
-          "filing_date": "2025-06-11"
+          "filing_date": "2024-06-11"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 2.9,
+          "ai_density": 0.169,
+          "substance_ratio": 0.947,
+          "filing_count": 1,
+          "filing_date": "2023-09-11"
         },
         {
           "quarter": "Q3 2024",
-          "rhetoric_score": 1.3,
-          "ai_density": 0.071,
-          "substance_ratio": 0.976,
-          "filing_count": 1,
-          "filing_date": "2024-09-09"
-        },
-        {
-          "quarter": "Q3 2025",
-          "rhetoric_score": 1.5,
-          "ai_density": 0.077,
-          "substance_ratio": 0.972,
+          "rhetoric_score": 0.7,
+          "ai_density": 0.035,
+          "substance_ratio": 0.988,
           "filing_count": 2,
-          "filing_date": "2025-09-26"
+          "filing_date": "2024-09-27"
         },
         {
           "quarter": "Q4 2022",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2022-11-18"
+          "filing_count": 4,
+          "filing_date": "2022-12-12"
         },
         {
           "quarter": "Q4 2023",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2023-11-17"
+          "rhetoric_score": 0.2,
+          "ai_density": 0.009,
+          "substance_ratio": 0.996,
+          "filing_count": 2,
+          "filing_date": "2023-12-11"
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2024-11-18"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 5.1,
-          "ai_density": 0.256,
-          "substance_ratio": 0.904,
-          "filing_count": 1,
-          "filing_date": "2025-12-10"
+          "rhetoric_score": 2.4,
+          "ai_density": 0.128,
+          "substance_ratio": 0.956,
+          "filing_count": 2,
+          "filing_date": "2024-12-09"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "PLTR": {
       "symbol": "PLTR",
-      "name": "Palantir",
+      "name": "Palantir Technologies",
       "cik": "1321655",
-      "latest_rhetoric_score": 10.8,
-      "rhetoric_trend": "rising",
+      "latest_rhetoric_score": 0.8,
+      "rhetoric_trend": "falling",
       "quarters": [
         {
           "quarter": "Q1 2023",
@@ -2209,6 +2887,14 @@
           "filing_date": "2024-06-10"
         },
         {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 0.4,
+          "ai_density": 0.028,
+          "substance_ratio": 0.993,
+          "filing_count": 2,
+          "filing_date": "2025-06-09"
+        },
+        {
           "quarter": "Q3 2023",
           "rhetoric_score": 0.8,
           "ai_density": 0.052,
@@ -2223,6 +2909,14 @@
           "substance_ratio": 0.986,
           "filing_count": 1,
           "filing_date": "2024-08-05"
+        },
+        {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 0.8,
+          "ai_density": 0.054,
+          "substance_ratio": 0.986,
+          "filing_count": 1,
+          "filing_date": "2025-08-04"
         },
         {
           "quarter": "Q4 2022",
@@ -2247,16 +2941,24 @@
           "substance_ratio": 0.736,
           "filing_count": 2,
           "filing_date": "2024-11-14"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 0.8,
+          "ai_density": 0.054,
+          "substance_ratio": 0.986,
+          "filing_count": 1,
+          "filing_date": "2025-11-03"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "CRM": {
       "symbol": "CRM",
       "name": "Salesforce",
       "cik": "1108524",
-      "latest_rhetoric_score": 0.5,
-      "rhetoric_trend": "stable",
+      "latest_rhetoric_score": 21.1,
+      "rhetoric_trend": "rising",
       "quarters": [
         {
           "quarter": "Q1 2024",
@@ -2307,6 +3009,14 @@
           "filing_date": "2024-09-05"
         },
         {
+          "quarter": "Q3 2025",
+          "rhetoric_score": 1.2,
+          "ai_density": 0.082,
+          "substance_ratio": 0.98,
+          "filing_count": 2,
+          "filing_date": "2025-09-03"
+        },
+        {
           "quarter": "Q4 2023",
           "rhetoric_score": 1.3,
           "ai_density": 0.087,
@@ -2321,64 +3031,80 @@
           "substance_ratio": 0.992,
           "filing_count": 3,
           "filing_date": "2024-12-10"
+        },
+        {
+          "quarter": "Q4 2025",
+          "rhetoric_score": 21.1,
+          "ai_density": 0.959,
+          "substance_ratio": 0.588,
+          "filing_count": 2,
+          "filing_date": "2025-11-18"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "NOW": {
       "symbol": "NOW",
       "name": "ServiceNow",
       "cik": "1373715",
-      "latest_rhetoric_score": 0.0,
-      "rhetoric_trend": "falling",
+      "latest_rhetoric_score": 12.3,
+      "rhetoric_trend": "rising",
       "quarters": [
         {
-          "quarter": "Q1 2025",
+          "quarter": "Q1 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
           "filing_count": 1,
-          "filing_date": "2025-02-12"
+          "filing_date": "2023-01-25"
         },
         {
-          "quarter": "Q1 2026",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "quarter": "Q1 2024",
+          "rhetoric_score": 3.9,
+          "ai_density": 0.289,
+          "substance_ratio": 0.937,
           "filing_count": 1,
-          "filing_date": "2026-02-11"
+          "filing_date": "2024-01-24"
+        },
+        {
+          "quarter": "Q1 2025",
+          "rhetoric_score": 2.3,
+          "ai_density": 0.156,
+          "substance_ratio": 0.961,
+          "filing_count": 3,
+          "filing_date": "2025-03-10"
         },
         {
           "quarter": "Q2 2023",
           "rhetoric_score": 0.0,
           "ai_density": 0.0,
           "substance_ratio": 1.0,
-          "filing_count": 2,
+          "filing_count": 3,
           "filing_date": "2023-06-02"
         },
         {
           "quarter": "Q2 2024",
-          "rhetoric_score": 0.9,
-          "ai_density": 0.061,
-          "substance_ratio": 0.986,
-          "filing_count": 1,
-          "filing_date": "2024-04-24"
+          "rhetoric_score": 0.5,
+          "ai_density": 0.03,
+          "substance_ratio": 0.993,
+          "filing_count": 2,
+          "filing_date": "2024-05-23"
         },
         {
           "quarter": "Q2 2025",
-          "rhetoric_score": 4.0,
-          "ai_density": 0.288,
-          "substance_ratio": 0.933,
-          "filing_count": 2,
+          "rhetoric_score": 2.7,
+          "ai_density": 0.192,
+          "substance_ratio": 0.955,
+          "filing_count": 3,
           "filing_date": "2025-05-30"
         },
         {
-          "quarter": "Q2 2026",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 2,
-          "filing_date": "2026-05-15"
+          "quarter": "Q3 2023",
+          "rhetoric_score": 3.1,
+          "ai_density": 0.225,
+          "substance_ratio": 0.95,
+          "filing_count": 1,
+          "filing_date": "2023-07-26"
         },
         {
           "quarter": "Q3 2024",
@@ -2390,11 +3116,11 @@
         },
         {
           "quarter": "Q3 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "rhetoric_score": 8.7,
+          "ai_density": 0.606,
+          "substance_ratio": 0.855,
           "filing_count": 1,
-          "filing_date": "2025-09-26"
+          "filing_date": "2025-07-23"
         },
         {
           "quarter": "Q4 2022",
@@ -2414,22 +3140,14 @@
         },
         {
           "quarter": "Q4 2024",
-          "rhetoric_score": 20.0,
-          "ai_density": 0.0,
-          "substance_ratio": 0.5,
-          "filing_count": 1,
-          "filing_date": "2024-12-27"
-        },
-        {
-          "quarter": "Q4 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
+          "rhetoric_score": 12.3,
+          "ai_density": 0.165,
+          "substance_ratio": 0.711,
           "filing_count": 2,
-          "filing_date": "2025-12-23"
+          "filing_date": "2024-12-27"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
     },
     "SNOW": {
       "symbol": "SNOW",
@@ -2456,11 +3174,11 @@
         },
         {
           "quarter": "Q1 2025",
-          "rhetoric_score": 0.0,
-          "ai_density": 0.0,
-          "substance_ratio": 1.0,
-          "filing_count": 1,
-          "filing_date": "2025-02-26"
+          "rhetoric_score": 0.6,
+          "ai_density": 0.043,
+          "substance_ratio": 0.989,
+          "filing_count": 3,
+          "filing_date": "2025-03-06"
         },
         {
           "quarter": "Q2 2023",
@@ -2477,6 +3195,14 @@
           "substance_ratio": 0.956,
           "filing_count": 1,
           "filing_date": "2024-05-22"
+        },
+        {
+          "quarter": "Q2 2025",
+          "rhetoric_score": 25.9,
+          "ai_density": 1.488,
+          "substance_ratio": 0.533,
+          "filing_count": 2,
+          "filing_date": "2025-05-21"
         },
         {
           "quarter": "Q3 2023",
@@ -2519,88 +3245,170 @@
           "filing_date": "2024-11-20"
         }
       ],
-      "filings_analyzed": 16
+      "filings_analyzed": 20
+    },
+    "AI": {
+      "symbol": "AI",
+      "name": "C3.ai",
+      "cik": "1577526",
+      "latest_rhetoric_score": 45.0,
+      "rhetoric_trend": "rising",
+      "quarters": [
+        {
+          "quarter": "Q1 2023",
+          "rhetoric_score": 33.3,
+          "ai_density": 1.238,
+          "substance_ratio": 0.316,
+          "filing_count": 2,
+          "filing_date": "2023-03-02"
+        },
+        {
+          "quarter": "Q1 2024",
+          "rhetoric_score": 30.0,
+          "ai_density": 1.175,
+          "substance_ratio": 0.391,
+          "filing_count": 2,
+          "filing_date": "2024-02-28"
+        },
+        {
+          "quarter": "Q2 2023",
+          "rhetoric_score": 29.5,
+          "ai_density": 1.097,
+          "substance_ratio": 0.394,
+          "filing_count": 2,
+          "filing_date": "2023-05-31"
+        },
+        {
+          "quarter": "Q2 2024",
+          "rhetoric_score": 30.7,
+          "ai_density": 0.999,
+          "substance_ratio": 0.352,
+          "filing_count": 3,
+          "filing_date": "2024-06-25"
+        },
+        {
+          "quarter": "Q3 2023",
+          "rhetoric_score": 26.8,
+          "ai_density": 1.234,
+          "substance_ratio": 0.48,
+          "filing_count": 2,
+          "filing_date": "2023-09-11"
+        },
+        {
+          "quarter": "Q3 2024",
+          "rhetoric_score": 24.4,
+          "ai_density": 1.018,
+          "substance_ratio": 0.512,
+          "filing_count": 2,
+          "filing_date": "2024-09-04"
+        },
+        {
+          "quarter": "Q4 2022",
+          "rhetoric_score": 31.4,
+          "ai_density": 1.065,
+          "substance_ratio": 0.344,
+          "filing_count": 2,
+          "filing_date": "2022-12-07"
+        },
+        {
+          "quarter": "Q4 2023",
+          "rhetoric_score": 33.5,
+          "ai_density": 1.278,
+          "substance_ratio": 0.318,
+          "filing_count": 2,
+          "filing_date": "2023-12-06"
+        },
+        {
+          "quarter": "Q4 2024",
+          "rhetoric_score": 45.0,
+          "ai_density": 3.169,
+          "substance_ratio": 0.254,
+          "filing_count": 3,
+          "filing_date": "2024-12-09"
+        }
+      ],
+      "filings_analyzed": 20
     }
   },
   "sector_trend": [
     {
       "quarter": "Q1 2023",
-      "sector_avg_rhetoric_score": 2.2,
-      "companies_count": 22
+      "sector_avg_rhetoric_score": 2.8,
+      "companies_count": 30
     },
     {
       "quarter": "Q1 2024",
-      "sector_avg_rhetoric_score": 1.7,
-      "companies_count": 23
+      "sector_avg_rhetoric_score": 2.5,
+      "companies_count": 33
     },
     {
       "quarter": "Q1 2025",
-      "sector_avg_rhetoric_score": 4.1,
-      "companies_count": 21
+      "sector_avg_rhetoric_score": 4.9,
+      "companies_count": 27
     },
     {
       "quarter": "Q1 2026",
-      "sector_avg_rhetoric_score": 2.6,
-      "companies_count": 8
+      "sector_avg_rhetoric_score": 7.7,
+      "companies_count": 7
     },
     {
       "quarter": "Q2 2023",
-      "sector_avg_rhetoric_score": 2.8,
-      "companies_count": 23
+      "sector_avg_rhetoric_score": 2.3,
+      "companies_count": 32
     },
     {
       "quarter": "Q2 2024",
-      "sector_avg_rhetoric_score": 3.7,
-      "companies_count": 24
+      "sector_avg_rhetoric_score": 4.0,
+      "companies_count": 34
     },
     {
       "quarter": "Q2 2025",
-      "sector_avg_rhetoric_score": 5.1,
-      "companies_count": 20
+      "sector_avg_rhetoric_score": 5.8,
+      "companies_count": 21
     },
     {
       "quarter": "Q2 2026",
-      "sector_avg_rhetoric_score": 0.0,
-      "companies_count": 2
+      "sector_avg_rhetoric_score": 5.4,
+      "companies_count": 5
     },
     {
       "quarter": "Q3 2023",
-      "sector_avg_rhetoric_score": 0.6,
-      "companies_count": 20
+      "sector_avg_rhetoric_score": 2.2,
+      "companies_count": 30
     },
     {
       "quarter": "Q3 2024",
-      "sector_avg_rhetoric_score": 1.5,
-      "companies_count": 23
+      "sector_avg_rhetoric_score": 2.9,
+      "companies_count": 34
     },
     {
       "quarter": "Q3 2025",
-      "sector_avg_rhetoric_score": 2.8,
-      "companies_count": 14
+      "sector_avg_rhetoric_score": 1.8,
+      "companies_count": 15
     },
     {
       "quarter": "Q4 2022",
-      "sector_avg_rhetoric_score": 0.2,
-      "companies_count": 23
+      "sector_avg_rhetoric_score": 1.7,
+      "companies_count": 31
     },
     {
       "quarter": "Q4 2023",
-      "sector_avg_rhetoric_score": 1.4,
-      "companies_count": 24
+      "sector_avg_rhetoric_score": 2.7,
+      "companies_count": 32
     },
     {
       "quarter": "Q4 2024",
-      "sector_avg_rhetoric_score": 3.5,
-      "companies_count": 22
+      "sector_avg_rhetoric_score": 5.6,
+      "companies_count": 32
     },
     {
       "quarter": "Q4 2025",
-      "sector_avg_rhetoric_score": 3.1,
-      "companies_count": 13
+      "sector_avg_rhetoric_score": 4.6,
+      "companies_count": 10
     }
   ],
   "meta": {
-    "companies_analyzed": 26,
+    "companies_analyzed": 34,
     "quarters_covered": 15,
     "first_quarter": "Q1 2023",
     "last_quarter": "Q4 2025"
