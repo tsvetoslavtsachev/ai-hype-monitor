@@ -17,6 +17,7 @@ PIT за derived: known_at = max(known_at на компонентите); `deriv
 
 import json
 from datetime import date, timedelta
+from functools import lru_cache
 from pathlib import Path
 
 try:  # работи и като модул (src.v2), и standalone
@@ -33,8 +34,9 @@ def _facts_path(ticker: str) -> Path:
     return FACTS_DIR / f"{ticker}.json"
 
 
+@lru_cache(maxsize=None)
 def load(ticker: str) -> dict:
-    """Целият facts обект за тикера ({} ако липсва)."""
+    """Целият facts обект за тикера ({} ако липсва). Кеширан — не мутирай резултата."""
     p = _facts_path(ticker)
     if not p.exists():
         return {}

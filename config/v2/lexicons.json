@@ -1,0 +1,35 @@
+{
+  "version": "v1",
+  "created": "2026-07-09",
+  "base_source": "_hype_redesign_analytics/probes/c3_results.json (lexicon_promise / lexicon_delivery, v0)",
+  "note": "Substring match, case-insensitive, over the clean raw 8-K corpus. Extensions vs v0 are conservative (obvious synonyms/inflections only); see `additions`. promise_share = P/(P+D) density.",
+  "promise": [
+    "opportunity", "opportunities", "transform", "transformation",
+    "revolutioniz", "vision", "roadmap", "potential", "we believe",
+    "excited", "momentum", "positioned", "next frontier", "promise",
+    "era of ai", "ai journey",
+    "poised", "on track", "unlock", "will enable", "next generation"
+  ],
+  "delivery": [
+    "delivered", "deployed", "deployment", "in production", "shipped",
+    "shipping", "record revenue", "revenue growth", "generated",
+    "adoption", "run-rate", "monetization", "bookings", "backlog", "billings",
+    "ramping", "delivering", "deployments", "grew", "generating"
+  ],
+  "additions": {
+    "promise": {
+      "poised": "synonym of 'positioned'",
+      "on track": "forward-looking, synonym of 'roadmap'",
+      "unlock": "aspirational AI framing (unlock opportunity/potential)",
+      "will enable": "forward capability claim, synonym of 'potential'/'future'",
+      "next generation": "aspirational/forward product framing"
+    },
+    "delivery": {
+      "ramping": "production ramp = realized delivery",
+      "delivering": "present-tense inflection of 'delivered'",
+      "deployments": "plural inflection of 'deployment'",
+      "grew": "past-tense synonym of 'revenue growth'",
+      "generating": "present-tense inflection of 'generated'"
+    }
+  }
+}
