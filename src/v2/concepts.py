@@ -58,3 +58,27 @@ def tag_priority(concept: str, xbrl_tag: str) -> int:
     """Индекс на тага в веригата (по-малък = по-приоритетен). Непознат → голям."""
     chain = CONCEPT_CHAINS.get(concept, [])
     return chain.index(xbrl_tag) if xbrl_tag in chain else len(chain)
+
+
+def period_days(period_start: str, period_end: str) -> int:
+    """Дни в периода (0 за instant, където start == end)."""
+    from datetime import date
+    return (date.fromisoformat(period_end) - date.fromisoformat(period_start)).days
+
+
+# Класификация на дюрацията. Тримесечните серии остават Q; H/9M/FY се пазят,
+# за да е възможна счетоводната ИДЕНТИЧНОСТ за TTM/Q4 (не прокси):
+#   TTM(край на Qk) = FY_прев + YTD_k_текуща - YTD_k_минала  ⟺  Q4 = FY - 9M.
+def period_type(period_start: str, period_end: str) -> str:
+    if period_start == period_end:
+        return "instant"
+    d = period_days(period_start, period_end)
+    if QUARTER_MIN_DAYS <= d <= QUARTER_MAX_DAYS:
+        return "Q"
+    if 170 <= d <= 195:
+        return "H"      # 6-месечно YTD (2 тримесечия)
+    if 260 <= d <= 285:
+        return "9M"     # 9-месечно YTD (3 тримесечия)
+    if 350 <= d <= 380:
+        return "FY"     # 12-месечно
+    return "other"

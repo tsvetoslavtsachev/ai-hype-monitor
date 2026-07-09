@@ -6,8 +6,9 @@ LLM НИКОГА в числовия път — тук всичко е арит�
 
 За всеки тикер от universe.csv:
   1. дърпа https://data.sec.gov/api/xbrl/companyfacts/CIK{10}.json
-  2. по fallback веригите (config: src/v2/concepts.py) вади ТРИМЕСЕЧНИ серии
-     (duration факти с 80..100 дни) + shares (instant, последна per filing)
+  2. по fallback веригите (config: src/v2/concepts.py) вади ВСИЧКИ duration
+     факти (Q + H/9M YTD + FY) + shares (instant); тримесечните серии се
+     филтрират в facts_store, а YTD/FY хранят TTM/Q4 идентичността
   3. записва app/data/v2/facts/{TICKER}.json — append-only, bitemporal:
      всеки запис {concept, xbrl_tag, period_start, period_end, value, unit,
      form, known_at=filed, accn}; всички винтиджи се пазят (ревизиите не трият).
@@ -23,7 +24,6 @@ import csv
 import json
 import sys
 import time
-from datetime import date
 from pathlib import Path
 
 try:
@@ -34,9 +34,7 @@ except ImportError:
     import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from concepts import (  # noqa: E402
-    CONCEPT_CHAINS, CONCEPT_KIND, QUARTER_MIN_DAYS, QUARTER_MAX_DAYS,
-)
+from concepts import CONCEPT_CHAINS, CONCEPT_KIND, period_type  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 UNIVERSE = ROOT / "config" / "universe.csv"
@@ -122,12 +120,8 @@ def _iter_tag_facts(facts_json: dict, xbrl_tag: str):
             yield unit, e
 
 
-def _days(a: str, b: str) -> int:
-    return (date.fromisoformat(b) - date.fromisoformat(a)).days
-
-
 def extract_records(facts_json: dict) -> list:
-    """Вади тримесечни (duration) + instant (shares) записи по веригите."""
+    """Вади ВСИЧКИ duration (Q/H/9M/FY) + instant (shares) записи по веригите."""
     records = []
     for concept, chain in CONCEPT_CHAINS.items():
         kind = CONCEPT_KIND[concept]
@@ -141,9 +135,9 @@ def extract_records(facts_json: dict) -> list:
                     start = e.get("start")
                     if not start:
                         continue
-                    d = _days(start, end)
-                    if d < QUARTER_MIN_DAYS or d > QUARTER_MAX_DAYS:
-                        continue  # само тримесечни; годишни/YTD се пропускат
+                    # Пазим ВСИЧКИ дюрации (Q + H/9M YTD + FY). Тримесечните серии
+                    # се получават с филтър в facts_store; YTD/FY са нужни за
+                    # счетоводната ИДЕНТИЧНОСТ на TTM/Q4 (facts_store.ttm_asof).
                     period_start = start
                 else:  # instant (shares)
                     period_start = end
@@ -237,10 +231,11 @@ def main():
         path = FACTS_DIR / f"{sym}.json"
         merged = merge_records(load_existing(path), new)
         path.write_text(canonical_dump(sym, cik, entity, merged), encoding="utf-8")
-        # покритие: концепт -> брой различни тримесечия
+        # покритие: концепт -> брой различни ТРИМЕСЕЧИЯ (Q за duration, instant за shares)
         cov = {}
         for c in CONCEPT_CHAINS:
-            periods = {rr["period_end"] for rr in merged if rr["concept"] == c}
+            periods = {rr["period_end"] for rr in merged if rr["concept"] == c
+                       and period_type(rr["period_start"], rr["period_end"]) in ("Q", "instant")}
             cov[c] = len(periods)
         coverage[sym] = cov
         print(f"[{sym}] {entity}: {len(merged)} records | "
