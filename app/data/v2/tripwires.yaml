@@ -1,0 +1,89 @@
+# Журнал на пукнатините T1-T10 (Фаза 4, 4.1)
+# Източник: _hype_redesign_analytics/TRIPWIRE-CATALOG.md (08.07.2026).
+# Дискретен слой ИЗВЪН числото G (журналът се показва ДО G, никога В G).
+# Статусите се сменят САМО ръчно (watcher-ите пишат КАНДИДАТИ; човек потвърждава).
+meta:
+  source: "TRIPWIRE-CATALOG.md (2026-07-08)"
+  as_of: "2026-07-08"
+  note: "T1-T4 fired to 2026-07-08; T5-T10 not fired. Statuses are human-set."
+tripwires:
+  - id: T1
+    name: "Хиперскейлър продава собствен компют навън"
+    definition: "Хиперскейлър обявява продажба/отдаване на собствен изчислителен капацитет"
+    status: fired
+    fired_date: "2026-07-01"
+    source: "Meta Compute (Bloomberg 01.07.2026); SpaceX по-рано"
+    bearish: "Синхронен излишък при няколко играча = върхът на строителния цикъл"
+    bullish: "Ражда се ликвиден вторичен пазар за компют = зрялост"
+  - id: T2
+    name: "Играч продава компют на самите лаборатории"
+    definition: "Инфраструктурен играч отдава капацитет на AI лаборатории (не корпоративни клиенти)"
+    status: fired
+    fired_date: null   # SpaceX Colossus 1 -> Anthropic (прецедент; точна дата не е в каталога)
+    source: "SpaceX Colossus 1 (~220k GPU) -> Anthropic (~$1.25 млрд./мес.)"
+    bearish: "Крайното търсене е замаскирано; приходът се самозахранва"
+    bullish: "Take-or-pay от кредитоспособни котви = качествен backlog"
+  - id: T3
+    name: ">=3 играча отдават капацитет в 90-дневен прозорец"
+    definition: "Клъстеринг: три или повече играча отдават капацитет в рамките на 90 дни"
+    status: fired
+    fired_date: "2026-07-01"
+    source: "SpaceX, Meta (01.07), Reflection (Colossus 2 GB300, от 01.07)"
+    bearish: "Синхронният клъстер потвърждава системен, не единичен, излишък"
+    bullish: "Едновременна зрялост на пазара за вторичен компют"
+  - id: T4
+    name: "Публично признание за забавен AI-прогрес от хиперскейлър CEO"
+    definition: "CEO на хиперскейлър публично признава забавяне на AI прогреса/ползите"
+    status: fired
+    fired_date: "2026-07-02"
+    source: "Zuckerberg town hall (Reuters ексклузив, 02.07.2026): агентите 'hasn't accelerated as expected'"
+    bearish: "Капацитетът се строи по-бързо от способността, която трябва да го оправдае"
+    bullish: "Честна калибровка с посочен прозорец (3-6 мес.), не отказ от тезата"
+  - id: T5
+    name: "Първо capex-ОРЯЗВАНЕ (не забавяне) с 'efficiency' рамка"
+    definition: "Хиперскейлър РЕЖЕ (не забавя) capex, рамкиран като ефективност"
+    status: not_fired
+    fired_date: null
+    source: "MSFT freeze е пауза, не орязване [Н]"
+    bearish: "Строителният цикъл се обръща надолу"
+    bullish: "Дисциплина; ROI фокус, не паника"
+  - id: T6
+    name: "Устойчив (>1 трим.) спад на GPU наемните индекси"
+    definition: "GPU наемните индекси падат устойчиво повече от едно тримесечие"
+    status: not_fired
+    fired_date: null
+    source: "SemiAnalysis H100: +38% окт'25->март'26 (КОНТРА-сигнал); май-юни неясно"
+    bearish: "Появяващ се глут (спот-крах)"
+    bullish: "Падаща цена на интелигентността = ускорено внедряване"
+  - id: T7
+    name: "Reciprocal/round-trip приходни структури в SEC отчети"
+    definition: "Продажба на капацитет + едновременна покупка от същия контрагент, клъстер в края на тримесечие"
+    status: not_fired
+    fired_date: null
+    source: "Аналогът: NVDA-CoreWeave backstop е ЕДНОпосочен, не reciprocal. Watcher: t7_reciprocal.py"
+    bearish: "Приходът се самозахранва (dot-com/GX шаблон: изпревари фалитите с 6-18 мес.)"
+    bullish: "Take-or-pay backstop = обичаен инструмент при нови капиталово-интензивни пазари"
+  - id: T8
+    name: "Restatement/SEC запитване към AI-инфраструктурен играч"
+    definition: "Преизчисляване на отчет или SEC разследване към AI-инфраструктурен играч"
+    status: not_fired
+    fired_date: null
+    source: "-"
+    bearish: "Счетоводна пукнатина потвърдена от регулатор"
+    bullish: "Изолиран инцидент, не системен"
+  - id: T9
+    name: "S-1 AI-дял >65% ИЛИ не-tech дял >85%"
+    definition: "Froth: дял S-1 с 'artificial intelligence' >65% (T9a) ИЛИ не-tech дял на споменаващите >85% (T9b)"
+    status: not_fired
+    fired_date: null
+    source: "froth.json (58.6% / 78.2% към 2026Q2). Прагове: zones_signoff.json.tripwire_T9. Watcher: t9_froth.py"
+    bearish: "Буквите A-I се лепят върху всичко, което иска капитал = дифузия на пяната"
+    bullish: "Дори на пика част от дифузията е реално внедряване, не поза"
+  - id: T10
+    name: "Смяна на амортизационни допускания НАДОЛУ от втори хиперскейлър"
+    definition: "Втори хиперскейлър съкращава useful-life на сървъри/GPU (10-K)"
+    status: not_fired
+    fired_date: null
+    source: "[Н] - иска отделен годишен 10-K diff. Watcher: t10_depreciation.py (stub)"
+    bearish: "Признание, че чиповете се амортизират по-бързо от планираното"
+    bullish: "Консервативно счетоводство; изпреварва реалността"
