@@ -19,7 +19,7 @@ sys.path.insert(0, str(ROOT / "src" / "v2"))
 
 import facts_store as fs        # noqa: E402
 import collect_xbrl as cx       # noqa: E402
-from concepts import CONCEPT_CHAINS  # noqa: E402
+from concepts import CONCEPT_CHAINS, period_type  # noqa: E402
 
 FACTS_DIR = ROOT / "app" / "data" / "v2" / "facts"
 FACT_FILES = sorted(glob.glob(str(FACTS_DIR / "*.json")))
@@ -61,10 +61,11 @@ def test_get_asof_resolves_latest_revenue():
 
 
 def test_get_asof_boundary():
-    """as_of преди първото подаване -> None; на самото подаване -> вече видимо."""
+    """as_of преди първото ТРИМЕСЕЧНО подаване -> None; на самото -> вече видимо."""
     from datetime import date, timedelta
-    recs = fs.records("NVDA", "revenue")
-    earliest = min(r["known_at"] for r in recs)
+    q = [r for r in fs.records("NVDA", "revenue")
+         if period_type(r["period_start"], r["period_end"]) == "Q"]
+    earliest = min(r["known_at"] for r in q)
     before = (date.fromisoformat(earliest) - timedelta(days=1)).isoformat()
     assert fs.get_asof("NVDA", "revenue", before) is None
     rec = fs.get_asof("NVDA", "revenue", earliest)
@@ -91,3 +92,39 @@ def test_none_propagation_missing_concept():
     # но налични концепти НЕ са None
     assert fs.latest("ASML", "shares") is not None
     assert fs.latest("NVDA", "revenue") is not None
+
+
+# ── TTM чрез счетоводна идентичност (Фаза-1 амендмент) ──────────────────────
+
+def test_ttm_identity_matches_hand_calc():
+    """TTM = FY_предх + YTD_текуща − YTD_минала, сверено ръчно от официалните факти."""
+    nvda = fs.ttm_asof("NVDA", "revenue", "9999-12-31")
+    msft = fs.ttm_asof("MSFT", "revenue", "9999-12-31")
+    assert nvda and abs(nvda["value"] - 253_491_000_000) < 1_000_000
+    assert msft and abs(msft["value"] - 318_273_000_000) < 1_000_000
+    assert nvda["method"] in ("identity", "sum_4q")
+
+
+def test_ttm_pit_known_at_is_max_of_components():
+    """PIT за derived: known_at = max(known_at на компонентите); никоя не е в бъдещето."""
+    for t in ["NVDA", "MSFT", "AMAT", "MU", "META", "AMZN"]:
+        r = fs.ttm_asof(t, "revenue", "9999-12-31")
+        assert r is not None, f"{t} TTM None"
+        comp = r["derived_from"]
+        assert comp, f"{t} празен derived_from"
+        assert r["known_at"] == max(c["known_at"] for c in comp)
+        assert {c["role"] for c in comp} <= {"plus", "minus"}
+
+
+def test_ttm_pit_respects_as_of():
+    """ttm_asof никога не ползва компонент, известен след as_of."""
+    for as_of in ["2023-06-30", "2024-12-31"]:
+        r = fs.ttm_asof("NVDA", "revenue", as_of)
+        if r is not None:
+            assert all(c["known_at"] <= as_of for c in r["derived_from"])
+            assert r["known_at"] <= as_of
+
+
+def test_ttm_none_for_instant_concept():
+    """TTM има смисъл само за flow концепти; shares (instant) -> None."""
+    assert fs.ttm_asof("NVDA", "shares", "9999-12-31") is None
