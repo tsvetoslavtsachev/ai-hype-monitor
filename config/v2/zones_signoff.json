@@ -1,0 +1,79 @@
+{
+  "_source": "ZONES-SIGNOFF.md machine-readable block (SIGNED-OFF 2026-07-08) + Appendix A (2026-07-09). Verbatim copy; single source for gap.py/zones.py/falsifiers.py. NOTHING changed by hand.",
+  "f_leg_composition": {
+    "_decision": "Phase-3 pre-registration (user-confirmed 2026-07-10), before retro G generated. Signoff pinned aggregation, not the component list.",
+    "components": ["revenue_growth_yoy", "operating_margin"],
+    "definitions": {
+      "revenue_growth_yoy": "(TTM_revenue[asof] - TTM_revenue[asof-1y]) / TTM_revenue[asof-1y], PIT",
+      "operating_margin": "TTM_operating_income[asof] / TTM_revenue[asof], PIT"
+    }
+  },
+  "zones": {
+    "ladder": {"a": 1.0, "b": 2.0},
+    "names": {
+      "extreme_high": "Opanata napred (Опъната напред)",
+      "mild_high": "Razteglena (Разтеглена)",
+      "neutral": "Neutralna (Неутрална)",
+      "mild_low": "Provisnala (Провиснала)",
+      "extreme_low": "Obarnata (Обърната)",
+      "undefined": "Neopredelena (Неопределена)"
+    },
+    "hysteresis": 0.25,
+    "dwell_weeks": 2,
+    "stale_weeks_to_undefined": 4
+  },
+  "velocity": {
+    "window_weeks": 4,
+    "flag_threshold_z": 1.25,
+    "role": "flag_only_never_zone_modifier",
+    "symmetric": true
+  },
+  "falsifiers": {
+    "F1": {
+      "episode_def": "first entry into extreme zone (extreme_high or extreme_low)",
+      "window_weeks": 26,
+      "raw_spread_narrowing_sigma": 0.5,
+      "quota": 0.6667,
+      "min_episodes_for_verdict": 3
+    },
+    "F2": {
+      "max_multiple_var_share_in_E": 0.60,
+      "max_abs_corr_G_vs_multiple_z": 0.90
+    },
+    "F3": {
+      "max_var_share_dG_in_weeks_without_F_update": 0.90
+    },
+    "cadence": "annual report + every phase gate; verdicts logged in zone journal"
+  },
+  "weights": {
+    "cross_company": "median_within_layer_then_layer_weight",
+    "layer_weights": {
+      "Semiconductor Equipment": 0.10,
+      "Chip Design": 0.25,
+      "Memory & Storage": 0.10,
+      "Networking & Optics": 0.10,
+      "Infrastructure & Power": 0.15,
+      "Hyperscalers": 0.20,
+      "AI Software": 0.10
+    },
+    "cross_component": "equal_weight_over_available_z",
+    "min_components_E": 2,
+    "min_components_F": 2,
+    "cap_weighting": "FORBIDDEN (imports price into F-leg)",
+    "revisit": "v2.1 after >=52 weeks live accumulation, new signoff required"
+  },
+  "tripwire_T9": {
+    "T9a_ai_share_threshold": 0.65,
+    "T9b_nontech_share_threshold": 0.85,
+    "T9b_basis_caveat": "single measured quarter (2026Q2, N=204) - judgment, re-bless after 3-4 quarters",
+    "rearm_rule": "ai_share < 0.50 for 2 consecutive quarters resets the tripwire",
+    "confirmation": "watcher writes CANDIDATE, human confirms - no auto-fire"
+  },
+  "cadence": {
+    "frequency": "weekly",
+    "anchor": "W-FRI (compute after Friday close)",
+    "publish_by": "Monday morning",
+    "burn_in_label_weeks": 26,
+    "z_scale_base": "retrospective G series (generated AFTER pre-registration commit), expanding window thereafter"
+  }
+}
