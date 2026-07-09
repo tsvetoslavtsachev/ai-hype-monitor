@@ -1,0 +1,129 @@
+{
+  "series_type": "retrospective/descriptive",
+  "voice": "rhetoric_intensity",
+  "lexicon_source": "config/keywords.json:ai_hype_terms",
+  "method": "ai_density (per-1000-words, word-boundary for short terms) per doc -> per-(ticker,calendar-quarter) mean -> universe median per quarter -> expanding robust z (median/MAD, min 8 quarters)",
+  "min_history_quarters": 8,
+  "series": [
+    {
+      "quarter": "2022Q4",
+      "quarter_end": "2022-12-31",
+      "n_tickers": 29,
+      "n_docs": 32,
+      "median_density": 0.1088,
+      "z": null
+    },
+    {
+      "quarter": "2023Q1",
+      "quarter_end": "2023-03-31",
+      "n_tickers": 29,
+      "n_docs": 30,
+      "median_density": 0.1708,
+      "z": null
+    },
+    {
+      "quarter": "2023Q2",
+      "quarter_end": "2023-06-30",
+      "n_tickers": 29,
+      "n_docs": 33,
+      "median_density": 0.5857,
+      "z": null
+    },
+    {
+      "quarter": "2023Q3",
+      "quarter_end": "2023-09-30",
+      "n_tickers": 31,
+      "n_docs": 32,
+      "median_density": 0.95,
+      "z": null
+    },
+    {
+      "quarter": "2023Q4",
+      "quarter_end": "2023-12-31",
+      "n_tickers": 31,
+      "n_docs": 32,
+      "median_density": 0.9987,
+      "z": null
+    },
+    {
+      "quarter": "2024Q1",
+      "quarter_end": "2024-03-31",
+      "n_tickers": 31,
+      "n_docs": 32,
+      "median_density": 0.7293,
+      "z": null
+    },
+    {
+      "quarter": "2024Q2",
+      "quarter_end": "2024-06-30",
+      "n_tickers": 30,
+      "n_docs": 30,
+      "median_density": 1.8003,
+      "z": null
+    },
+    {
+      "quarter": "2024Q3",
+      "quarter_end": "2024-09-30",
+      "n_tickers": 32,
+      "n_docs": 32,
+      "median_density": 1.19,
+      "z": 0.7821
+    },
+    {
+      "quarter": "2024Q4",
+      "quarter_end": "2024-12-31",
+      "n_tickers": 32,
+      "n_docs": 32,
+      "median_density": 1.3398,
+      "z": 0.7217
+    },
+    {
+      "quarter": "2025Q1",
+      "quarter_end": "2025-03-31",
+      "n_tickers": 32,
+      "n_docs": 33,
+      "median_density": 1.2164,
+      "z": 0.5348
+    },
+    {
+      "quarter": "2025Q2",
+      "quarter_end": "2025-06-30",
+      "n_tickers": 32,
+      "n_docs": 34,
+      "median_density": 1.5157,
+      "z": 1.0223
+    },
+    {
+      "quarter": "2025Q3",
+      "quarter_end": "2025-09-30",
+      "n_tickers": 32,
+      "n_docs": 34,
+      "median_density": 1.5868,
+      "z": 0.8447
+    },
+    {
+      "quarter": "2025Q4",
+      "quarter_end": "2025-12-31",
+      "n_tickers": 32,
+      "n_docs": 33,
+      "median_density": 1.4806,
+      "z": 0.6018
+    },
+    {
+      "quarter": "2026Q1",
+      "quarter_end": "2026-03-31",
+      "n_tickers": 32,
+      "n_docs": 32,
+      "median_density": 1.6056,
+      "z": 0.7798
+    },
+    {
+      "quarter": "2026Q2",
+      "quarter_end": "2026-06-30",
+      "n_tickers": 32,
+      "n_docs": 34,
+      "median_density": 1.7053,
+      "z": 0.8903
+    }
+  ]
+}

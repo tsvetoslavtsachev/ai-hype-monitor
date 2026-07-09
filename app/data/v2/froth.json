@@ -1,0 +1,128 @@
+{
+  "series_type": "retrospective/descriptive",
+  "voice": "froth",
+  "method": "share of S-1-root filings (S-1+S-1/A) containing 'artificial intelligence' per calendar quarter -> expanding robust z (min 8). Numerator: efts total (documents; mild overcount). Denominator: form.idx S-1+S-1/A. Phrase-mention != AI-centrality.",
+  "min_history_quarters": 8,
+  "latest_quarter_sic_split": {
+    "quarter": "2026Q2",
+    "unique_ciks": 210,
+    "tech": 44,
+    "nontech": 158,
+    "unknown_sic": 8,
+    "nontech_share_pct": 78.2
+  },
+  "series": [
+    {
+      "quarter": "2023Q1",
+      "ai_hits": 146,
+      "s1_root_filings": 571,
+      "share": 0.2557,
+      "share_pct": 25.6,
+      "z": null
+    },
+    {
+      "quarter": "2023Q2",
+      "ai_hits": 154,
+      "s1_root_filings": 701,
+      "share": 0.2197,
+      "share_pct": 22.0,
+      "z": null
+    },
+    {
+      "quarter": "2023Q3",
+      "ai_hits": 169,
+      "s1_root_filings": 629,
+      "share": 0.2687,
+      "share_pct": 26.9,
+      "z": null
+    },
+    {
+      "quarter": "2023Q4",
+      "ai_hits": 188,
+      "s1_root_filings": 657,
+      "share": 0.2861,
+      "share_pct": 28.6,
+      "z": null
+    },
+    {
+      "quarter": "2024Q1",
+      "ai_hits": 168,
+      "s1_root_filings": 614,
+      "share": 0.2736,
+      "share_pct": 27.4,
+      "z": null
+    },
+    {
+      "quarter": "2024Q2",
+      "ai_hits": 255,
+      "s1_root_filings": 763,
+      "share": 0.3342,
+      "share_pct": 33.4,
+      "z": null
+    },
+    {
+      "quarter": "2024Q3",
+      "ai_hits": 196,
+      "s1_root_filings": 647,
+      "share": 0.3029,
+      "share_pct": 30.3,
+      "z": null
+    },
+    {
+      "quarter": "2024Q4",
+      "ai_hits": 200,
+      "s1_root_filings": 645,
+      "share": 0.3101,
+      "share_pct": 31.0,
+      "z": 0.8645
+    },
+    {
+      "quarter": "2025Q1",
+      "ai_hits": 265,
+      "s1_root_filings": 616,
+      "share": 0.4302,
+      "share_pct": 43.0,
+      "z": 4.0498
+    },
+    {
+      "quarter": "2025Q2",
+      "ai_hits": 266,
+      "s1_root_filings": 697,
+      "share": 0.3816,
+      "share_pct": 38.2,
+      "z": 1.8188
+    },
+    {
+      "quarter": "2025Q3",
+      "ai_hits": 325,
+      "s1_root_filings": 826,
+      "share": 0.3935,
+      "share_pct": 39.3,
+      "z": 1.7868
+    },
+    {
+      "quarter": "2025Q4",
+      "ai_hits": 295,
+      "s1_root_filings": 685,
+      "share": 0.4307,
+      "share_pct": 43.1,
+      "z": 1.891
+    },
+    {
+      "quarter": "2026Q1",
+      "ai_hits": 322,
+      "s1_root_filings": 674,
+      "share": 0.4777,
+      "share_pct": 47.8,
+      "z": 2.078
+    },
+    {
+      "quarter": "2026Q2",
+      "ai_hits": 421,
+      "s1_root_filings": 719,
+      "share": 0.5855,
+      "share_pct": 58.6,
+      "z": 2.8217
+    }
+  ]
+}

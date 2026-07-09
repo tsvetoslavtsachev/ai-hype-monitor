@@ -1,0 +1,144 @@
+{
+  "series_type": "retrospective/descriptive",
+  "voice": "promise_delivery",
+  "lexicon_source": "config/v2/lexicons.json (v1)",
+  "method": "substring match, pooled per calendar quarter: P_1k, D_1k (per-1000-words) -> promise_share = P/(P+D) -> expanding robust z (median/MAD, min 8 quarters)",
+  "min_history_quarters": 8,
+  "series": [
+    {
+      "quarter": "2022Q4",
+      "quarter_end": "2022-12-31",
+      "n_docs": 32,
+      "promise_1k": 2.242,
+      "delivery_1k": 1.0992,
+      "promise_share": 0.671,
+      "z": null
+    },
+    {
+      "quarter": "2023Q1",
+      "quarter_end": "2023-03-31",
+      "n_docs": 30,
+      "promise_1k": 2.4,
+      "delivery_1k": 1.1815,
+      "promise_share": 0.6701,
+      "z": null
+    },
+    {
+      "quarter": "2023Q2",
+      "quarter_end": "2023-06-30",
+      "n_docs": 33,
+      "promise_1k": 2.4632,
+      "delivery_1k": 1.0469,
+      "promise_share": 0.7018,
+      "z": null
+    },
+    {
+      "quarter": "2023Q3",
+      "quarter_end": "2023-09-30",
+      "n_docs": 32,
+      "promise_1k": 2.5078,
+      "delivery_1k": 1.082,
+      "promise_share": 0.6986,
+      "z": null
+    },
+    {
+      "quarter": "2023Q4",
+      "quarter_end": "2023-12-31",
+      "n_docs": 32,
+      "promise_1k": 2.6697,
+      "delivery_1k": 1.0002,
+      "promise_share": 0.7275,
+      "z": null
+    },
+    {
+      "quarter": "2024Q1",
+      "quarter_end": "2024-03-31",
+      "n_docs": 32,
+      "promise_1k": 2.548,
+      "delivery_1k": 1.0658,
+      "promise_share": 0.7051,
+      "z": null
+    },
+    {
+      "quarter": "2024Q2",
+      "quarter_end": "2024-06-30",
+      "n_docs": 30,
+      "promise_1k": 2.8754,
+      "delivery_1k": 1.0859,
+      "promise_share": 0.7259,
+      "z": null
+    },
+    {
+      "quarter": "2024Q3",
+      "quarter_end": "2024-09-30",
+      "n_docs": 32,
+      "promise_1k": 2.6139,
+      "delivery_1k": 0.9964,
+      "promise_share": 0.724,
+      "z": 0.6447
+    },
+    {
+      "quarter": "2024Q4",
+      "quarter_end": "2024-12-31",
+      "n_docs": 32,
+      "promise_1k": 2.6825,
+      "delivery_1k": 1.0828,
+      "promise_share": 0.7124,
+      "z": 0.2605
+    },
+    {
+      "quarter": "2025Q1",
+      "quarter_end": "2025-03-31",
+      "n_docs": 33,
+      "promise_1k": 2.7086,
+      "delivery_1k": 1.1411,
+      "promise_share": 0.7036,
+      "z": -0.0365
+    },
+    {
+      "quarter": "2025Q2",
+      "quarter_end": "2025-06-30",
+      "n_docs": 34,
+      "promise_1k": 2.7043,
+      "delivery_1k": 1.1797,
+      "promise_share": 0.6963,
+      "z": -0.5595
+    },
+    {
+      "quarter": "2025Q3",
+      "quarter_end": "2025-09-30",
+      "n_docs": 34,
+      "promise_1k": 2.6664,
+      "delivery_1k": 1.2102,
+      "promise_share": 0.6878,
+      "z": -0.8171
+    },
+    {
+      "quarter": "2025Q4",
+      "quarter_end": "2025-12-31",
+      "n_docs": 33,
+      "promise_1k": 2.5615,
+      "delivery_1k": 1.2511,
+      "promise_share": 0.6718,
+      "z": -1.4453
+    },
+    {
+      "quarter": "2026Q1",
+      "quarter_end": "2026-03-31",
+      "n_docs": 32,
+      "promise_1k": 2.4267,
+      "delivery_1k": 1.3569,
+      "promise_share": 0.6414,
+      "z": -2.1912
+    },
+    {
+      "quarter": "2026Q2",
+      "quarter_end": "2026-06-30",
+      "n_docs": 34,
+      "promise_1k": 2.5999,
+      "delivery_1k": 1.2696,
+      "promise_share": 0.6719,
+      "z": -0.709
+    }
+  ]
+}
