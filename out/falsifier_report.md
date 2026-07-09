@@ -28,8 +28,9 @@ Share of var(dG) in weeks WITHOUT an F-update <= 0.9.
 - **Verdict: PASS (not falsified)**
 
 ## Summary
-| Falsifier | Verdict |
-|---|---|
-| F1 | INSUFFICIENT DATA (1 episode(s) < 3) |
-| F2 | PASS (not falsified) |
-| F3 | PASS (not falsified) |
+| Falsifier | Verdict | Number |
+|---|---|---|
+| F1 | INSUFFICIENT DATA (1 episode(s) < 3) | 1/1 episodes narrowed |
+| F2 (gate, G-basis) | PASS (not falsified) | price cov-share in var(G) = 0.0074 (<= 0.6) |
+| F2-WATCH (E-basis) | WATCH (not a gate) | multiple cov-share in var(E) = 0.7479 -- E is multiple-heavy; kept visible per audit |
+| F3 | PASS (not falsified) | var(dG) share in no-F-update weeks = 0.2113 (<= 0.9) |

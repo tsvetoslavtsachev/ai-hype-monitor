@@ -176,11 +176,12 @@ Share of var(dG) in weeks WITHOUT an F-update <= {r3['threshold']}.
 - **Verdict: {v(r3)}**
 
 ## Summary
-| Falsifier | Verdict |
-|---|---|
-| F1 | {v(r1)} |
-| F2 | {v(r2)} |
-| F3 | {v(r3)} |
+| Falsifier | Verdict | Number |
+|---|---|---|
+| F1 | {v(r1)} | {r1['passed']}/{r1['n_episodes']} episodes narrowed |
+| F2 (gate, G-basis) | {v(r2)} | price cov-share in var(G) = {r2['price_cov_share_in_G']} (<= {r2['threshold_share']}) |
+| F2-WATCH (E-basis) | WATCH (not a gate) | multiple cov-share in var(E) = {r2['multiple_cov_share_in_E_reference']} -- E is multiple-heavy; kept visible per audit |
+| F3 | {v(r3)} | var(dG) share in no-F-update weeks = {r3['share_var_dG_no_F_update']} (<= {r3['threshold']}) |
 """
     OUT.write_text(md, encoding="utf-8")
     print("=== falsifiers.py ===")
