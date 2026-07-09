@@ -1,0 +1,1490 @@
+{
+  "series_type": "retrospective/descriptive",
+  "constants_source": "config/v2/zones_signoff.json",
+  "zone_names": {
+    "extreme_high": "Opanata napred (Опъната напред)",
+    "mild_high": "Razteglena (Разтеглена)",
+    "neutral": "Neutralna (Неутрална)",
+    "mild_low": "Provisnala (Провиснала)",
+    "extreme_low": "Obarnata (Обърната)",
+    "undefined": "Neopredelena (Неопределена)"
+  },
+  "occupancy_pct": {
+    "extreme_high": 16.7,
+    "neutral": 83.3
+  },
+  "n_transitions": 2,
+  "transitions": [
+    {
+      "date": "2024-11-15",
+      "old": "init",
+      "new": "extreme_high",
+      "reason": "init/resume",
+      "G_z": 2.7339,
+      "dG4": null
+    },
+    {
+      "date": "2025-02-21",
+      "old": "extreme_high",
+      "new": "neutral",
+      "G_z": -0.1253,
+      "dG4": -2.833,
+      "velocity_flag": true,
+      "driving": {
+        "driver": "F",
+        "dE": -0.3883,
+        "dF": 0.4232
+      }
+    }
+  ],
+  "series": [
+    {
+      "date": "2023-01-06",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-01-13",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-01-20",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-01-27",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-02-03",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-02-10",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-02-17",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-02-24",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-03-03",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-03-10",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-03-17",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-03-24",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-03-31",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-04-07",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-04-14",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-04-21",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-04-28",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-05-05",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-05-12",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-05-19",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-05-26",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-06-02",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-06-09",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-06-16",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-06-23",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-06-30",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-07-07",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-07-14",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-07-21",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-07-28",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-08-04",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-08-11",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-08-18",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-08-25",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-09-01",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-09-08",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-09-15",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-09-22",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-09-29",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-10-06",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-10-13",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-10-20",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-10-27",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-11-03",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-11-10",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-11-17",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-11-24",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-12-01",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-12-08",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-12-15",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-12-22",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2023-12-29",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-01-05",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-01-12",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-01-19",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-01-26",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-02-02",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-02-09",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-02-16",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-02-23",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-03-01",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-03-08",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-03-15",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-03-22",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-03-29",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-04-05",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-04-12",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-04-19",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-04-26",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-05-03",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-05-10",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-05-17",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-05-24",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-05-31",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-06-07",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-06-14",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-06-21",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-06-28",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-07-05",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-07-12",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-07-19",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-07-26",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-08-02",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-08-09",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-08-16",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-08-23",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-08-30",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-09-06",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-09-13",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-09-20",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-09-27",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-10-04",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-10-11",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-10-18",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-10-25",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-11-01",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-11-08",
+      "G_z": null,
+      "dG4": null,
+      "instant_zone": null,
+      "committed_zone": null,
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-11-15",
+      "G_z": 2.7339,
+      "dG4": null,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-11-22",
+      "G_z": 2.8942,
+      "dG4": null,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-11-29",
+      "G_z": 2.8142,
+      "dG4": null,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-12-06",
+      "G_z": 2.7245,
+      "dG4": null,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-12-13",
+      "G_z": 2.6575,
+      "dG4": -0.0764,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-12-20",
+      "G_z": 2.5314,
+      "dG4": -0.3628,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2024-12-27",
+      "G_z": 2.4812,
+      "dG4": -0.333,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-01-03",
+      "G_z": 2.5545,
+      "dG4": -0.17,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-01-10",
+      "G_z": 2.4379,
+      "dG4": -0.2196,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-01-17",
+      "G_z": 2.6089,
+      "dG4": 0.0775,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-01-24",
+      "G_z": 2.7077,
+      "dG4": 0.2265,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-01-31",
+      "G_z": 2.1834,
+      "dG4": -0.3711,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-02-07",
+      "G_z": 2.198,
+      "dG4": -0.2399,
+      "instant_zone": "extreme_high",
+      "committed_zone": "extreme_high",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-02-14",
+      "G_z": 0.014,
+      "dG4": -2.5949,
+      "instant_zone": "neutral",
+      "committed_zone": "extreme_high",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-02-21",
+      "G_z": -0.1253,
+      "dG4": -2.833,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-02-28",
+      "G_z": -0.3002,
+      "dG4": -2.4836,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-03-07",
+      "G_z": -0.45,
+      "dG4": -2.648,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-03-14",
+      "G_z": -0.4154,
+      "dG4": -0.4294,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-03-21",
+      "G_z": -0.4538,
+      "dG4": -0.3285,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-03-28",
+      "G_z": -0.6644,
+      "dG4": -0.3642,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-04-04",
+      "G_z": -0.9196,
+      "dG4": -0.4696,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-04-11",
+      "G_z": -0.6455,
+      "dG4": -0.2301,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-04-18",
+      "G_z": -0.7632,
+      "dG4": -0.3094,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-04-25",
+      "G_z": -0.5513,
+      "dG4": 0.1131,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-05-02",
+      "G_z": -0.5422,
+      "dG4": 0.3774,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-05-09",
+      "G_z": -0.5167,
+      "dG4": 0.1288,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-05-16",
+      "G_z": 0.8641,
+      "dG4": 1.6273,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-05-23",
+      "G_z": 0.7778,
+      "dG4": 1.3291,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-05-30",
+      "G_z": 0.8232,
+      "dG4": 1.3654,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-06-06",
+      "G_z": 0.9622,
+      "dG4": 1.4789,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-06-13",
+      "G_z": 0.8484,
+      "dG4": -0.0157,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-06-20",
+      "G_z": 0.9611,
+      "dG4": 0.1833,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-06-27",
+      "G_z": 1.1552,
+      "dG4": 0.332,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-07-04",
+      "G_z": 1.1936,
+      "dG4": 0.2314,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-07-11",
+      "G_z": 1.1297,
+      "dG4": 0.2813,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-07-18",
+      "G_z": 1.2271,
+      "dG4": 0.266,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-07-25",
+      "G_z": 1.3762,
+      "dG4": 0.221,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-08-01",
+      "G_z": 1.2495,
+      "dG4": 0.0559,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-08-08",
+      "G_z": 1.1266,
+      "dG4": -0.0031,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-08-15",
+      "G_z": -0.7621,
+      "dG4": -1.9892,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-08-22",
+      "G_z": -0.7925,
+      "dG4": -2.1687,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-08-29",
+      "G_z": -0.6211,
+      "dG4": -1.8706,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-09-05",
+      "G_z": -0.7478,
+      "dG4": -1.8744,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2025-09-12",
+      "G_z": -0.686,
+      "dG4": 0.0761,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-09-19",
+      "G_z": -0.5764,
+      "dG4": 0.2161,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-09-26",
+      "G_z": -0.6717,
+      "dG4": -0.0506,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-10-03",
+      "G_z": -0.3159,
+      "dG4": 0.4319,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-10-10",
+      "G_z": -0.2803,
+      "dG4": 0.4057,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-10-17",
+      "G_z": -0.0663,
+      "dG4": 0.5101,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-10-24",
+      "G_z": 0.0548,
+      "dG4": 0.7265,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-10-31",
+      "G_z": 0.1686,
+      "dG4": 0.4845,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-11-07",
+      "G_z": 0.1602,
+      "dG4": 0.4405,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-11-14",
+      "G_z": -0.6912,
+      "dG4": -0.6249,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-11-21",
+      "G_z": -1.1521,
+      "dG4": -1.2069,
+      "instant_zone": "mild_low",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-11-28",
+      "G_z": -0.6773,
+      "dG4": -0.8459,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-12-05",
+      "G_z": -0.5774,
+      "dG4": -0.7376,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-12-12",
+      "G_z": -0.6315,
+      "dG4": 0.0597,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-12-19",
+      "G_z": -0.8962,
+      "dG4": 0.2559,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2025-12-26",
+      "G_z": -0.6787,
+      "dG4": -0.0014,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-01-02",
+      "G_z": -0.4312,
+      "dG4": 0.1462,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-01-09",
+      "G_z": -0.0765,
+      "dG4": 0.555,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-01-16",
+      "G_z": 0.0042,
+      "dG4": 0.9004,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-01-23",
+      "G_z": -0.1948,
+      "dG4": 0.4839,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-01-30",
+      "G_z": -0.0133,
+      "dG4": 0.4179,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-02-06",
+      "G_z": -0.0017,
+      "dG4": 0.0748,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-02-13",
+      "G_z": 0.2011,
+      "dG4": 0.1969,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-02-20",
+      "G_z": 0.0286,
+      "dG4": 0.2234,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-02-27",
+      "G_z": 0.0656,
+      "dG4": 0.0789,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-03-06",
+      "G_z": 0.0293,
+      "dG4": 0.031,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-03-13",
+      "G_z": 0.0091,
+      "dG4": -0.192,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-03-20",
+      "G_z": 0.0017,
+      "dG4": -0.0269,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-03-27",
+      "G_z": -0.3355,
+      "dG4": -0.4011,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-04-03",
+      "G_z": -0.0918,
+      "dG4": -0.1211,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-04-10",
+      "G_z": 0.3125,
+      "dG4": 0.3034,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-04-17",
+      "G_z": 0.7345,
+      "dG4": 0.7328,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-04-24",
+      "G_z": 0.8658,
+      "dG4": 1.2013,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-05-01",
+      "G_z": 0.7527,
+      "dG4": 0.8445,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-05-08",
+      "G_z": 1.2118,
+      "dG4": 0.8993,
+      "instant_zone": "mild_high",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-05-15",
+      "G_z": -0.3383,
+      "dG4": -1.0728,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-05-22",
+      "G_z": -0.3669,
+      "dG4": -1.2327,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-05-29",
+      "G_z": -0.0105,
+      "dG4": -0.7632,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-06-05",
+      "G_z": -0.8005,
+      "dG4": -2.0123,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-06-12",
+      "G_z": -0.5691,
+      "dG4": -0.2308,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-06-19",
+      "G_z": -0.6099,
+      "dG4": -0.243,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    }
+  ]
+}

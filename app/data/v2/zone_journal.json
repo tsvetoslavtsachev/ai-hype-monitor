@@ -1,0 +1,11 @@
+{
+  "type": "LIVE zone journal (append-only)",
+  "live_start_date": "2026-07-10",
+  "note": "Ретро-преходите са в zones_retro.json (descriptive). Тук се пишат САМО живи преходи от датата на фазата нататък.",
+  "baseline": {
+    "as_of_data": "2026-06-19",
+    "zone": "neutral",
+    "G_z": -0.6099
+  },
+  "entries": []
+}
