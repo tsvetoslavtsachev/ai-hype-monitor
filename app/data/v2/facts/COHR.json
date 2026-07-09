@@ -3,6 +3,17 @@
   "entity_name": "COHERENT CORP.",
   "facts": [
     {
+      "accn": "0001193125-11-233520",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2009-06-30",
+      "period_start": "2008-07-01",
+      "unit": "USD",
+      "value": 15557000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001193125-10-251878",
       "concept": "capex",
       "form": "10-Q",
@@ -11,6 +22,50 @@
       "period_start": "2009-07-01",
       "unit": "USD",
       "value": 2547000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2009-12-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 6691000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2010-03-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 9384000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 13837000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 13837000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -36,6 +91,28 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001193125-11-027023",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 14668000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 14668000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001193125-12-046236",
       "concept": "capex",
       "form": "10-Q",
@@ -47,6 +124,28 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001193125-11-132041",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 28856000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 28856000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001193125-12-221622",
       "concept": "capex",
       "form": "10-Q",
@@ -55,6 +154,39 @@
       "period_start": "2011-01-01",
       "unit": "USD",
       "value": 14188000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 40859000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 40859000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 40859000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -77,6 +209,28 @@
       "period_start": "2011-07-01",
       "unit": "USD",
       "value": 12712000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 23068000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 23068000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -107,6 +261,28 @@
       "form": "10-Q",
       "known_at": "2012-05-09",
       "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 32771000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 32771000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2012-03-31",
       "period_start": "2012-01-01",
       "unit": "USD",
       "value": 9703000,
@@ -121,6 +297,39 @@
       "period_start": "2012-01-01",
       "unit": "USD",
       "value": 9703000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 42840000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 42840000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 42797000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -143,6 +352,28 @@
       "period_start": "2012-07-01",
       "unit": "USD",
       "value": 5929000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 13177000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 13144000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -173,6 +404,28 @@
       "form": "10-Q",
       "known_at": "2013-05-09",
       "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 17498000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 17430000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2013-03-31",
       "period_start": "2013-01-01",
       "unit": "USD",
       "value": 4321000,
@@ -187,6 +440,39 @@
       "period_start": "2013-01-01",
       "unit": "USD",
       "value": 4286000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 25273000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 25205000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 25205000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -217,6 +503,28 @@
       "form": "10-Q",
       "known_at": "2014-02-07",
       "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 14289000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 14289000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2013-12-31",
       "period_start": "2013-10-01",
       "unit": "USD",
       "value": 7716000,
@@ -239,6 +547,28 @@
       "form": "10-Q",
       "known_at": "2014-05-12",
       "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 20767000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 20767000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2014-03-31",
       "period_start": "2014-01-01",
       "unit": "USD",
       "value": 6478000,
@@ -253,6 +583,39 @@
       "period_start": "2014-01-01",
       "unit": "USD",
       "value": 6478000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 29220000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 29220000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 29220000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -283,6 +646,28 @@
       "form": "10-Q",
       "known_at": "2015-02-06",
       "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 31609000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 31609000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2014-12-31",
       "period_start": "2014-10-01",
       "unit": "USD",
       "value": 10079000,
@@ -305,6 +690,28 @@
       "form": "10-Q",
       "known_at": "2015-05-08",
       "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 40163000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 40163000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2015-03-31",
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 8554000,
@@ -319,6 +726,39 @@
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 8554000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 52313000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 52313000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 52313000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -349,6 +789,28 @@
       "form": "10-Q",
       "known_at": "2016-02-08",
       "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 19156000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 19156000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2015-12-31",
       "period_start": "2015-10-01",
       "unit": "USD",
       "value": 9732000,
@@ -371,6 +833,28 @@
       "form": "10-Q",
       "known_at": "2016-05-09",
       "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 32743000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 32743000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2016-03-31",
       "period_start": "2016-01-01",
       "unit": "USD",
       "value": 13587000,
@@ -385,6 +869,50 @@
       "period_start": "2016-01-01",
       "unit": "USD",
       "value": 13587000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 58170000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 58170000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 58170000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 58170000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -415,6 +943,28 @@
       "form": "10-Q",
       "known_at": "2017-02-01",
       "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 57822000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 57822000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2016-12-31",
       "period_start": "2016-10-01",
       "unit": "USD",
       "value": 27828000,
@@ -426,9 +976,86 @@
       "form": "10-Q",
       "known_at": "2017-05-02",
       "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 99135000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 99135000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2017-03-31",
       "period_start": "2017-01-01",
       "unit": "USD",
       "value": 41313000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 138517000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 138517000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 138517000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 138517000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "capex",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 138517000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -454,6 +1081,105 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001564590-18-001697",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 77623000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 77623000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 116477000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 116477000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 153438000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 153438000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 153438000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "capex",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 153438000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 153438000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001564590-18-028645",
       "concept": "capex",
       "form": "10-Q",
@@ -476,6 +1202,94 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001564590-19-002429",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 74368000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 74368000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 108170000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 108170000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 137122000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "capex",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 137122000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 137122000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 137122000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001564590-19-042658",
       "concept": "capex",
       "form": "10-Q",
@@ -498,6 +1312,83 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001564590-20-004069",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 80288000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 80288000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 107975000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 107975000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 136877000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 136877000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 136877000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-20-000029",
       "concept": "capex",
       "form": "10-Q",
@@ -520,6 +1411,83 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000820318-21-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 79329000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 79329000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 105331000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 105331000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 146337000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 146337000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 146337000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-21-000022",
       "concept": "capex",
       "form": "10-Q",
@@ -542,6 +1510,83 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000820318-22-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 101689000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 101689000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 195991000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 195991000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 314332000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 314332000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 314332000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-22-000027",
       "concept": "capex",
       "form": "10-Q",
@@ -564,6 +1609,94 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000820318-23-000005",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 245854000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 245854000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 342999000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 342999000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 436060000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 436060000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 436060000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 436060000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-23-000029",
       "concept": "capex",
       "form": "10-Q",
@@ -586,6 +1719,83 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000820318-24-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 153667000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 153667000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 246909000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 246909000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 346816000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 346816000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 346816000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-24-000035",
       "concept": "capex",
       "form": "10-Q",
@@ -608,6 +1818,72 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000820318-25-000004",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 197667000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 197667000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 309486000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 309486000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 440836000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "capex",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 440836000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0000820318-25-000019",
       "concept": "capex",
       "form": "10-Q",
@@ -617,6 +1893,39 @@
       "unit": "USD",
       "value": 103946000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2025-12-31",
+      "period_start": "2025-07-01",
+      "unit": "USD",
+      "value": 257544000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2026-03-31",
+      "period_start": "2025-07-01",
+      "unit": "USD",
+      "value": 547228000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2009-06-30",
+      "period_start": "2008-07-01",
+      "unit": "USD/shares",
+      "value": 0.61,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
       "accn": "0001193125-10-251878",
@@ -638,6 +1947,17 @@
       "period_start": "2009-07-01",
       "unit": "USD/shares",
       "value": 0.11,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2009-12-31",
+      "period_start": "2009-07-01",
+      "unit": "USD/shares",
+      "value": 0.41,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -668,6 +1988,17 @@
       "form": "10-Q",
       "known_at": "2011-05-09",
       "period_end": "2010-03-31",
+      "period_start": "2009-07-01",
+      "unit": "USD/shares",
+      "value": 0.74,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2010-03-31",
       "period_start": "2010-01-01",
       "unit": "USD/shares",
       "value": 0.33,
@@ -682,6 +2013,28 @@
       "period_start": "2010-01-01",
       "unit": "USD/shares",
       "value": 0.17,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD/shares",
+      "value": 0.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD/shares",
+      "value": 0.63,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -745,6 +2098,28 @@
       "form": "10-Q",
       "known_at": "2011-02-08",
       "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 1.18,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 0.59,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2010-12-31",
       "period_start": "2010-10-01",
       "unit": "USD/shares",
       "value": 0.6,
@@ -789,6 +2164,28 @@
       "form": "10-Q",
       "known_at": "2011-05-09",
       "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 1.9,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 0.95,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2011-03-31",
       "period_start": "2011-01-01",
       "unit": "USD/shares",
       "value": 0.72,
@@ -825,6 +2222,39 @@
       "period_start": "2011-01-01",
       "unit": "USD/shares",
       "value": 0.36,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 1.3,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 1.3,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD/shares",
+      "value": 1.3,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -899,6 +2329,28 @@
       "form": "10-Q",
       "known_at": "2012-02-08",
       "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.5,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.5,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2011-12-31",
       "period_start": "2011-10-01",
       "unit": "USD/shares",
       "value": 0.21,
@@ -943,6 +2395,28 @@
       "form": "10-Q",
       "known_at": "2012-05-09",
       "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.71,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.71,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2012-03-31",
       "period_start": "2012-01-01",
       "unit": "USD/shares",
       "value": 0.22,
@@ -979,6 +2453,39 @@
       "period_start": "2012-01-01",
       "unit": "USD/shares",
       "value": 0.22,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.94,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.94,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD/shares",
+      "value": 0.94,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1053,6 +2560,28 @@
       "form": "10-Q",
       "known_at": "2013-02-08",
       "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.39,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.39,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2012-12-31",
       "period_start": "2012-10-01",
       "unit": "USD/shares",
       "value": 0.19,
@@ -1097,6 +2626,28 @@
       "form": "10-Q",
       "known_at": "2013-05-09",
       "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.64,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.64,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2013-03-31",
       "period_start": "2013-01-01",
       "unit": "USD/shares",
       "value": 0.25,
@@ -1133,6 +2684,39 @@
       "period_start": "2013-01-01",
       "unit": "USD/shares",
       "value": 0.25,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.8,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.8,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD/shares",
+      "value": 0.8,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1207,6 +2791,28 @@
       "form": "10-Q",
       "known_at": "2014-02-07",
       "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.27,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.27,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2013-12-31",
       "period_start": "2013-10-01",
       "unit": "USD/shares",
       "value": 0.12,
@@ -1251,6 +2857,28 @@
       "form": "10-Q",
       "known_at": "2014-05-12",
       "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.4,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.4,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2014-03-31",
       "period_start": "2014-01-01",
       "unit": "USD/shares",
       "value": 0.13,
@@ -1287,6 +2915,39 @@
       "period_start": "2014-01-01",
       "unit": "USD/shares",
       "value": 0.13,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.6,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.6,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD/shares",
+      "value": 0.6,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1361,6 +3022,28 @@
       "form": "10-Q",
       "known_at": "2015-02-06",
       "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 0.55,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 0.55,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2014-12-31",
       "period_start": "2014-10-01",
       "unit": "USD/shares",
       "value": 0.35,
@@ -1405,6 +3088,28 @@
       "form": "10-Q",
       "known_at": "2015-05-08",
       "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 0.78,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 0.78,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2015-03-31",
       "period_start": "2015-01-01",
       "unit": "USD/shares",
       "value": 0.23,
@@ -1441,6 +3146,39 @@
       "period_start": "2015-01-01",
       "unit": "USD/shares",
       "value": 0.23,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 1.05,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 1.05,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD/shares",
+      "value": 1.05,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1515,6 +3253,28 @@
       "form": "10-Q",
       "known_at": "2016-02-08",
       "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 0.58,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 0.58,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2015-12-31",
       "period_start": "2015-10-01",
       "unit": "USD/shares",
       "value": 0.3,
@@ -1559,6 +3319,28 @@
       "form": "10-Q",
       "known_at": "2016-05-09",
       "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 0.81,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 0.81,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2016-03-31",
       "period_start": "2016-01-01",
       "unit": "USD/shares",
       "value": 0.24,
@@ -1595,6 +3377,50 @@
       "period_start": "2016-01-01",
       "unit": "USD/shares",
       "value": 0.24,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 1.04,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 1.04,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 1.04,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD/shares",
+      "value": 1.04,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1680,6 +3506,28 @@
       "form": "10-Q",
       "known_at": "2017-02-01",
       "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 0.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 0.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2016-12-31",
       "period_start": "2016-10-01",
       "unit": "USD/shares",
       "value": 0.37,
@@ -1735,6 +3583,28 @@
       "form": "10-Q",
       "known_at": "2017-05-02",
       "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 0.97,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 0.97,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2017-03-31",
       "period_start": "2017-01-01",
       "unit": "USD/shares",
       "value": 0.35,
@@ -1782,6 +3652,61 @@
       "period_start": "2017-01-01",
       "unit": "USD/shares",
       "value": 0.35,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 1.48,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 1.48,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 1.48,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 1.48,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "eps_diluted",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD/shares",
+      "value": 1.48,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -1889,6 +3814,28 @@
       "form": "10-Q",
       "known_at": "2018-02-08",
       "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 0.47,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 0.47,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2017-12-31",
       "period_start": "2017-10-01",
       "unit": "USD/shares",
       "value": 0.15,
@@ -1955,6 +3902,28 @@
       "form": "10-Q",
       "known_at": "2018-05-09",
       "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 0.93,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 0.93,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2018-03-31",
       "period_start": "2018-01-01",
       "unit": "USD/shares",
       "value": 0.45,
@@ -2013,6 +3982,61 @@
       "period_start": "2018-01-01",
       "unit": "USD/shares",
       "value": 0.45,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 1.35,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 1.35,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 1.35,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "eps_diluted",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 1.35,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD/shares",
+      "value": 1.35,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2120,6 +4144,28 @@
       "form": "10-Q",
       "known_at": "2019-02-08",
       "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 0.83,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 0.83,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2018-12-31",
       "period_start": "2018-10-01",
       "unit": "USD/shares",
       "value": 0.44,
@@ -2167,6 +4213,28 @@
       "period_start": "2018-10-01",
       "unit": "USD/shares",
       "value": 0.44,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1.21,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1210,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2230,6 +4298,50 @@
       "form": "10-K",
       "known_at": "2019-08-16",
       "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "eps_diluted",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD/shares",
+      "value": 1.63,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2019-06-30",
       "period_start": "2019-04-01",
       "unit": "USD/shares",
       "value": 0.43,
@@ -2307,6 +4419,28 @@
       "form": "10-Q",
       "known_at": "2020-02-10",
       "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -1.58,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -1.58,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2019-12-31",
       "period_start": "2019-10-01",
       "unit": "USD/shares",
       "value": -1.08,
@@ -2343,6 +4477,28 @@
       "period_start": "2019-10-01",
       "unit": "USD/shares",
       "value": -1.08,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -1430,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -1.43,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2395,6 +4551,39 @@
       "form": "10-K",
       "known_at": "2020-08-26",
       "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -0.79,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -0.79,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD/shares",
+      "value": -0.79,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2020-06-30",
       "period_start": "2020-04-01",
       "unit": "USD/shares",
       "value": 0.53,
@@ -2450,6 +4639,28 @@
       "form": "10-Q",
       "known_at": "2021-02-09",
       "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 1.12,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 1.12,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2020-12-31",
       "period_start": "2020-10-01",
       "unit": "USD/shares",
       "value": 0.73,
@@ -2475,6 +4686,28 @@
       "period_start": "2020-10-01",
       "unit": "USD/shares",
       "value": 0.73,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 1.78,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 1.78,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2516,6 +4749,39 @@
       "form": "10-K",
       "known_at": "2021-08-20",
       "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 2.37,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 2.37,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD/shares",
+      "value": 2.37,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2021-06-30",
       "period_start": "2021-04-01",
       "unit": "USD/shares",
       "value": 0.59,
@@ -2549,6 +4815,28 @@
       "form": "10-Q",
       "known_at": "2022-02-09",
       "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 0.94,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 0.94,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2021-12-31",
       "period_start": "2021-10-01",
       "unit": "USD/shares",
       "value": 0.44,
@@ -2571,6 +4859,28 @@
       "form": "10-Q",
       "known_at": "2022-05-10",
       "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 1.22,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 1.22,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2022-03-31",
       "period_start": "2022-01-01",
       "unit": "USD/shares",
       "value": 0.28,
@@ -2585,6 +4895,39 @@
       "period_start": "2022-01-01",
       "unit": "USD/shares",
       "value": 0.28,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 1.45,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 1.45,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD/shares",
+      "value": 1.45,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2615,6 +4958,28 @@
       "form": "10-Q",
       "known_at": "2023-02-08",
       "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -1.14,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -1.14,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2022-12-31",
       "period_start": "2022-10-01",
       "unit": "USD/shares",
       "value": -0.58,
@@ -2637,6 +5002,28 @@
       "form": "10-Q",
       "known_at": "2023-05-10",
       "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -1.38,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -1.38,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2023-03-31",
       "period_start": "2023-01-01",
       "unit": "USD/shares",
       "value": -0.24,
@@ -2651,6 +5038,50 @@
       "period_start": "2023-01-01",
       "unit": "USD/shares",
       "value": -0.24,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -2.93,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -2.93,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -2.93,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD/shares",
+      "value": -2.93,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2681,6 +5112,28 @@
       "form": "10-Q",
       "known_at": "2024-02-06",
       "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.03,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.03,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2023-12-31",
       "period_start": "2023-10-01",
       "unit": "USD/shares",
       "value": -0.38,
@@ -2703,6 +5156,28 @@
       "form": "10-Q",
       "known_at": "2024-05-07",
       "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.32,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.32,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2024-03-31",
       "period_start": "2024-01-01",
       "unit": "USD/shares",
       "value": -0.29,
@@ -2717,6 +5192,39 @@
       "period_start": "2024-01-01",
       "unit": "USD/shares",
       "value": -0.29,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.84,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.84,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD/shares",
+      "value": -1.84,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2747,6 +5255,28 @@
       "form": "10-Q",
       "known_at": "2025-02-05",
       "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": 0.41,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": 0.41,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000004",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2024-12-31",
       "period_start": "2024-10-01",
       "unit": "USD/shares",
       "value": 0.44,
@@ -2761,6 +5291,28 @@
       "period_start": "2024-10-01",
       "unit": "USD/shares",
       "value": 0.44,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": 0.3,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": 0.3,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2786,6 +5338,28 @@
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
+      "accn": "0000820318-25-000014",
+      "concept": "eps_diluted",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": -0.52,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "eps_diluted",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD/shares",
+      "value": -0.52,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
       "accn": "0000820318-25-000019",
       "concept": "eps_diluted",
       "form": "10-Q",
@@ -2794,6 +5368,17 @@
       "period_start": "2025-07-01",
       "unit": "USD/shares",
       "value": 1.19,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2025-12-31",
+      "period_start": "2025-07-01",
+      "unit": "USD/shares",
+      "value": 1.95,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -2813,10 +5398,43 @@
       "form": "10-Q",
       "known_at": "2026-05-06",
       "period_end": "2026-03-31",
+      "period_start": "2025-07-01",
+      "unit": "USD/shares",
+      "value": 2.92,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2026-03-31",
       "period_start": "2026-01-01",
       "unit": "USD/shares",
       "value": 0.97,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 81522000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 52095000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
       "accn": "0001564590-14-002039",
@@ -2827,6 +5445,28 @@
       "period_start": "2013-01-01",
       "unit": "USD",
       "value": 18169000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 71491000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 71491000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -2846,9 +5486,42 @@
       "form": "10-Q",
       "known_at": "2015-02-06",
       "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 23039000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2013-12-31",
       "period_start": "2013-10-01",
       "unit": "USD",
       "value": 9568000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 31782000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 31782000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -2874,6 +5547,39 @@
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
+      "accn": "0001564590-14-003921",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 46486000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 46486000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 46486000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
       "accn": "0001564590-14-005303",
       "concept": "operating_income",
       "form": "10-Q",
@@ -2893,6 +5599,28 @@
       "period_start": "2014-07-01",
       "unit": "USD",
       "value": 19396000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 35927000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 35927000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -2923,6 +5651,28 @@
       "form": "10-Q",
       "known_at": "2015-05-08",
       "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 53586000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 53586000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2015-03-31",
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 17659000,
@@ -2937,6 +5687,39 @@
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 17659000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 76799000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 76799000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 76799000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -2959,6 +5742,28 @@
       "period_start": "2015-07-01",
       "unit": "USD",
       "value": 21728000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 43509000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 43509000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -2989,6 +5794,28 @@
       "form": "10-Q",
       "known_at": "2016-05-09",
       "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 62899000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 62899000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2016-03-31",
       "period_start": "2016-01-01",
       "unit": "USD",
       "value": 19390000,
@@ -3003,6 +5830,50 @@
       "period_start": "2016-01-01",
       "unit": "USD",
       "value": 19390000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 91813000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 91813000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 91813000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "operating_income",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 90916000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3025,6 +5896,28 @@
       "period_start": "2016-07-01",
       "unit": "USD",
       "value": 23691000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 50827000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 50827000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3055,6 +5948,28 @@
       "form": "10-Q",
       "known_at": "2017-05-02",
       "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 79866000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 79866000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2017-03-31",
       "period_start": "2017-01-01",
       "unit": "USD",
       "value": 29039000,
@@ -3069,6 +5984,61 @@
       "period_start": "2017-01-01",
       "unit": "USD",
       "value": 29039000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 115541000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 115540000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "operating_income",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 115556000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 115556000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "operating_income",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 115556000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3091,6 +6061,28 @@
       "period_start": "2017-07-01",
       "unit": "USD",
       "value": 29777000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 62324000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 62261000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3121,6 +6113,28 @@
       "form": "10-Q",
       "known_at": "2018-05-09",
       "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 97062000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 96739000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2018-03-31",
       "period_start": "2018-01-01",
       "unit": "USD",
       "value": 34738000,
@@ -3135,6 +6149,61 @@
       "period_start": "2018-01-01",
       "unit": "USD",
       "value": 34479000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 135287000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "operating_income",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 136763000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 136763000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "operating_income",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 136763000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 136763000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3165,6 +6234,28 @@
       "form": "10-Q",
       "known_at": "2019-02-08",
       "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 76819000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 76819000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2018-12-31",
       "period_start": "2018-10-01",
       "unit": "USD",
       "value": 39606000,
@@ -3187,6 +6278,28 @@
       "form": "10-Q",
       "known_at": "2019-05-09",
       "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 107949000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 107949000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2019-03-31",
       "period_start": "2019-01-01",
       "unit": "USD",
       "value": 31130000,
@@ -3201,6 +6314,50 @@
       "period_start": "2019-01-01",
       "unit": "USD",
       "value": 31130000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 148668000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "operating_income",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 148668000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 148668000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 148668000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3231,6 +6388,28 @@
       "form": "10-Q",
       "known_at": "2020-02-10",
       "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": -97054000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": -97054000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2019-12-31",
       "period_start": "2019-10-01",
       "unit": "USD",
       "value": -78580000,
@@ -3253,6 +6432,28 @@
       "form": "10-Q",
       "known_at": "2020-05-11",
       "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": -28017000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": -28017000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2020-03-31",
       "period_start": "2020-01-01",
       "unit": "USD",
       "value": 69036000,
@@ -3267,6 +6468,39 @@
       "period_start": "2020-01-01",
       "unit": "USD",
       "value": 69036000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 39479000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 39479000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 39479000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3297,6 +6531,28 @@
       "form": "10-Q",
       "known_at": "2021-02-09",
       "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 219845000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 219845000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2020-12-31",
       "period_start": "2020-10-01",
       "unit": "USD",
       "value": 118716000,
@@ -3319,6 +6575,28 @@
       "form": "10-Q",
       "known_at": "2021-05-07",
       "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 304925000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 304925000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2021-03-31",
       "period_start": "2021-01-01",
       "unit": "USD",
       "value": 85080000,
@@ -3333,6 +6611,39 @@
       "period_start": "2021-01-01",
       "unit": "USD",
       "value": 85080000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 402119000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 402119000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 402119000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3363,6 +6674,28 @@
       "form": "10-Q",
       "known_at": "2022-02-09",
       "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 193272000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 193272000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2021-12-31",
       "period_start": "2021-10-01",
       "unit": "USD",
       "value": 98222000,
@@ -3385,6 +6718,28 @@
       "form": "10-Q",
       "known_at": "2022-05-10",
       "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 300041000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 300041000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2022-03-31",
       "period_start": "2022-01-01",
       "unit": "USD",
       "value": 106768000,
@@ -3399,6 +6754,39 @@
       "period_start": "2022-01-01",
       "unit": "USD",
       "value": 106768000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 414294000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 414294000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 414294000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3429,6 +6817,28 @@
       "form": "10-Q",
       "known_at": "2023-02-08",
       "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 50722000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 50722000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2022-12-31",
       "period_start": "2022-10-01",
       "unit": "USD",
       "value": 8246000,
@@ -3443,6 +6853,28 @@
       "period_start": "2022-10-01",
       "unit": "USD",
       "value": 8246000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 118110000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 118110000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3468,6 +6900,28 @@
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
+      "accn": "0000820318-23-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": -37120000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": -37120000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
       "accn": "0000820318-23-000029",
       "concept": "operating_income",
       "form": "10-Q",
@@ -3476,6 +6930,17 @@
       "period_start": "2023-07-01",
       "unit": "USD",
       "value": -21308000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 10577000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -3495,10 +6960,43 @@
       "form": "10-Q",
       "known_at": "2024-05-07",
       "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 32882000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2024-03-31",
       "period_start": "2024-01-01",
       "unit": "USD",
       "value": 22305000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "operating_income",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 96121000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2009-06-30",
+      "period_start": "2008-07-01",
+      "unit": "USD",
+      "value": 292222000,
+      "xbrl_tag": "us-gaap:Revenues"
     },
     {
       "accn": "0001193125-10-251878",
@@ -3539,6 +7037,28 @@
       "form": "10-Q",
       "known_at": "2011-02-08",
       "period_end": "2009-12-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 134323000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2009-12-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 130558000,
+      "xbrl_tag": "us-gaap:SalesRevenueNet"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2009-12-31",
       "period_start": "2009-10-01",
       "unit": "USD",
       "value": 68785000,
@@ -3572,6 +7092,28 @@
       "form": "10-Q",
       "known_at": "2011-05-09",
       "period_end": "2010-03-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 231854000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2010-03-31",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 225266000,
+      "xbrl_tag": "us-gaap:SalesRevenueNet"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2010-03-31",
       "period_start": "2010-01-01",
       "unit": "USD",
       "value": 97531000,
@@ -3597,6 +7139,28 @@
       "period_start": "2010-01-01",
       "unit": "USD",
       "value": 97531000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 345091000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2010-06-30",
+      "period_start": "2009-07-01",
+      "unit": "USD",
+      "value": 345091000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -3671,6 +7235,39 @@
       "form": "10-Q",
       "known_at": "2011-02-08",
       "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 241021000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 236559000,
+      "xbrl_tag": "us-gaap:SalesRevenueNet"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2010-12-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 241021000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-027023",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-02-08",
+      "period_end": "2010-12-31",
       "period_start": "2010-10-01",
       "unit": "USD",
       "value": 120887000,
@@ -3726,6 +7323,39 @@
       "form": "10-Q",
       "known_at": "2011-05-09",
       "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 371018000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 363504000,
+      "xbrl_tag": "us-gaap:SalesRevenueNet"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2011-03-31",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 371018000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-132041",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2011-05-09",
+      "period_end": "2011-03-31",
       "period_start": "2011-01-01",
       "unit": "USD",
       "value": 129997000,
@@ -3773,6 +7403,39 @@
       "period_start": "2011-01-01",
       "unit": "USD",
       "value": 129997000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-11-233520",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2011-08-26",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 502801000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 502801000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2011-06-30",
+      "period_start": "2010-07-01",
+      "unit": "USD",
+      "value": 502801000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -3847,6 +7510,28 @@
       "form": "10-Q",
       "known_at": "2012-02-08",
       "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 265130000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2011-12-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 265130000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-12-046236",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2012-02-08",
+      "period_end": "2011-12-31",
       "period_start": "2011-10-01",
       "unit": "USD",
       "value": 126757000,
@@ -3891,6 +7576,28 @@
       "form": "10-Q",
       "known_at": "2012-05-09",
       "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 397720000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2012-03-31",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 397720000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-12-221622",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2012-05-09",
+      "period_end": "2012-03-31",
       "period_start": "2012-01-01",
       "unit": "USD",
       "value": 132590000,
@@ -3927,6 +7634,39 @@
       "period_start": "2012-01-01",
       "unit": "USD",
       "value": 132590000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-12-371833",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2012-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 534630000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 534630000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2012-06-30",
+      "period_start": "2011-07-01",
+      "unit": "USD",
+      "value": 516403000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -4001,6 +7741,28 @@
       "form": "10-Q",
       "known_at": "2013-02-08",
       "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 258181000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2012-12-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 253105000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-045661",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2013-02-08",
+      "period_end": "2012-12-31",
       "period_start": "2012-10-01",
       "unit": "USD",
       "value": 125889000,
@@ -4045,6 +7807,28 @@
       "form": "10-Q",
       "known_at": "2013-05-09",
       "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 403351000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2013-03-31",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 397045000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-210373",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2013-05-09",
+      "period_end": "2013-03-31",
       "period_start": "2013-01-01",
       "unit": "USD",
       "value": 145170000,
@@ -4081,6 +7865,39 @@
       "period_start": "2013-01-01",
       "unit": "USD",
       "value": 143940000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-13-350423",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2013-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 558396000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 551075000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2013-06-30",
+      "period_start": "2012-07-01",
+      "unit": "USD",
+      "value": 551075000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -4155,6 +7972,28 @@
       "form": "10-Q",
       "known_at": "2014-02-07",
       "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 321785000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2013-12-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 321785000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-000200",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2014-02-07",
+      "period_end": "2013-12-31",
       "period_start": "2013-10-01",
       "unit": "USD",
       "value": 171765000,
@@ -4199,6 +8038,28 @@
       "form": "10-Q",
       "known_at": "2014-05-12",
       "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 495340000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2014-03-31",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 495340000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-002039",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2014-05-12",
+      "period_end": "2014-03-31",
       "period_start": "2014-01-01",
       "unit": "USD",
       "value": 173555000,
@@ -4235,6 +8096,39 @@
       "period_start": "2014-01-01",
       "unit": "USD",
       "value": 173555000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-14-003921",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2014-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 683261000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 683261000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2014-06-30",
+      "period_start": "2013-07-01",
+      "unit": "USD",
+      "value": 683261000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -4309,6 +8203,28 @@
       "form": "10-Q",
       "known_at": "2015-02-06",
       "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 362569000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2014-12-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 362569000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-000536",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2015-02-06",
+      "period_end": "2014-12-31",
       "period_start": "2014-10-01",
       "unit": "USD",
       "value": 176736000,
@@ -4353,6 +8269,28 @@
       "form": "10-Q",
       "known_at": "2015-05-08",
       "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 545278000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2015-03-31",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 545278000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-003753",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2015-05-08",
+      "period_end": "2015-03-31",
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 182709000,
@@ -4389,6 +8327,39 @@
       "period_start": "2015-01-01",
       "unit": "USD",
       "value": 182709000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-15-007628",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2015-08-28",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 741961000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 741961000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2015-06-30",
+      "period_start": "2014-07-01",
+      "unit": "USD",
+      "value": 741961000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -4463,6 +8434,28 @@
       "form": "10-Q",
       "known_at": "2016-02-08",
       "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 380641000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2015-12-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 380641000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-012460",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2016-02-08",
+      "period_end": "2015-12-31",
       "period_start": "2015-10-01",
       "unit": "USD",
       "value": 191434000,
@@ -4499,6 +8492,28 @@
       "period_start": "2015-10-01",
       "unit": "USD",
       "value": 191434000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-018663",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2016-05-09",
+      "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 585746000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2016-03-31",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 585746000,
       "xbrl_tag": "us-gaap:Revenues"
     },
     {
@@ -4544,6 +8559,50 @@
       "unit": "USD",
       "value": 205105000,
       "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-16-024750",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2016-08-26",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 827216000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 827216000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 827216000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2016-06-30",
+      "period_start": "2015-07-01",
+      "unit": "USD",
+      "value": 827216000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
       "accn": "0001564590-16-024750",
@@ -4628,6 +8687,28 @@
       "form": "10-Q",
       "known_at": "2017-02-01",
       "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 453342000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2016-12-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 453342000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-000837",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2017-02-01",
+      "period_end": "2016-12-31",
       "period_start": "2016-10-01",
       "unit": "USD",
       "value": 231822000,
@@ -4683,6 +8764,28 @@
       "form": "10-Q",
       "known_at": "2017-05-02",
       "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 698329000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2017-03-31",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 698329000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-17-008137",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2017-05-02",
+      "period_end": "2017-03-31",
       "period_start": "2017-01-01",
       "unit": "USD",
       "value": 244987000,
@@ -4730,6 +8833,61 @@
       "period_start": "2017-01-01",
       "unit": "USD",
       "value": 244987000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-17-017901",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2017-08-21",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 972046000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 972046000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 972046000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 972046000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "revenue",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2017-06-30",
+      "period_start": "2016-07-01",
+      "unit": "USD",
+      "value": 972046000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -4837,6 +8995,28 @@
       "form": "10-Q",
       "known_at": "2018-02-08",
       "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 542973000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2017-12-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 542973000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-18-001697",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2018-02-08",
+      "period_end": "2017-12-31",
       "period_start": "2017-10-01",
       "unit": "USD",
       "value": 281470000,
@@ -4903,6 +9083,28 @@
       "form": "10-Q",
       "known_at": "2018-05-09",
       "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 837719000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2018-03-31",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 837719000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-18-012438",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2018-05-09",
+      "period_end": "2018-03-31",
       "period_start": "2018-01-01",
       "unit": "USD",
       "value": 294746000,
@@ -4961,6 +9163,61 @@
       "period_start": "2018-01-01",
       "unit": "USD",
       "value": 294746000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-18-022409",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2018-08-28",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 1158794000,
+      "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-18-358638",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2018-12-27",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 1158794000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 1158794000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "revenue",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 1158794000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2018-06-30",
+      "period_start": "2017-07-01",
+      "unit": "USD",
+      "value": 1158794000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5068,6 +9325,28 @@
       "form": "10-Q",
       "known_at": "2019-02-08",
       "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 657272000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2018-12-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 657272000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-19-002429",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2019-02-08",
+      "period_end": "2018-12-31",
       "period_start": "2018-10-01",
       "unit": "USD",
       "value": 342839000,
@@ -5123,6 +9402,28 @@
       "form": "10-Q",
       "known_at": "2019-05-09",
       "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 999768000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2019-03-31",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 999768000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-19-017964",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2019-05-09",
+      "period_end": "2019-03-31",
       "period_start": "2019-01-01",
       "unit": "USD",
       "value": 342496000,
@@ -5170,6 +9471,50 @@
       "period_start": "2019-01-01",
       "unit": "USD",
       "value": 342496000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-19-032471",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2019-08-16",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 1362496000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000016",
+      "concept": "revenue",
+      "form": "8-K/A",
+      "known_at": "2020-07-02",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 1362496000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 1362496000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2019-06-30",
+      "period_start": "2018-07-01",
+      "unit": "USD",
+      "value": 1362496000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5255,6 +9600,28 @@
       "form": "10-Q",
       "known_at": "2020-02-10",
       "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 1006740000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2019-12-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 1006740000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0001564590-20-004069",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2020-02-10",
+      "period_end": "2019-12-31",
       "period_start": "2019-10-01",
       "unit": "USD",
       "value": 666331000,
@@ -5299,6 +9666,28 @@
       "form": "10-Q",
       "known_at": "2020-05-11",
       "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 1633781000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2020-03-31",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 1633781000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000006",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2020-05-11",
+      "period_end": "2020-03-31",
       "period_start": "2020-01-01",
       "unit": "USD",
       "value": 627041000,
@@ -5335,6 +9724,39 @@
       "period_start": "2020-01-01",
       "unit": "USD",
       "value": 627041000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-20-000023",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2020-08-26",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 2380071000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 2380071000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2020-06-30",
+      "period_start": "2019-07-01",
+      "unit": "USD",
+      "value": 2380071000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5398,6 +9820,28 @@
       "form": "10-Q",
       "known_at": "2021-02-09",
       "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 1514653000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2020-12-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 1514653000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2021-02-09",
+      "period_end": "2020-12-31",
       "period_start": "2020-10-01",
       "unit": "USD",
       "value": 786569000,
@@ -5423,6 +9867,28 @@
       "period_start": "2020-10-01",
       "unit": "USD",
       "value": 786569000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000012",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2021-05-07",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 2297885000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2021-03-31",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 2297885000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5464,6 +9930,39 @@
       "form": "10-K",
       "known_at": "2021-08-20",
       "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 3105891000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 3105891000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2021-06-30",
+      "period_start": "2020-07-01",
+      "unit": "USD",
+      "value": 3105891000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-21-000017",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2021-08-20",
+      "period_end": "2021-06-30",
       "period_start": "2021-04-01",
       "unit": "USD",
       "value": 808006000,
@@ -5497,6 +9996,28 @@
       "form": "10-Q",
       "known_at": "2022-02-09",
       "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 1601930000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2021-12-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 1601930000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2022-02-09",
+      "period_end": "2021-12-31",
       "period_start": "2021-10-01",
       "unit": "USD",
       "value": 806819000,
@@ -5519,6 +10040,28 @@
       "form": "10-Q",
       "known_at": "2022-05-10",
       "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 2429654000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2022-03-31",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 2429654000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000010",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2022-05-10",
+      "period_end": "2022-03-31",
       "period_start": "2022-01-01",
       "unit": "USD",
       "value": 827724000,
@@ -5533,6 +10076,39 @@
       "period_start": "2022-01-01",
       "unit": "USD",
       "value": 827724000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-22-000019",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2022-08-29",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 3316616000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 3316616000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2022-06-30",
+      "period_start": "2021-07-01",
+      "unit": "USD",
+      "value": 3316616000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5563,6 +10139,28 @@
       "form": "10-Q",
       "known_at": "2023-02-08",
       "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 2714855000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2022-12-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 2714855000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000005",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2023-02-08",
+      "period_end": "2022-12-31",
       "period_start": "2022-10-01",
       "unit": "USD",
       "value": 1370285000,
@@ -5585,6 +10183,28 @@
       "form": "10-Q",
       "known_at": "2023-05-10",
       "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 3955049000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2023-03-31",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 3955049000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2023-05-10",
+      "period_end": "2023-03-31",
       "period_start": "2023-01-01",
       "unit": "USD",
       "value": 1240194000,
@@ -5599,6 +10219,50 @@
       "period_start": "2023-01-01",
       "unit": "USD",
       "value": 1240194000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-23-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2023-08-18",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 5160100000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 5160100000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 5160100000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2023-06-30",
+      "period_start": "2022-07-01",
+      "unit": "USD",
+      "value": 5160100000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5629,6 +10293,28 @@
       "form": "10-Q",
       "known_at": "2024-02-06",
       "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 2184517000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2023-12-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 2184517000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2024-02-06",
+      "period_end": "2023-12-31",
       "period_start": "2023-10-01",
       "unit": "USD",
       "value": 1131434000,
@@ -5651,6 +10337,28 @@
       "form": "10-Q",
       "known_at": "2024-05-07",
       "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 3393326000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2024-03-31",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 3393326000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2024-05-07",
+      "period_end": "2024-03-31",
       "period_start": "2024-01-01",
       "unit": "USD",
       "value": 1208809000,
@@ -5665,6 +10373,39 @@
       "period_start": "2024-01-01",
       "unit": "USD",
       "value": 1208809000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-24-000016",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2024-08-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 4707688000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000014",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 4707688000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2024-06-30",
+      "period_start": "2023-07-01",
+      "unit": "USD",
+      "value": 4707688000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5695,6 +10436,28 @@
       "form": "10-Q",
       "known_at": "2025-02-05",
       "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 2782800000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2024-12-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 2782800000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000004",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2025-02-05",
+      "period_end": "2024-12-31",
       "period_start": "2024-10-01",
       "unit": "USD",
       "value": 1434665000,
@@ -5709,6 +10472,28 @@
       "period_start": "2024-10-01",
       "unit": "USD",
       "value": 1434665000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000009",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2025-05-07",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 4280679000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2025-03-31",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 4280679000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -5734,6 +10519,28 @@
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
+      "accn": "0000820318-25-000014",
+      "concept": "revenue",
+      "form": "10-K",
+      "known_at": "2025-08-15",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 5810115000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-25-000024",
+      "concept": "revenue",
+      "form": "8-K",
+      "known_at": "2025-12-16",
+      "period_end": "2025-06-30",
+      "period_start": "2024-07-01",
+      "unit": "USD",
+      "value": 5810115000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
       "accn": "0000820318-25-000019",
       "concept": "revenue",
       "form": "10-Q",
@@ -5750,9 +10557,31 @@
       "form": "10-Q",
       "known_at": "2026-02-04",
       "period_end": "2025-12-31",
+      "period_start": "2025-07-01",
+      "unit": "USD",
+      "value": 3267007000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-26-000006",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-02-04",
+      "period_end": "2025-12-31",
       "period_start": "2025-10-01",
       "unit": "USD",
       "value": 1685629000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
+      "accn": "0000820318-26-000013",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-05-06",
+      "period_end": "2026-03-31",
+      "period_start": "2025-07-01",
+      "unit": "USD",
+      "value": 5072648000,
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
@@ -6471,7 +11300,7 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     }
   ],
-  "record_count": 588,
+  "record_count": 1027,
   "schema": "bitemporal append-only; record={concept,xbrl_tag,period_start,period_end,value,unit,form,known_at,accn}",
   "source": "SEC XBRL companyfacts (data.sec.gov)",
   "ticker": "COHR"
