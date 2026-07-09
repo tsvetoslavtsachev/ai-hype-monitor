@@ -21,9 +21,9 @@ OUT = ROOT / "out" / "falsifier_report.md"
 
 
 def _pvar(xs):
-    # вариацията на ≤1 точка е дегенерирала -> 0 (falsy); всички ползватели
-    # guard-ват с `if var else None`, тъй че НЕ е тих placeholder за липса.
-    return statistics.pvariance(xs) if len(xs) > 1 else 0
+    # вариацията на ≤1 точка е недефинирана -> None (None-propagation, не тих 0);
+    # всички ползватели guard-ват изрично за None.
+    return statistics.pvariance(xs) if len(xs) > 1 else None
 
 
 def _cov(a, b):
@@ -33,7 +33,7 @@ def _cov(a, b):
 
 def _corr(a, b):
     va, vb = _pvar(a), _pvar(b)
-    if va == 0 or vb == 0:
+    if va is None or vb is None or va == 0 or vb == 0:
         return None
     return _cov(a, b) / (va ** 0.5 * vb ** 0.5)
 
@@ -44,14 +44,15 @@ def f1(cfg, gap, zones):
                                       p["quota"], p["min_episodes_for_verdict"])
     graw = {r["date"]: r["G_raw"] for r in gap["series"]}
     dates = [r["date"] for r in gap["series"]]
-    sigma = _pvar([v for v in graw.values() if v is not None]) ** 0.5
+    _sv = _pvar([v for v in graw.values() if v is not None])
+    sigma = _sv ** 0.5 if _sv else None          # None-propagation ако недефинирано
     # епизоди = преходи ВЛИЗАЩИ в екстремна зона
     episodes = [t for t in zones["transitions"] if t["new"] in ("extreme_high", "extreme_low")]
     results = []
     for ep in episodes:
         di = dates.index(ep["date"])
         g0 = graw.get(ep["date"])
-        if g0 is None or sigma == 0:
+        if g0 is None or not sigma:              # sigma None или 0 -> не може да се оцени
             continue
         # до win седмици напред: сви ли се суровият спред с ≥ need_sigma·σ (към 0)?
         narrowed = False
@@ -122,7 +123,6 @@ def f3(cfg, gap):
         if r["G_z"] is not None:
             prevG = r["G_z"]
         prevF = r["F"]
-    var_all = _pvar(dG)
     dG_no = [d for d, nu in zip(dG, no_update) if nu]
     # дял на var(ΔG) в седмици без F-обновление: sum of squares (около 0) proxy
     ss_all = sum(d * d for d in dG)

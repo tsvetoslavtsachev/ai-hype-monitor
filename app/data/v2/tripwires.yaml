@@ -19,8 +19,8 @@ tripwires:
     name: "Играч продава компют на самите лаборатории"
     definition: "Инфраструктурен играч отдава капацитет на AI лаборатории (не корпоративни клиенти)"
     status: fired
-    fired_date: null   # SpaceX Colossus 1 -> Anthropic (прецедент; точна дата не е в каталога)
-    source: "SpaceX Colossus 1 (~220k GPU) -> Anthropic (~$1.25 млрд./мес.)"
+    fired_date: "2026-05-20"   # датата на съобщението (TechCrunch)
+    source: "SpaceX Colossus 1 (~220k GPU) -> Anthropic (~$1.25 млрд./мес.), TechCrunch 2026-05-20"
     bearish: "Крайното търсене е замаскирано; приходът се самозахранва"
     bullish: "Take-or-pay от кредитоспособни котви = качествен backlog"
   - id: T3

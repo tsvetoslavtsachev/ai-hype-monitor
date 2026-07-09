@@ -9,3 +9,4 @@ dist/
 build/
 .DS_Store
 *.log
+out/watcher_t7.md

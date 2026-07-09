@@ -24,23 +24,26 @@ def main():
     froth = json.loads(FROTH.read_text(encoding="utf-8"))
     series = froth["series"]
     latest = series[-1]
-    ai_share = latest["share"]                    # 0..1
+    ai_share = latest["share"]                    # 0..1 (или None)
     split = froth.get("latest_quarter_sic_split", {})
-    nontech = (split.get("nontech_share_pct") or 0) / 100.0
+    nt_pct = split.get("nontech_share_pct")       # None ако липсва SIC разбивка
+    nontech = nt_pct / 100.0 if nt_pct is not None else None   # None-propagation, не тих 0
 
     t9a_hit = ai_share is not None and ai_share >= t9a
-    t9b_hit = nontech >= t9b
+    t9b_hit = nontech is not None and nontech >= t9b
     candidate = t9a_hit or t9b_hit
     # rearm: AI-дял < 0.50 две поредни тримесечия
     last2 = [s["share"] for s in series[-2:] if s["share"] is not None]
     rearm = len(last2) == 2 and all(s < 0.50 for s in last2)
 
+    ai_str = f"{ai_share:.3f}" if ai_share is not None else "None"
+    nt_str = f"{nontech:.3f}" if nontech is not None else "None (no SIC split)"
     lines = [
         "# Watcher T9 (froth) — CANDIDATE (human confirms; no auto-status)",
         "",
         f"- Latest quarter: **{latest['quarter']}**",
-        f"- T9a AI-share: **{ai_share:.3f}** vs threshold {t9a}  -> {'HIT' if t9a_hit else 'no'}",
-        f"- T9b non-tech share: **{nontech:.3f}** vs threshold {t9b}  -> {'HIT' if t9b_hit else 'no'}",
+        f"- T9a AI-share: **{ai_str}** vs threshold {t9a}  -> {'HIT' if t9a_hit else 'no'}",
+        f"- T9b non-tech share: **{nt_str}** vs threshold {t9b}  -> {'HIT' if t9b_hit else 'no'}",
         f"- **CANDIDATE: {'FIRE T9' if candidate else 'not fired'}**",
         f"- rearm (AI-share < 0.50 x2 quarters): {rearm}",
         "",
@@ -48,8 +51,8 @@ def main():
         f"{latest['s1_root_filings']}); thresholds config/v2/zones_signoff.json.tripwire_T9",
     ]
     OUT.write_text("\n".join(lines) + "\n", encoding="utf-8")
-    print(f"[t9_froth] {latest['quarter']}: AI={ai_share:.3f}(>={t9a}? {t9a_hit}) "
-          f"nontech={nontech:.3f}(>={t9b}? {t9b_hit}) -> candidate={candidate} -> {OUT.name}")
+    print(f"[t9_froth] {latest['quarter']}: AI={ai_str}(>={t9a}? {t9a_hit}) "
+          f"nontech={nt_str}(>={t9b}? {t9b_hit}) -> candidate={candidate} -> {OUT.name}")
     return candidate
 
 
