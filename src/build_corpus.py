@@ -214,6 +214,23 @@ def get_exhibit_text(cik: str, accession: str) -> tuple[str | None, str | None]:
                 exhibit_url = BASE_SEC + href.group(1)
                 break
 
+    # FALLBACK (по-хлабав matcher): някои емитенти етикетират прессъобщението
+    # EX-99 (без .1) или EX-99.01/.02 (водеща нула) — напр. ETN (EX-99),
+    # CDNS (EX-99.01/.02). Стриктният `EX-99\.[12]` ги пропуска. Пуска се САМО
+    # когато стриктният се провали, за да НЕ променя избора за работещите тикери.
+    if not exhibit_url:
+        for row in rows:
+            cells_text = [re.sub(r'<[^>]+>', '', c).strip()
+                          for c in re.findall(r'<td[^>]*>(.*?)</td>', row,
+                                              re.DOTALL | re.IGNORECASE)]
+            row_text = ' '.join(cells_text)
+            if re.search(r'EX-99(\.\d{1,2})?\b', row_text, re.IGNORECASE):
+                href = re.search(r'href="(/Archives/edgar/data/[^"]+\.htm[^"]*)"',
+                                 row, re.IGNORECASE)
+                if href:
+                    exhibit_url = BASE_SEC + href.group(1)
+                    break
+
     if not exhibit_url:
         return None, None
 

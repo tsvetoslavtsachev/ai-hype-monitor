@@ -57,14 +57,11 @@ WRONG_TOKEN = {
 
 # Активни тикери без raw корпус — документирани причини (не са провал):
 #  - foreign filer: подава 20-F/6-K, няма 8-K item 2.02 (структурно).
-#  - exhibit-matcher: има 8-K 2.02, но build_corpus.get_exhibit_text търси
-#    буквално EX-99.1/EX-99.2 в индекса и не хваща етикета на този емитент
-#    (Phase 2 rhetoric_v2 кандидат за поправка; backfill_edgar ги хваща).
+# (ETN/CDNS бяха тук заради стриктния EX-99.1/.2 matcher; Фаза-2 амендмент К1
+#  добави по-хлабав fallback — EX-99 / EX-99.01/.02 — и ги backfill-на.)
 KNOWN_MISSING = {
     "ASML": "foreign filer (20-F/6-K); no 8-K item 2.02",
     "ARM": "foreign filer (20-F/6-K); no 8-K item 2.02",
-    "ETN": "8-K 2.02 present but EX-99.1/EX-99.2 exhibit not matched by build_corpus",
-    "CDNS": "8-K 2.02 present but EX-99.1/EX-99.2 exhibit not matched by build_corpus",
 }
 
 
