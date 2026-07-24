@@ -1,11 +1,12 @@
-# Журнал на пукнатините T1-T10 (Фаза 4, 4.1)
-# Източник: _hype_redesign_analytics/TRIPWIRE-CATALOG.md (08.07.2026).
+# Журнал на пукнатините T1-T13 (Фаза 4, 4.1; кредитният слой T11-T13 добавен 24.07.2026)
+# Източник: _hype_redesign_analytics/TRIPWIRE-CATALOG.md (08.07.2026);
+#   T11-T13: research/reconciliation-matrix-2026-07-22.md (Панел В, кредитният слой).
 # Дискретен слой ИЗВЪН числото G (журналът се показва ДО G, никога В G).
 # Статусите се сменят САМО ръчно (watcher-ите пишат КАНДИДАТИ; човек потвърждава).
 meta:
-  source: "TRIPWIRE-CATALOG.md (2026-07-08)"
-  as_of: "2026-07-08"
-  note: "T1-T4 fired to 2026-07-08; T5-T10 not fired. Statuses are human-set."
+  source: "TRIPWIRE-CATALOG.md (2026-07-08); T11-T13: research/reconciliation-matrix-2026-07-22.md"
+  as_of: "2026-07-24"
+  note: "T1-T4 fired to 2026-07-08; T11 fired 2026-07-09 (S&P/Oracle). T5-T10, T12-T13 not fired. Statuses are human-set."
 tripwires:
   - id: T1
     name: "Хиперскейлър продава собствен компют навън"
@@ -84,6 +85,30 @@ tripwires:
     definition: "Втори хиперскейлър съкращава useful-life на сървъри/GPU (10-K)"
     status: not_fired
     fired_date: null
-    source: "[Н] - иска отделен годишен 10-K diff. Watcher: t10_depreciation.py (stub)"
+    source: "Amazon ПЪРВИЯТ скъси (6->5 г., -$700M opex 2025); Meta/MSFT удължиха - чака се вторият. Burry $176B оценка 2026-28 оспорена (Nvidia rebuttal). Watcher: t10_depreciation.py (stub); досие: research/reconciliation-matrix-2026-07-22.md (Панел В4)"
     bearish: "Признание, че чиповете се амортизират по-бързо от планираното"
     bullish: "Консервативно счетоводство; изпреварва реалността"
+  - id: T11
+    name: "Рейтингово действие заради AI ливъридж"
+    definition: "Downgrade/negative outlook/watch към хиперскейлър или AI-инфраструктурен играч, изрично цитиращи AI ливъридж/лизинги/capex; или материално разширение на DC private credit / project bond спредове"
+    status: fired
+    fired_date: "2026-07-09"
+    source: "S&P: Oracle BBB -> BBB- (09.07.2026) - изрично AI capex (FY27 $90-95 млрд.), ливъридж mid-4x FY27, OpenAI концентрацията като риск. Потвърждение: Moody's/BIS флагове. Праг за следващо задействане: второ действие срещу друг от петте"
+    bearish: "Първото кредитно репрайсване на цикъла - спредовете реагират преди P&L"
+    bullish: "Идиосинкратично за Oracle-овия баланс (най-агресивният от петте); останалите държат A/AA с масивен OCF"
+  - id: T12
+    name: "Ускорение на footnote серията (незапочнати лизинги + off-BS)"
+    definition: "Ръст >20% q/q на footnote серията (незапочнати DC лизинги / off-BS ангажименти) ИЛИ off-BS > 1.5x видимия дълг"
+    status: not_fired
+    fired_date: null
+    source: "Серията: Moody's $662B (февр. 2026) -> Morgan Stanley $800B+ лизинги в $1.8T обща оценка (юли); Nikkei агрегат $1.65T, 8x за ~4 г. [Н] вайръл разбивките по компании НЕ са Nikkei данни - потвърдени само агрегатът, Meta ($420B) и Oracle. Досие: research/reconciliation-matrix-2026-07-22.md (Панел В)"
+    bearish: "Задлъжняването изпреварва счетоводното признаване; лизингите влизат в баланса при пускане -> механичен ливъридж ръст 2027-28 на capex пика (~38% capex/revenue)"
+    bullish: "Законно, оповестено, покрито от OCF; финансова иновация за buildout без equity разводняване"
+  - id: T13
+    name: "Backlog концентрация >50% в един частен контрагент"
+    definition: "RPO/backlog концентрация >50% в един частен AI контрагент при който и да е хиперскейлър, ИЛИ спад на RPO при задържана концентрация"
+    status: not_fired
+    fired_date: null
+    source: "MSFT 10-Q (апр. 2026): OpenAI = 45% от $627B RPO; Google backlog $462B срещу $200B Anthropic ангажимент (43.3%). Сверява се тримесечно от 10-Q таблиците, не от новинарския промпт"
+    bearish: "Demand видимостта на чиповия цикъл виси на неодитирана едномесечна анюализация"
+    bullish: "Договорен take-or-pay lock-in с най-дълбоко финансираните контрагенти в историята на частните пазари"

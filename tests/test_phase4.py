@@ -1,7 +1,7 @@
 """
 test_phase4.py — Фаза 4 тестове (offline).
 ==========================================
-tripwires.yaml парсва (T1-T4 fired); provenance тест (всяко число в
+tripwires.yaml парсва (T1-T4 + T11 fired); provenance тест (всяко число в
 едностраничника се проследява до съхранен вход); watcher изходите съществуват.
 Генерирани изходи -> skip ако още не са произведени.
 """
@@ -21,11 +21,11 @@ V2 = ROOT / "app" / "data" / "v2"
 def test_tripwires_yaml_parses():
     tw = yaml.safe_load((V2 / "tripwires.yaml").read_text(encoding="utf-8"))
     tws = tw["tripwires"]
-    assert len(tws) == 10
+    assert len(tws) == 13
     ids = [t["id"] for t in tws]
-    assert ids == [f"T{i}" for i in range(1, 11)]
+    assert ids == [f"T{i}" for i in range(1, 14)]
     fired = {t["id"] for t in tws if t["status"] == "fired"}
-    assert fired == {"T1", "T2", "T3", "T4"}
+    assert fired == {"T1", "T2", "T3", "T4", "T11"}
     for t in tws:
         assert t["status"] in ("fired", "not_fired")
         for k in ("name", "definition", "source", "bearish", "bullish"):

@@ -526,6 +526,15 @@ T8: An accounting restatement or SEC inquiry/investigation involving an AI
     infrastructure company.
 T10: A second hyperscaler REDUCING server/GPU useful-life (depreciation)
      assumptions in its 10-K.
+T11: A credit rating downgrade, negative outlook, or watch placement on a
+     hyperscaler or AI-infrastructure company explicitly citing AI-related
+     leverage, lease obligations, or capex (S&P, Moody's, Fitch actions);
+     also material widening in data-center private credit or project bond
+     spreads.
+T12: New disclosures or third-party studies quantifying growth in
+     off-balance-sheet AI obligations: non-commenced data-center leases,
+     GPU purchase commitments, SPV/JV financing structures (footnote
+     analyses, Moody's/Nikkei-type studies, 10-Q commitment tables).
 
 For every match report: date · source (publication + link) · 2-line summary ·
 which tripwire ID it matches · confidence (clear match / borderline).
@@ -571,9 +580,11 @@ _ROUTINE_FOLD = """
     <p class="routine-note">CI е нарочно паузиран — събужда се с отделно решение СЛЕД одобрението на лицето; дотогава рутината е ръчна.</p>
 
     <p style="font-weight:700;margin:14px 0 2px;font-size:13.5px">Блок 3 · Новинарската рутина (пукнатините) + промптът за Perplexity</p>
-    <p class="routine-note">Пукнатините T1–T10 са дискретни събития ИЗВЪН числото G; статусът им се сменя САМО от човек.
-      Watcher-ите (t7, t9, t10) пишат само кандидати в <code>out\\</code>. Новинарските (T1–T6, T8, T10) се търсят ръчно —
-      с промпта долу, седмично. T9 нарочно липсва от промпта: той е машинно наблюдаван от <code>t9_froth.py</code>.</p>
+    <p class="routine-note">Пукнатините T1–T13 са дискретни събития ИЗВЪН числото G; статусът им се сменя САМО от човек.
+      Watcher-ите (t7, t9, t10) пишат само кандидати в <code>out\\</code>. Новинарските (T1–T6, T8, T10–T12) се търсят ръчно —
+      с промпта долу, седмично. T9 нарочно липсва от промпта: той е машинно наблюдаван от <code>t9_froth.py</code>.
+      T13 също не е новинарска — сверява се тримесечно от 10-Q таблиците (RPO концентрацията), при четенето на отчетите.
+      Кредитният слой (T11–T13) има доказателствен анекс: <code>research/reconciliation-matrix-2026-07-22.md</code>.</p>
     <div class="copyrow">
       <button type="button" class="copybtn" data-copy="ppx-prompt">копирай</button>
       <span class="routine-note" style="margin:0">Perplexity промпт — вмъква се дословно.</span>
