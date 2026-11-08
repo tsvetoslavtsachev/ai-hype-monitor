@@ -115,4 +115,5 @@ def main(as_of=AS_OF):
 
 
 if __name__ == "__main__":
-    main()
+    # По избор: as-of дата като аргумент (както render_onepager_html.py), иначе AS_OF.
+    main(sys.argv[1] if len(sys.argv) > 1 else AS_OF)
