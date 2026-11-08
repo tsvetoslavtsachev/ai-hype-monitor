@@ -1,0 +1,109 @@
+name: Weekly v2 — каишката
+
+# Седмичната рутина на v2 (сгъвката „Рутината“ на живото лице), автоматизирана 08.11.2026.
+# Статусът на пукнатините T1-T13 остава САМО ръчен; тук не се пипа.
+# Ред: цени (price-archive за ETF-ите, yfinance за акциите) → фундамент (SEC XBRL) →
+# четирите гласа на еуфорията → E, G, зона → седмичен едностраничник → лицето docs/index.html.
+# Сайтът е legacy Pages от main/docs: комитът тук е деплоят.
+#
+# pull_request = сух рън (всичко без комита), за да се проверява конвейерът преди сливане.
+
+on:
+  schedule:
+    # 06:00 UTC събота: след петъчното затваряне в price-archive (дневният рън е 00:37 UTC).
+    - cron: '0 6 * * 6'
+  workflow_dispatch: {}
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'config/**'
+      - 'tests/**'
+      - '.github/workflows/weekly_v2.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-v2
+  cancel-in-progress: false
+
+jobs:
+  weekly:
+    runs-on: ubuntu-24.04
+    env:
+      PYTHONUTF8: '1'
+      PYTHONUNBUFFERED: '1'
+    steps:
+      - name: Checkout ai-hype-monitor
+        uses: actions/checkout@v5
+        with:
+          path: ai-hype-monitor
+
+      - name: Checkout price-archive (ETF цените)
+        uses: actions/checkout@v5
+        with:
+          repository: tsvetoslavtsachev/price-archive
+          path: price-archive
+          token: ${{ secrets.PRICE_ARCHIVE_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Зависимости
+        run: |
+          pip install --upgrade pip
+          pip install -r ai-hype-monitor/requirements.txt pyyaml pytest
+
+      - name: Цени (история + файлове по символ)
+        working-directory: ai-hype-monitor
+        run: |
+          python src/backfill_prices.py --price-archive-root ../price-archive
+          python src/split_price_history.py
+
+      - name: Фундамент (SEC XBRL, point-in-time)
+        working-directory: ai-hype-monitor
+        run: python src/v2/collect_xbrl.py
+
+      - name: Четирите гласа на еуфорията
+        working-directory: ai-hype-monitor
+        run: |
+          python src/v2/rhetoric_v2.py
+          python src/v2/promise_delivery.py
+          python src/v2/froth.py
+          python src/v2/multiple_v2.py
+
+      - name: Композитите и зоната
+        working-directory: ai-hype-monitor
+        run: |
+          python src/v2/euphoria.py
+          python src/v2/gap.py
+          python src/v2/zones.py
+
+      - name: Едностраничник и лице
+        id: face
+        working-directory: ai-hype-monitor
+        run: |
+          d=$(date -u +%Y-%m-%d)
+          python src/v2/onepager.py "$d"
+          python src/v2/render_onepager_html.py "$d"
+          echo "asof=$d" >> "$GITHUB_OUTPUT"
+
+      - name: Тестове (провенансът на лицето срещу данните)
+        working-directory: ai-hype-monitor
+        run: python -m pytest -q tests
+
+      - name: Комит (= деплой на лицето)
+        if: github.event_name != 'pull_request'
+        working-directory: ai-hype-monitor
+        run: |
+          git config user.name  "weekly-v2"
+          git config user.email "actions@users.noreply.github.com"
+          git add app/data docs out
+          if git diff --cached --quiet; then
+            echo "без промяна, нищо за комитване"
+          else
+            git commit -m "v2 weekly: ${{ steps.face.outputs.asof }}"
+            git push
+          fi

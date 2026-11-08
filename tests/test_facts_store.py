@@ -97,9 +97,13 @@ def test_none_propagation_missing_concept():
 # ── TTM чрез счетоводна идентичност (Фаза-1 амендмент) ──────────────────────
 
 def test_ttm_identity_matches_hand_calc():
-    """TTM = FY_предх + YTD_текуща − YTD_минала, сверено ръчно от официалните факти."""
-    nvda = fs.ttm_asof("NVDA", "revenue", "9999-12-31")
-    msft = fs.ttm_asof("MSFT", "revenue", "9999-12-31")
+    """TTM = FY_предх + YTD_текуща − YTD_минала, сверено ръчно от официалните факти.
+
+    Към фиксирана дата (датата на фазата), не към „най-новото“: ръчната сметка е от
+    07.2026 и с всяко ново SEC подаване последният TTM законно се мени (08.11.2026:
+    NVDA 302.97 млрд. от 10-Q на 26.08), което чупеше теста в седмичния CI."""
+    nvda = fs.ttm_asof("NVDA", "revenue", "2026-07-10")
+    msft = fs.ttm_asof("MSFT", "revenue", "2026-07-10")
     assert nvda and abs(nvda["value"] - 253_491_000_000) < 1_000_000
     assert msft and abs(msft["value"] - 318_273_000_000) < 1_000_000
     assert nvda["method"] in ("identity", "sum_4q")

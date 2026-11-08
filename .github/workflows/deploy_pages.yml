@@ -1,10 +1,10 @@
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [ main ]
-    paths:
-      - 'app/**'
+  # САМО ръчно (08.11.2026). Това е деплоят на v1 (качва ./app). Сайтът е на legacy Pages
+  # от main/docs (v2). Push тригерът върху app/** се надбягваше с pages-build-deployment
+  # (24.07 и двата тръгнаха в една минута) и седмичният v2 рън пише в app/data, тоест
+  # всеки седмичен комит рискуваше да върне v1 на главния адрес.
   workflow_dispatch:
 
 permissions:
