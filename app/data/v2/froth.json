@@ -4,12 +4,12 @@
   "method": "share of S-1-root filings (S-1+S-1/A) containing 'artificial intelligence' per calendar quarter -> expanding robust z (min 8). Numerator: efts total (documents; mild overcount). Denominator: form.idx S-1+S-1/A. Phrase-mention != AI-centrality.",
   "min_history_quarters": 8,
   "latest_quarter_sic_split": {
-    "quarter": "2026Q2",
-    "unique_ciks": 210,
-    "tech": 44,
-    "nontech": 158,
-    "unknown_sic": 8,
-    "nontech_share_pct": 78.2
+    "quarter": "2026Q3",
+    "unique_ciks": 162,
+    "tech": 37,
+    "nontech": 116,
+    "unknown_sic": 9,
+    "nontech_share_pct": 75.8
   },
   "series": [
     {
@@ -123,6 +123,14 @@
       "share": 0.5855,
       "share_pct": 58.6,
       "z": 2.8217
+    },
+    {
+      "quarter": "2026Q3",
+      "ai_hits": 317,
+      "s1_root_filings": 547,
+      "share": 0.5795,
+      "share_pct": 58.0,
+      "z": 2.526
     }
   ]
 }

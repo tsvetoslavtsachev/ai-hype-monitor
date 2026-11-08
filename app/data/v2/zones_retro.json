@@ -10,30 +10,84 @@
     "undefined": "Neopredelena (Неопределена)"
   },
   "occupancy_pct": {
-    "extreme_high": 16.7,
-    "neutral": 83.3
+    "extreme_high": 13.5,
+    "neutral": 74.0,
+    "mild_high": 6.7,
+    "mild_low": 5.8
   },
-  "n_transitions": 2,
+  "n_transitions": 6,
   "transitions": [
     {
       "date": "2024-11-15",
       "old": "init",
       "new": "extreme_high",
       "reason": "init/resume",
-      "G_z": 2.7339,
+      "G_z": 3.0329,
       "dG4": null
     },
     {
       "date": "2025-02-21",
       "old": "extreme_high",
       "new": "neutral",
-      "G_z": -0.1253,
-      "dG4": -2.833,
+      "G_z": -0.0912,
+      "dG4": -3.0774,
       "velocity_flag": true,
       "driving": {
         "driver": "F",
-        "dE": -0.3883,
-        "dF": 0.4232
+        "dE": -0.3828,
+        "dF": 0.4419
+      }
+    },
+    {
+      "date": "2025-07-04",
+      "old": "neutral",
+      "new": "mild_high",
+      "G_z": 1.3204,
+      "dG4": 0.2448,
+      "velocity_flag": false,
+      "driving": {
+        "driver": "E",
+        "dE": 0.0656,
+        "dF": 0.0
+      }
+    },
+    {
+      "date": "2025-08-22",
+      "old": "mild_high",
+      "new": "neutral",
+      "G_z": -0.8051,
+      "dG4": -2.3252,
+      "velocity_flag": true,
+      "driving": {
+        "driver": "E",
+        "dE": -0.5532,
+        "dF": 0.0699
+      }
+    },
+    {
+      "date": "2026-07-10",
+      "old": "neutral",
+      "new": "mild_low",
+      "G_z": -1.4738,
+      "dG4": -0.868,
+      "velocity_flag": false,
+      "driving": {
+        "driver": "E",
+        "dE": -0.2326,
+        "dF": 0.0
+      }
+    },
+    {
+      "date": "2026-08-21",
+      "old": "mild_low",
+      "new": "neutral",
+      "G_z": 0.2357,
+      "dG4": 2.1916,
+      "velocity_flag": true,
+      "driving": {
+        "driver": "E",
+        "dE": 0.6478,
+        "dF": 0.0605
       }
     }
   ],
@@ -816,7 +870,7 @@
     },
     {
       "date": "2024-11-15",
-      "G_z": 2.7339,
+      "G_z": 3.0329,
       "dG4": null,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
@@ -824,7 +878,7 @@
     },
     {
       "date": "2024-11-22",
-      "G_z": 2.8942,
+      "G_z": 3.2027,
       "dG4": null,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
@@ -832,7 +886,7 @@
     },
     {
       "date": "2024-11-29",
-      "G_z": 2.8142,
+      "G_z": 3.1183,
       "dG4": null,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
@@ -840,7 +894,7 @@
     },
     {
       "date": "2024-12-06",
-      "G_z": 2.7245,
+      "G_z": 3.0071,
       "dG4": null,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
@@ -848,643 +902,803 @@
     },
     {
       "date": "2024-12-13",
-      "G_z": 2.6575,
-      "dG4": -0.0764,
+      "G_z": 2.9448,
+      "dG4": -0.0881,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2024-12-20",
-      "G_z": 2.5314,
-      "dG4": -0.3628,
+      "G_z": 2.8164,
+      "dG4": -0.3863,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2024-12-27",
-      "G_z": 2.4812,
-      "dG4": -0.333,
+      "G_z": 2.7646,
+      "dG4": -0.3537,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-01-03",
-      "G_z": 2.5545,
-      "dG4": -0.17,
+      "G_z": 2.8411,
+      "dG4": -0.166,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-01-10",
-      "G_z": 2.4379,
-      "dG4": -0.2196,
+      "G_z": 2.7205,
+      "dG4": -0.2243,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-01-17",
-      "G_z": 2.6089,
-      "dG4": 0.0775,
+      "G_z": 2.9034,
+      "dG4": 0.087,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-01-24",
-      "G_z": 2.7077,
-      "dG4": 0.2265,
+      "G_z": 2.9862,
+      "dG4": 0.2216,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-01-31",
-      "G_z": 2.1834,
-      "dG4": -0.3711,
+      "G_z": 2.4548,
+      "dG4": -0.3863,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-02-07",
-      "G_z": 2.198,
-      "dG4": -0.2399,
+      "G_z": 2.4653,
+      "dG4": -0.2552,
       "instant_zone": "extreme_high",
       "committed_zone": "extreme_high",
       "velocity_flag": false
     },
     {
       "date": "2025-02-14",
-      "G_z": 0.014,
-      "dG4": -2.5949,
+      "G_z": 0.0606,
+      "dG4": -2.8428,
       "instant_zone": "neutral",
       "committed_zone": "extreme_high",
       "velocity_flag": true
     },
     {
       "date": "2025-02-21",
-      "G_z": -0.1253,
-      "dG4": -2.833,
+      "G_z": -0.0912,
+      "dG4": -3.0774,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-02-28",
-      "G_z": -0.3002,
-      "dG4": -2.4836,
+      "G_z": -0.2793,
+      "dG4": -2.7341,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-03-07",
-      "G_z": -0.45,
-      "dG4": -2.648,
+      "G_z": -0.436,
+      "dG4": -2.9013,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-03-14",
-      "G_z": -0.4154,
-      "dG4": -0.4294,
+      "G_z": -0.4025,
+      "dG4": -0.4631,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-03-21",
-      "G_z": -0.4538,
-      "dG4": -0.3285,
+      "G_z": -0.4368,
+      "dG4": -0.3456,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-03-28",
-      "G_z": -0.6644,
-      "dG4": -0.3642,
+      "G_z": -0.6663,
+      "dG4": -0.387,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-04-04",
-      "G_z": -0.9196,
-      "dG4": -0.4696,
+      "G_z": -0.9379,
+      "dG4": -0.5019,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-04-11",
-      "G_z": -0.6455,
-      "dG4": -0.2301,
+      "G_z": -0.6465,
+      "dG4": -0.244,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-04-18",
-      "G_z": -0.7632,
-      "dG4": -0.3094,
+      "G_z": -0.7719,
+      "dG4": -0.3351,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-04-25",
-      "G_z": -0.5513,
-      "dG4": 0.1131,
+      "G_z": -0.545,
+      "dG4": 0.1213,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-05-02",
-      "G_z": -0.5422,
-      "dG4": 0.3774,
+      "G_z": -0.5383,
+      "dG4": 0.3996,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-05-09",
-      "G_z": -0.5167,
-      "dG4": 0.1288,
+      "G_z": -0.5099,
+      "dG4": 0.1366,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-05-16",
-      "G_z": 0.8641,
-      "dG4": 1.6273,
+      "G_z": 0.9678,
+      "dG4": 1.7397,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-05-23",
-      "G_z": 0.7778,
-      "dG4": 1.3291,
+      "G_z": 0.8794,
+      "dG4": 1.4244,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-05-30",
-      "G_z": 0.8232,
-      "dG4": 1.3654,
+      "G_z": 0.9238,
+      "dG4": 1.4621,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-06-06",
-      "G_z": 0.9622,
-      "dG4": 1.4789,
-      "instant_zone": "neutral",
+      "G_z": 1.0756,
+      "dG4": 1.5855,
+      "instant_zone": "mild_high",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-06-13",
-      "G_z": 0.8484,
-      "dG4": -0.0157,
+      "G_z": 0.9469,
+      "dG4": -0.0209,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-06-20",
-      "G_z": 0.9611,
-      "dG4": 0.1833,
-      "instant_zone": "neutral",
+      "G_z": 1.0663,
+      "dG4": 0.1869,
+      "instant_zone": "mild_high",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-06-27",
-      "G_z": 1.1552,
-      "dG4": 0.332,
+      "G_z": 1.276,
+      "dG4": 0.3522,
       "instant_zone": "mild_high",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-07-04",
-      "G_z": 1.1936,
-      "dG4": 0.2314,
+      "G_z": 1.3204,
+      "dG4": 0.2448,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-07-11",
-      "G_z": 1.1297,
-      "dG4": 0.2813,
+      "G_z": 1.2533,
+      "dG4": 0.3064,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-07-18",
-      "G_z": 1.2271,
-      "dG4": 0.266,
+      "G_z": 1.3596,
+      "dG4": 0.2933,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-07-25",
-      "G_z": 1.3762,
-      "dG4": 0.221,
+      "G_z": 1.5201,
+      "dG4": 0.2441,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-08-01",
-      "G_z": 1.2495,
-      "dG4": 0.0559,
+      "G_z": 1.3828,
+      "dG4": 0.0624,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-08-08",
-      "G_z": 1.1266,
-      "dG4": -0.0031,
+      "G_z": 1.2577,
+      "dG4": 0.0044,
       "instant_zone": "mild_high",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": false
     },
     {
       "date": "2025-08-15",
-      "G_z": -0.7621,
-      "dG4": -1.9892,
+      "G_z": -0.773,
+      "dG4": -2.1326,
       "instant_zone": "neutral",
-      "committed_zone": "neutral",
+      "committed_zone": "mild_high",
       "velocity_flag": true
     },
     {
       "date": "2025-08-22",
-      "G_z": -0.7925,
-      "dG4": -2.1687,
+      "G_z": -0.8051,
+      "dG4": -2.3252,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-08-29",
-      "G_z": -0.6211,
-      "dG4": -1.8706,
+      "G_z": -0.6275,
+      "dG4": -2.0103,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-09-05",
-      "G_z": -0.7478,
-      "dG4": -1.8744,
+      "G_z": -0.7611,
+      "dG4": -2.0188,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2025-09-12",
-      "G_z": -0.686,
-      "dG4": 0.0761,
+      "G_z": -0.6965,
+      "dG4": 0.0765,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-09-19",
-      "G_z": -0.5764,
-      "dG4": 0.2161,
+      "G_z": -0.5805,
+      "dG4": 0.2246,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-09-26",
-      "G_z": -0.6717,
-      "dG4": -0.0506,
+      "G_z": -0.6827,
+      "dG4": -0.0552,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-10-03",
-      "G_z": -0.3159,
-      "dG4": 0.4319,
+      "G_z": -0.3017,
+      "dG4": 0.4594,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-10-10",
-      "G_z": -0.2803,
-      "dG4": 0.4057,
+      "G_z": -0.2655,
+      "dG4": 0.431,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-10-17",
-      "G_z": -0.0663,
-      "dG4": 0.5101,
+      "G_z": -0.0297,
+      "dG4": 0.5508,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-10-24",
-      "G_z": 0.0548,
-      "dG4": 0.7265,
+      "G_z": 0.1058,
+      "dG4": 0.7885,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-10-31",
-      "G_z": 0.1686,
-      "dG4": 0.4845,
+      "G_z": 0.2177,
+      "dG4": 0.5194,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-11-07",
-      "G_z": 0.1602,
-      "dG4": 0.4405,
+      "G_z": 0.2125,
+      "dG4": 0.478,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-11-14",
-      "G_z": -0.6912,
-      "dG4": -0.6249,
+      "G_z": -0.7114,
+      "dG4": -0.6817,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-11-21",
-      "G_z": -1.1521,
-      "dG4": -1.2069,
+      "G_z": -1.2048,
+      "dG4": -1.3106,
       "instant_zone": "mild_low",
       "committed_zone": "neutral",
-      "velocity_flag": false
+      "velocity_flag": true
     },
     {
       "date": "2025-11-28",
-      "G_z": -0.6773,
-      "dG4": -0.8459,
+      "G_z": -0.6946,
+      "dG4": -0.9123,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-12-05",
-      "G_z": -0.5774,
-      "dG4": -0.7376,
+      "G_z": -0.5846,
+      "dG4": -0.7971,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-12-12",
-      "G_z": -0.6315,
-      "dG4": 0.0597,
+      "G_z": -0.6443,
+      "dG4": 0.0671,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-12-19",
-      "G_z": -0.8962,
-      "dG4": 0.2559,
+      "G_z": -0.9275,
+      "dG4": 0.2773,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2025-12-26",
-      "G_z": -0.6787,
-      "dG4": -0.0014,
+      "G_z": -0.6931,
+      "dG4": 0.0015,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-01-02",
-      "G_z": -0.4312,
-      "dG4": 0.1462,
+      "G_z": -0.4278,
+      "dG4": 0.1568,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-01-09",
-      "G_z": -0.0765,
-      "dG4": 0.555,
+      "G_z": -0.0603,
+      "dG4": 0.584,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-01-16",
-      "G_z": 0.0042,
-      "dG4": 0.9004,
+      "G_z": -0.0006,
+      "dG4": 0.9269,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-01-23",
-      "G_z": -0.1948,
-      "dG4": 0.4839,
+      "G_z": -0.1961,
+      "dG4": 0.497,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-01-30",
-      "G_z": -0.0133,
-      "dG4": 0.4179,
+      "G_z": 0.0006,
+      "dG4": 0.4284,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-02-06",
-      "G_z": -0.0017,
-      "dG4": 0.0748,
+      "G_z": 0.0248,
+      "dG4": 0.0851,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-02-13",
-      "G_z": 0.2011,
-      "dG4": 0.1969,
+      "G_z": 0.2457,
+      "dG4": 0.2463,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-02-20",
-      "G_z": 0.0286,
-      "dG4": 0.2234,
+      "G_z": 0.039,
+      "dG4": 0.2351,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-02-27",
-      "G_z": 0.0656,
-      "dG4": 0.0789,
+      "G_z": 0.0774,
+      "dG4": 0.0768,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-03-06",
-      "G_z": 0.0293,
-      "dG4": 0.031,
+      "G_z": 0.0438,
+      "dG4": 0.019,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-03-13",
-      "G_z": 0.0091,
-      "dG4": -0.192,
+      "G_z": 0.0188,
+      "dG4": -0.2269,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-03-20",
-      "G_z": 0.0017,
-      "dG4": -0.0269,
+      "G_z": 0.0129,
+      "dG4": -0.0261,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-03-27",
-      "G_z": -0.3355,
-      "dG4": -0.4011,
+      "G_z": -0.3465,
+      "dG4": -0.4239,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-04-03",
-      "G_z": -0.0918,
-      "dG4": -0.1211,
+      "G_z": -0.0927,
+      "dG4": -0.1365,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-04-10",
-      "G_z": 0.3125,
-      "dG4": 0.3034,
+      "G_z": 0.3293,
+      "dG4": 0.3105,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-04-17",
-      "G_z": 0.7345,
-      "dG4": 0.7328,
+      "G_z": 0.7999,
+      "dG4": 0.787,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-04-24",
-      "G_z": 0.8658,
-      "dG4": 1.2013,
+      "G_z": 0.9417,
+      "dG4": 1.2882,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
-      "velocity_flag": false
+      "velocity_flag": true
     },
     {
       "date": "2026-05-01",
-      "G_z": 0.7527,
-      "dG4": 0.8445,
+      "G_z": 0.8189,
+      "dG4": 0.9116,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-05-08",
-      "G_z": 1.2118,
-      "dG4": 0.8993,
+      "G_z": 1.3018,
+      "dG4": 0.9725,
       "instant_zone": "mild_high",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-05-15",
-      "G_z": -0.3383,
-      "dG4": -1.0728,
+      "G_z": -0.3636,
+      "dG4": -1.1635,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-05-22",
-      "G_z": -0.3669,
-      "dG4": -1.2327,
+      "G_z": -0.4159,
+      "dG4": -1.3576,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
-      "velocity_flag": false
+      "velocity_flag": true
     },
     {
       "date": "2026-05-29",
-      "G_z": -0.0105,
-      "dG4": -0.7632,
+      "G_z": -0.0095,
+      "dG4": -0.8284,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-06-05",
-      "G_z": -0.8005,
-      "dG4": -2.0123,
+      "G_z": -0.8603,
+      "dG4": -2.1621,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": true
     },
     {
       "date": "2026-06-12",
-      "G_z": -0.5691,
-      "dG4": -0.2308,
+      "G_z": -0.6058,
+      "dG4": -0.2422,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
     },
     {
       "date": "2026-06-19",
-      "G_z": -0.6099,
-      "dG4": -0.243,
+      "G_z": -0.6405,
+      "dG4": -0.2246,
       "instant_zone": "neutral",
       "committed_zone": "neutral",
       "velocity_flag": false
+    },
+    {
+      "date": "2026-06-26",
+      "G_z": -0.9529,
+      "dG4": -0.9434,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-07-03",
+      "G_z": -1.6742,
+      "dG4": -0.8139,
+      "instant_zone": "mild_low",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-07-10",
+      "G_z": -1.4738,
+      "dG4": -0.868,
+      "instant_zone": "mild_low",
+      "committed_zone": "mild_low",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-07-17",
+      "G_z": -2.125,
+      "dG4": -1.4845,
+      "instant_zone": "extreme_low",
+      "committed_zone": "mild_low",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-07-24",
+      "G_z": -1.9559,
+      "dG4": -1.003,
+      "instant_zone": "mild_low",
+      "committed_zone": "mild_low",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-07-31",
+      "G_z": -2.1186,
+      "dG4": -0.4444,
+      "instant_zone": "extreme_low",
+      "committed_zone": "mild_low",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-08-07",
+      "G_z": -1.5324,
+      "dG4": -0.0586,
+      "instant_zone": "mild_low",
+      "committed_zone": "mild_low",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-08-14",
+      "G_z": 0.5062,
+      "dG4": 2.6312,
+      "instant_zone": "neutral",
+      "committed_zone": "mild_low",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-08-21",
+      "G_z": 0.2357,
+      "dG4": 2.1916,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-08-28",
+      "G_z": 0.0285,
+      "dG4": 2.1471,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-09-04",
+      "G_z": 0.1252,
+      "dG4": 1.6576,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": true
+    },
+    {
+      "date": "2026-09-11",
+      "G_z": 0.0256,
+      "dG4": -0.4806,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-09-18",
+      "G_z": 0.0633,
+      "dG4": -0.1724,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-09-25",
+      "G_z": 0.3819,
+      "dG4": 0.3534,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-10-02",
+      "G_z": 0.3976,
+      "dG4": 0.2724,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-10-09",
+      "G_z": 0.2465,
+      "dG4": 0.2209,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-10-16",
+      "G_z": -0.4943,
+      "dG4": -0.5576,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-10-23",
+      "G_z": -0.4316,
+      "dG4": -0.8135,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-10-30",
+      "G_z": -0.7066,
+      "dG4": -1.1042,
+      "instant_zone": "neutral",
+      "committed_zone": "neutral",
+      "velocity_flag": false
+    },
+    {
+      "date": "2026-11-06",
+      "G_z": -1.3813,
+      "dG4": -1.6278,
+      "instant_zone": "mild_low",
+      "committed_zone": "neutral",
+      "velocity_flag": true
     }
   ]
 }

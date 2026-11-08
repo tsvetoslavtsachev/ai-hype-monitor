@@ -1,6 +1,6 @@
 {
   "cik": "1341439",
-  "entity_name": "Oracle Corporation",
+  "entity_name": "ORACLE CORP",
   "facts": [
     {
       "accn": "0001193125-12-284007",
@@ -1455,6 +1455,17 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0001193125-26-389274",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2025-08-31",
+      "period_start": "2025-06-01",
+      "unit": "USD",
+      "value": 8502000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
       "accn": "0001193125-25-315925",
       "concept": "capex",
       "form": "10-Q",
@@ -1485,6 +1496,17 @@
       "period_start": "2025-06-01",
       "unit": "USD",
       "value": 55663000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-26-389274",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "unit": "USD",
+      "value": 28499000000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
@@ -3864,6 +3886,17 @@
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
+      "accn": "0001193125-26-389274",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2025-08-31",
+      "period_start": "2025-06-01",
+      "unit": "USD/shares",
+      "value": 1.01,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
       "accn": "0001193125-25-315925",
       "concept": "eps_diluted",
       "form": "10-Q",
@@ -3916,6 +3949,17 @@
       "period_start": "2025-06-01",
       "unit": "USD/shares",
       "value": 5.83,
+      "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
+    },
+    {
+      "accn": "0001193125-26-389274",
+      "concept": "eps_diluted",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "unit": "USD/shares",
+      "value": 1.56,
       "xbrl_tag": "us-gaap:EarningsPerShareDiluted"
     },
     {
@@ -6581,6 +6625,17 @@
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
+      "accn": "0001193125-26-389274",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2025-08-31",
+      "period_start": "2025-06-01",
+      "unit": "USD",
+      "value": 4277000000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
       "accn": "0001193125-25-315925",
       "concept": "operating_income",
       "form": "10-Q",
@@ -6633,6 +6688,17 @@
       "period_start": "2025-06-01",
       "unit": "USD",
       "value": 20606000000,
+      "xbrl_tag": "us-gaap:OperatingIncomeLoss"
+    },
+    {
+      "accn": "0001193125-26-389274",
+      "concept": "operating_income",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "unit": "USD",
+      "value": 6728000000,
       "xbrl_tag": "us-gaap:OperatingIncomeLoss"
     },
     {
@@ -9474,6 +9540,17 @@
       "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
+      "accn": "0001193125-26-389274",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2025-08-31",
+      "period_start": "2025-06-01",
+      "unit": "USD",
+      "value": 14926000000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    },
+    {
       "accn": "0001193125-25-315925",
       "concept": "revenue",
       "form": "10-Q",
@@ -9538,6 +9615,17 @@
       "unit": "USD",
       "value": 67357000000,
       "xbrl_tag": "us-gaap:Revenues"
+    },
+    {
+      "accn": "0001193125-26-389274",
+      "concept": "revenue",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2026-08-31",
+      "period_start": "2026-06-01",
+      "unit": "USD",
+      "value": 19345000000,
+      "xbrl_tag": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
     },
     {
       "accn": "0001193125-09-195193",
@@ -10286,9 +10374,20 @@
       "unit": "shares",
       "value": 2880471000,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0001193125-26-389274",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-09-11",
+      "period_end": "2026-09-07",
+      "period_start": "2026-09-07",
+      "unit": "shares",
+      "value": 3023736000,
+      "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     }
   ],
-  "record_count": 935,
+  "record_count": 944,
   "schema": "bitemporal append-only; record={concept,xbrl_tag,period_start,period_end,value,unit,form,known_at,accn}",
   "source": "SEC XBRL companyfacts (data.sec.gov)",
   "ticker": "ORCL"
