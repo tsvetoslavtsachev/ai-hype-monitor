@@ -3,9 +3,9 @@
   "live_start_date": "2026-07-10",
   "note": "Ретро-преходите са в zones_retro.json (descriptive). Тук се пишат САМО живи преходи от датата на фазата нататък.",
   "baseline": {
-    "as_of_data": "2026-11-06",
+    "as_of_data": "2026-11-13",
     "zone": "neutral",
-    "G_z": -1.3813
+    "G_z": -1.0814
   },
   "entries": []
 }
