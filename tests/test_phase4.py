@@ -39,6 +39,12 @@ def _last_defined(series, key):
     return None
 
 
+def held_f_row(f_quarterly, wk):
+    """Независим еталон (ПРОЛЕТР7): F, който важи към седмицата wk (effective <= wk)."""
+    ok = [r for r in f_quarterly if r.get("F") is not None and r.get("effective") and r["effective"] <= wk]
+    return max(ok, key=lambda r: r["effective"]) if ok else None
+
+
 def _parse_provenance(md_text):
     """Извлича {metric: value_str} от provenance таблицата."""
     out = {}
@@ -69,7 +75,7 @@ def test_onepager_provenance_traces_to_stored_inputs():
     wk = grow["date"]
     erow = next(r for r in euph if r["date"] == wk)
     zrow = next(s for s in zones["series"] if s["date"] == wk)
-    fq = _last_defined(gap["f_quarterly"], "F")
+    fq = held_f_row(gap["f_quarterly"], wk)  # ПРОЛЕТР7: F, който важи към седмицата
 
     def close(a, b):
         return abs(float(a) - float(b)) < 5e-4
@@ -83,6 +89,8 @@ def test_onepager_provenance_traces_to_stored_inputs():
     assert close(prov["z_promise_delivery"], erow["z_promise_delivery"])
     assert close(prov["E"], erow["E"])
     assert close(prov["F"], fq["F"])
+    # ПРОЛЕТР7: едно число, една мярка: G_raw в изхода е E − F от същия изход
+    assert close(prov["G_raw"], float(prov["E"]) - float(prov["F"])), "G_raw != E - F в едностраничника"
     assert close(prov["froth_share"], froth["series"][-1]["share"])
 
 

@@ -31,7 +31,7 @@ from pathlib import Path
 import yaml
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from onepager import _last_defined, AS_OF  # noqa: E402  (споделен източник, без дублиране)
+from onepager import _last_defined, held_f_row, AS_OF  # noqa: E402  (споделен източник, без дублиране)
 
 ROOT = Path(__file__).resolve().parents[2]
 V2 = ROOT / "app" / "data" / "v2"
@@ -371,7 +371,7 @@ def build(as_of=AS_OF):
     wk = grow["date"]
     zrow = next((s for s in zones["series"] if s["date"] == wk), {})
     erow = next((r for r in euph if r["date"] == wk), {})
-    fq = _last_defined(gap["f_quarterly"], "F")
+    fq = held_f_row(gap["f_quarterly"], wk)
     froth_last = froth["series"][-1]
 
     zone = zrow.get("committed_zone")
@@ -400,11 +400,11 @@ def build(as_of=AS_OF):
         ("z_froth", erow.get("z_froth"), "euphoria_series.json:z_froth@" + wk, wk),
         ("z_multiple", erow.get("z_multiple"), "euphoria_series.json:z_multiple@" + wk, wk),
         ("E", erow.get("E"), "euphoria_series.json:E@" + wk, wk),
-        ("F", fq["F"], "gap_series.json:f_quarterly:last(F)", fq["quarter"]),
+        ("F", fq["F"], "gap_series.json:f_quarterly:held(F)@effective<=" + wk, fq["quarter"]),
         ("z_revenue_growth_yoy", fq.get("z_revenue_growth_yoy"),
-         "gap_series.json:f_quarterly:last", fq["quarter"]),
+         "gap_series.json:f_quarterly:held", fq["quarter"]),
         ("z_operating_margin", fq.get("z_operating_margin"),
-         "gap_series.json:f_quarterly:last", fq["quarter"]),
+         "gap_series.json:f_quarterly:held", fq["quarter"]),
         ("froth_share", froth_last["share"], "froth.json:last(share)", froth_last["quarter"]),
     ]
 
