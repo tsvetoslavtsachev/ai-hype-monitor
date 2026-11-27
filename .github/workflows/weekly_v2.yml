@@ -72,7 +72,9 @@ jobs:
         run: python src/v2/collect_xbrl.py
 
       # ПРОЛЕТР9 (27.11.2026): гласовете на еуфорията, E, G, зоните, едностраничникът и лицето
-      # (docs/index.html) са замразени по решение на Ц.; виж src/v2/FROZEN.md. Живи са източниците
+      # (старото е в docs/arhiv/2026-11-20/) са замразени по решение на Ц.; виж src/v2/FROZEN.md.
+      # docs/index.html от 27.11.2026 е новата публична страница на двете стрелки (strelki_site.py).
+      # Живи са източниците
       # на двете стрелки: froth (S-1 делът), ai_words (AI думите в резултатите, третата съставка на
       # историята по решението на Ц. „Само думите“, 27.11.2026; SEC се пита веднъж на тримесечие)
       # и multiple_v2 (P/S по име), плюс фактите горе.
@@ -85,12 +87,14 @@ jobs:
           python src/v2/ai_words.py
           python src/v2/multiple_v2.py
 
-      - name: Двете стрелки (out/weekly/<събота>.json и .md)
+      - name: Двете стрелки (out/weekly/<събота>.json и .md, серията, публичната страница)
         id: face
         working-directory: ai-hype-monitor
         run: |
           d=$(python src/v2/strelki.py --print-saturday)
           python src/v2/strelki.py "$d"
+          # публичната страница (решение на Ц. „Публичен сайт“, 27.11.2026): docs/index.html и данните
+          python src/v2/strelki_site.py "$d"
           echo "asof=$d" >> "$GITHUB_OUTPUT"
 
       - name: Тестове
