@@ -26,12 +26,12 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from series_util import expanding_robust_z, quarter_sort_key  # noqa: E402
+from sec_ua import sec_headers  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "app" / "data" / "v2" / "froth.json"
 CACHE = ROOT / "app" / "data" / "v2" / "froth_cache"
 
-UA = {"User-Agent": "Tsachev Research tsvetoslav.tsachev@gmail.com"}
 EFTS = "https://efts.sec.gov/LATEST/search-index?"
 
 # тримесечия 2023Q1 .. текущо (спрямо днешната дата се спира; тук до 2026Q2)
@@ -53,7 +53,7 @@ def _get(url, tries=5):
     last = None
     for a in range(tries):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=sec_headers()), timeout=60) as r:
                 return r.read()
         except Exception as ex:
             last = ex

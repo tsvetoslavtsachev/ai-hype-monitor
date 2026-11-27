@@ -32,10 +32,11 @@ except ImportError:
 
 EDGAR_BASE   = "https://data.sec.gov"
 EDGAR_ARCH   = "https://www.sec.gov/Archives/edgar/data"
-HEADERS = {
-    "User-Agent": "Tsachev Research tsvetoslav.tsachev@gmail.com",
-    "Accept-Encoding": "gzip, deflate",
-}
+import sys  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent / "v2"))
+from sec_ua import sec_headers  # noqa: E402
+
+HEADERS = {"Accept-Encoding": "gzip, deflate"}  # User-Agent: sec_ua (SEC_USER_AGENT)
 RATE_LIMIT_SLEEP = 0.12   # ~8 req/sec (лимит е 10)
 
 
@@ -49,7 +50,7 @@ def sec_get(url: str, timeout: int = 20):
     resp = None
     for attempt in range(len(backoffs) + 1):
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=timeout)
+            resp = requests.get(url, headers=sec_headers(HEADERS), timeout=timeout)
             time.sleep(RATE_LIMIT_SLEEP)
             if resp.status_code in (429, 500, 502, 503) and attempt < len(backoffs):
                 wait = backoffs[attempt]

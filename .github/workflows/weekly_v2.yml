@@ -66,10 +66,15 @@ jobs:
 
       - name: Фундамент (SEC XBRL, point-in-time)
         working-directory: ai-hype-monitor
+        env:
+          # ПРОЛЕТР9: идентификацията пред SEC идва от тайната, не от кода (src/v2/sec_ua.py).
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python src/v2/collect_xbrl.py
 
       - name: Четирите гласа на еуфорията
         working-directory: ai-hype-monitor
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           python src/v2/rhetoric_v2.py
           python src/v2/promise_delivery.py

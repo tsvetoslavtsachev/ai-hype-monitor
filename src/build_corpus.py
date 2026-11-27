@@ -26,8 +26,11 @@ from datetime import datetime
 
 # ── Конфигурация ──────────────────────────────────────────────────────────
 
-HEADERS  = {"User-Agent": "Tsachev Research tsvetoslav.tsachev@gmail.com",
-            "Accept-Encoding": "gzip, deflate"}
+import sys  # noqa: E402
+sys.path.insert(0, str(Path(__file__).resolve().parent / "v2"))
+from sec_ua import sec_headers  # noqa: E402
+
+HEADERS  = {"Accept-Encoding": "gzip, deflate"}  # User-Agent: sec_ua (SEC_USER_AGENT)
 BASE_SEC  = "https://www.sec.gov"
 BASE_DATA = "https://data.sec.gov"
 RATE      = 0.15   # секунди между заявки
@@ -136,7 +139,7 @@ def sec_get(url: str, timeout: int = 20) -> requests.Response | None:
     """GET с rate limiting и retry."""
     for attempt in range(3):
         try:
-            r = requests.get(url, headers=HEADERS, timeout=timeout)
+            r = requests.get(url, headers=sec_headers(HEADERS), timeout=timeout)
             time.sleep(RATE)
             return r
         except Exception as e:

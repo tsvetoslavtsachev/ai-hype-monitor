@@ -19,7 +19,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
 OUT = ROOT / "out" / "watcher_t7.md"
-UA = {"User-Agent": "Tsachev Research tsvetoslav.tsachev@gmail.com"}
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from sec_ua import sec_headers  # noqa: E402
 EFTS = "https://efts.sec.gov/LATEST/search-index?"
 
 # целеви фрази (по-специфични от само "reciprocal", за да падне шумът)
@@ -30,7 +31,7 @@ def efts(params, tries=5):
     url = EFTS + urllib.parse.urlencode(params)
     for a in range(tries):
         try:
-            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=45) as r:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=sec_headers()), timeout=45) as r:
                 return json.loads(r.read().decode())
         except Exception as e:
             if a == tries - 1:
