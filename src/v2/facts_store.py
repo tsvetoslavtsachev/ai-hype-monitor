@@ -21,11 +21,11 @@ from functools import lru_cache
 from pathlib import Path
 
 try:  # работи и като модул (src.v2), и standalone
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS
 except ImportError:  # pragma: no cover
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS
 
 FACTS_DIR = Path(__file__).resolve().parents[2] / "app" / "data" / "v2" / "facts"
 
@@ -68,6 +68,25 @@ def _best_vintage(recs: list) -> dict:
     )[-1]
 
 
+def _fresh_top_tag(recs: list) -> list:
+    """Instant (броя акции): записите само на най-приоритетния таг сред „свежите“.
+
+    Свеж е таг, чийто последен период е до INSTANT_TAG_FRESH_DAYS преди най-скорошния
+    период изобщо. Имената с dei остават на dei; резервата идва само при липса
+    или остарял по-приоритетен таг (ПРОЛЕТР9).
+    """
+    last_by_tag = {}
+    for r in recs:
+        t = r["xbrl_tag"]
+        if r["period_end"] > last_by_tag.get(t, ""):
+            last_by_tag[t] = r["period_end"]
+    newest = date.fromisoformat(max(last_by_tag.values()))
+    fresh = [t for t, pe in last_by_tag.items()
+             if (newest - date.fromisoformat(pe)).days <= INSTANT_TAG_FRESH_DAYS]
+    top = min(fresh, key=lambda t: tag_priority(recs[0]["concept"], t))
+    return [r for r in recs if r["xbrl_tag"] == top]
+
+
 def _default_period(concept: str) -> str:
     return "instant" if CONCEPT_KIND.get(concept) == "instant" else "Q"
 
@@ -88,6 +107,8 @@ def get_asof(ticker: str, concept: str, as_of_date: str, period: str = None):
     recs = _pit_period_recs(ticker, concept, as_of_date, period)
     if not recs:
         return None
+    if period == "instant":
+        recs = _fresh_top_tag(recs)
     latest_pe = max(r["period_end"] for r in recs)
     return _best_vintage([r for r in recs if r["period_end"] == latest_pe])
 
@@ -156,17 +177,22 @@ def ttm_asof(ticker: str, concept: str, as_of_date: str):
     best = _best_by_period(ticker, concept, as_of_date)
     if not best:
         return None
-    quarters = {k: r for k, r in best.items() if _ptype(r) == "Q"}
-    if not quarters:
-        # без тримесечия: ако има FY факт — TTM = последният FY
-        fys = {k: r for k, r in best.items() if _ptype(r) == "FY"}
+    # ПРОЛЕТР9: краят E е най-скорошният край сред ВСИЧКИ дюрации (Q, H, 9M, FY), не само
+    # тримесечните. Иначе отчетите само с натрупано от началото на годината (капексът на
+    # GOOGL и META) и годишните отчети без Q4 държат TTM на старо тримесечие.
+    durs = {k: r for k, r in best.items() if _ptype(r) in ("Q", "H", "9M", "FY")}
+    if not durs:
+        return None
+    if not any(_ptype(r) == "Q" for r in durs.values()):
+        # без тримесечия: TTM = последният FY (както досега)
+        fys = {k: r for k, r in durs.items() if _ptype(r) == "FY"}
         if not fys:
             return None
         E = max(k[1] for k in fys)
         r = _best_vintage([v for k, v in fys.items() if k[1] == E])
         return _ttm_result(r["value"], [r], None, "fy_only")
 
-    E = max(k[1] for k in quarters)
+    E = max(k[1] for k in durs)
 
     # (1) сума на 4 съседни тримесечия
     chain = _four_quarters(best, E)

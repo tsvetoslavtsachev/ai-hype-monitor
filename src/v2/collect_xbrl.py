@@ -34,7 +34,7 @@ except ImportError:
     import requests
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from concepts import CONCEPT_CHAINS, CONCEPT_KIND, period_type  # noqa: E402
+from concepts import CONCEPT_CHAINS, CONCEPT_KIND, DURATION_AS_INSTANT, period_type  # noqa: E402
 from sec_ua import sec_headers  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -140,6 +140,11 @@ def extract_records(facts_json: dict) -> list:
                     # счетоводната ИДЕНТИЧНОСТ на TTM/Q4 (facts_store.ttm_asof).
                     period_start = start
                 else:  # instant (shares)
+                    if xbrl_tag in DURATION_AS_INSTANT:
+                        # тримесечна дюрация като точка в края ѝ (ПРОЛЕТР9, META)
+                        start = e.get("start")
+                        if not start or period_type(start, end) != "Q":
+                            continue
                     period_start = end
                 records.append({
                     "concept": concept,

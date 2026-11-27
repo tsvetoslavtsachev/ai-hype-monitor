@@ -60,6 +60,7 @@ STOCKS = {
     "AMAT":  {"name": "Applied Materials",     "layer": "Semicon Equipment"},
     "LRCX":  {"name": "Lam Research",          "layer": "Semicon Equipment"},
     "KLAC":  {"name": "KLA Corp",              "layer": "Semicon Equipment"},
+    "ONTO":  {"name": "Onto Innovation",       "layer": "Semicon Equipment"},  # ПРОЛЕТР9: беше във вселената без цена
     "SNPS":  {"name": "Synopsys",              "layer": "Semicon Equipment"},
     "CDNS":  {"name": "Cadence Design",        "layer": "Semicon Equipment"},
     # Memory

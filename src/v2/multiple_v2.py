@@ -30,6 +30,7 @@ ROOT = Path(__file__).resolve().parents[2]
 PRICES = ROOT / "app" / "data" / "prices"
 UNIVERSE = ROOT / "config" / "universe.csv"
 OUT = ROOT / "app" / "data" / "v2" / "multiple_v2.json"
+OUT_TICKERS = ROOT / "app" / "data" / "v2" / "ps_by_ticker.json"
 
 MIN_TICKERS = 8      # минимум компании за валидна кръстосана медиана
 MIN_WEEKS = 52       # ~1г седмична база за робастния z (аналог на "кратка база")
@@ -61,6 +62,42 @@ def price_asof(series, d):
     return closes[i] if i >= 0 else None
 
 
+def load_layers():
+    with open(UNIVERSE, encoding="utf-8-sig") as fh:
+        return {r["symbol"].strip(): r["layer"].strip() for r in csv.DictReader(fh)}
+
+
+def ticker_ps(series, t, d):
+    """P/S на името към петъка d и подробностите (дати, тагове) или причината за липса."""
+    det = {"ps": None}
+    if series is None:
+        det["missing"] = "no price file"
+        return None, det
+    i = bisect.bisect_right(series[0], d) - 1
+    if i < 0:
+        det["missing"] = "no price on/before Friday"
+        return None, det
+    det.update(price=series[1][i], price_date=series[0][i])
+    sh = fs.get_asof(t, "shares", d)          # PIT
+    ttm = fs.ttm_asof(t, "revenue", d)        # PIT идентичност
+    if sh is None:
+        det["missing"] = "no shares in facts"
+        return None, det
+    det.update(shares=sh["value"], shares_tag=sh["xbrl_tag"], shares_period_end=sh["period_end"],
+               shares_known_at=sh["known_at"])
+    if ttm is None:
+        det["missing"] = "no TTM revenue in facts"
+        return None, det
+    det.update(ttm_revenue=ttm["value"], ttm_known_at=ttm["known_at"], ttm_method=ttm["method"],
+               ttm_period_end=max(c["period_end"] for c in ttm["derived_from"]))
+    if sh["value"] <= 0 or ttm["value"] <= 0:
+        det["missing"] = "non-positive shares or revenue"
+        return None, det
+    ps = (series[1][i] * sh["value"]) / ttm["value"]
+    det["ps"] = round(ps, 4)
+    return ps, det
+
+
 def fridays(start: str, end: str):
     cur = date.fromisoformat(start)
     end_d = date.fromisoformat(end)
@@ -77,18 +114,16 @@ def main():
     last_price = max((price[t][0][-1] for t in universe if price[t]), default="2026-06-26")
 
     rows = []
+    weeks, per_ticker, last_detail = [], {t: [] for t in universe}, {}
     for d in fridays(WEEK_START, last_price):
         ps_vals = []
+        weeks.append(d)
         for t in universe:
-            pr = price_asof(price[t], d)
-            sh = fs.get_asof(t, "shares", d)          # PIT
-            ttm = fs.ttm_asof(t, "revenue", d)        # PIT идентичност
-            if pr is None or sh is None or ttm is None:
-                continue
-            shares_val, ttm_val = sh["value"], ttm["value"]
-            if shares_val <= 0 or ttm_val <= 0:
-                continue
-            ps_vals.append((pr * shares_val) / ttm_val)
+            ps, det = ticker_ps(price[t], t, d)
+            per_ticker[t].append(round(ps, 4) if ps is not None else None)
+            last_detail[t] = det
+            if ps is not None:
+                ps_vals.append(ps)
         if len(ps_vals) >= MIN_TICKERS:
             ps_vals.sort()
             n = len(ps_vals)
@@ -112,6 +147,22 @@ def main():
         "series": rows,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    # ПРОЛЕТР9, Фаза 2: P/S по име се пази (досега се губеше след медианата).
+    layers = load_layers()
+    tick = {
+        "series_type": "retrospective/descriptive",
+        "what": "weekly (Fri) trailing P/S per ticker; the same numbers as the median in multiple_v2.json",
+        "method": out["method"],
+        "sources": {"price": "app/data/prices/{TICKER}.json (close on/before Friday)",
+                    "shares": "app/data/v2/facts (SEC XBRL companyfacts, PIT by filed date; tag in last.shares_tag)",
+                    "revenue": "app/data/v2/facts (TTM by accounting identity, PIT)"},
+        "weeks": weeks,
+        "tickers": {t: {"layer": layers.get(t), "ps": per_ticker[t]} for t in universe},
+        "last_week": weeks[-1] if weeks else None,
+        "last": last_detail,
+    }
+    OUT_TICKERS.write_text(json.dumps(tick, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
     nonnull = [r for r in rows if r["median_ps"] is not None]
     zdef = [r for r in rows if r["z"] is not None]
