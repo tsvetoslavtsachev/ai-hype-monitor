@@ -159,7 +159,8 @@ def market_arrow(series):
     return {d: (100 * v / base, v, n) for d, (v, n) in sorted(m.items()) if d >= BASE_WEEK and v is not None}
 
 
-HIST_KEYS = [("s1", "делът на S-1 проспектите с „artificial intelligence“", SRC_S1),
+SHORT = {"s1": "S-1 делът", "capex": "капексът на хайпърскейлърите"}   # за реда в блока
+HIST_KEYS = [("s1","делът на S-1 проспектите с „artificial intelligence“", SRC_S1),
              ("capex", "капексът на петте хайпърскейлъра към продажбите им, %", SRC_CAPEX)]
 
 
@@ -288,7 +289,7 @@ def build(saturday: str):
             "what": "колко пари се наливат и колко нови компании се закачат (тримесечно)",
             **h_read,
             "components": f"{h_now['n_used']} от {h_now['n_total']}",
-            "stale_or_missing": [{"label": p["label"], "state": p["state"], "quarter": p.get("quarter"),
+            "stale_or_missing": [{"label": p["label"], "short": SHORT[p["key"]], "state": p["state"], "quarter": p.get("quarter"),
                                   "valid_from": p.get("valid_from"), "expected_quarter": p.get("expected_quarter")}
                                  for p in stale],
             "parts": h_now["parts"],
