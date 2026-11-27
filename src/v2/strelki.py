@@ -293,8 +293,9 @@ def build(saturday: str):
                                   "valid_from": p.get("valid_from"), "expected_quarter": p.get("expected_quarter")}
                                  for p in stale],
             "parts": h_now["parts"],
-            "capex_detail": qvals.get(h_now["parts"][1].get("quarter"), {}).get("capex_detail")
-            if h_now["parts"][1].get("quarter") else None,
+            # капексът за очакваното тримесечие: сумите или назованите имена без него
+            "capex_detail": {"quarter": expected_quarter(friday),
+                             **(qvals.get(expected_quarter(friday), {}).get("capex_detail") or {})},
         },
         "segments": segs,
         "names": names,

@@ -85,7 +85,44 @@
     "source": "app/data/v2/facts (SEC XBRL companyfacts: капекс и продажби за 12 месеца, по дата на подаване)"
    }
   ],
-  "capex_detail": null
+  "capex_detail": {
+   "quarter": "2026Q3",
+   "names": {
+    "MSFT": {
+     "capex_12m": 135921000000,
+     "capex_to": "2026-09-30",
+     "revenue_12m": 346445000000,
+     "revenue_to": "2026-09-30"
+    },
+    "GOOGL": {
+     "capex_12m": 159804000000,
+     "capex_to": "2026-09-30",
+     "revenue_12m": 471098000000,
+     "revenue_to": "2026-09-30"
+    },
+    "AMZN": {
+     "capex_12m": 7417000000,
+     "capex_to": "2017-03-31",
+     "revenue_12m": 797455000000,
+     "revenue_to": "2026-09-30"
+    },
+    "META": {
+     "capex_12m": 104438000000,
+     "capex_to": "2026-09-30",
+     "revenue_12m": 241605000000,
+     "revenue_to": "2026-09-30"
+    },
+    "ORCL": {
+     "capex_12m": 75660000000,
+     "capex_to": "2026-08-31",
+     "revenue_12m": 71776000000,
+     "revenue_to": "2026-08-31"
+    }
+   },
+   "missing": [
+    "AMZN"
+   ]
+  }
  },
  "segments": [
   {
