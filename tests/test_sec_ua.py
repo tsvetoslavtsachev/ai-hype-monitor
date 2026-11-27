@@ -60,7 +60,7 @@ def test_modules_import_without_setting(monkeypatch, rel):
 
 def test_placeholder_or_cyrillic_stops_before_any_request(monkeypatch):
     """27.11.2026: образецът „<име> <адрес>“ на кирилица гърмеше в latin-1 при всяка заявка."""
-    for bad in ["<име> <адрес>", "<name> <address>", "Цветан test-contact"]:
+    for bad in ["<име> <адрес>", "<name> <address>", "Иван test-contact"]:
         monkeypatch.setenv("SEC_USER_AGENT", bad)
         with pytest.raises(SystemExit):
             sec_ua.sec_user_agent()
