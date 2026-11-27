@@ -84,14 +84,14 @@ def test_ps_after_split_uses_shares_in_todays_basis(monkeypatch):
 
 def test_md_and_block_carry_dates():
     o = {"friday": "2026-11-20", "saturday": "2026-11-21", "base_week": "2023-05-19",
-         "market": {"date": "2026-11-20", "level": 288.0, "vs_4_weeks": {"change_pct": -30.0},
-                    "vs_52_weeks": {"change_pct": 16.8}, "peak": {"level": 520.0, "date": "2026-05-29", "distance_pct": -44.7},
+         "market": {"date": "2026-11-20", "level": 288.0, "vs_4_weeks": {"change_pct": -30.0, "date": "2026-10-23"},
+                    "vs_52_weeks": {"change_pct": 16.8, "date": "2025-11-21"}, "peak": {"level": 520.0, "date": "2026-05-29", "distance_pct": -44.7},
                     "median_ps": 7.7, "base_median_ps": 2.7, "n_names": 30, "source": "x"},
-         "history": {"level": 250.0, "vs_4_weeks": {"change_pct": 7.6}, "vs_52_weeks": {"change_pct": 54.7},
+         "history": {"level": 250.0, "vs_4_weeks": {"change_pct": 7.6, "date": "2026-10-23"}, "vs_52_weeks": {"change_pct": 54.7, "date": "2025-11-21"},
                      "peak": {"level": 250.0, "date": "2026-11-20", "distance_pct": 0.0}, "components": "2 от 2",
                      "stale_or_missing": [], "parts": [
                          {"key": "s1", "label": "S-1", "state": "свежа", "quarter": "2026Q3", "valid_from": "2026-11-14",
                           "value": 0.58, "base_value": 0.26, "base_quarter": "2023Q1", "index": 227.0, "source": "x"}]},
          "segments": [], "names": [], "frozen": "x"}
     md = s.render_md(o)
-    assert "20.11.2026" in md and "2026Q3, важи от 14.11.2026" in md
+    assert "20.11.2026" in md and "2026Q3, важи от 14.11.2026" in md and "(от 23.10.2026)" in md

@@ -205,7 +205,7 @@ def readings(levels: dict, d: str):
         d0 = ds[i - w]
         return {"date": d0, "level": round(levels[d0], 2), "change_pct": round((levels[d] / levels[d0] - 1) * 100, 1)}
     pk = max(ds[: i + 1], key=lambda x: levels[x])
-    return {"date": d, "level": round(levels[d], 2), "vs_4_weeks": back(WEEKS_MONTH),
+    return {"date": d, "level": round(levels[d], 2), "vs_1_week": back(1), "vs_4_weeks": back(WEEKS_MONTH),
             "vs_52_weeks": back(WEEKS_YEAR),
             "peak": {"date": pk, "level": round(levels[pk], 2),
                      "distance_pct": round((levels[d] / levels[pk] - 1) * 100, 1)}}
@@ -325,19 +325,31 @@ def render_md(o):
     m, h = o["market"], o["history"]
     L = [f"# AI Hype: двете стрелки, седмицата до петък {dm(o['friday'])}",
          "",
-         f"Файлът с всички числа: `out/weekly/{o['saturday']}.json`. Базата е седмицата {dm(o['base_week'])} (100).",
+         f"Файлът с всички числа: `out/weekly/{o['saturday']}.json`.",
          "",
-         "| стрелка | ниво | към дата | спрямо 4 седмици | спрямо 52 седмици | върхът |",
-         "|---|---|---|---|---|---|"]
+         f"Двете стрелки са индекси без таван: 100 е нивото в седмицата до {dm(o['base_week'])}, 200 значи двойно. "
+         "Пазарът е медианата на цена към продажби (P/S за 12 месеца) по имената, седмично към петъка. Историята е "
+         "геометричната средна на два индекса (S-1 делът и капексът на хайпърскейлърите към продажбите им); тя се мести "
+         "само когато влезе ново тримесечие (45 дни след края му), затова седмичната ѝ промяна обикновено е 0, а "
+         "месечната е стъпката на новото тримесечие.",
+         "",
+         "| стрелка | ниво | към дата | спрямо 1 седмица | спрямо 4 седмици | спрямо 52 седмици | върхът |",
+         "|---|---|---|---|---|---|---|"]
+
+    def ch(r, k):
+        return f"{pct(r[k]['change_pct'])} (от {dm(r[k]['date'])})" if r.get(k) else "няма"
     for name, r, when in (("пазарът", m, dm(m["date"])),
-                          ("историята", h, f"{h['parts'][0].get('quarter') or '?'}, важи от "
+                          ("историята", h, f"{max((p['quarter'] for p in h['parts'] if p.get('quarter')), default='?')}, важи от "
                                            f"{dm(max(p['valid_from'] for p in h['parts'] if p.get('valid_from')))}")):
-        L.append(f"| {name} | {r['level']:.0f} | {when} | {pct(r['vs_4_weeks']['change_pct'] if r['vs_4_weeks'] else None)} "
-                 f"| {pct(r['vs_52_weeks']['change_pct'] if r['vs_52_weeks'] else None)} "
+        L.append(f"| {name} | {r['level']:.0f} | {when} | {ch(r, 'vs_1_week')} | {ch(r, 'vs_4_weeks')} | {ch(r, 'vs_52_weeks')} "
                  f"| {r['peak']['level']:.0f} на {dm(r['peak']['date'])} ({pct(r['peak']['distance_pct'])}) |")
     L += ["",
           f"Пазарът: медианата P/S е {num(m['median_ps'], 2)} по {m['n_names']} имена (базата {num(m['base_median_ps'], 2)}). Източник: {m['source']}.",
           f"Историята: от {h['components']} съставки."]
+    cd = h.get("capex_detail") or {}
+    if cd.get("names"):
+        L.append(f"- Капексът за {cd.get('quarter')} по име, до кой край на тримесечието (фискалните краища се различават): "
+                 + "; ".join(f"{t} {v['capex_to'] or 'няма'}" for t, v in cd["names"].items()) + ".")
     for p in h["parts"]:
         if p["state"] == "липсва":
             L.append(f"- {p['label']}: липсва. Източник: {p['source']}.")
