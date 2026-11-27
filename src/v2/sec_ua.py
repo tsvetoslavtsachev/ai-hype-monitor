@@ -24,6 +24,13 @@ def sec_user_agent() -> str:
             f"User-Agent header. Set the environment variable {ENV} locally, "
             f"or the repository secret {ENV} for GitHub Actions."
         )
+    # HTTP заглавките са latin-1: кирилица или неподменен образец гърмят при всяка заявка
+    # и събирачът минава на следващото име (27.11.2026). Спираме веднага.
+    if not ua.isascii() or "<" in ua or ">" in ua:
+        raise SystemExit(
+            f"{ENV} must be plain Latin text with a real name and contact address "
+            f"(no Cyrillic, no <...> placeholder left in it)."
+        )
     return ua
 
 
