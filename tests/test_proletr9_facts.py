@@ -93,3 +93,19 @@ def test_ttm_takes_fy_after_10k(monkeypatch):
     ])
     assert fs.ttm_asof("X", C, "2026-01-15")["value"] == 90
     assert fs.ttm_asof("X", C, "2026-03-13")["value"] == 110
+
+
+def test_ttm_identity_tries_every_ytd_candidate(monkeypatch):
+    """ONTO след смяната на календара: два 9M с край 30.09; само единият стъпва на FY."""
+    C, T = "revenue", "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax"
+    _with(monkeypatch, [
+        _rec(C, T, "2024-12-29", "2026-01-03", 1005, "2026-02-24"),   # FY 2025 (53 седмици)
+        _rec(C, T, "2024-12-29", "2025-09-27", 738, "2025-11-05"),    # 9M 2025
+        _rec(C, T, "2026-01-04", "2026-03-31", 292, "2026-05-05"),
+        _rec(C, T, "2026-04-01", "2026-06-30", 343, "2026-08-06"),
+        _rec(C, T, "2026-07-01", "2026-09-30", 410, "2026-11-09"),
+        _rec(C, T, "2026-01-01", "2026-09-30", 1045, "2026-11-09"),   # 9M, начало 01.01
+        _rec(C, T, "2026-01-04", "2026-09-30", 1045, "2026-11-09"),   # 9M, начало 04.01
+    ])
+    r = fs.ttm_asof("X", C, "2026-11-20")
+    assert r is not None and r["value"] == 1005 + 1045 - 738

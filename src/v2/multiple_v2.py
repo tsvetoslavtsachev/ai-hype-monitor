@@ -50,16 +50,26 @@ def load_price_series(ticker):
     pts = json.loads(f.read_text(encoding="utf-8"))["prices"]
     dates = [p["date"] for p in pts]
     closes = [p["close"] for p in pts]
-    return dates, closes
+    # ПРОЛЕТР9: натрупаният сплит след деня; липсва в старите файлове (тогава 1.0, старото поведение)
+    splits = [float(p.get("split_factor", 1.0)) for p in pts]
+    return dates, closes, splits
 
 
 def price_asof(series, d):
     """Последна цена на/преди d (PIT). None ако няма."""
     if series is None:
         return None
-    dates, closes = series
+    dates, closes = series[0], series[1]
     i = bisect.bisect_right(dates, d) - 1
     return closes[i] if i >= 0 else None
+
+
+def split_factor_at(series, d):
+    """Натрупаният сплит след деня d (за дата преди серията: първата стойност)."""
+    if series is None or len(series) < 3:
+        return 1.0
+    i = bisect.bisect_right(series[0], d) - 1
+    return series[2][max(i, 0)]
 
 
 def load_layers():
@@ -93,7 +103,12 @@ def ticker_ps(series, t, d):
     if sh["value"] <= 0 or ttm["value"] <= 0:
         det["missing"] = "non-positive shares or revenue"
         return None, det
-    ps = (series[1][i] * sh["value"]) / ttm["value"]
+    # Капитализацията: цената е в днешната база (коригирана за всички сплитове до днес), затова
+    # акциите се привеждат към днешната база: брой акции × сплитовете след датата им.
+    # (= реалната цена в петъка × реалния брой акции в петъка)
+    adj = split_factor_at(series, sh["period_end"])
+    det["split_adj"] = adj
+    ps = (series[1][i] * sh["value"] * adj) / ttm["value"]
     det["ps"] = round(ps, 4)
     return ps, det
 

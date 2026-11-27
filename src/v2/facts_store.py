@@ -199,17 +199,26 @@ def ttm_asof(ticker: str, concept: str, as_of_date: str):
     if chain:
         return _ttm_result(sum(r["value"] for r in chain), chain, None, "sum_4q")
 
-    # (2) счетоводна идентичност
-    ending_E = [r for k, r in best.items() if k[1] == E]
-    ytd_cur = max(ending_E, key=_pdays)
-    if _ptype(ytd_cur) == "FY":              # E е фискален край -> TTM = FY
-        return _ttm_result(ytd_cur["value"], [ytd_cur], None, "fy_direct")
+    # (2) счетоводна идентичност. ПРОЛЕТР9: опитва всички натрупани записи, завършващи на E,
+    # най-дългия първи (ONTO има два 9M с начало 01.01 и 04.01.2026 след смяна на календара;
+    # само единият стъпва на предходната фискална година).
+    ending_E = sorted([r for k, r in best.items() if k[1] == E], key=_pdays, reverse=True)
+    for ytd_cur in ending_E:
+        if _ptype(ytd_cur) == "FY":          # E е фискален край -> TTM = FY
+            return _ttm_result(ytd_cur["value"], [ytd_cur], None, "fy_direct")
+        got = _identity(best, ytd_cur)
+        if got is not None:
+            return got
+    return None                               # не може да се деривира -> None
 
+
+def _identity(best, ytd_cur):
+    """TTM = FY_предх + YTD_текуща − YTD_минала за един кандидат; None, ако не стъпва."""
     fys = ytd_cur["period_start"]
     P = (date.fromisoformat(fys) - timedelta(days=1)).isoformat()
     fy_prior = [r for k, r in best.items() if k[1] == P and _ptype(r) == "FY"]
     if not fy_prior:
-        return None                           # не може да се деривира -> None
+        return None
     fyp = _best_vintage(fy_prior)
     prior_fys = fyp["period_start"]
     cur_days = _pdays(ytd_cur)
