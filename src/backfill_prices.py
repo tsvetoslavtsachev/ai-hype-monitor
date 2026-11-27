@@ -47,6 +47,13 @@ ARCHIVE_ETFS = {
 }
 
 # Индивидуални акции — теглим от yfinance
+# ПРОЛЕТР9 (27.11.2026): курсовете за P/S на имена, които отчитат в друга валута (ASML в евро).
+# Ключ: series_id в price-archive; стойност: (име на файла в app/data/prices, символ в yfinance).
+# EURUSD = долари за едно евро.
+ARCHIVE_FX = {
+    "px_eurusd_daily": ("EURUSD", "EURUSD=X"),
+}
+
 STOCKS = {
     # Chip Design
     "NVDA":  {"name": "Nvidia",               "layer": "Chip Design"},
@@ -248,6 +255,7 @@ def main():
         "end_date":     args.end,
         "etfs":   {},
         "stocks": {},
+        "fx":     {},
     }
 
     # ── ETF-и от price-archive ────────────────────────────────────────────
@@ -291,6 +299,20 @@ def main():
                 "layer":   meta["layer"],
                 "prices":  records,
             }
+            print(f"OK ({len(records)} дни)")
+        else:
+            print("FAIL")
+
+    # ── Курсове (ПРОЛЕТР9): price-archive, иначе yfinance ─────────────────
+    print("--- Курсове ---")
+    for series_id, (name, yf_symbol) in ARCHIVE_FX.items():
+        print(f"  {name} ({series_id})...", end=" ", flush=True)
+        records = read_archive_series(archive_root, series_id, args.start, args.end)
+        if not records:
+            print("archive miss → yfinance...", end=" ", flush=True)
+            records = fetch_yfinance(yf_symbol, args.start, args.end)
+        if records:
+            result["fx"][name] = records
             print(f"OK ({len(records)} дни)")
         else:
             print("FAIL")

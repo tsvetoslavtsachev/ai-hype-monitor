@@ -159,10 +159,11 @@ def _ttm_result(value, plus, minus, method):
     known_at = max(c["known_at"] for c, _ in comps)
     derived_from = [{
         "role": role, "period_start": c["period_start"], "period_end": c["period_end"],
-        "value": c["value"], "known_at": c["known_at"], "accn": c["accn"],
+        "value": c["value"], "known_at": c["known_at"], "accn": c["accn"], "unit": c.get("unit"),
     } for c, role in comps]
+    units = {c.get("unit") for c, _ in comps}
     return {"value": value, "known_at": known_at, "method": method,
-            "derived_from": derived_from}
+            "unit": units.pop() if len(units) == 1 else "MIXED", "derived_from": derived_from}
 
 
 def ttm_asof(ticker: str, concept: str, as_of_date: str):

@@ -39,6 +39,10 @@ WEEK_START = "2023-01-06"   # петък
 # годишните отчети плюс четирите месеца срок за 20-F, с една седмица отгоре. По-старото е липса,
 # не цена (ПРОЛЕТР9, 27.11.2026: AI взимаше броя акции от април 2021 г., само клас B).
 MAX_FACT_AGE_DAYS = 490
+# Продажбите в друга валута се превеждат в долари по курса в същия петък (капитализацията е в
+# долари към петъка, затова P/S е същото, както ако и двете бяха в евро). Файлът е в app/data/prices
+# и носи долари за една единица от валутата (ПРОЛЕТР9, 27.11.2026: ASML отчита в евро).
+FX_FILES = {"EUR": "EURUSD"}
 
 
 def load_universe():
@@ -104,6 +108,16 @@ def ticker_ps(series, t, d):
         return None, det
     det.update(ttm_revenue=ttm["value"], ttm_known_at=ttm["known_at"], ttm_method=ttm["method"],
                ttm_period_end=max(c["period_end"] for c in ttm["derived_from"]))
+    unit = ttm.get("unit") or "USD"
+    det["revenue_unit"] = unit
+    if unit != "USD":
+        fx = price_asof(load_price_series(FX_FILES[unit]) if unit in FX_FILES else None, d)
+        if fx is None:
+            det["missing"] = f"no FX rate for revenue in {unit}"
+            return None, det
+        det.update(fx_rate=fx, fx_file=FX_FILES[unit])
+        ttm = dict(ttm, value=ttm["value"] * fx)
+        det["ttm_revenue_usd"] = ttm["value"]
     dd = date.fromisoformat(d)
     for what, pe in (("shares", sh["period_end"]), ("TTM revenue", det["ttm_period_end"])):
         if (dd - date.fromisoformat(pe)).days > MAX_FACT_AGE_DAYS:

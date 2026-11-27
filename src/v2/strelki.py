@@ -318,6 +318,50 @@ def build(saturday: str):
     return out
 
 
+SERIES_FILE = "strelki_series.csv"
+
+
+def series(friday: str):
+    """Цялата седмична история на двете стрелки до петъка, ред по петък (за графики и публикации).
+
+    Същите правила като файла за съботата: пазарът от базовата седмица, историята по датата
+    „важи от“, сегментите като медиана на P/S по имената им. Колоните са на латиница, за да се
+    отварят в Excel без настройка на кодировката.
+    """
+    mk = market_arrow(market_series())
+    weeks = [d for d in sorted(mk) if d <= friday]
+    hs = history_arrow(weeks, history_quarters(quarter_of(friday)))
+    t = load_json("ps_by_ticker.json")
+    segs = {}
+    for tk, v in t["tickers"].items():
+        segs.setdefault(v["layer"], []).append(tk)
+    pos = {d: i for i, d in enumerate(t["weeks"])}
+    rows = []
+    for d in weeks:
+        h = hs[d]
+        part = {p["key"]: p for p in h["parts"]}
+        row = {"friday": d, "market": round(mk[d][0], 2), "median_ps": round(mk[d][1], 4), "n_names": mk[d][2],
+               "history": round(h["index"], 2) if h["index"] is not None else "",
+               "history_components": f"{h['n_used']} of {h['n_total']}"}
+        for k, _, _ in HIST_KEYS:
+            p = part.get(k, {})
+            row[f"{k}_index"] = round(p["index"], 2) if p.get("index") is not None else ""
+            row[f"{k}_quarter"] = p.get("quarter", "")
+        for sname in sorted(segs):
+            i = pos.get(d)
+            vals = [t["tickers"][x]["ps"][i] for x in segs[sname] if i is not None and t["tickers"][x]["ps"][i] is not None]
+            row[f"seg_ps {sname}"] = round(statistics.median(vals), 4) if vals else ""
+        rows.append(row)
+    return rows
+
+
+def write_series(rows, path: Path):
+    with path.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+
+
 # ── форматиране ─────────────────────────────────────────────────────────────
 
 def num(x, nd=1):
@@ -409,6 +453,7 @@ def main():
     od.mkdir(parents=True, exist_ok=True)
     (od / f"{a.saturday}.json").write_text(json.dumps(o, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     (od / f"{a.saturday}.md").write_text(render_md(o), encoding="utf-8")
+    write_series(series(o["friday"]), od / SERIES_FILE)
     m, h = o["market"], o["history"]
     print(f"[strelki] {o['friday']}: market {m['level']:.1f} | history {h['level']:.1f} ({h['components']})")
 

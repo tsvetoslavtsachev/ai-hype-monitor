@@ -248,7 +248,7 @@
    "n_names": 5,
    "names": {
     "AMAT": 7.7883,
-    "ASML": 14.9392,
+    "ASML": 13.6186,
     "KLAC": 11.3959,
     "LRCX": 8.7621,
     "ONTO": 6.3675
@@ -274,6 +274,7 @@
    "ttm_known_at": "2026-09-09",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-31",
+   "revenue_unit": "USD",
    "missing": "shares older than 490 days (2021-04-30)"
   },
   {
@@ -290,6 +291,7 @@
    "ttm_known_at": "2026-08-20",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-26",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -306,6 +308,7 @@
    "ttm_known_at": "2026-11-04",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-26",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -322,6 +325,7 @@
    "ttm_known_at": "2026-10-30",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -338,6 +342,7 @@
    "ttm_known_at": "2026-11-04",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -354,12 +359,13 @@
    "ttm_known_at": "2026-11-04",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
    "ticker": "ASML",
    "segment": "Semiconductor Equipment",
-   "ps": 14.9392,
+   "ps": 13.6186,
    "price": 1266.22,
    "price_date": "2026-11-20",
    "shares": 385417665,
@@ -370,6 +376,10 @@
    "ttm_known_at": "2026-02-25",
    "ttm_method": "fy_only",
    "ttm_period_end": "2025-12-31",
+   "revenue_unit": "EUR",
+   "fx_rate": 1.096972,
+   "fx_file": "EURUSD",
+   "ttm_revenue_usd": 35835113415.6,
    "split_adj": 1.0
   },
   {
@@ -386,6 +396,7 @@
    "ttm_known_at": "2026-09-10",
    "ttm_method": "identity",
    "ttm_period_end": "2026-08-02",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -402,6 +413,7 @@
    "ttm_known_at": "2026-10-28",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -418,6 +430,7 @@
    "ttm_known_at": "2026-09-03",
    "ttm_method": "identity",
    "ttm_period_end": "2026-08-01",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -434,6 +447,7 @@
    "ttm_known_at": "2026-11-04",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -450,6 +464,7 @@
    "ttm_known_at": "2026-08-27",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-31",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -466,6 +481,7 @@
    "ttm_known_at": "2026-09-08",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-31",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -482,6 +498,7 @@
    "ttm_known_at": "2026-11-03",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -498,6 +515,7 @@
    "ttm_known_at": "2026-11-03",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-25",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -514,6 +532,7 @@
    "ttm_known_at": "2026-10-29",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -530,6 +549,7 @@
    "ttm_known_at": "2026-10-29",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -546,6 +566,7 @@
    "ttm_known_at": "2026-08-17",
    "ttm_method": "fy_direct",
    "ttm_period_end": "2026-06-27",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -562,6 +583,7 @@
    "ttm_known_at": "2026-10-22",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-27",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -578,6 +600,7 @@
    "ttm_known_at": "2026-10-22",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -594,6 +617,7 @@
    "ttm_known_at": "2026-08-28",
    "ttm_method": "identity",
    "ttm_period_end": "2026-08-01",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -610,6 +634,7 @@
    "ttm_known_at": "2026-10-28",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -626,6 +651,7 @@
    "ttm_known_at": "2026-10-09",
    "ttm_method": "fy_direct",
    "ttm_period_end": "2026-09-03",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -642,6 +668,7 @@
    "ttm_known_at": "2026-10-28",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -658,6 +685,7 @@
    "ttm_known_at": "2026-08-26",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-26",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -674,6 +702,7 @@
    "ttm_known_at": "2026-11-09",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -690,6 +719,7 @@
    "ttm_known_at": "2026-09-11",
    "ttm_method": "identity",
    "ttm_period_end": "2026-08-31",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -706,6 +736,7 @@
    "ttm_known_at": "2026-11-03",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -722,6 +753,7 @@
    "ttm_known_at": "2026-10-29",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -738,6 +770,7 @@
    "ttm_known_at": "2026-11-04",
    "ttm_method": "fy_direct",
    "ttm_period_end": "2026-09-27",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -754,6 +787,7 @@
    "ttm_known_at": "2026-11-06",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -770,6 +804,7 @@
    "ttm_known_at": "2026-09-04",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-31",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -786,6 +821,7 @@
    "ttm_known_at": "2026-08-26",
    "ttm_method": "identity",
    "ttm_period_end": "2026-07-31",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -802,6 +838,7 @@
    "ttm_known_at": "2026-10-29",
    "ttm_method": "identity",
    "ttm_period_end": "2026-10-02",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -818,6 +855,7 @@
    "ttm_known_at": "2026-10-28",
    "ttm_method": "identity",
    "ttm_period_end": "2026-09-30",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   },
   {
@@ -834,6 +872,7 @@
    "ttm_known_at": "2026-10-23",
    "ttm_method": "identity",
    "ttm_period_end": "2026-10-02",
+   "revenue_unit": "USD",
    "split_adj": 1.0
   }
  ],

@@ -117,3 +117,9 @@ def test_diluted_fallback_only_for_meta(monkeypatch):
     _with(monkeypatch, recs)
     assert fs.get_asof("AI", "shares", "2026-11-20") is None
     assert fs.get_asof("META", "shares", "2026-11-20")["value"] == 155
+
+
+def test_ttm_carries_its_currency(monkeypatch):
+    recs = [{**_rec("revenue", "us-gaap:Revenues", "2025-01-01", "2025-12-31", 32.7e9, "2026-02-25"), "unit": "EUR"}]
+    _with(monkeypatch, recs)
+    assert fs.ttm_asof("ASML", "revenue", "2026-11-20")["unit"] == "EUR"

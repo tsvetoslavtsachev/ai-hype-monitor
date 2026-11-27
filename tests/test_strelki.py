@@ -133,3 +133,37 @@ def test_words_quarter_is_the_filing_quarter(monkeypatch):
     monkeypatch.setattr(s, "load_json", lambda n: {"series": [{"filing_quarter": "2026Q3", "share": 0.1625},
                                                               {"filing_quarter": "2026Q4", "share": None}]})
     assert s.words_quarters() == {"2026Q3": 0.1625}
+
+
+def test_ps_revenue_in_euro_is_converted_at_friday_rate(monkeypatch):
+    """ASML отчита в евро: продажбите се превеждат в долари по курса в същия петък (27.11.2026)."""
+    series = (["2026-11-20"], [1266.22], [1.0])
+    fx = (["2026-11-13", "2026-11-20"], [1.05, 1.10], [1.0, 1.0])
+    monkeypatch.setattr(m, "load_price_series", lambda t: fx if t == "EURUSD" else None)
+    monkeypatch.setattr(m.fs, "get_asof", lambda t, c, d: {"value": 385e6, "xbrl_tag": "dei:X",
+                                                           "period_end": "2025-12-31", "known_at": "2026-02-25"})
+    monkeypatch.setattr(m.fs, "ttm_asof", lambda t, c, d: {"value": 32.7e9, "known_at": "2026-02-25", "method": "fy_only",
+                                                           "unit": "EUR", "derived_from": [{"period_end": "2025-12-31"}]})
+    ps, det = m.ticker_ps(series, "ASML", "2026-11-20")
+    assert ps == pytest.approx(1266.22 * 385e6 / (32.7e9 * 1.10))
+    assert det["revenue_unit"] == "EUR" and det["fx_rate"] == 1.10
+
+
+def test_ps_unknown_currency_is_missing(monkeypatch):
+    series = (["2026-11-20"], [10.0], [1.0])
+    monkeypatch.setattr(m.fs, "get_asof", lambda t, c, d: {"value": 1e9, "xbrl_tag": "dei:X",
+                                                           "period_end": "2026-09-30", "known_at": "2026-10-30"})
+    monkeypatch.setattr(m.fs, "ttm_asof", lambda t, c, d: {"value": 5e9, "known_at": "2026-10-30", "method": "identity",
+                                                           "unit": "JPY", "derived_from": [{"period_end": "2026-09-30"}]})
+    ps, det = m.ticker_ps(series, "X", "2026-11-20")
+    assert ps is None and "JPY" in det["missing"]
+
+
+def test_series_last_row_is_the_saturday_file():
+    """Серията за графиките е същото число като файла за съботата (данните в репото)."""
+    o = s.build("2026-11-21")
+    rows = s.series(o["friday"])
+    assert rows[0]["friday"] == s.BASE_WEEK and rows[0]["market"] == 100.0 and rows[0]["history"] == 100.0
+    assert rows[-1]["friday"] == o["friday"]
+    assert rows[-1]["market"] == round(o["market"]["level"], 2)
+    assert rows[-1]["history"] == round(o["history"]["level"], 2)
