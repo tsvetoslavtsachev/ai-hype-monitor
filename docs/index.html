@@ -31,7 +31,7 @@ section{padding:36px 0 8px;scroll-margin-top:60px}
 .kpi .lbl{font-size:13px;color:var(--sec);display:flex;align-items:center;gap:8px;padding-right:100px;min-height:34px}
 .kpi .dot{width:10px;height:10px;border-radius:2px;display:inline-block}
 .kpi .val{font-size:40px;font-weight:600;line-height:1.15;margin:4px 0 2px}
-.kpi .val small{font-size:15px;font-weight:400;color:var(--sec);margin-left:6px}
+.kpi .val small{font-size:15px;font-weight:400;color:var(--sec);margin-left:6px;white-space:nowrap}
 .kpi .chg{font-size:13px;color:var(--sec)}
 .kpi svg{position:absolute;right:16px;top:18px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px}
@@ -89,8 +89,8 @@ footer{border-top:1px solid var(--line);margin-top:40px;padding:20px 0 48px;font
 <div class="kpis" id="kpis">
 <div class="kpi"><div class="lbl"><span class="dot" style="background:var(--m)"></span>Пазарът</div><div class="val">136</div><div class="chg" id="k-m"></div></div>
 <div class="kpi"><div class="lbl"><span class="dot" style="background:var(--h)"></span>Историята</div><div class="val">337</div><div class="chg" id="k-h">тримесечие 2026Q3 · съставки 3 от 3</div></div>
-<div class="kpi"><div class="lbl">Медианата на цена към продажби</div><div class="val" id="k-ps"></div><div class="chg" id="k-ps2"></div></div>
-<div class="kpi"><div class="lbl">Следващата стъпка на историята</div><div class="val" id="k-next" style="font-size:28px;margin-top:10px"></div><div class="chg" id="k-next2"></div></div>
+<div class="kpi"><div class="lbl">Медианата на P/S</div><div class="val" id="k-ps"></div><div class="chg" id="k-ps2"></div></div>
+<div class="kpi"><div class="lbl">Следващата стъпка</div><div class="val" id="k-next" style="font-size:28px;margin-top:10px"></div><div class="chg" id="k-next2"></div></div>
 </div>
 <p class="meta" id="missing"></p>
 </div>
