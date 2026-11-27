@@ -362,13 +362,22 @@ def render_md(o):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("saturday", help="датата на файла (съботата след петъка на данните), YYYY-MM-DD")
+    ap.add_argument("saturday", nargs="?",
+                    help="датата на файла (съботата след петъка на данните), YYYY-MM-DD; "
+                         "без нея: съботата след последния петък с медиана в multiple_v2.json")
+    ap.add_argument("--print-saturday", action="store_true", help="само печата съботата и спира")
     ap.add_argument("--facts-dir", help="друга папка с фактите (само за сверки)")
     ap.add_argument("--out-dir", help="друга папка за изхода (само за сверки)")
     a = ap.parse_args()
     if a.facts_dir:
         fs.FACTS_DIR = Path(a.facts_dir)
         fs.load.cache_clear()
+    if not a.saturday:
+        fri = [d for d, v, _ in market_series() if v is not None][-1]
+        a.saturday = (date.fromisoformat(fri) + timedelta(days=1)).isoformat()
+    if a.print_saturday:
+        print(a.saturday)
+        return
     o = build(a.saturday)
     od = Path(a.out_dir) if a.out_dir else OUT_DIR
     od.mkdir(parents=True, exist_ok=True)

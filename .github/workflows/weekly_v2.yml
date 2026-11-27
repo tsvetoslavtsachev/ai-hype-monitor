@@ -2,8 +2,8 @@ name: Weekly v2 — каишката
 
 # Седмичната рутина на v2 (сгъвката „Рутината“ на живото лице), автоматизирана 08.11.2026.
 # Статусът на пукнатините T1-T13 остава САМО ръчен; тук не се пипа.
-# Ред: цени (price-archive за ETF-ите, yfinance за акциите) → фундамент (SEC XBRL) →
-# четирите гласа на еуфорията → E, G, зона → седмичен едностраничник → лицето docs/index.html.
+# Ред: цени (price-archive, при липса yfinance; за акциите със split_factor, ПРОЛЕТР9) → фундамент (SEC XBRL) →
+# двете стрелки (ПРОЛЕТР9, 27.11.2026; старите гласове, E, G, зоната и лицето са замразени).
 # Сайтът е legacy Pages от main/docs: комитът тук е деплоят.
 #
 # pull_request = сух рън (всичко без комита), за да се проверява конвейерът преди сливане.
@@ -71,33 +71,26 @@ jobs:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: python src/v2/collect_xbrl.py
 
-      - name: Четирите гласа на еуфорията
+      # ПРОЛЕТР9 (27.11.2026): гласовете на еуфорията, E, G, зоните, едностраничникът и лицето
+      # (docs/index.html) са замразени по решение на Ц.; виж src/v2/FROZEN.md. Живи са източниците
+      # на двете стрелки: froth (S-1 делът) и multiple_v2 (P/S по име), плюс фактите горе.
+      - name: Източниците на стрелките (S-1 делът, P/S по име)
         working-directory: ai-hype-monitor
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
-          python src/v2/rhetoric_v2.py
-          python src/v2/promise_delivery.py
           python src/v2/froth.py
           python src/v2/multiple_v2.py
 
-      - name: Композитите и зоната
-        working-directory: ai-hype-monitor
-        run: |
-          python src/v2/euphoria.py
-          python src/v2/gap.py
-          python src/v2/zones.py
-
-      - name: Едностраничник и лице
+      - name: Двете стрелки (out/weekly/<събота>.json и .md)
         id: face
         working-directory: ai-hype-monitor
         run: |
-          d=$(date -u +%Y-%m-%d)
-          python src/v2/onepager.py "$d"
-          python src/v2/render_onepager_html.py "$d"
+          d=$(python src/v2/strelki.py --print-saturday)
+          python src/v2/strelki.py "$d"
           echo "asof=$d" >> "$GITHUB_OUTPUT"
 
-      - name: Тестове (провенансът на лицето срещу данните)
+      - name: Тестове
         working-directory: ai-hype-monitor
         run: python -m pytest -q tests
 

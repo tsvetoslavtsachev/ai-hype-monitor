@@ -87,8 +87,10 @@ def test_none_propagation_missing_concept():
     # ASML (foreign, IFRS годишно) няма тримесечно revenue
     assert fs.latest("ASML", "revenue") is None
     assert fs.get_series_asof("ASML", "revenue", "9999-12-31") == {}
-    # GOOGL/META не подават dei:EntityCommonStockSharesOutstanding
-    assert fs.latest("GOOGL", "shares") is None
+    # GOOGL/META не подават dei:EntityCommonStockSharesOutstanding. ПРОЛЕТР9: броят им идва от
+    # резервните тагове; ако го има, не е от dei (никакво импровизирано прокси, а таг от веригата).
+    g = fs.latest("GOOGL", "shares")
+    assert g is None or not g["xbrl_tag"].startswith("dei:")
     # но налични концепти НЕ са None
     assert fs.latest("ASML", "shares") is not None
     assert fs.latest("NVDA", "revenue") is not None
