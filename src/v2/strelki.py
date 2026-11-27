@@ -319,6 +319,7 @@ def build(saturday: str):
 
 
 SERIES_FILE = "strelki_series.csv"
+MD_HEAD = "# AI Hype: двете стрелки"   # така започва нашият .md; друг .md на същия път не се пипа
 
 
 def series(friday: str):
@@ -379,7 +380,7 @@ def dm(d):
 
 def render_md(o):
     m, h = o["market"], o["history"]
-    L = [f"# AI Hype: двете стрелки, седмицата до петък {dm(o['friday'])}",
+    L = [f"{MD_HEAD}, седмицата до петък {dm(o['friday'])}",
          "",
          f"Файлът с всички числа: `out/weekly/{o['saturday']}.json`.",
          "",
@@ -452,7 +453,12 @@ def main():
     od = Path(a.out_dir) if a.out_dir else OUT_DIR
     od.mkdir(parents=True, exist_ok=True)
     (od / f"{a.saturday}.json").write_text(json.dumps(o, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    (od / f"{a.saturday}.md").write_text(render_md(o), encoding="utf-8")
+    md = od / f"{a.saturday}.md"
+    if md.exists() and not md.read_text(encoding="utf-8").startswith(MD_HEAD):
+        # замразеният едностраничник от старото лице (2026-11-21.md) остава, какъвто го е чел столът
+        print(f"[strelki] {md.name}: old one-pager kept, short .md not written")
+    else:
+        md.write_text(render_md(o), encoding="utf-8")
     write_series(series(o["friday"]), od / SERIES_FILE)
     m, h = o["market"], o["history"]
     print(f"[strelki] {o['friday']}: market {m['level']:.1f} | history {h['level']:.1f} ({h['components']})")

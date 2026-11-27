@@ -167,3 +167,16 @@ def test_series_last_row_is_the_saturday_file():
     assert rows[-1]["friday"] == o["friday"]
     assert rows[-1]["market"] == round(o["market"]["level"], 2)
     assert rows[-1]["history"] == round(o["history"]["level"], 2)
+
+
+def test_old_one_pager_is_not_overwritten(tmp_path, monkeypatch):
+    """27.11.2026: първият ход в GitHub презаписа замразения 2026-11-21.md и тестът на старото лице падна."""
+    old = "# AI Hype Monitor v2: едностраничник\n\nстарото\n"
+    (tmp_path / "2026-11-21.md").write_text(old, encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["strelki.py", "2026-11-21", "--out-dir", str(tmp_path)])
+    s.main()
+    assert (tmp_path / "2026-11-21.md").read_text(encoding="utf-8") == old
+    assert (tmp_path / "2026-11-21.json").exists() and (tmp_path / s.SERIES_FILE).exists()
+    (tmp_path / "2026-11-21.md").unlink()
+    s.main()
+    assert (tmp_path / "2026-11-21.md").read_text(encoding="utf-8").startswith(s.MD_HEAD)
