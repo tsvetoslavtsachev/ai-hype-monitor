@@ -69,9 +69,9 @@ def pct(a, b):
 
 
 def words_section(mlev, qvals):
-    p = PROBES / "ai_words.json"
+    p = PROBES.parent / "ai_words.json"          # от 27.11.2026 съставка, не проба
     if not p.exists():
-        return ["## Думите в съобщенията за резултати", "", "Няма `app/data/v2/probes/ai_words.json`: пробата не е пусната.", ""], None
+        return ["## Думите в съобщенията за резултати", "", "Няма `app/data/v2/ai_words.json`: пробата не е пусната.", ""], None
     w = json.loads(p.read_text(encoding="utf-8"))
     rows = [r for r in w["series"] if r["share"] is not None]
     qs = [r["filing_quarter"] for r in rows]

@@ -1,8 +1,9 @@
 """
-probe_ai_words.py: пробата за AI думите в съобщенията за резултати (ПРОЛЕТР9, Фаза 3).
-=====================================================================================
+ai_words.py: AI думите в съобщенията за резултати, третата съставка на историята (ПРОЛЕТР9).
+=============================================================================================
 Решение на Ц. (26.11.2026, „Да, с пробата“): AI думите минават от ръчния корпус към пълнотекстовото
-търсене на SEC, с проба дали серията мърда, преди да влязат в стрелката на историята.
+търсене на SEC, с проба дали серията мърда. Пробата мина мярката (27.11.2026) и Ц. реши „Само
+думите“ (27.11.2026): серията влиза в стрелката на историята; Wikipedia остава проба.
 
 Мери ШИРИНАТА, не гъстотата: в какъв дял от документите в 8-K, които приличат на съобщение за
 резултати, стои „artificial intelligence“. По образа на froth.py (EDGAR full-text search, само
@@ -17,8 +18,9 @@ EFTS брои документи (основният 8-K и всяко прил�
 тримесечие пробата тегли и първата страница от числителя, за да покаже какви документи брои
 (`file_type`, `items`), без да ги пази.
 
-Пуска се от Ц. (вика SEC): изисква SEC_USER_AGENT (src/v2/sec_ua.py). Кеш: app/data/v2/probes/.
-Изход: app/data/v2/probes/ai_words.json. Седмичният ход НЕ го пуска; влиза в стрелката само с „да“ на Ц.
+Вика SEC: изисква SEC_USER_AGENT (src/v2/sec_ua.py). Кеш: app/data/v2/ai_words_cache/ (приключило
+тримесечие се пита веднъж и се пази, какъвто е бил броят тогава). Изход: app/data/v2/ai_words.json.
+Седмичният ход го пуска; ако последното приключило тримесечие вече е във файла, не вика SEC.
 """
 
 import json
@@ -33,9 +35,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from sec_ua import sec_headers  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
-PROBES = ROOT / "app" / "data" / "v2" / "probes"
-CACHE = PROBES / "ai_words_cache"
-OUT = PROBES / "ai_words.json"
+V2 = ROOT / "app" / "data" / "v2"
+CACHE = V2 / "ai_words_cache"
+OUT = V2 / "ai_words.json"
 EFTS = "https://efts.sec.gov/LATEST/search-index?"
 Q_NUM = '"artificial intelligence" "three months ended"'
 Q_DEN = '"three months ended"'
@@ -115,6 +117,12 @@ def sample(y, k):
 
 
 def main():
+    last = complete_quarters()[-1]
+    if OUT.exists():
+        have = [r["filing_quarter"] for r in json.loads(OUT.read_text(encoding="utf-8"))["series"]]
+        if have and have[-1] == f"{last[0]}Q{last[1]}":
+            print(f"[ai_words] {have[-1]} already in {OUT.name}; no SEC call")
+            return
     CACHE.mkdir(parents=True, exist_ok=True)
     rows = []
     for y, k in complete_quarters():
@@ -123,9 +131,9 @@ def main():
         rows.append({"filing_quarter": f"{y}Q{k}", "ai_docs": num, "earnings_like_docs": den,
                      "share": round(num / den, 4) if den else None})
         print(f"  {y}Q{k}: {num} / {den}", flush=True)
-    last = complete_quarters()[-1]
     out = {
-        "probe": "AI думите в съобщенията за резултати (ширина)",
+        "what": "AI думите в съобщенията за резултати (ширина); третата съставка на историята",
+        "decided": "Ц., 27.11.2026: „Само думите“",
         "by": "ПРОЛЕТР9", "built": date.today().isoformat(),
         "method": {"numerator": Q_NUM, "denominator": Q_DEN, "forms": "8-K",
                    "unit": "документи в EFTS (основният 8-K и приложенията поотделно)",
@@ -135,7 +143,7 @@ def main():
         "series": rows,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"[probe_ai_words] {len(rows)} quarters -> {OUT}")
+    print(f"[ai_words] {len(rows)} quarters -> {OUT}")
 
 
 if __name__ == "__main__":

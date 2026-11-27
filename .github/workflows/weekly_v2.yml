@@ -73,13 +73,16 @@ jobs:
 
       # ПРОЛЕТР9 (27.11.2026): гласовете на еуфорията, E, G, зоните, едностраничникът и лицето
       # (docs/index.html) са замразени по решение на Ц.; виж src/v2/FROZEN.md. Живи са източниците
-      # на двете стрелки: froth (S-1 делът) и multiple_v2 (P/S по име), плюс фактите горе.
-      - name: Източниците на стрелките (S-1 делът, P/S по име)
+      # на двете стрелки: froth (S-1 делът), ai_words (AI думите в резултатите, третата съставка на
+      # историята по решението на Ц. „Само думите“, 27.11.2026; SEC се пита веднъж на тримесечие)
+      # и multiple_v2 (P/S по име), плюс фактите горе.
+      - name: Източниците на стрелките (S-1 делът, AI думите, P/S по име)
         working-directory: ai-hype-monitor
         env:
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
         run: |
           python src/v2/froth.py
+          python src/v2/ai_words.py
           python src/v2/multiple_v2.py
 
       - name: Двете стрелки (out/weekly/<събота>.json и .md)

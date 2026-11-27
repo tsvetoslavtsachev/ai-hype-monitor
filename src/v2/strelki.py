@@ -6,10 +6,12 @@ strelki.py: AI Hype, двете стрелки (ПРОЛЕТР9, Фаза 4).
   Пазарът (седмично): колко плаща пазарът за историята. Медианата на цена към продажби
     (P/S за 12 месеца) по всички имена с данни, от multiple_v2.json; сегментите са таблицата
     (ps_by_ticker.json).
-  Историята (тримесечно): колко пари се наливат и колко нови компании се закачат.
-    Геометрична средна на два индекса: делът на S-1 проспектите с „artificial intelligence“
-    (froth.json) и капексът за 12 месеца на MSFT, GOOGL, AMZN, META и ORCL към продажбите им
-    за 12 месеца (app/data/v2/facts).
+  Историята (тримесечно): колко пари се наливат, колко нови компании се закачат и колко
+    компаниите говорят за AI. Геометрична средна на три индекса: делът на S-1 проспектите с
+    „artificial intelligence“ (froth.json), капексът за 12 месеца на MSFT, GOOGL, AMZN, META и
+    ORCL към продажбите им за 12 месеца (app/data/v2/facts) и делът на 8-K съобщенията за
+    резултати с „artificial intelligence“ (ai_words.json; третата съставка по решението на Ц.
+    „Само думите“ от 27.11.2026; тримесечието е по датата на подаване).
 
 Правила (еталонът на ПРОЛЕТМ2, `prolet/pregledi/materiali/ai_hype_sim1..4.py`):
   - суровите нива, не оценки спрямо историята;
@@ -50,6 +52,8 @@ WEEKS_MONTH, WEEKS_YEAR = 4, 52
 SRC_PS = "app/data/v2/multiple_v2.json (медианата), app/data/v2/ps_by_ticker.json (по име); цени app/data/prices, акции и продажби SEC XBRL companyfacts"
 SRC_S1 = "app/data/v2/froth.json (SEC EDGAR full-text search: S-1 и S-1/A с „artificial intelligence“ към всички S-1)"
 SRC_CAPEX = "app/data/v2/facts (SEC XBRL companyfacts: капекс и продажби за 12 месеца, по дата на подаване)"
+SRC_WORDS = ("app/data/v2/ai_words.json (SEC EDGAR full-text search: 8-K документи с „artificial intelligence“ "
+             "и „three months ended“ към тези с „three months ended“, по тримесечието на подаване)")
 
 
 # ── дати ────────────────────────────────────────────────────────────────────
@@ -104,6 +108,11 @@ def s1_quarters():
             for r in load_json("froth.json")["series"] if r.get("share") is not None}
 
 
+def words_quarters():
+    """{тримесечие на подаване: дял} от ai_words.json."""
+    return {r["filing_quarter"]: r["share"] for r in load_json("ai_words.json")["series"] if r.get("share") is not None}
+
+
 def capex_quarter(q: str):
     """Капекс/продажби за 12 месеца на петте към тримесечието q, както се знае към датата „важи от“.
 
@@ -129,13 +138,14 @@ def capex_quarter(q: str):
 
 
 def history_quarters(last_q: str):
-    """{тримесечие: {"s1": ..., "capex": ...}} от 2023Q1 до last_q."""
+    """{тримесечие: {"s1": ..., "capex": ..., "words": ...}} от 2023Q1 до last_q."""
     s1 = s1_quarters()
+    words = words_quarters()
     out = {}
     for q in quarters_from("2023Q1", last_q):
         cx, cdet = capex_quarter(q)
         out[q] = {"s1": s1.get(q, (None, None, None))[0], "s1_counts": s1.get(q, (None, None, None))[1:],
-                  "capex": cx, "capex_detail": cdet}
+                  "capex": cx, "capex_detail": cdet, "words": words.get(q)}
     return out
 
 
@@ -159,9 +169,11 @@ def market_arrow(series):
     return {d: (100 * v / base, v, n) for d, (v, n) in sorted(m.items()) if d >= BASE_WEEK and v is not None}
 
 
-SHORT = {"s1": "S-1 делът", "capex": "капексът на хайпърскейлърите"}   # за реда в блока
+SHORT = {"s1": "S-1 делът", "capex": "капексът на хайпърскейлърите",
+         "words": "AI думите в резултатите"}   # за реда в блока
 HIST_KEYS = [("s1","делът на S-1 проспектите с „artificial intelligence“", SRC_S1),
-             ("capex", "капексът на петте хайпърскейлъра към продажбите им, %", SRC_CAPEX)]
+             ("capex", "капексът на петте хайпърскейлъра към продажбите им, %", SRC_CAPEX),
+             ("words", "делът на съобщенията за резултати (8-K) с „artificial intelligence“", SRC_WORDS)]
 
 
 def history_arrow(weeks, qvals):
@@ -286,7 +298,7 @@ def build(saturday: str):
             "n_names": mk[friday][2], "components": "1 от 1", "source": SRC_PS,
         },
         "history": {
-            "what": "колко пари се наливат и колко нови компании се закачат (тримесечно)",
+            "what": "колко пари се наливат, колко нови компании се закачат и колко компаниите говорят за AI (тримесечно)",
             **h_read,
             "components": f"{h_now['n_used']} от {h_now['n_total']}",
             "stale_or_missing": [{"label": p["label"], "short": SHORT[p["key"]], "state": p["state"], "quarter": p.get("quarter"),
@@ -329,7 +341,8 @@ def render_md(o):
          "",
          f"Двете стрелки са индекси без таван: 100 е нивото в седмицата до {dm(o['base_week'])}, 200 значи двойно. "
          "Пазарът е медианата на цена към продажби (P/S за 12 месеца) по имената, седмично към петъка. Историята е "
-         "геометричната средна на два индекса (S-1 делът и капексът на хайпърскейлърите към продажбите им); тя се мести "
+         "геометричната средна на три индекса (S-1 делът, капексът на хайпърскейлърите към продажбите им и делът на "
+         "съобщенията за резултати с „artificial intelligence“, по тримесечието на подаване); тя се мести "
          "само когато влезе ново тримесечие (45 дни след края му), затова седмичната ѝ промяна обикновено е 0, а "
          "месечната е стъпката на новото тримесечие.",
          "",

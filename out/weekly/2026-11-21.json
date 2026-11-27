@@ -38,30 +38,30 @@
   "source": "app/data/v2/multiple_v2.json (медианата), app/data/v2/ps_by_ticker.json (по име); цени app/data/prices, акции и продажби SEC XBRL companyfacts"
  },
  "history": {
-  "what": "колко пари се наливат и колко нови компании се закачат (тримесечно)",
+  "what": "колко пари се наливат, колко нови компании се закачат и колко компаниите говорят за AI (тримесечно)",
   "date": "2026-11-20",
-  "level": 249.73,
+  "level": 337.33,
   "vs_1_week": {
    "date": "2026-11-13",
-   "level": 232.08,
-   "change_pct": 7.6
+   "level": 305.68,
+   "change_pct": 10.4
   },
   "vs_4_weeks": {
    "date": "2026-10-23",
-   "level": 232.08,
-   "change_pct": 7.6
+   "level": 305.68,
+   "change_pct": 10.4
   },
   "vs_52_weeks": {
    "date": "2025-11-21",
-   "level": 161.46,
-   "change_pct": 54.7
+   "level": 219.71,
+   "change_pct": 53.5
   },
   "peak": {
    "date": "2026-11-20",
-   "level": 249.73,
+   "level": 337.33,
    "distance_pct": 0.0
   },
-  "components": "2 от 2",
+  "components": "3 от 3",
   "stale_or_missing": [],
   "parts": [
    {
@@ -89,6 +89,19 @@
     "state": "свежа",
     "expected_quarter": "2026Q3",
     "source": "app/data/v2/facts (SEC XBRL companyfacts: капекс и продажби за 12 месеца, по дата на подаване)"
+   },
+   {
+    "key": "words",
+    "label": "делът на съобщенията за резултати (8-K) с „artificial intelligence“",
+    "quarter": "2026Q3",
+    "valid_from": "2026-11-14",
+    "value": 0.1625,
+    "base_quarter": "2023Q1",
+    "base_value": 0.0264,
+    "index": 615.530303030303,
+    "state": "свежа",
+    "expected_quarter": "2026Q3",
+    "source": "app/data/v2/ai_words.json (SEC EDGAR full-text search: 8-K документи с „artificial intelligence“ и „three months ended“ към тези с „three months ended“, по тримесечието на подаване)"
    }
   ],
   "capex_detail": {

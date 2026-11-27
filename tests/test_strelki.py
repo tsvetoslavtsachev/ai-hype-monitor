@@ -12,11 +12,11 @@ import multiple_v2 as m  # noqa: E402
 import strelki as s  # noqa: E402
 
 
-def _q(s1=None, capex=None):
-    return {"s1": s1, "s1_counts": (None, None), "capex": capex, "capex_detail": None}
+def _q(s1=None, capex=None, words=None):
+    return {"s1": s1, "s1_counts": (None, None), "capex": capex, "capex_detail": None, "words": words}
 
 
-QV = {"2023Q1": _q(0.25, 13.0), "2026Q2": _q(0.5, 30.0), "2026Q3": _q(0.6, 36.0)}
+QV = {"2023Q1": _q(0.25, 13.0, 0.02), "2026Q2": _q(0.5, 30.0, 0.14), "2026Q3": _q(0.6, 36.0, 0.16)}
 
 
 def test_quarter_value_never_before_valid_from():
@@ -39,24 +39,25 @@ def test_base_week_is_fixed_and_is_100():
 
 def test_history_is_geometric_mean_of_component_indices():
     h = s.history_arrow(["2026-11-20"], QV)["2026-11-20"]
-    expect = math.sqrt((100 * 0.6 / 0.25) * (100 * 36.0 / 13.0))
+    expect = ((100 * 0.6 / 0.25) * (100 * 36.0 / 13.0) * (100 * 0.16 / 0.02)) ** (1 / 3)
     assert h["index"] == pytest.approx(expect)
-    assert (h["n_used"], h["n_total"]) == (2, 2)
+    assert (h["n_used"], h["n_total"]) == (3, 3)
+    assert [p["key"] for p in h["parts"]] == ["s1", "capex", "words"]    # „Само думите“, 27.11.2026
     assert all(p["state"] == "свежа" for p in h["parts"])
 
 
 def test_missing_component_is_named_not_silently_averaged():
-    qv = {k: _q(v["s1"], None) for k, v in QV.items()}
+    qv = {k: _q(v["s1"], None, v["words"]) for k, v in QV.items()}
     h = s.history_arrow(["2026-11-20"], qv)["2026-11-20"]
-    assert (h["n_used"], h["n_total"]) == (1, 2)
+    assert (h["n_used"], h["n_total"]) == (2, 3)
     miss = [p for p in h["parts"] if p["state"] == "липсва"]
     assert [p["key"] for p in miss] == ["capex"]
-    assert h["index"] == pytest.approx(100 * 0.6 / 0.25)
+    assert h["index"] == pytest.approx(math.sqrt((100 * 0.6 / 0.25) * (100 * 0.16 / 0.02)))
 
 
 def test_stale_component_is_named_with_its_quarter():
     qv = dict(QV)
-    qv["2026Q3"] = _q(0.6, None)          # капексът за Q3 още го няма
+    qv["2026Q3"] = _q(0.6, None, 0.16)    # капексът за Q3 още го няма
     h = s.history_arrow(["2026-11-20"], qv)["2026-11-20"]
     cap = [p for p in h["parts"] if p["key"] == "capex"][0]
     assert cap["state"] == "остаряла" and cap["quarter"] == "2026Q2" and cap["expected_quarter"] == "2026Q3"
@@ -117,3 +118,18 @@ def test_ps_annual_filer_one_year_back_still_counts(monkeypatch):
                                                            "derived_from": [{"period_end": "2025-12-31"}]})
     ps, _ = m.ticker_ps(series, "ASML", "2026-11-20")
     assert ps is not None
+
+
+def test_words_missing_is_named_in_block_terms():
+    """Без файла за думите историята казва „2 от 3“ и назовава думите (Ц., „Само думите“)."""
+    qv = {k: _q(v["s1"], v["capex"], None) for k, v in QV.items()}
+    h = s.history_arrow(["2026-11-20"], qv)["2026-11-20"]
+    assert (h["n_used"], h["n_total"]) == (2, 3)
+    assert [p["key"] for p in h["parts"] if p["state"] == "липсва"] == ["words"]
+    assert s.SHORT["words"] == "AI думите в резултатите"
+
+
+def test_words_quarter_is_the_filing_quarter(monkeypatch):
+    monkeypatch.setattr(s, "load_json", lambda n: {"series": [{"filing_quarter": "2026Q3", "share": 0.1625},
+                                                              {"filing_quarter": "2026Q4", "share": None}]})
+    assert s.words_quarters() == {"2026Q3": 0.1625}
