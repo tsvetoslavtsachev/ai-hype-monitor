@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>AI Hype: колко плаща пазарът за историята · данни до __FRIDAY__</title>
+<meta name="description" content="Две стрелки за AI бума: колко плаща пазарът (седмично) и колко реално се случва (тримесечно). Данни до __FRIDAY__."/>
+<style>
+:root{--bg:#fcfcfb;--card:#ffffff;--ink:#0b0b0b;--sec:#52514e;--muted:#6f6d68;--line:#e1e0d9;--soft:#f1f0ec;--m:#2a78d6;--h:#eb6834;--c3:#1baf7a;--c4:#eda100;--c5:#e87ba4;--c6:#008300;--c7:#6250d6;--c8:#e34948;--link:#185fa5;--ago:#a3a19a;--focus:#2a78d6}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--card:#1b1b1a;--ink:#f0efec;--sec:#c3c2b7;--muted:#9a988f;--line:#2c2c2a;--soft:#232322;--m:#3987e5;--h:#d95926;--c3:#199e70;--c4:#c98500;--c5:#d55181;--c6:#0ca30c;--c7:#9085e9;--c8:#e66767;--link:#85b7eb;--ago:#6f6d68}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-variant-numeric:tabular-nums}
+a{color:var(--link)}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;height:52px}
+.brand{font-weight:600;letter-spacing:.2px}
+nav a{color:var(--sec);text-decoration:none;font-size:14px;margin-left:16px}
+nav a:hover{color:var(--ink)}
+.hero{padding:36px 0 8px}
+.eyebrow{font-size:13px;color:var(--muted);text-transform:none;margin:0 0 6px}
+h1{font-size:30px;line-height:1.25;font-weight:600;margin:0 0 10px;max-width:820px}
+.lede{font-size:17px;color:var(--sec);max-width:820px;margin:0}
+.meta{font-size:13px;color:var(--muted);margin:12px 0 0}
+h2{font-size:22px;font-weight:600;margin:0 0 4px}
+.sub{color:var(--sec);margin:0 0 16px;font-size:15px;max-width:820px}
+section{padding:36px 0 8px;scroll-margin-top:60px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:12px;margin:24px 0 0}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;position:relative}
+.kpi .lbl{font-size:13px;color:var(--sec);display:flex;align-items:center;gap:8px;padding-right:100px;min-height:34px}
+.kpi .dot{width:10px;height:10px;border-radius:2px;display:inline-block}
+.kpi .val{font-size:40px;font-weight:600;line-height:1.15;margin:4px 0 2px}
+.kpi .val small{font-size:15px;font-weight:400;color:var(--sec);margin-left:6px}
+.kpi .chg{font-size:13px;color:var(--sec)}
+.kpi svg{position:absolute;right:16px;top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 18px 14px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;justify-content:space-between;margin:0 0 10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:transparent;color:var(--sec);font:inherit;font-size:13px;padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--soft);color:var(--ink);font-weight:600}
+.seg button+button{border-left:1px solid var(--line)}
+button.png,select{border:1px solid var(--line);background:transparent;color:var(--sec);font:inherit;font-size:13px;padding:6px 10px;border-radius:8px;cursor:pointer}
+button:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--sec)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.sw{width:18px;height:0;border-top:2px solid}
+.sw.dash{border-top-style:dashed}
+.chart{position:relative;height:380px}
+.chart.sm{height:150px}
+.chart.md{height:320px}
+.cap{font-size:13px;color:var(--muted);margin:8px 0 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-weight:600;color:var(--sec);border-bottom:1px solid var(--line);padding:8px}
+td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top}
+td.n,th.n{text-align:right;white-space:nowrap}
+.tw{overflow-x:auto}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px}
+.multiples{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.mini{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px 8px;cursor:pointer;text-align:left;font:inherit;color:inherit}
+.mini[aria-pressed="true"]{border-color:var(--m);box-shadow:0 0 0 1px var(--m)}
+.mini .t{font-size:14px;font-weight:600}
+.mini .v{font-size:13px;color:var(--sec)}
+.quad{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.quad div{background:var(--soft);border-radius:12px;padding:14px 16px}
+.quad b{display:block;margin-bottom:4px}
+details{border-bottom:1px solid var(--line);padding:12px 0}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--muted);font-weight:400}
+details[open] summary::after{content:"−"}
+details p,details ul{color:var(--sec);margin:10px 0 0;max-width:820px}
+.note{font-size:14px;color:var(--sec)}
+.pill{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;background:var(--soft);color:var(--sec)}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:20px 0 48px;font-size:13px;color:var(--muted)}
+.sr{position:absolute;left:-9999px}
+@media (max-width:720px){h1{font-size:24px}nav{display:none}.kpi .val{font-size:32px}.chart{height:300px}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><div class="brand">AI Hype Monitor</div>
+<nav aria-label="Раздели"><a href="#strelki">Стрелките</a><a href="#segmenti">Сегментите</a><a href="#istoria">Историята</a><a href="#rakovodstvo">Как се чете</a><a href="#danni">Данни</a></nav></div></header>
+
+<main class="wrap">
+<div class="hero">
+<p class="eyebrow">Седмичен уред · данни до петък __FRIDAY__</p>
+<h1>Колко плаща пазарът за историята на изкуствения интелект и колко от историята наистина се случва</h1>
+<p class="lede">Две стрелки. <b>Пазарът</b> е оценката на __N_NAMES__ компании от веригата на AI, всяка седмица. <b>Историята</b> е колко пари, нови компании и думи наливат бума, всяко тримесечие. И двете са 100 в седмицата до __BASE__.</p>
+<div class="kpis" id="kpis">
+<div class="kpi"><div class="lbl"><span class="dot" style="background:var(--m)"></span>Пазарът</div><div class="val">__M_LEVEL__</div><div class="chg" id="k-m"></div></div>
+<div class="kpi"><div class="lbl"><span class="dot" style="background:var(--h)"></span>Историята</div><div class="val">__H_LEVEL__</div><div class="chg" id="k-h">тримесечие __H_QUARTER__ · съставки __H_COMPONENTS__</div></div>
+<div class="kpi"><div class="lbl">Медианата на цена към продажби</div><div class="val" id="k-ps"></div><div class="chg" id="k-ps2"></div></div>
+<div class="kpi"><div class="lbl">Следващата стъпка на историята</div><div class="val" id="k-next" style="font-size:28px;margin-top:10px"></div><div class="chg" id="k-next2"></div></div>
+</div>
+<p class="meta" id="missing"></p>
+</div>
+
+<section id="strelki" aria-labelledby="t-strelki">
+<h2 id="t-strelki">Двете стрелки</h2>
+<p class="sub">Пазарът се мести всяка седмица с цените. Историята стъпва веднъж на тримесечие, когато отчетите за него вече са подадени.</p>
+<div class="card">
+<div class="toolbar">
+<div class="legend"><span><i class="sw" style="border-color:var(--m)"></i>Пазарът</span><span><i class="sw dash" style="border-color:var(--h)"></i>Историята</span></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap">
+<div class="seg" role="group" aria-label="Период" id="range"><button data-r="26">6 м</button><button data-r="52">1 г</button><button data-r="104">2 г</button><button data-r="0" aria-pressed="true">Всичко</button></div>
+<div class="seg" role="group" aria-label="Изглед" id="mode"><button data-m="lvl" aria-pressed="true">Ниво</button><button data-m="dd">Спад от върха</button></div>
+<button class="png" data-png="c-main" aria-label="Свали главната графика като картинка">PNG</button>
+</div></div>
+<div class="chart"><canvas id="c-main" role="img" aria-label="Двете стрелки по седмици от __BASE__ до __FRIDAY__">Пазарът __M_LEVEL__, историята __H_LEVEL__.</canvas></div>
+<p class="cap" id="cap-main"></p>
+</div>
+<div class="tw" style="margin-top:12px"><table id="t-read"><caption class="sr">Промените на двете стрелки</caption></table></div>
+</section>
+
+<section id="segmenti" aria-labelledby="t-seg">
+<h2 id="t-seg">Пазарът по сегменти</h2>
+<p class="sub">Медианата на цена към продажби (последните 12 месеца) в седемте сегмента на веригата. Сивата точка е преди 52 седмици, синята е сега.</p>
+<div class="card"><div class="toolbar"><div class="legend"><span><i class="dot" style="width:10px;height:10px;border-radius:50%;background:var(--ago);display:inline-block"></i>преди 52 седмици</span><span><i style="width:10px;height:10px;border-radius:50%;background:var(--m);display:inline-block"></i>сега</span></div></div>
+<div id="dumbbell" role="img" aria-label="Медианата на P/S по сегменти сега и преди 52 седмици"></div></div>
+<h3 style="font-size:17px;margin:24px 0 8px">Всеки сегмент от базовата седмица насам</h3>
+<p class="sub">Една и съща скала за всички, за да се сравняват. Избери сегмент, за да видиш компаниите в него.</p>
+<div class="multiples" id="multiples"></div>
+<div class="card" style="margin-top:12px">
+<div class="toolbar"><div><label for="segsel" class="note">Сегмент </label><select id="segsel"></select></div>
+<div style="display:flex;gap:8px"><div class="seg" role="group" aria-label="Период за компаниите" id="range2"><button data-r="26">6 м</button><button data-r="52">1 г</button><button data-r="0" aria-pressed="true">Всичко</button></div><button class="png" data-png="c-names" aria-label="Свали графиката на компаниите като картинка">PNG</button></div></div>
+<div class="legend" id="names-legend" style="margin-bottom:6px"></div>
+<div class="chart md"><canvas id="c-names" role="img" aria-label="Цена към продажби на компаниите в избрания сегмент"></canvas></div>
+<div class="tw" style="margin-top:10px"><table id="t-names"></table></div>
+</div>
+</section>
+
+<section id="istoria" aria-labelledby="t-ist">
+<h2 id="t-ist">Историята по съставки</h2>
+<p class="sub">Трите части на историята, всяка 100 в базата. Историята е геометричното им средно: трите части тежат еднакво.</p>
+<div class="card">
+<div class="toolbar"><div class="legend"><span><i class="sw" style="border-color:var(--c3)"></i>Новите компании</span><span><i class="sw" style="border-color:var(--c4)"></i>Парите</span><span><i class="sw" style="border-color:var(--c7)"></i>Думите</span><span><i class="sw dash" style="border-color:var(--h)"></i>Историята</span></div>
+<button class="png" data-png="c-parts" aria-label="Свали графиката на съставките като картинка">PNG</button></div>
+<div class="chart md"><canvas id="c-parts" role="img" aria-label="Трите съставки на историята по тримесечия"></canvas></div>
+</div>
+<div class="tw" style="margin-top:12px"><table id="t-parts"></table></div>
+</section>
+
+<section id="rakovodstvo" aria-labelledby="t-rak">
+<h2 id="t-rak">Как се чете</h2>
+<p class="sub">Представи си бума като огън. Историята е колко дърва се хвърлят в него. Пазарът е колко хората плащат, за да стоят до огъня. Уредът не казва кога огънят ще угасне. Показва дали цената върви с дървата, или пред тях.</p>
+<div class="quad" aria-label="Четирите съчетания на двете стрелки">
+<div><b>Пазарът нагоре, историята нагоре</b>Цената расте заедно с парите, компаниите и думите.</div>
+<div><b>Пазарът нагоре, историята стои</b>Пазарът плаща повече за същата история. Цената върви пред дървата.</div>
+<div><b>Пазарът надолу, историята нагоре</b>Историята продължава да расте, а пазарът плаща по-малко за нея.</div>
+<div><b>Пазарът надолу, историята надолу</b>И цената, и историята се свиват.</div>
+</div>
+<p class="note" id="today" style="margin-top:12px"></p>
+
+<h3 style="font-size:17px;margin:28px 0 4px">Методиката с въпроси и отговори</h3>
+<details><summary>Какво точно мери пазарът?</summary><p id="faq-m"></p></details>
+<details><summary>Какво мери историята и защо е от три части?</summary><p>Три независими следи от един и същ бум. <b>Парите</b>: колко от продажбите си Microsoft, Alphabet, Amazon, Meta и Oracle влагат в капиталови разходи (центрове за данни, чипове, енергия). <b>Новите компании</b>: какъв дял от проспектите за ново листване в САЩ (S-1) споменават изкуствения интелект. <b>Думите</b>: какъв дял от съобщенията за тримесечни резултати (8-K) споменават изкуствения интелект. Всяка част е 100 в базата, а историята е геометричното им средно: двойно повече в една част и същото в другите вдига историята с около една четвърт, не двойно.</p></details>
+<details><summary>Защо цена към продажби, а не цена към печалба?</summary><p>Много компании от веригата имат малка, променлива или отрицателна печалба, и тогава цената към печалба скача или изчезва. Продажбите ги има при всички и се местят по-плавно, затова мерят по-чисто колко пари плаща пазарът за един долар бизнес.</p></details>
+<details><summary>Защо медиана, а не средно?</summary><p>Медианата е средната компания по оценка: половината са по-скъпи, половината по-евтини. Една много скъпа компания не я тегли. Средното би се местило от едно-две имена.</p></details>
+<details><summary>Защо 100 е седмицата до <span class="base"></span>?</summary><p>Базата е фиксирана и не се мести, за да са сравними всички седмици: 200 значи двойно спрямо тогава, 50 значи наполовина. Тя е стартът на уреда, не оценка дали тогава е било евтино или скъпо.</p></details>
+<details><summary>Защо историята закъснява с <span class="lag"></span> дни?</summary><p>Компаниите подават тримесечните си отчети до около 40 дни след края на тримесечието. Затова стойността за едно тримесечие влиза едва 45 дни след края му, когато е известна. Така никоя седмица не ползва число, което тогава още не е било публично.</p></details>
+<details><summary>Как уредът се пази от поглед назад?</summary><p>Всяко число е такова, каквото е било известно в петъка на седмицата: отчетите се взимат по датата на подаване, цените са коригирани само за сплитовете, броят акции е приведен към същата база. Продажбите в евро (ASML) се превеждат в долари по курса в същия петък. По-стар от 490 дни брой акции или отчет не се ползва.</p></details>
+<details><summary>Кои компании са вътре?</summary><p id="faq-names"></p></details>
+<details><summary>Какво уредът не прави?</summary><ul><li>Не прогнозира и не дава сигнал за покупка или продажба.</li><li>Няма зони и прагове: стрелките са само нива и промени.</li><li>Не мери дали печалбите идват. Мери колко се плаща (пазарът) и колко се влага и говори (историята).</li></ul></details>
+<details><summary>Известни ограничения</summary><ul><li>За Lumentum (LITE) източникът на SEC няма тримесечните отчети след юни 2025 г., затова продажбите му стоят на последния годишен отчет.</li><li>C3.ai е вън: в отчетите няма актуален брой акции.</li><li>Думите броят документи: съобщението и приложенията му се броят поотделно.</li><li>Историята за ново тримесечие може да закъснее, ако някоя от петте компании подаде отчета си късно. Тогава съставката се назовава като остаряла.</li></ul></details>
+<details><summary>Промени в методиката</summary><ul><li>27.11.2026: уредът става две стрелки (пазарът и историята), без зони; добавени са думите в резултатите; цените са коригирани за сплитовете; продажбите в евро се превеждат по курса; старото лице е в <a href="arhiv/2026-11-20/">архива</a>.</li></ul></details>
+</section>
+
+<section id="danni" aria-labelledby="t-danni">
+<h2 id="t-danni">Данни и графики за публикации</h2>
+<div class="grid2">
+<div class="card"><b>Свали данните</b><p class="note">Всяка седмица от базата насам: двете стрелки, трите съставки на историята и медианите на сегментите.</p><p><a href="data/strelki_series.csv" download>strelki_series.csv</a> · <a href="data/latest.json" download>latest.json</a> (последната седмица с всички подробности)</p></div>
+<div class="card"><b>Графиките като картинка</b><p class="note">Бутонът PNG до всяка графика я сваля в изгледа, който виждаш (период, режим, светъл или тъмен фон).</p><p class="note">Как да цитирате: <span id="cite"></span></p></div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap">
+<p>Източници: SEC EDGAR (финансовите отчети в XBRL и пълнотекстовото търсене), цени от архива на цените и Yahoo Finance, курсът евро/долар. Обновява се всяка събота за седмицата до петъка.</p>
+<p>Уредът описва, не прогнозира и не е препоръка за покупка или продажба. <a href="arhiv/2026-11-20/">Старото лице на монитора</a>, замразено на 20.11.2026.</p>
+</div></footer>
+
+<script id="data" type="application/json">__DATA__</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+(function(){
+const D=JSON.parse(document.getElementById('data').textContent);
+const S=D.series, N=S.d.length, L=N-1;
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const MON=['яну','фев','мар','апр','май','юни','юли','авг','сеп','окт','ное','дек'];
+const dm=s=>s.slice(8,10)+'.'+s.slice(5,7)+'.'+s.slice(0,4);
+const nf=(x,d=0)=>x==null?'няма':x.toLocaleString('bg-BG',{minimumFractionDigits:d,maximumFractionDigits:d});
+const pc=x=>x==null?'няма':(x>0?'+':'')+nf(x,1)+'%';
+const ago=k=>L-k>=0?L-k:null;
+const ch=(arr,k)=>{const i=ago(k);return i==null||arr[i]==null||arr[L]==null?null:(arr[L]/arr[i]-1)*100};
+const SEGC=['--m','--h','--c3','--c4','--c5','--c6','--c7','--c8'];
+
+Chart.register({id:'bg',beforeDraw(c){const x=c.ctx;x.save();x.fillStyle=css('--card');x.fillRect(0,0,c.width,c.height);x.restore();}});
+Chart.defaults.font.family=getComputedStyle(document.body).fontFamily;
+Chart.defaults.color=css('--muted');
+
+function spark(arr,color){const a=arr.slice(-52).filter(v=>v!=null);if(a.length<2)return '';const mn=Math.min(...a),mx=Math.max(...a),w=90,h=34;
+ const pts=a.map((v,i)=>(i*(w/(a.length-1))).toFixed(1)+','+(h-2-(v-mn)/((mx-mn)||1)*(h-4)).toFixed(1)).join(' ');
+ return '<svg width="'+w+'" height="'+h+'" aria-hidden="true"><polyline fill="none" stroke="'+color+'" stroke-width="1.5" points="'+pts+'"/></svg>';}
+
+const m=D.market,h=D.history;
+document.getElementById('k-m').innerHTML='седмица '+pc(m.vs_1_week.change_pct)+' · месец '+pc(m.vs_4_weeks.change_pct)+' · година '+pc(m.vs_52_weeks.change_pct)+'<br>връх '+nf(m.peak.level)+' на '+dm(m.peak.date)+', днес '+pc(m.peak.distance_pct)+' от него';
+document.getElementById('k-h').innerHTML+='<br>месец '+pc(h.vs_4_weeks.change_pct)+' · година '+pc(h.vs_52_weeks.change_pct)+(h.peak.distance_pct===0?' · на върха си':' · връх '+nf(h.peak.level)+' на '+dm(h.peak.date));
+const kp=document.querySelectorAll('.kpi');
+kp[0].insertAdjacentHTML('beforeend',spark(S.m,css('--m')));kp[1].insertAdjacentHTML('beforeend',spark(S.h,css('--h')));kp[2].insertAdjacentHTML('beforeend',spark(S.median,css('--sec')));
+document.getElementById('k-ps').innerHTML=nf(m.median_ps,2)+'<small>пъти продажбите</small>';
+document.getElementById('k-ps2').textContent='в базата '+nf(m.base_median_ps,2)+' · преди година '+nf(S.median[ago(52)],2)+' · имена '+m.n_names;
+const hq=S.hq[L];
+if(hq){const y=+hq.slice(0,4),q=+hq.slice(5);const ny=q===4?y+1:y,nq=q===4?1:q+1;const end=new Date(Date.UTC(ny,nq*3,0));end.setUTCDate(end.getUTCDate()+D.lag);
+ document.getElementById('k-next').textContent=ny+'Q'+nq;document.getElementById('k-next2').textContent='влиза около '+dm(end.toISOString().slice(0,10))+', '+D.lag+' дни след края на тримесечието';}
+if(D.missing.length)document.getElementById('missing').textContent='Липсва или е остаряла: '+D.missing.join(', ')+'.';
+document.querySelectorAll('.base').forEach(e=>e.textContent=dm(D.base));
+document.querySelectorAll('.lag').forEach(e=>e.textContent=D.lag);
+document.getElementById('cite').textContent='AI Hype Monitor, двете стрелки, данни до '+dm(D.friday)+'.';
+document.getElementById('today').textContent='Към '+dm(D.friday)+': пазарът '+pc(m.vs_52_weeks.change_pct)+' за 52 седмици, историята '+pc(h.vs_52_weeks.change_pct)+'.';
+document.getElementById('faq-m').textContent='За всяка от '+m.n_names+' компании от веригата на AI (чипове, оборудване, памет, мрежи, инфраструктура, облак и софтуер) се смята капитализацията в петъка, разделена на продажбите за последните 12 месеца. Пазарът е медианата на тези числа, разделена на медианата в базовата седмица и умножена по 100. Днес медианата е '+nf(m.median_ps,2)+' пъти продажбите, в базата беше '+nf(m.base_median_ps,2)+'.';
+
+function ticks(idx){const n=idx.length;return (v,i)=>{const s=S.d[idx[i]];if(!s)return '';const d=+s.slice(8,10),mo=+s.slice(5,7);
+ if(n<=60)return d<=7?MON[mo-1]+' '+s.slice(2,4):'';return d<=7&&mo===1?s.slice(0,4):'';};}
+const rng=r=>{const a=[];for(let i=r?Math.max(0,N-r):0;i<N;i++)a.push(i);return a;};
+const dd=arr=>{let mx=-Infinity;return arr.map(v=>{if(v==null)return null;mx=Math.max(mx,v);return (v/mx-1)*100;});};
+const baseOpts=(idx,yfmt,tfmt)=>({responsive:true,maintainAspectRatio:false,animation:false,interaction:{mode:'index',intersect:false},
+ plugins:{legend:{display:false},tooltip:{callbacks:{title:t=>dm(S.d[idx[t[0].dataIndex]]),label:c=>' '+c.dataset.label+': '+yfmt(c.parsed.y)}}},
+ scales:{x:{grid:{display:false},ticks:{autoSkip:false,maxRotation:0,callback:ticks(idx)}},y:{grid:{color:css('--line')},ticks:{callback:tfmt||(v=>nf(v,0))}}}});
+
+let R=0,MODE='lvl';const main=new Chart(document.getElementById('c-main'),{type:'line',data:{labels:[],datasets:[]},options:{}});
+function drawMain(){const idx=rng(R);const pick=a=>idx.map(i=>a[i]);const mm=MODE==='dd'?dd(S.m):S.m,hh=MODE==='dd'?dd(S.h):S.h;
+ const pk=S.m.indexOf(Math.max(...S.m.filter(v=>v!=null)));
+ main.data={labels:idx.map(i=>S.d[i]),datasets:[
+ {label:'Пазарът',data:pick(mm),borderColor:css('--m'),borderWidth:2,pointRadius:idx.map(i=>i===pk&&MODE==='lvl'?4:0),pointBackgroundColor:css('--m'),pointHoverRadius:4,tension:0},
+ {label:'Историята',data:pick(hh),borderColor:css('--h'),borderWidth:2,borderDash:[6,4],stepped:true,pointRadius:0,pointHoverRadius:4}]};
+ main.options=baseOpts(idx,MODE==='dd'?(v=>nf(v,1)+'%'):(v=>nf(v,0)),MODE==='dd'?(v=>nf(v,0)+'%'):null);main.update();
+ document.getElementById('cap-main').textContent=MODE==='dd'?'Колко под най-високата си стойност до тази седмица е всяка стрелка. 0% значи нов връх.':'100 = седмицата до '+dm(D.base)+'. Точката е върхът на пазара ('+nf(S.m[pk])+' на '+dm(S.d[pk])+').';}
+function bindSeg(id,fn){const g=document.getElementById(id);g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;g.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===b?'true':'false'));fn(b);});}
+bindSeg('range',b=>{R=+b.dataset.r;drawMain();});bindSeg('mode',b=>{MODE=b.dataset.m;drawMain();});drawMain();
+
+const rows=[['Пазарът',m],['Историята',h]];
+document.getElementById('t-read').innerHTML+='<tr><th></th><th class="n">ниво</th><th class="n">спрямо 1 седмица</th><th class="n">спрямо 4 седмици</th><th class="n">спрямо 52 седмици</th><th class="n">върхът</th><th class="n">от върха</th></tr>'+rows.map(([n,x])=>'<tr><td>'+n+'</td><td class="n">'+nf(x.level)+'</td><td class="n">'+pc(x.vs_1_week.change_pct)+'</td><td class="n">'+pc(x.vs_4_weeks.change_pct)+'</td><td class="n">'+pc(x.vs_52_weeks.change_pct)+'</td><td class="n">'+nf(x.peak.level)+' ('+dm(x.peak.date)+')</td><td class="n">'+pc(x.peak.distance_pct)+'</td></tr>').join('');
+
+const segs=D.segments.slice().sort((a,b)=>(b.median||0)-(a.median||0));
+const segColor={};D.segments.forEach((s,i)=>segColor[s.key]=css(SEGC[i%SEGC.length]));
+(function(){const w=680,lh=38,top=10,left=190,right=70,H=top+lh*segs.length+24;let mx=0;
+ segs.forEach(s=>{const a=S.seg[s.key][ago(52)];mx=Math.max(mx,s.median||0,a||0);});mx*=1.08;const x=v=>left+(v/mx)*(w-left-right);
+ let g='<svg viewBox="0 0 '+w+' '+H+'" width="100%" style="max-width:100%">';
+ for(let t=0;t<=mx;t+=5){g+='<line x1="'+x(t)+'" x2="'+x(t)+'" y1="'+top+'" y2="'+(H-22)+'" stroke="'+css('--line')+'"/><text x="'+x(t)+'" y="'+(H-6)+'" font-size="11" fill="'+css('--muted')+'" text-anchor="middle">'+t+'</text>';}
+ segs.forEach((s,i)=>{const y=top+lh*i+lh/2,a=S.seg[s.key][ago(52)],n=s.median;
+  g+='<text x="0" y="'+(y+4)+'" font-size="13" fill="'+css('--ink')+'">'+s.bg+'</text>';
+  if(a!=null&&n!=null)g+='<line x1="'+x(a)+'" x2="'+x(n)+'" y1="'+y+'" y2="'+y+'" stroke="'+css('--ago')+'" stroke-width="2"/>';
+  if(a!=null)g+='<circle cx="'+x(a)+'" cy="'+y+'" r="5" fill="'+css('--ago')+'"><title>преди 52 седмици: '+nf(a,2)+'</title></circle>';
+  if(n!=null)g+='<circle cx="'+x(n)+'" cy="'+y+'" r="6" fill="'+css('--m')+'" stroke="'+css('--card')+'" stroke-width="2"><title>сега: '+nf(n,2)+'</title></circle>';
+  g+='<text x="'+(w-2)+'" y="'+(y+4)+'" font-size="13" text-anchor="end" fill="'+css('--sec')+'">'+nf(n,2)+' <tspan fill="'+css('--muted')+'">'+pc(s.y1)+'</tspan></text>';});
+ document.getElementById('dumbbell').innerHTML=g+'</svg>';})();
+
+let mxAll=0;D.segments.forEach(s=>S.seg[s.key].forEach(v=>{if(v!=null)mxAll=Math.max(mxAll,v);}));
+const mult=document.getElementById('multiples'),sel=document.getElementById('segsel');let SEG=segs[0].key,R2=0;
+segs.forEach((s,i)=>{const b=document.createElement('button');b.className='mini';b.type='button';b.dataset.k=s.key;b.setAttribute('aria-pressed',i===0?'true':'false');
+ b.innerHTML='<div class="t">'+s.bg+'</div><div class="v">'+nf(s.median,2)+' · месец '+pc(s.m4)+' · година '+pc(s.y1)+' · '+s.n+' имена</div><div class="chart sm"><canvas aria-label="Медианата на P/S в сегмента '+s.bg+'" role="img"></canvas></div>';
+ mult.appendChild(b);const idx=rng(0);
+ new Chart(b.querySelector('canvas'),{type:'line',data:{labels:idx.map(i=>S.d[i]),datasets:[{label:s.bg,data:S.seg[s.key],borderColor:segColor[s.key],borderWidth:1.5,pointRadius:0,tension:0,fill:false}]},
+ options:{...baseOpts(idx,v=>nf(v,1)),scales:{x:{display:false},y:{min:0,max:Math.ceil(mxAll/5)*5,grid:{color:css('--line')},ticks:{maxTicksLimit:4}}}}});
+ const o=document.createElement('option');o.value=s.key;o.textContent=s.bg;sel.appendChild(o);
+ b.addEventListener('click',()=>{SEG=s.key;sel.value=s.key;drawNames();document.getElementById('c-names').scrollIntoView({block:'center'});});});
+sel.addEventListener('change',()=>{SEG=sel.value;drawNames();});
+bindSeg('range2',b=>{R2=+b.dataset.r;drawNames();});
+const nm=new Chart(document.getElementById('c-names'),{type:'line',data:{labels:[],datasets:[]},options:{}});
+function drawNames(){mult.querySelectorAll('.mini').forEach(x=>x.setAttribute('aria-pressed',x.dataset.k===SEG?'true':'false'));
+ const idx=rng(R2);const list=Object.entries(D.names).filter(([t,v])=>v.seg===SEG).sort((a,b)=>(b[1].ps[L]||-1)-(a[1].ps[L]||-1));
+ nm.data={labels:idx.map(i=>S.d[i]),datasets:list.map(([t,v],j)=>({label:t,data:idx.map(i=>v.ps[i]),borderColor:css(SEGC[j%SEGC.length]),borderWidth:2,pointRadius:0,tension:0,spanGaps:false}))};
+ nm.options=baseOpts(idx,v=>nf(v,1));nm.update();
+ document.getElementById('names-legend').innerHTML=list.map(([t,v],j)=>'<span><i class="sw" style="border-color:'+css(SEGC[j%SEGC.length])+'"></i>'+t+'</span>').join('');
+ document.getElementById('t-names').innerHTML='<tr><th>компания</th><th>тикер</th><th class="n">P/S сега</th><th class="n">спрямо 4 седмици</th><th class="n">спрямо 52 седмици</th></tr>'+list.map(([t,v])=>'<tr><td>'+v.name+'</td><td>'+t+'</td><td class="n">'+(v.ps[L]==null?'<span class="pill">няма данни</span>':nf(v.ps[L],2))+'</td><td class="n">'+pc(ch(v.ps,4))+'</td><td class="n">'+pc(ch(v.ps,52))+'</td></tr>').join('');}
+drawNames();
+
+(function(){const idx=rng(0);const pick=a=>idx.map(i=>a[i]);
+ new Chart(document.getElementById('c-parts'),{type:'line',data:{labels:idx.map(i=>S.d[i]),datasets:[
+ {label:'Новите компании',data:pick(S.s1),borderColor:css('--c3'),borderWidth:2,stepped:true,pointRadius:0},
+ {label:'Парите',data:pick(S.capex),borderColor:css('--c4'),borderWidth:2,stepped:true,pointRadius:0},
+ {label:'Думите',data:pick(S.words),borderColor:css('--c7'),borderWidth:2,stepped:true,pointRadius:0},
+ {label:'Историята',data:pick(S.h),borderColor:css('--h'),borderWidth:2,borderDash:[6,4],stepped:true,pointRadius:0}]},options:baseOpts(idx,v=>nf(v,0))});
+ document.getElementById('t-parts').innerHTML='<tr><th>съставка</th><th>какво мери</th><th class="n">индекс</th><th>тримесечие</th><th>важи от</th><th class="n">стойност</th><th class="n">в базата</th></tr>'+D.parts.map(p=>{
+  const f=v=>v==null?'няма':(p.key==='capex'?nf(v,1)+'%':nf(v*100,1)+'%');
+  return '<tr><td>'+p.name+(p.state!=='свежа'?' <span class="pill">'+p.state+'</span>':'')+'</td><td>'+p.what+'</td><td class="n">'+nf(p.index)+'</td><td>'+(p.quarter||'няма')+'</td><td>'+(p.valid_from?dm(p.valid_from):'няма')+'</td><td class="n">'+f(p.value)+'</td><td class="n">'+f(p.base_value)+' ('+(p.base_quarter||'')+')</td></tr>';}).join('');})();
+
+const bySeg={};Object.entries(D.names).forEach(([t,v])=>{(bySeg[v.seg]=bySeg[v.seg]||[]).push(v.name+' ('+t+')'+(v.missing?' вън':''));});
+document.getElementById('faq-names').innerHTML=D.segments.map(s=>'<b>'+s.bg+'</b>: '+(bySeg[s.key]||[]).join(', ')).join('<br>');
+
+document.querySelectorAll('button.png').forEach(b=>b.addEventListener('click',()=>{const c=Chart.getChart(document.getElementById(b.dataset.png));if(!c)return;
+ const a=document.createElement('a');a.href=c.toBase64Image('image/png',1);a.download='ai-hype-'+b.dataset.png.replace('c-','')+'-'+D.friday+'.png';a.click();}));
+})();
+</script>
+</body>
+</html>
