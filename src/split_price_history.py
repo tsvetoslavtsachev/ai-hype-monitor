@@ -15,7 +15,7 @@ with open(SRC) as f:
     data = json.load(f)
 
 count = 0
-for category in ('stocks', 'etfs'):
+for category in ('stocks', 'etfs', 'fx'):   # fx: курсовете (ПРОЛЕТР9)
     for symbol, info in data.get(category, {}).items():
         # stocks are dicts with 'prices' key; etfs are stored directly as lists
         if isinstance(info, list):

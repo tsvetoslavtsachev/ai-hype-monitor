@@ -39,6 +39,12 @@ def _last_defined(series, key):
     return None
 
 
+def held_f_row(f_quarterly, wk):
+    """Независим еталон (ПРОЛЕТР7): F, който важи към седмицата wk (effective <= wk)."""
+    ok = [r for r in f_quarterly if r.get("F") is not None and r.get("effective") and r["effective"] <= wk]
+    return max(ok, key=lambda r: r["effective"]) if ok else None
+
+
 def _parse_provenance(md_text):
     """Извлича {metric: value_str} от provenance таблицата."""
     out = {}
@@ -55,10 +61,13 @@ def _parse_provenance(md_text):
 
 
 def test_onepager_provenance_traces_to_stored_inputs():
+    # ПРОЛЕТР9: едностраничникът е замразен на 27.11.2026; новите out/weekly/*.md са на двете стрелки
+    # и нямат провенансната таблица. Проверява се последният стар едностраничник срещу замразените данни.
     weekly = sorted((ROOT / "out" / "weekly").glob("*.md")) if (ROOT / "out" / "weekly").exists() else []
-    if not weekly:
+    old = [p for p in weekly if _parse_provenance(p.read_text(encoding="utf-8"))]
+    if not old:
         pytest.skip("one-pager not generated yet")
-    prov = _parse_provenance(weekly[-1].read_text(encoding="utf-8"))
+    prov = _parse_provenance(old[-1].read_text(encoding="utf-8"))
     assert prov, "provenance table empty"
 
     gap = json.loads((V2 / "gap_series.json").read_text(encoding="utf-8"))
@@ -69,7 +78,7 @@ def test_onepager_provenance_traces_to_stored_inputs():
     wk = grow["date"]
     erow = next(r for r in euph if r["date"] == wk)
     zrow = next(s for s in zones["series"] if s["date"] == wk)
-    fq = _last_defined(gap["f_quarterly"], "F")
+    fq = held_f_row(gap["f_quarterly"], wk)  # ПРОЛЕТР7: F, който важи към седмицата
 
     def close(a, b):
         return abs(float(a) - float(b)) < 5e-4
@@ -83,7 +92,10 @@ def test_onepager_provenance_traces_to_stored_inputs():
     assert close(prov["z_promise_delivery"], erow["z_promise_delivery"])
     assert close(prov["E"], erow["E"])
     assert close(prov["F"], fq["F"])
-    assert close(prov["froth_share"], froth["series"][-1]["share"])
+    # ПРОЛЕТР7: едно число, една мярка: G_raw в изхода е E − F от същия изход
+    assert close(prov["G_raw"], float(prov["E"]) - float(prov["F"])), "G_raw != E - F в едностраничника"
+    # froth е жив след замразяването: делът от едностраничника е един от тримесечните дялове
+    assert any(r["share"] is not None and close(prov["froth_share"], r["share"]) for r in froth["series"])
 
 
 def test_watcher_outputs():

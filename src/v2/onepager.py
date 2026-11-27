@@ -28,6 +28,24 @@ def _last_defined(series, key):
     return None
 
 
+def held_f_row(f_quarterly, wk):
+    """Редът на F, който важи към седмицата wk: последният с `effective` <= wk и F не None.
+
+    ПРОЛЕТР7 (26.11.2026): едностраничникът показваше последния ДЕФИНИРАН ред
+    (2026Q4, effective 2027-02-14, F 0.9717), а G_raw се смята в gap.py с F, който
+    важи към седмицата (2026Q3, effective 2026-11-14, F 1.133). Едно число, една мярка:
+    тук е правилото на gap.held_F, затова G_raw == E - F в изхода."""
+    rows = sorted((r for r in f_quarterly if r.get("F") is not None and r.get("effective")),
+                  key=lambda r: r["effective"])
+    row = None
+    for r in rows:
+        if r["effective"] <= wk:
+            row = r
+        else:
+            break
+    return row
+
+
 def main(as_of=AS_OF):
     OUTDIR.mkdir(parents=True, exist_ok=True)
     gap = json.loads((V2 / "gap_series.json").read_text(encoding="utf-8"))
@@ -40,7 +58,7 @@ def main(as_of=AS_OF):
     wk = grow["date"]
     zrow = next((s for s in zones["series"] if s["date"] == wk), {})
     erow = next((r for r in euph if r["date"] == wk), {})
-    fq = _last_defined(gap["f_quarterly"], "F")
+    fq = held_f_row(gap["f_quarterly"], wk)
     froth_last = froth["series"][-1]
 
     zone = zrow.get("committed_zone")
@@ -64,9 +82,9 @@ def main(as_of=AS_OF):
         ("z_froth", erow.get("z_froth"), "euphoria_series.json:z_froth@" + wk, wk),
         ("z_multiple", erow.get("z_multiple"), "euphoria_series.json:z_multiple@" + wk, wk),
         ("E", erow.get("E"), "euphoria_series.json:E@" + wk, wk),
-        ("F", fq["F"], "gap_series.json:f_quarterly:last(F)", fq["quarter"]),
-        ("z_revenue_growth_yoy", fq.get("z_revenue_growth_yoy"), "gap_series.json:f_quarterly:last", fq["quarter"]),
-        ("z_operating_margin", fq.get("z_operating_margin"), "gap_series.json:f_quarterly:last", fq["quarter"]),
+        ("F", fq["F"], "gap_series.json:f_quarterly:held(F)@effective<=" + wk, fq["quarter"]),
+        ("z_revenue_growth_yoy", fq.get("z_revenue_growth_yoy"), "gap_series.json:f_quarterly:held", fq["quarter"]),
+        ("z_operating_margin", fq.get("z_operating_margin"), "gap_series.json:f_quarterly:held", fq["quarter"]),
         ("froth_share", froth_last["share"], "froth.json:last(share)", froth_last["quarter"]),
     ]
 

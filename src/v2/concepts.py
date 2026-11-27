@@ -28,6 +28,8 @@ CONCEPT_CHAINS = {
     ],
     "capex": [
         "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+        # ПРОЛЕТР9: AMZN след 2017 (сменен таг); панелът на stock-selection има същия ред.
+        "us-gaap:PaymentsToAcquireProductiveAssets",
         "ifrs-full:PurchaseOfPropertyPlantAndEquipmentClassifiedAsInvestingActivities",
     ],
     "eps_diluted": [
@@ -36,8 +38,29 @@ CONCEPT_CHAINS = {
     ],
     "shares": [
         "dei:EntityCommonStockSharesOutstanding",
+        # ПРОЛЕТР9: емитентите с няколко класа (GOOGL, DELL, PLTR) нямат dei без измерение
+        # в companyfacts; балансовият брой е резервата.
+        "us-gaap:CommonStockSharesOutstanding",
+        # ПРОЛЕТР9: META няма и двата; средно претеглените разводнени акции за тримесечието,
+        # като точка в края му (виж DURATION_AS_INSTANT). Последна резерва, с бележка в изхода.
+        "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
     ],
 }
+
+# Тагове, които са дюрация в XBRL, но се пазят като точка в края на периода за instant
+# концепт. Взимат се само тримесечните им факти (QUARTER_MIN_DAYS..QUARTER_MAX_DAYS).
+DURATION_AS_INSTANT = {"us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"}
+
+# Тагове, позволени само за изброените имена (решението на Ц. от 27.11.2026, избор 2:
+# разводнените акции са резерва само за META; AI остава вън). Без това правило AI влизаше
+# през резервата на META при първия истински ход на събирача (27.11.2026).
+TAG_ONLY_FOR = {"us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding": {"META"}}
+
+# За instant концепт (броя акции) тагът се избира преди периода: най-приоритетният таг,
+# чийто последен период е до толкова дни по-стар от най-скорошния период изобщо.
+# Така имената с dei остават на dei (нищо не се мести за тях), а остарял dei не държи
+# името на стара стойност, когато балансовият брой е по-нов.
+INSTANT_TAG_FRESH_DAYS = 120
 
 # duration = flow (period start..end); instant = единичен момент (само end)
 CONCEPT_KIND = {

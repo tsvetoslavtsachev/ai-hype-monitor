@@ -3,6 +3,347 @@
   "entity_name": "APPLIED MATERIALS INC /DE",
   "facts": [
     {
+      "accn": "0000950123-09-070205",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2009-12-11",
+      "period_end": "2007-10-28",
+      "period_start": "2006-10-30",
+      "unit": "USD",
+      "value": 264784000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-072007",
+      "concept": "capex",
+      "form": "10-K/A",
+      "known_at": "2009-12-18",
+      "period_end": "2007-10-28",
+      "period_start": "2006-10-30",
+      "unit": "USD",
+      "value": 264784000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-040145",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2009-09-01",
+      "period_end": "2008-07-27",
+      "period_start": "2007-10-29",
+      "unit": "USD",
+      "value": 209512000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-070205",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2009-12-11",
+      "period_end": "2008-10-26",
+      "period_start": "2007-10-29",
+      "unit": "USD",
+      "value": 287906000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-072007",
+      "concept": "capex",
+      "form": "10-K/A",
+      "known_at": "2009-12-18",
+      "period_end": "2008-10-26",
+      "period_start": "2007-10-29",
+      "unit": "USD",
+      "value": 287906000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-112754",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2010-12-10",
+      "period_end": "2008-10-26",
+      "period_start": "2007-10-29",
+      "unit": "USD",
+      "value": 287906000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-022556",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-03-09",
+      "period_end": "2009-01-25",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 73318000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-056967",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2009-04-26",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 128099000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-040145",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2009-09-01",
+      "period_end": "2009-07-26",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 187804000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2009-07-26",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 187804000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-070205",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2009-12-11",
+      "period_end": "2009-10-25",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 248427000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-09-072007",
+      "concept": "capex",
+      "form": "10-K/A",
+      "known_at": "2009-12-18",
+      "period_end": "2009-10-25",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 248427000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-112754",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2010-12-10",
+      "period_end": "2009-10-25",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 248427000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001193125-11-332050",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-12-06",
+      "period_end": "2009-10-25",
+      "period_start": "2008-10-27",
+      "unit": "USD",
+      "value": 249000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-022556",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-03-09",
+      "period_end": "2010-01-31",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 53167000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-019761",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-02-28",
+      "period_end": "2010-01-31",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 53000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-056967",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2010-05-02",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 97874000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-055462",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-05-31",
+      "period_end": "2010-05-02",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 98000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2010-08-01",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 134044000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-080527",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-08-26",
+      "period_end": "2010-08-01",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 134000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-10-112754",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2010-12-10",
+      "period_end": "2010-10-31",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 169081000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001193125-11-332050",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-12-06",
+      "period_end": "2010-10-31",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 169000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-12-000018",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-12-05",
+      "period_end": "2010-10-31",
+      "period_start": "2009-10-26",
+      "unit": "USD",
+      "value": 169000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-019761",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-02-28",
+      "period_end": "2011-01-30",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 24000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001193125-12-081804",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-02-27",
+      "period_end": "2011-01-30",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 24000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-055462",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-05-31",
+      "period_end": "2011-05-01",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 81000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001445305-12-001872",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-05-24",
+      "period_end": "2011-05-01",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 81000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000950123-11-080527",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2011-08-26",
+      "period_end": "2011-07-31",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 136000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-12-000011",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-08-23",
+      "period_end": "2011-07-31",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 136000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001193125-11-332050",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2011-12-06",
+      "period_end": "2011-10-30",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 209000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-12-000018",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-12-05",
+      "period_end": "2011-10-30",
+      "period_start": "2010-11-01",
+      "unit": "USD",
+      "value": 209000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
       "accn": "0000006951-13-000044",
       "concept": "capex",
       "form": "10-K",
@@ -12,6 +353,72 @@
       "unit": "USD",
       "value": 209000000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0001193125-12-081804",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-02-27",
+      "period_end": "2012-01-29",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 37000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-13-000008",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-02-21",
+      "period_end": "2012-01-29",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 37000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0001445305-12-001872",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-05-24",
+      "period_end": "2012-04-29",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 76000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-13-000017",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-05-23",
+      "period_end": "2012-04-29",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 76000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-12-000011",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2012-08-23",
+      "period_end": "2012-07-29",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 121000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
+      "accn": "0000006951-12-000018",
+      "concept": "capex",
+      "form": "10-K",
+      "known_at": "2012-12-05",
+      "period_end": "2012-10-28",
+      "period_start": "2011-10-31",
+      "unit": "USD",
+      "value": 162000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
     },
     {
       "accn": "0000006951-13-000044",
@@ -36,6 +443,17 @@
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
     },
     {
+      "accn": "0000006951-13-000008",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-02-21",
+      "period_end": "2013-01-27",
+      "period_start": "2012-10-29",
+      "unit": "USD",
+      "value": 49000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
+    },
+    {
       "accn": "0000006951-14-000007",
       "concept": "capex",
       "form": "10-Q",
@@ -45,6 +463,17 @@
       "unit": "USD",
       "value": 49000000,
       "xbrl_tag": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment"
+    },
+    {
+      "accn": "0000006951-13-000017",
+      "concept": "capex",
+      "form": "10-Q",
+      "known_at": "2013-05-23",
+      "period_end": "2013-04-28",
+      "period_start": "2012-10-29",
+      "unit": "USD",
+      "value": 100000000,
+      "xbrl_tag": "us-gaap:PaymentsToAcquireProductiveAssets"
     },
     {
       "accn": "0000006951-14-000016",
@@ -13988,11 +14417,143 @@
       "concept": "shares",
       "form": "10-Q",
       "known_at": "2009-09-01",
+      "period_end": "2008-07-27",
+      "period_start": "2008-07-27",
+      "unit": "shares",
+      "value": 1367557000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-070205",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2009-12-11",
+      "period_end": "2008-10-26",
+      "period_start": "2008-10-26",
+      "unit": "shares",
+      "value": 1330761000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-072007",
+      "concept": "shares",
+      "form": "10-K/A",
+      "known_at": "2009-12-18",
+      "period_end": "2008-10-26",
+      "period_start": "2008-10-26",
+      "unit": "shares",
+      "value": 1330761000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-022556",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-03-09",
+      "period_end": "2009-01-25",
+      "period_start": "2009-01-25",
+      "unit": "shares",
+      "value": 1329223000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-056967",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2009-04-26",
+      "period_start": "2009-04-26",
+      "unit": "shares",
+      "value": 1331729000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-040145",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2009-09-01",
       "period_end": "2009-07-26",
       "period_start": "2009-07-26",
       "unit": "shares",
       "value": 1333714002,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-040145",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2009-09-01",
+      "period_end": "2009-07-26",
+      "period_start": "2009-07-26",
+      "unit": "shares",
+      "value": 1333278000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2009-07-26",
+      "period_start": "2009-07-26",
+      "unit": "shares",
+      "value": 1333278000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-070205",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2009-12-11",
+      "period_end": "2009-10-25",
+      "period_start": "2009-10-25",
+      "unit": "shares",
+      "value": 1340917000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-09-072007",
+      "concept": "shares",
+      "form": "10-K/A",
+      "known_at": "2009-12-18",
+      "period_end": "2009-10-25",
+      "period_start": "2009-10-25",
+      "unit": "shares",
+      "value": 1340917000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-056967",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2009-10-25",
+      "period_start": "2009-10-25",
+      "unit": "shares",
+      "value": 1340917000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2009-10-25",
+      "period_start": "2009-10-25",
+      "unit": "shares",
+      "value": 1340917000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-112754",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2010-12-10",
+      "period_end": "2009-10-25",
+      "period_start": "2009-10-25",
+      "unit": "shares",
+      "value": 1340917000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000950123-09-070205",
@@ -14028,6 +14589,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000950123-10-022556",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-03-09",
+      "period_end": "2010-01-31",
+      "period_start": "2010-01-31",
+      "unit": "shares",
+      "value": 1349567000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-11-019761",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-02-28",
+      "period_end": "2010-01-31",
+      "period_start": "2010-01-31",
+      "unit": "shares",
+      "value": 1350000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000950123-10-056967",
       "concept": "shares",
       "form": "10-Q",
@@ -14039,6 +14622,39 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000950123-10-056967",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2010-05-02",
+      "period_start": "2010-05-02",
+      "unit": "shares",
+      "value": 1342979000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-056967",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-06-09",
+      "period_end": "2010-05-02",
+      "period_start": "2010-05-02",
+      "unit": "shares",
+      "value": 1352436000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-11-055462",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-05-31",
+      "period_end": "2010-05-02",
+      "period_start": "2010-05-02",
+      "unit": "shares",
+      "value": 1352000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000950123-10-083841",
       "concept": "shares",
       "form": "10-Q",
@@ -14048,6 +14664,61 @@
       "unit": "shares",
       "value": 1336068013,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2010-08-01",
+      "period_start": "2010-08-01",
+      "unit": "shares",
+      "value": 1336068000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-083841",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2010-09-03",
+      "period_end": "2010-08-01",
+      "period_start": "2010-08-01",
+      "unit": "shares",
+      "value": 1348808000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-11-080527",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-08-26",
+      "period_end": "2010-08-01",
+      "period_start": "2010-08-01",
+      "unit": "shares",
+      "value": 1349000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-10-112754",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2010-12-10",
+      "period_end": "2010-10-31",
+      "period_start": "2010-10-31",
+      "unit": "shares",
+      "value": 1327998000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0001193125-11-332050",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2011-12-06",
+      "period_end": "2010-10-31",
+      "period_start": "2010-10-31",
+      "unit": "shares",
+      "value": 1328000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000950123-10-112754",
@@ -14072,6 +14743,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000950123-11-019761",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-02-28",
+      "period_end": "2011-01-30",
+      "period_start": "2011-01-30",
+      "unit": "shares",
+      "value": 1335000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001193125-12-081804",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-02-27",
+      "period_end": "2011-01-30",
+      "period_start": "2011-01-30",
+      "unit": "shares",
+      "value": 1335000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000950123-11-055462",
       "concept": "shares",
       "form": "10-Q",
@@ -14083,6 +14776,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000950123-11-055462",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-05-31",
+      "period_end": "2011-05-01",
+      "period_start": "2011-05-01",
+      "unit": "shares",
+      "value": 1333000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001445305-12-001872",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-05-24",
+      "period_end": "2011-05-01",
+      "period_start": "2011-05-01",
+      "unit": "shares",
+      "value": 1333000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000950123-11-080527",
       "concept": "shares",
       "form": "10-Q",
@@ -14092,6 +14807,50 @@
       "unit": "shares",
       "value": 1317531478,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000950123-11-080527",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2011-08-26",
+      "period_end": "2011-07-31",
+      "period_start": "2011-07-31",
+      "unit": "shares",
+      "value": 1330000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-12-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-08-23",
+      "period_end": "2011-07-31",
+      "period_start": "2011-07-31",
+      "unit": "shares",
+      "value": 1330000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001193125-11-332050",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2011-12-06",
+      "period_end": "2011-10-30",
+      "period_start": "2011-10-30",
+      "unit": "shares",
+      "value": 1306000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-12-000018",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2012-12-05",
+      "period_end": "2011-10-30",
+      "period_start": "2011-10-30",
+      "unit": "shares",
+      "value": 1306000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0001193125-11-332050",
@@ -14116,6 +14875,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0001193125-12-081804",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-02-27",
+      "period_end": "2012-01-29",
+      "period_start": "2012-01-29",
+      "unit": "shares",
+      "value": 1310000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-13-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-02-21",
+      "period_end": "2012-01-29",
+      "period_start": "2012-01-29",
+      "unit": "shares",
+      "value": 1310000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0001445305-12-001872",
       "concept": "shares",
       "form": "10-Q",
@@ -14127,6 +14908,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0001445305-12-001872",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-05-24",
+      "period_end": "2012-04-29",
+      "period_start": "2012-04-29",
+      "unit": "shares",
+      "value": 1301000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-13-000017",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-05-23",
+      "period_end": "2012-04-29",
+      "period_start": "2012-04-29",
+      "unit": "shares",
+      "value": 1301000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-12-000011",
       "concept": "shares",
       "form": "10-Q",
@@ -14136,6 +14939,50 @@
       "unit": "shares",
       "value": 1237495151,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-12-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2012-08-23",
+      "period_end": "2012-07-29",
+      "period_start": "2012-07-29",
+      "unit": "shares",
+      "value": 1268000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-13-000034",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-08-22",
+      "period_end": "2012-07-29",
+      "period_start": "2012-07-29",
+      "unit": "shares",
+      "value": 1268000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-12-000018",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2012-12-05",
+      "period_end": "2012-10-28",
+      "period_start": "2012-10-28",
+      "unit": "shares",
+      "value": 1197000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-13-000044",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2013-12-04",
+      "period_end": "2012-10-28",
+      "period_start": "2012-10-28",
+      "unit": "shares",
+      "value": 1197000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-12-000018",
@@ -14160,6 +15007,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-13-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-02-21",
+      "period_end": "2013-01-27",
+      "period_start": "2013-01-27",
+      "unit": "shares",
+      "value": 1212000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000007",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-02-20",
+      "period_end": "2013-01-27",
+      "period_start": "2013-01-27",
+      "unit": "shares",
+      "value": 1212000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-13-000017",
       "concept": "shares",
       "form": "10-Q",
@@ -14171,6 +15040,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-13-000017",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-05-23",
+      "period_end": "2013-04-28",
+      "period_start": "2013-04-28",
+      "unit": "shares",
+      "value": 1203000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000016",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-05-22",
+      "period_end": "2013-04-28",
+      "period_start": "2013-04-28",
+      "unit": "shares",
+      "value": 1203000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-13-000034",
       "concept": "shares",
       "form": "10-Q",
@@ -14180,6 +15071,39 @@
       "unit": "shares",
       "value": 1202826487,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-13-000034",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2013-08-22",
+      "period_end": "2013-07-28",
+      "period_start": "2013-07-28",
+      "unit": "shares",
+      "value": 1220000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000028",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-08-21",
+      "period_end": "2013-07-28",
+      "period_start": "2013-07-28",
+      "unit": "shares",
+      "value": 1220000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000037",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2014-12-17",
+      "period_end": "2013-10-27",
+      "period_start": "2013-10-27",
+      "unit": "shares",
+      "value": 1204000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-13-000044",
@@ -14197,11 +15121,55 @@
       "concept": "shares",
       "form": "10-Q",
       "known_at": "2014-02-20",
+      "period_end": "2014-01-26",
+      "period_start": "2014-01-26",
+      "unit": "shares",
+      "value": 1225000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-02-19",
+      "period_end": "2014-01-26",
+      "period_start": "2014-01-26",
+      "unit": "shares",
+      "value": 1225000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000007",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-02-20",
       "period_end": "2014-01-31",
       "period_start": "2014-01-31",
       "unit": "shares",
       "value": 1211068250,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000016",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-05-22",
+      "period_end": "2014-04-27",
+      "period_start": "2014-04-27",
+      "unit": "shares",
+      "value": 1229000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000014",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-05-21",
+      "period_end": "2014-04-27",
+      "period_start": "2014-04-27",
+      "unit": "shares",
+      "value": 1229000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
     },
     {
       "accn": "0000006951-14-000016",
@@ -14226,6 +15194,50 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-14-000028",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2014-08-21",
+      "period_end": "2014-07-27",
+      "period_start": "2014-07-27",
+      "unit": "shares",
+      "value": 1233000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000026",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-08-20",
+      "period_end": "2014-07-27",
+      "period_start": "2014-07-27",
+      "unit": "shares",
+      "value": 1233000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-14-000037",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2014-12-17",
+      "period_end": "2014-10-26",
+      "period_start": "2014-10-26",
+      "unit": "shares",
+      "value": 1221000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000034",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2015-12-09",
+      "period_end": "2014-10-26",
+      "period_start": "2014-10-26",
+      "unit": "shares",
+      "value": 1221000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
       "accn": "0000006951-14-000037",
       "concept": "shares",
       "form": "10-K",
@@ -14235,6 +15247,28 @@
       "unit": "shares",
       "value": 1221471983,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-02-19",
+      "period_end": "2015-01-25",
+      "period_start": "2015-01-25",
+      "unit": "shares",
+      "value": 1240000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000041",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-02-25",
+      "period_end": "2015-01-25",
+      "period_start": "2015-01-25",
+      "unit": "shares",
+      "value": 1240000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
     },
     {
       "accn": "0000006951-15-000008",
@@ -14259,6 +15293,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-15-000014",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-05-21",
+      "period_end": "2015-04-26",
+      "period_start": "2015-04-26",
+      "unit": "shares",
+      "value": 1241000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000048",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-05-26",
+      "period_end": "2015-04-26",
+      "period_start": "2015-04-26",
+      "unit": "shares",
+      "value": 1241000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-15-000026",
       "concept": "shares",
       "form": "10-Q",
@@ -14268,6 +15324,50 @@
       "unit": "shares",
       "value": 1200619417,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000026",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2015-08-20",
+      "period_end": "2015-07-26",
+      "period_start": "2015-07-26",
+      "unit": "shares",
+      "value": 1231000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000059",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-08-25",
+      "period_end": "2015-07-26",
+      "period_start": "2015-07-26",
+      "unit": "shares",
+      "value": 1231000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-15-000034",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2015-12-09",
+      "period_end": "2015-10-25",
+      "period_start": "2015-10-25",
+      "unit": "shares",
+      "value": 1160000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000068",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2016-12-15",
+      "period_end": "2015-10-25",
+      "period_start": "2015-10-25",
+      "unit": "shares",
+      "value": 1160000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-15-000034",
@@ -14292,6 +15392,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-16-000041",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-02-25",
+      "period_end": "2016-01-31",
+      "period_start": "2016-01-31",
+      "unit": "shares",
+      "value": 1154000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000007",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-02-23",
+      "period_end": "2016-01-31",
+      "period_start": "2016-01-31",
+      "unit": "shares",
+      "value": 1154000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-16-000048",
       "concept": "shares",
       "form": "10-Q",
@@ -14303,6 +15425,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-16-000048",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-05-26",
+      "period_end": "2016-05-01",
+      "period_start": "2016-05-01",
+      "unit": "shares",
+      "value": 1119000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000015",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-05-25",
+      "period_end": "2016-05-01",
+      "period_start": "2016-05-01",
+      "unit": "shares",
+      "value": 1119000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-16-000059",
       "concept": "shares",
       "form": "10-Q",
@@ -14312,6 +15456,50 @@
       "unit": "shares",
       "value": 1080893856,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000059",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2016-08-25",
+      "period_end": "2016-07-31",
+      "period_start": "2016-07-31",
+      "unit": "shares",
+      "value": 1093000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000026",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-08-24",
+      "period_end": "2016-07-31",
+      "period_start": "2016-07-31",
+      "unit": "shares",
+      "value": 1093000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-16-000068",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2016-12-15",
+      "period_end": "2016-10-30",
+      "period_start": "2016-10-30",
+      "unit": "shares",
+      "value": 1078000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000038",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2017-12-15",
+      "period_end": "2016-10-30",
+      "period_start": "2016-10-30",
+      "unit": "shares",
+      "value": 1078000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-16-000068",
@@ -14336,6 +15524,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-17-000007",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-02-23",
+      "period_end": "2017-01-29",
+      "period_start": "2017-01-29",
+      "unit": "shares",
+      "value": 1089000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-02-22",
+      "period_end": "2017-01-29",
+      "period_start": "2017-01-29",
+      "unit": "shares",
+      "value": 1089000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-17-000015",
       "concept": "shares",
       "form": "10-Q",
@@ -14347,6 +15557,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-17-000015",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-05-25",
+      "period_end": "2017-04-30",
+      "period_start": "2017-04-30",
+      "unit": "shares",
+      "value": 1087000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000017",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-05-24",
+      "period_end": "2017-04-30",
+      "period_start": "2017-04-30",
+      "unit": "shares",
+      "value": 1087000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-17-000026",
       "concept": "shares",
       "form": "10-Q",
@@ -14356,6 +15588,50 @@
       "unit": "shares",
       "value": 1066487165,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000026",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2017-08-24",
+      "period_end": "2017-07-30",
+      "period_start": "2017-07-30",
+      "unit": "shares",
+      "value": 1083000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000029",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-08-23",
+      "period_end": "2017-07-30",
+      "period_start": "2017-07-30",
+      "unit": "shares",
+      "value": 1083000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-17-000038",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2017-12-15",
+      "period_end": "2017-10-29",
+      "period_start": "2017-10-29",
+      "unit": "shares",
+      "value": 1060000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000041",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2018-12-13",
+      "period_end": "2017-10-29",
+      "period_start": "2017-10-29",
+      "unit": "shares",
+      "value": 1060000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-17-000038",
@@ -14380,6 +15656,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-18-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-02-22",
+      "period_end": "2018-01-28",
+      "period_start": "2018-01-28",
+      "unit": "shares",
+      "value": 1071000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-02-21",
+      "period_end": "2018-01-28",
+      "period_start": "2018-01-28",
+      "unit": "shares",
+      "value": 1071000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-18-000017",
       "concept": "shares",
       "form": "10-Q",
@@ -14391,6 +15689,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-18-000017",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-05-24",
+      "period_end": "2018-04-29",
+      "period_start": "2018-04-29",
+      "unit": "shares",
+      "value": 1040000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000019",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-05-23",
+      "period_end": "2018-04-29",
+      "period_start": "2018-04-29",
+      "unit": "shares",
+      "value": 1040000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-18-000029",
       "concept": "shares",
       "form": "10-Q",
@@ -14400,6 +15720,50 @@
       "unit": "shares",
       "value": 982990521,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000029",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2018-08-23",
+      "period_end": "2018-07-29",
+      "period_start": "2018-07-29",
+      "unit": "shares",
+      "value": 1005000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000029",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-08-22",
+      "period_end": "2018-07-29",
+      "period_start": "2018-07-29",
+      "unit": "shares",
+      "value": 1005000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-18-000041",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2018-12-13",
+      "period_end": "2018-10-28",
+      "period_start": "2018-10-28",
+      "unit": "shares",
+      "value": 967000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000046",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2019-12-13",
+      "period_end": "2018-10-28",
+      "period_start": "2018-10-28",
+      "unit": "shares",
+      "value": 967000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-18-000041",
@@ -14424,6 +15788,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-19-000008",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-02-21",
+      "period_end": "2019-01-27",
+      "period_start": "2019-01-27",
+      "unit": "shares",
+      "value": 965000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000014",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-02-20",
+      "period_end": "2019-01-27",
+      "period_start": "2019-01-27",
+      "unit": "shares",
+      "value": 965000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-19-000019",
       "concept": "shares",
       "form": "10-Q",
@@ -14435,6 +15821,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-19-000019",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-05-23",
+      "period_end": "2019-04-28",
+      "period_start": "2019-04-28",
+      "unit": "shares",
+      "value": 948000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000028",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-05-21",
+      "period_end": "2019-04-28",
+      "period_start": "2019-04-28",
+      "unit": "shares",
+      "value": 948000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-19-000029",
       "concept": "shares",
       "form": "10-Q",
@@ -14444,6 +15852,50 @@
       "unit": "shares",
       "value": 923753756,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000029",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2019-08-22",
+      "period_end": "2019-07-28",
+      "period_start": "2019-07-28",
+      "unit": "shares",
+      "value": 937000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000037",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-08-20",
+      "period_end": "2019-07-28",
+      "period_start": "2019-07-28",
+      "unit": "shares",
+      "value": 937000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-19-000046",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2019-12-13",
+      "period_end": "2019-10-27",
+      "period_start": "2019-10-27",
+      "unit": "shares",
+      "value": 916000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000048",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2020-12-11",
+      "period_end": "2019-10-27",
+      "period_start": "2019-10-27",
+      "unit": "shares",
+      "value": 916000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-19-000046",
@@ -14468,6 +15920,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-20-000014",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-02-20",
+      "period_end": "2020-01-26",
+      "period_start": "2020-01-26",
+      "unit": "shares",
+      "value": 927000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000013",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-02-25",
+      "period_end": "2020-01-26",
+      "period_start": "2020-01-26",
+      "unit": "shares",
+      "value": 927000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-20-000028",
       "concept": "shares",
       "form": "10-Q",
@@ -14479,6 +15953,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-20-000028",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-05-21",
+      "period_end": "2020-04-26",
+      "period_start": "2020-04-26",
+      "unit": "shares",
+      "value": 923000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000023",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-05-27",
+      "period_end": "2020-04-26",
+      "period_start": "2020-04-26",
+      "unit": "shares",
+      "value": 923000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-20-000037",
       "concept": "shares",
       "form": "10-Q",
@@ -14488,6 +15984,50 @@
       "unit": "shares",
       "value": 913282764,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000037",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2020-08-20",
+      "period_end": "2020-07-26",
+      "period_start": "2020-07-26",
+      "unit": "shares",
+      "value": 922000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000034",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-08-26",
+      "period_end": "2020-07-26",
+      "period_start": "2020-07-26",
+      "unit": "shares",
+      "value": 922000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-20-000048",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2020-12-11",
+      "period_end": "2020-10-25",
+      "period_start": "2020-10-25",
+      "unit": "shares",
+      "value": 914000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000043",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2021-12-17",
+      "period_end": "2020-10-25",
+      "period_start": "2020-10-25",
+      "unit": "shares",
+      "value": 914000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-20-000048",
@@ -14512,6 +16052,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-21-000013",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-02-25",
+      "period_end": "2021-01-31",
+      "period_start": "2021-01-31",
+      "unit": "shares",
+      "value": 925000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-02-24",
+      "period_end": "2021-01-31",
+      "period_start": "2021-01-31",
+      "unit": "shares",
+      "value": 925000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-21-000023",
       "concept": "shares",
       "form": "10-Q",
@@ -14523,6 +16085,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-21-000023",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-05-27",
+      "period_end": "2021-05-02",
+      "period_start": "2021-05-02",
+      "unit": "shares",
+      "value": 927000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-05-26",
+      "period_end": "2021-05-02",
+      "period_start": "2021-05-02",
+      "unit": "shares",
+      "value": 927000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-21-000034",
       "concept": "shares",
       "form": "10-Q",
@@ -14532,6 +16116,50 @@
       "unit": "shares",
       "value": 902928500,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000034",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2021-08-26",
+      "period_end": "2021-08-01",
+      "period_start": "2021-08-01",
+      "unit": "shares",
+      "value": 918000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000032",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-08-25",
+      "period_end": "2021-08-01",
+      "period_start": "2021-08-01",
+      "unit": "shares",
+      "value": 918000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-21-000043",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2021-12-17",
+      "period_end": "2021-10-31",
+      "period_start": "2021-10-31",
+      "unit": "shares",
+      "value": 892000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000043",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2022-12-16",
+      "period_end": "2021-10-31",
+      "period_start": "2021-10-31",
+      "unit": "shares",
+      "value": 892000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-21-000043",
@@ -14556,6 +16184,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-22-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-02-24",
+      "period_end": "2022-01-30",
+      "period_start": "2022-01-30",
+      "unit": "shares",
+      "value": 897000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000012",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-02-23",
+      "period_end": "2022-01-30",
+      "period_start": "2022-01-30",
+      "unit": "shares",
+      "value": 897000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-22-000022",
       "concept": "shares",
       "form": "10-Q",
@@ -14567,6 +16217,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-22-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-05-26",
+      "period_end": "2022-05-01",
+      "period_start": "2022-05-01",
+      "unit": "shares",
+      "value": 883000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-05-26",
+      "period_end": "2022-05-01",
+      "period_start": "2022-05-01",
+      "unit": "shares",
+      "value": 883000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-22-000032",
       "concept": "shares",
       "form": "10-Q",
@@ -14576,6 +16248,50 @@
       "unit": "shares",
       "value": 860309377,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000032",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2022-08-25",
+      "period_end": "2022-07-31",
+      "period_start": "2022-07-31",
+      "unit": "shares",
+      "value": 869000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000031",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-08-24",
+      "period_end": "2022-07-31",
+      "period_start": "2022-07-31",
+      "unit": "shares",
+      "value": 869000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-22-000043",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2022-12-16",
+      "period_end": "2022-10-30",
+      "period_start": "2022-10-30",
+      "unit": "shares",
+      "value": 844000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000041",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2023-12-15",
+      "period_end": "2022-10-30",
+      "period_start": "2022-10-30",
+      "unit": "shares",
+      "value": 844000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-22-000043",
@@ -14600,6 +16316,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-23-000012",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-02-23",
+      "period_end": "2023-01-29",
+      "period_start": "2023-01-29",
+      "unit": "shares",
+      "value": 849000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000012",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-02-27",
+      "period_end": "2023-01-29",
+      "period_start": "2023-01-29",
+      "unit": "shares",
+      "value": 849000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-23-000022",
       "concept": "shares",
       "form": "10-Q",
@@ -14611,6 +16349,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-23-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-05-26",
+      "period_end": "2023-04-30",
+      "period_start": "2023-04-30",
+      "unit": "shares",
+      "value": 847000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-05-23",
+      "period_end": "2023-04-30",
+      "period_start": "2023-04-30",
+      "unit": "shares",
+      "value": 847000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-23-000031",
       "concept": "shares",
       "form": "10-Q",
@@ -14620,6 +16380,50 @@
       "unit": "shares",
       "value": 836533852,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000031",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2023-08-24",
+      "period_end": "2023-07-30",
+      "period_start": "2023-07-30",
+      "unit": "shares",
+      "value": 843000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000032",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-08-22",
+      "period_end": "2023-07-30",
+      "period_start": "2023-07-30",
+      "unit": "shares",
+      "value": 843000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-23-000041",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2023-12-15",
+      "period_end": "2023-10-29",
+      "period_start": "2023-10-29",
+      "unit": "shares",
+      "value": 833000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000044",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2024-12-13",
+      "period_end": "2023-10-29",
+      "period_start": "2023-10-29",
+      "unit": "shares",
+      "value": 833000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-23-000041",
@@ -14644,6 +16448,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-24-000012",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-02-27",
+      "period_end": "2024-01-28",
+      "period_start": "2024-01-28",
+      "unit": "shares",
+      "value": 837000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-25-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-02-20",
+      "period_end": "2024-01-28",
+      "period_start": "2024-01-28",
+      "unit": "shares",
+      "value": 837000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-24-000022",
       "concept": "shares",
       "form": "10-Q",
@@ -14655,6 +16481,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-24-000022",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-05-23",
+      "period_end": "2024-04-28",
+      "period_start": "2024-04-28",
+      "unit": "shares",
+      "value": 836000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-25-000024",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-05-22",
+      "period_end": "2024-04-28",
+      "period_start": "2024-04-28",
+      "unit": "shares",
+      "value": 836000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-24-000032",
       "concept": "shares",
       "form": "10-Q",
@@ -14664,6 +16512,50 @@
       "unit": "shares",
       "value": 824404088,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000032",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2024-08-22",
+      "period_end": "2024-07-28",
+      "period_start": "2024-07-28",
+      "unit": "shares",
+      "value": 833000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-25-000037",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-08-21",
+      "period_end": "2024-07-28",
+      "period_start": "2024-07-28",
+      "unit": "shares",
+      "value": 833000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-24-000044",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2024-12-13",
+      "period_end": "2024-10-27",
+      "period_start": "2024-10-27",
+      "unit": "shares",
+      "value": 818000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-25-056742",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2025-12-12",
+      "period_end": "2024-10-27",
+      "period_start": "2024-10-27",
+      "unit": "shares",
+      "value": 818000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0000006951-24-000044",
@@ -14688,6 +16580,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-25-000011",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-02-20",
+      "period_end": "2025-01-26",
+      "period_start": "2025-01-26",
+      "unit": "shares",
+      "value": 819000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-26-009694",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-02-19",
+      "period_end": "2025-01-26",
+      "period_start": "2025-01-26",
+      "unit": "shares",
+      "value": 819000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-25-000024",
       "concept": "shares",
       "form": "10-Q",
@@ -14699,6 +16613,28 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0000006951-25-000024",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-05-22",
+      "period_end": "2025-04-27",
+      "period_start": "2025-04-27",
+      "unit": "shares",
+      "value": 812000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-26-037227",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-05-21",
+      "period_end": "2025-04-27",
+      "period_start": "2025-04-27",
+      "unit": "shares",
+      "value": 812000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0000006951-25-000037",
       "concept": "shares",
       "form": "10-Q",
@@ -14708,6 +16644,39 @@
       "unit": "shares",
       "value": 796642427,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0000006951-25-000037",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2025-08-21",
+      "period_end": "2025-07-27",
+      "period_start": "2025-07-27",
+      "unit": "shares",
+      "value": 802000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-26-058235",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-08-20",
+      "period_end": "2025-07-27",
+      "period_start": "2025-07-27",
+      "unit": "shares",
+      "value": 802000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-25-056742",
+      "concept": "shares",
+      "form": "10-K",
+      "known_at": "2025-12-12",
+      "period_end": "2025-10-26",
+      "period_start": "2025-10-26",
+      "unit": "shares",
+      "value": 793000000,
+      "xbrl_tag": "us-gaap:CommonStockSharesOutstanding"
     },
     {
       "accn": "0001628280-25-056742",
@@ -14732,6 +16701,17 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0001628280-26-009694",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-02-19",
+      "period_end": "2026-01-25",
+      "period_start": "2026-01-25",
+      "unit": "shares",
+      "value": 799000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0001628280-26-037227",
       "concept": "shares",
       "form": "10-Q",
@@ -14743,6 +16723,17 @@
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
     },
     {
+      "accn": "0001628280-26-037227",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-05-21",
+      "period_end": "2026-04-26",
+      "period_start": "2026-04-26",
+      "unit": "shares",
+      "value": 799000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
+    },
+    {
       "accn": "0001628280-26-058235",
       "concept": "shares",
       "form": "10-Q",
@@ -14752,9 +16743,20 @@
       "unit": "shares",
       "value": 793597443,
       "xbrl_tag": "dei:EntityCommonStockSharesOutstanding"
+    },
+    {
+      "accn": "0001628280-26-058235",
+      "concept": "shares",
+      "form": "10-Q",
+      "known_at": "2026-08-20",
+      "period_end": "2026-07-26",
+      "period_start": "2026-07-26",
+      "unit": "shares",
+      "value": 800000000,
+      "xbrl_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding"
     }
   ],
-  "record_count": 1341,
+  "record_count": 1523,
   "schema": "bitemporal append-only; record={concept,xbrl_tag,period_start,period_end,value,unit,form,known_at,accn}",
   "source": "SEC XBRL companyfacts (data.sec.gov)",
   "ticker": "AMAT"

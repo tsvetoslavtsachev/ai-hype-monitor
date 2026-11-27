@@ -33,8 +33,10 @@ SEC_SEARCH = "https://efts.sec.gov/LATEST/search-index"
 EDGAR_FULL = "https://www.sec.gov/Archives/edgar"
 
 # ВАЖНО: SEC изисква User-Agent с контакт
-USER_AGENT = "AI-Hype-Monitor tsvetoslav@elana.net"
-HEADERS = {"User-Agent": USER_AGENT, "Accept-Encoding": "gzip, deflate"}
+sys.path.insert(0, str(Path(__file__).resolve().parent / "v2"))
+from sec_ua import sec_headers  # noqa: E402
+
+HEADERS = {"Accept-Encoding": "gzip, deflate"}  # User-Agent: sec_ua (SEC_USER_AGENT)
 
 # Брой последни filings на компания
 MAX_FILINGS_PER_COMPANY = 8   # ~2 години тримесечни отчети
@@ -49,7 +51,7 @@ def _get_company_filings(cik: str, form_type: str = "8-K",
     cik_padded = str(cik).zfill(10)
     url = f"{SEC_BASE}/submissions/CIK{cik_padded}.json"
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp = requests.get(url, headers=sec_headers(HEADERS), timeout=15)
         resp.raise_for_status()
         data = resp.json()
     except Exception as e:
@@ -90,7 +92,7 @@ def _get_filing_text(cik: str, accession_clean: str, primary_doc: str) -> Option
     # Опитваме primary document
     url = f"{EDGAR_FULL}/{cik_padded}/{accession_clean}/{primary_doc}"
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=20)
+        resp = requests.get(url, headers=sec_headers(HEADERS), timeout=20)
         resp.raise_for_status()
         text = resp.text
         # Премахваме HTML тагове ако е HTML документ
@@ -113,7 +115,7 @@ def _get_filing_index(cik: str, accession_clean: str) -> list[dict]:
     cik_padded = str(cik).zfill(10)
     url = f"{EDGAR_FULL}/{cik_padded}/{accession_clean}/{accession_clean}-index.json"
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15)
+        resp = requests.get(url, headers=sec_headers(HEADERS), timeout=15)
         resp.raise_for_status()
         data = resp.json()
         return data.get("directory", {}).get("item", [])
@@ -130,7 +132,7 @@ def _lookup_cik(symbol: str) -> Optional[str]:
     # По-надежден: company_tickers.json
     try:
         tickers_url = f"{SEC_BASE}/files/company_tickers.json"
-        resp = requests.get(tickers_url, headers=HEADERS, timeout=20)
+        resp = requests.get(tickers_url, headers=sec_headers(HEADERS), timeout=20)
         resp.raise_for_status()
         tickers = resp.json()
         for entry in tickers.values():
@@ -156,7 +158,7 @@ def run(fetch_text: bool = True, log=print) -> dict:
     try:
         resp = requests.get(
             f"{SEC_BASE}/files/company_tickers.json",
-            headers=HEADERS, timeout=20
+            headers=sec_headers(HEADERS), timeout=20
         )
         resp.raise_for_status()
         tickers_data = resp.json()

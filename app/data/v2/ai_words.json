@@ -1,0 +1,125 @@
+{
+ "what": "AI думите в съобщенията за резултати (ширина); третата съставка на историята",
+ "decided": "Ц., 27.11.2026: „Само думите“",
+ "by": "ПРОЛЕТР9",
+ "built": "2026-11-27",
+ "method": {
+  "numerator": "\"artificial intelligence\" \"three months ended\"",
+  "denominator": "\"three months ended\"",
+  "forms": "8-K",
+  "unit": "документи в EFTS (основният 8-K и приложенията поотделно)",
+  "quarter": "по датата на подаване; съобщенията за тримесечие Q се подават през Q+1"
+ },
+ "source": "SEC EDGAR full-text search (efts.sec.gov/LATEST/search-index), само броят total",
+ "sample_last_quarter": {
+  "quarter": "2026Q3",
+  "n": 100,
+  "file_type": {
+   "EX-99.1": 83,
+   "EX-99.2": 15,
+   "EX-99": 1,
+   "8-K": 1
+  },
+  "items": {
+   "9.01": 100,
+   "2.02": 94,
+   "7.01": 31,
+   "8.01": 15,
+   "5.02": 5,
+   "1.01": 1,
+   "2.01": 1
+  }
+ },
+ "series": [
+  {
+   "filing_quarter": "2023Q1",
+   "ai_docs": 115,
+   "earnings_like_docs": 4362,
+   "share": 0.0264
+  },
+  {
+   "filing_quarter": "2023Q2",
+   "ai_docs": 151,
+   "earnings_like_docs": 5288,
+   "share": 0.0286
+  },
+  {
+   "filing_quarter": "2023Q3",
+   "ai_docs": 199,
+   "earnings_like_docs": 4887,
+   "share": 0.0407
+  },
+  {
+   "filing_quarter": "2023Q4",
+   "ai_docs": 208,
+   "earnings_like_docs": 4615,
+   "share": 0.0451
+  },
+  {
+   "filing_quarter": "2024Q1",
+   "ai_docs": 266,
+   "earnings_like_docs": 4062,
+   "share": 0.0655
+  },
+  {
+   "filing_quarter": "2024Q2",
+   "ai_docs": 349,
+   "earnings_like_docs": 5167,
+   "share": 0.0675
+  },
+  {
+   "filing_quarter": "2024Q3",
+   "ai_docs": 332,
+   "earnings_like_docs": 4601,
+   "share": 0.0722
+  },
+  {
+   "filing_quarter": "2024Q4",
+   "ai_docs": 336,
+   "earnings_like_docs": 4458,
+   "share": 0.0754
+  },
+  {
+   "filing_quarter": "2025Q1",
+   "ai_docs": 408,
+   "earnings_like_docs": 3962,
+   "share": 0.103
+  },
+  {
+   "filing_quarter": "2025Q2",
+   "ai_docs": 485,
+   "earnings_like_docs": 4956,
+   "share": 0.0979
+  },
+  {
+   "filing_quarter": "2025Q3",
+   "ai_docs": 482,
+   "earnings_like_docs": 4487,
+   "share": 0.1074
+  },
+  {
+   "filing_quarter": "2025Q4",
+   "ai_docs": 510,
+   "earnings_like_docs": 4338,
+   "share": 0.1176
+  },
+  {
+   "filing_quarter": "2026Q1",
+   "ai_docs": 568,
+   "earnings_like_docs": 3880,
+   "share": 0.1464
+  },
+  {
+   "filing_quarter": "2026Q2",
+   "ai_docs": 678,
+   "earnings_like_docs": 4842,
+   "share": 0.14
+  },
+  {
+   "filing_quarter": "2026Q3",
+   "ai_docs": 728,
+   "earnings_like_docs": 4479,
+   "share": 0.1625
+  }
+ ]
+}

@@ -47,6 +47,13 @@ ARCHIVE_ETFS = {
 }
 
 # Индивидуални акции — теглим от yfinance
+# ПРОЛЕТР9 (27.11.2026): курсовете за P/S на имена, които отчитат в друга валута (ASML в евро).
+# Ключ: series_id в price-archive; стойност: (име на файла в app/data/prices, символ в yfinance).
+# EURUSD = долари за едно евро.
+ARCHIVE_FX = {
+    "px_eurusd_daily": ("EURUSD", "EURUSD=X"),
+}
+
 STOCKS = {
     # Chip Design
     "NVDA":  {"name": "Nvidia",               "layer": "Chip Design"},
@@ -60,6 +67,7 @@ STOCKS = {
     "AMAT":  {"name": "Applied Materials",     "layer": "Semicon Equipment"},
     "LRCX":  {"name": "Lam Research",          "layer": "Semicon Equipment"},
     "KLAC":  {"name": "KLA Corp",              "layer": "Semicon Equipment"},
+    "ONTO":  {"name": "Onto Innovation",       "layer": "Semicon Equipment"},  # ПРОЛЕТР9: беше във вселената без цена
     "SNPS":  {"name": "Synopsys",              "layer": "Semicon Equipment"},
     "CDNS":  {"name": "Cadence Design",        "layer": "Semicon Equipment"},
     # Memory
@@ -95,8 +103,13 @@ STOCKS = {
 # ── Четене от price-archive ───────────────────────────────────────────────
 
 def read_archive_series(archive_root: Path, series_id: str,
-                         start: str, end: str) -> list[dict]:
-    """Чете JSONL файлове от price-archive за даден series_id."""
+                         start: str, end: str, with_split: bool = False) -> list[dict]:
+    """Чете JSONL файлове от price-archive за даден series_id.
+
+    При повече версии на един ден (бителемпорна корекция при сплит) взима последната по
+    recorded_on. with_split (ПРОЛЕТР9): пази и split_factor (натрупаният сплит след деня);
+    close в архива е коригиран само за сплит, не за дивиденти.
+    """
     series_dir = archive_root / "archive" / series_id
     if not series_dir.exists():
         print(f"  [SKIP] {series_id} — не е намерен в archive")
@@ -104,7 +117,7 @@ def read_archive_series(archive_root: Path, series_id: str,
 
     start_year = int(start[:4])
     end_year   = int(end[:4])
-    records = []
+    by_day = {}
 
     for year in range(start_year, end_year + 1):
         fpath = series_dir / f"{year}.jsonl"
@@ -119,14 +132,19 @@ def read_archive_series(archive_root: Path, series_id: str,
                     rec = json.loads(line)
                     as_of = rec.get("as_of", "")
                     if start <= as_of <= end:
-                        records.append({
-                            "date":  as_of,
-                            "close": rec.get("close") or rec.get("value"),
-                        })
+                        prev = by_day.get(as_of)
+                        if prev is None or rec.get("recorded_on", "") >= prev.get("recorded_on", ""):
+                            by_day[as_of] = rec
                 except json.JSONDecodeError:
                     continue
 
-    records.sort(key=lambda x: x["date"])
+    records = []
+    for as_of in sorted(by_day):
+        rec = by_day[as_of]
+        r = {"date": as_of, "close": rec.get("close") or rec.get("value")}
+        if with_split:
+            r["split_factor"] = float(rec.get("split_factor") or 1.0)
+        records.append(r)
     return records
 
 
@@ -161,8 +179,15 @@ def compute_percentile_series(prices: list[dict]) -> list[dict]:
 
 # ── Теглене от yfinance ───────────────────────────────────────────────────
 
-def fetch_yfinance(symbol: str, start: str, end: str) -> list[dict]:
-    """Тегли дневни цени от yfinance."""
+def fetch_yfinance(symbol: str, start: str, end: str, with_split: bool = False) -> list[dict]:
+    """Тегли дневни цени от yfinance.
+
+    with_split (ПРОЛЕТР9, акциите): close е коригиран само за сплит (auto_adjust=False), както
+    в price-archive, плюс split_factor = произведението на сплитовете СЛЕД деня. Тогава
+    капитализацията е close × брой акции × split_factor(датата на акциите).
+    """
+    if with_split:
+        return _fetch_yfinance_split(symbol, start, end)
     try:
         ticker = yf.Ticker(symbol)
         df = ticker.history(start=start, end=end, auto_adjust=True)
@@ -176,6 +201,26 @@ def fetch_yfinance(symbol: str, start: str, end: str) -> list[dict]:
                 "date":  d,
                 "close": round(float(row["Close"]), 4),
             })
+        records.sort(key=lambda x: x["date"])
+        return records
+    except Exception as e:
+        print(f"  [ERROR] {symbol}: {e}")
+        return []
+
+
+def _fetch_yfinance_split(symbol: str, start: str, end: str) -> list[dict]:
+    try:
+        df = yf.Ticker(symbol).history(start=start, end=end, auto_adjust=False, actions=True)
+        if df.empty:
+            print(f"  [WARN] {symbol} — празен резултат от yfinance")
+            return []
+        days = [(idx.date().isoformat() if hasattr(idx, 'date') else str(idx)[:10], row) for idx, row in df.iterrows()]
+        records, factor = [], 1.0
+        for d, row in reversed(days):          # отзад напред: натрупаният сплит след деня
+            records.append({"date": d, "close": round(float(row["Close"]), 4), "split_factor": factor})
+            s = float(row.get("Stock Splits", 0) or 0)
+            if s > 0:
+                factor *= s
         records.sort(key=lambda x: x["date"])
         return records
     except Exception as e:
@@ -210,6 +255,7 @@ def main():
         "end_date":     args.end,
         "etfs":   {},
         "stocks": {},
+        "fx":     {},
     }
 
     # ── ETF-и от price-archive ────────────────────────────────────────────
@@ -234,11 +280,18 @@ def main():
 
     print()
 
-    # ── Индивидуални акции от yfinance ────────────────────────────────────
-    print("--- Индивидуални акции от yfinance ---")
+    # ── Индивидуални акции: price-archive, иначе yfinance ─────────────────
+    # ПРОЛЕТР9: close е коригиран само за сплит и носи split_factor, за да е капитализацията
+    # вярна и преди сплитовете (multiple_v2). Досега беше yfinance auto_adjust=True (сплит и
+    # дивиденти) срещу брой акции, какъвто е подаден: P/S преди сплит 10:1 излизаше 10 пъти по-нисък.
+    print("--- Индивидуални акции (price-archive, иначе yfinance) ---")
     for symbol, meta in STOCKS.items():
         print(f"  {symbol} ({meta['name']})...", end=" ", flush=True)
-        records = fetch_yfinance(symbol, args.start, args.end)
+        records = read_archive_series(archive_root, f"px_{symbol.lower()}_daily",
+                                      args.start, args.end, with_split=True)
+        if not records:
+            print("archive miss → yfinance...", end=" ", flush=True)
+            records = fetch_yfinance(symbol, args.start, args.end, with_split=True)
         if records:
             records = compute_percentile_series(records)
             result["stocks"][symbol] = {
@@ -246,6 +299,20 @@ def main():
                 "layer":   meta["layer"],
                 "prices":  records,
             }
+            print(f"OK ({len(records)} дни)")
+        else:
+            print("FAIL")
+
+    # ── Курсове (ПРОЛЕТР9): price-archive, иначе yfinance ─────────────────
+    print("--- Курсове ---")
+    for series_id, (name, yf_symbol) in ARCHIVE_FX.items():
+        print(f"  {name} ({series_id})...", end=" ", flush=True)
+        records = read_archive_series(archive_root, series_id, args.start, args.end)
+        if not records:
+            print("archive miss → yfinance...", end=" ", flush=True)
+            records = fetch_yfinance(yf_symbol, args.start, args.end)
+        if records:
+            result["fx"][name] = records
             print(f"OK ({len(records)} дни)")
         else:
             print("FAIL")

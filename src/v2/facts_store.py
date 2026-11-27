@@ -21,11 +21,11 @@ from functools import lru_cache
 from pathlib import Path
 
 try:  # работи и като модул (src.v2), и standalone
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS, TAG_ONLY_FOR
 except ImportError:  # pragma: no cover
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS, TAG_ONLY_FOR
 
 FACTS_DIR = Path(__file__).resolve().parents[2] / "app" / "data" / "v2" / "facts"
 
@@ -47,7 +47,8 @@ def records(ticker: str, concept: str = None) -> list:
     facts = load(ticker).get("facts", [])
     if concept is not None:
         facts = [r for r in facts if r["concept"] == concept]
-    return facts
+    # Таг, позволен само за някои имена (concepts.TAG_ONLY_FOR), не съществува за другите.
+    return [r for r in facts if ticker in TAG_ONLY_FOR.get(r.get("xbrl_tag"), {ticker})]
 
 
 def _ptype(r: dict) -> str:
@@ -66,6 +67,25 @@ def _best_vintage(recs: list) -> dict:
         recs,
         key=lambda r: (r["known_at"], -tag_priority(r["concept"], r["xbrl_tag"])),
     )[-1]
+
+
+def _fresh_top_tag(recs: list) -> list:
+    """Instant (броя акции): записите само на най-приоритетния таг сред „свежите“.
+
+    Свеж е таг, чийто последен период е до INSTANT_TAG_FRESH_DAYS преди най-скорошния
+    период изобщо. Имената с dei остават на dei; резервата идва само при липса
+    или остарял по-приоритетен таг (ПРОЛЕТР9).
+    """
+    last_by_tag = {}
+    for r in recs:
+        t = r["xbrl_tag"]
+        if r["period_end"] > last_by_tag.get(t, ""):
+            last_by_tag[t] = r["period_end"]
+    newest = date.fromisoformat(max(last_by_tag.values()))
+    fresh = [t for t, pe in last_by_tag.items()
+             if (newest - date.fromisoformat(pe)).days <= INSTANT_TAG_FRESH_DAYS]
+    top = min(fresh, key=lambda t: tag_priority(recs[0]["concept"], t))
+    return [r for r in recs if r["xbrl_tag"] == top]
 
 
 def _default_period(concept: str) -> str:
@@ -88,6 +108,8 @@ def get_asof(ticker: str, concept: str, as_of_date: str, period: str = None):
     recs = _pit_period_recs(ticker, concept, as_of_date, period)
     if not recs:
         return None
+    if period == "instant":
+        recs = _fresh_top_tag(recs)
     latest_pe = max(r["period_end"] for r in recs)
     return _best_vintage([r for r in recs if r["period_end"] == latest_pe])
 
@@ -137,10 +159,11 @@ def _ttm_result(value, plus, minus, method):
     known_at = max(c["known_at"] for c, _ in comps)
     derived_from = [{
         "role": role, "period_start": c["period_start"], "period_end": c["period_end"],
-        "value": c["value"], "known_at": c["known_at"], "accn": c["accn"],
+        "value": c["value"], "known_at": c["known_at"], "accn": c["accn"], "unit": c.get("unit"),
     } for c, role in comps]
+    units = {c.get("unit") for c, _ in comps}
     return {"value": value, "known_at": known_at, "method": method,
-            "derived_from": derived_from}
+            "unit": units.pop() if len(units) == 1 else "MIXED", "derived_from": derived_from}
 
 
 def ttm_asof(ticker: str, concept: str, as_of_date: str):
@@ -156,34 +179,48 @@ def ttm_asof(ticker: str, concept: str, as_of_date: str):
     best = _best_by_period(ticker, concept, as_of_date)
     if not best:
         return None
-    quarters = {k: r for k, r in best.items() if _ptype(r) == "Q"}
-    if not quarters:
-        # без тримесечия: ако има FY факт — TTM = последният FY
-        fys = {k: r for k, r in best.items() if _ptype(r) == "FY"}
+    # ПРОЛЕТР9: краят E е най-скорошният край сред ВСИЧКИ дюрации (Q, H, 9M, FY), не само
+    # тримесечните. Иначе отчетите само с натрупано от началото на годината (капексът на
+    # GOOGL и META) и годишните отчети без Q4 държат TTM на старо тримесечие.
+    durs = {k: r for k, r in best.items() if _ptype(r) in ("Q", "H", "9M", "FY")}
+    if not durs:
+        return None
+    if not any(_ptype(r) == "Q" for r in durs.values()):
+        # без тримесечия: TTM = последният FY (както досега)
+        fys = {k: r for k, r in durs.items() if _ptype(r) == "FY"}
         if not fys:
             return None
         E = max(k[1] for k in fys)
         r = _best_vintage([v for k, v in fys.items() if k[1] == E])
         return _ttm_result(r["value"], [r], None, "fy_only")
 
-    E = max(k[1] for k in quarters)
+    E = max(k[1] for k in durs)
 
     # (1) сума на 4 съседни тримесечия
     chain = _four_quarters(best, E)
     if chain:
         return _ttm_result(sum(r["value"] for r in chain), chain, None, "sum_4q")
 
-    # (2) счетоводна идентичност
-    ending_E = [r for k, r in best.items() if k[1] == E]
-    ytd_cur = max(ending_E, key=_pdays)
-    if _ptype(ytd_cur) == "FY":              # E е фискален край -> TTM = FY
-        return _ttm_result(ytd_cur["value"], [ytd_cur], None, "fy_direct")
+    # (2) счетоводна идентичност. ПРОЛЕТР9: опитва всички натрупани записи, завършващи на E,
+    # най-дългия първи (ONTO има два 9M с начало 01.01 и 04.01.2026 след смяна на календара;
+    # само единият стъпва на предходната фискална година).
+    ending_E = sorted([r for k, r in best.items() if k[1] == E], key=_pdays, reverse=True)
+    for ytd_cur in ending_E:
+        if _ptype(ytd_cur) == "FY":          # E е фискален край -> TTM = FY
+            return _ttm_result(ytd_cur["value"], [ytd_cur], None, "fy_direct")
+        got = _identity(best, ytd_cur)
+        if got is not None:
+            return got
+    return None                               # не може да се деривира -> None
 
+
+def _identity(best, ytd_cur):
+    """TTM = FY_предх + YTD_текуща − YTD_минала за един кандидат; None, ако не стъпва."""
     fys = ytd_cur["period_start"]
     P = (date.fromisoformat(fys) - timedelta(days=1)).isoformat()
     fy_prior = [r for k, r in best.items() if k[1] == P and _ptype(r) == "FY"]
     if not fy_prior:
-        return None                           # не може да се деривира -> None
+        return None
     fyp = _best_vintage(fy_prior)
     prior_fys = fyp["period_start"]
     cur_days = _pdays(ytd_cur)
