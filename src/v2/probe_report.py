@@ -124,28 +124,35 @@ def wiki_section(mlev, qvals):
           f"Мерките: смени на посоката {v['turns']}; размах {v['range_vs_median']:.0%} от медианата; корелация на "
           f"4-седмичните промени с пазарната стрелка {v['corr_with_market']}. Мърда: {'да' if v['moves'] else 'не'}. "
           f"Не повтаря цената: {'да' if v['not_price'] else 'не'}.", ""]
-    for q in qvals:                                       # за таблицата „със и без“: сборът за тримесечието
+    for q in qvals:              # за таблицата „със и без“: средно на седмица в тримесечието (12 или 13 седмици)
         s0, e0 = s.qend(q) - timedelta(days=89), s.qend(q)
         vals = [r["total"] for r in rows if s0.isoformat() <= r["week_end"] <= e0.isoformat()]
-        qvals[q]["wiki"] = sum(vals) if len(vals) >= 12 else None
+        qvals[q]["wiki"] = sum(vals) / len(vals) if len(vals) >= 12 else None
     return L, v
 
 
 def with_without(qvals, keys_extra):
     """Историята в датата „важи от“ на последните 8 тримесечия: s1+капекс и с всяка проба поотделно."""
+    def base_of(k):
+        """2023Q1, а за серия, която започва по-късно, първото ѝ пълно тримесечие."""
+        return next((q for q in sorted(qvals) if qvals[q].get(k) is not None), None)
+
     def idx(q, keys):
-        base = "2023Q1"
         logs = []
         for k in keys:
-            if qvals.get(q, {}).get(k) is None or qvals.get(base, {}).get(k) is None:
+            b = base_of(k)
+            if b is None or qvals.get(q, {}).get(k) is None:
                 return None
-            logs.append(math.log(100 * qvals[q][k] / qvals[base][k]))
+            logs.append(math.log(100 * qvals[q][k] / qvals[b][k]))
         return math.exp(sum(logs) / len(logs))
     qs = sorted(qvals)[-8:]
     head = "| тримесечие | важи от | историята (S-1, капекс) | " + " | ".join(f"с {n}" for n, _ in keys_extra) + " |"
     L = ["## Историята със и без пробата (последните 8 тримесечия)", "",
          "База 2023Q1 = 100. Пробата влиза като трета съставка; думите са по тримесечието на подаване, "
-         "Wikipedia е сборът за тримесечието. Стойността важи от края на тримесечието + 45 дни.", "",
+         "Wikipedia е средното на седмица за тримесечието. Стойността важи от края на тримесечието + 45 дни.",
+         "Базата на всяка съставка: " + ", ".join(f"{n} {base_of(k) or 'няма'}" for n, k in
+                                               [("S-1", "s1"), ("капекс", "capex")] + [(n, k) for n, k in keys_extra])
+         + " (серия, която започва след 2023Q1, е на 100 в първото си пълно тримесечие).", "",
          head, "|" + "---|" * (3 + len(keys_extra))]
     for q in qs:
         b = idx(q, ["s1", "capex"])

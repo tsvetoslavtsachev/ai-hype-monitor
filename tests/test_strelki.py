@@ -95,3 +95,25 @@ def test_md_and_block_carry_dates():
          "segments": [], "names": [], "frozen": "x"}
     md = s.render_md(o)
     assert "20.11.2026" in md and "2026Q3, важи от 14.11.2026" in md and "(от 23.10.2026)" in md
+
+
+def test_ps_stale_shares_is_missing_not_a_price(monkeypatch):
+    """27.11.2026: AI взимаше броя акции от април 2021 г. (само клас B) и P/S 0,14."""
+    series = (["2026-11-20"], [9.13], [1.0])
+    monkeypatch.setattr(m.fs, "get_asof", lambda t, c, d: {"value": 3_499_992, "xbrl_tag": "us-gaap:X",
+                                                           "period_end": "2021-04-30", "known_at": "2021-06-25"})
+    monkeypatch.setattr(m.fs, "ttm_asof", lambda t, c, d: {"value": 232e6, "known_at": "2026-09-09", "method": "identity",
+                                                           "derived_from": [{"period_end": "2026-07-31"}]})
+    ps, det = m.ticker_ps(series, "AI", "2026-11-20")
+    assert ps is None and "shares older than" in det["missing"]
+
+
+def test_ps_annual_filer_one_year_back_still_counts(monkeypatch):
+    """ASML (20-F): броят акции и продажбите към 31.12 важат до следващия годишен отчет."""
+    series = (["2026-11-20"], [1266.22], [1.0])
+    monkeypatch.setattr(m.fs, "get_asof", lambda t, c, d: {"value": 385e6, "xbrl_tag": "dei:X",
+                                                           "period_end": "2025-12-31", "known_at": "2026-02-25"})
+    monkeypatch.setattr(m.fs, "ttm_asof", lambda t, c, d: {"value": 32.7e9, "known_at": "2026-02-25", "method": "fy_only",
+                                                           "derived_from": [{"period_end": "2025-12-31"}]})
+    ps, _ = m.ticker_ps(series, "ASML", "2026-11-20")
+    assert ps is not None

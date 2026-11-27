@@ -26,3 +26,12 @@ def test_corr_sign_and_none():
     assert pr.corr([1, 2, 3], [2, 4, 6]) > 0.99
     assert pr.corr([1, 2, 3], [3, 2, 1]) < -0.99
     assert pr.corr([1, 2], [1, 2]) is None
+
+
+def test_late_series_indexes_from_its_first_full_quarter():
+    """Wikipedia започва през март 2023 г.: без своя база колоната беше „няма“ навсякъде (27.11.2026)."""
+    qv = {"2023Q1": {"s1": 1.0, "capex": 1.0, "wiki": None},
+          "2023Q2": {"s1": 1.0, "capex": 1.0, "wiki": 50.0},
+          "2023Q3": {"s1": 2.0, "capex": 2.0, "wiki": 100.0}}
+    rows = [r for r in pr.with_without(qv, [("Wikipedia", "wiki")]) if r.startswith("| 2023Q3")]
+    assert rows and rows[0].split("|")[3].strip() == "200.0" and rows[0].split("|")[4].strip() == "200.0"

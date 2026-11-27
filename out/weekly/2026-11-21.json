@@ -10,68 +10,59 @@
  "market": {
   "what": "колко плаща пазарът за историята: медианата на цена към продажби (12 месеца) по имената",
   "date": "2026-11-20",
-  "level": 181.23,
+  "level": 135.64,
   "vs_1_week": {
    "date": "2026-11-13",
-   "level": 209.49,
-   "change_pct": -13.5
+   "level": 151.23,
+   "change_pct": -10.3
   },
   "vs_4_weeks": {
    "date": "2026-10-23",
-   "level": 231.42,
-   "change_pct": -21.7
+   "level": 174.04,
+   "change_pct": -22.1
   },
   "vs_52_weeks": {
    "date": "2025-11-21",
-   "level": 217.99,
-   "change_pct": -16.9
+   "level": 179.18,
+   "change_pct": -24.3
   },
   "peak": {
    "date": "2026-06-19",
-   "level": 384.0,
-   "distance_pct": -52.8
+   "level": 313.43,
+   "distance_pct": -56.7
   },
-  "median_ps": 7.6028,
-  "base_median_ps": 4.1952,
-  "n_names": 31,
+  "median_ps": 6.9231,
+  "base_median_ps": 5.104,
+  "n_names": 35,
   "components": "1 от 1",
   "source": "app/data/v2/multiple_v2.json (медианата), app/data/v2/ps_by_ticker.json (по име); цени app/data/prices, акции и продажби SEC XBRL companyfacts"
  },
  "history": {
   "what": "колко пари се наливат и колко нови компании се закачат (тримесечно)",
   "date": "2026-11-20",
-  "level": 226.63,
+  "level": 249.73,
   "vs_1_week": {
    "date": "2026-11-13",
-   "level": 228.98,
-   "change_pct": -1.0
+   "level": 232.08,
+   "change_pct": 7.6
   },
   "vs_4_weeks": {
    "date": "2026-10-23",
-   "level": 228.98,
-   "change_pct": -1.0
+   "level": 232.08,
+   "change_pct": 7.6
   },
   "vs_52_weeks": {
    "date": "2025-11-21",
-   "level": 153.89,
-   "change_pct": 47.3
+   "level": 161.46,
+   "change_pct": 54.7
   },
   "peak": {
-   "date": "2026-08-14",
-   "level": 228.98,
-   "distance_pct": -1.0
+   "date": "2026-11-20",
+   "level": 249.73,
+   "distance_pct": 0.0
   },
-  "components": "1 от 2",
-  "stale_or_missing": [
-   {
-    "label": "капексът на петте хайпърскейлъра към продажбите им, %",
-    "short": "капексът на хайпърскейлърите",
-    "state": "липсва",
-    "quarter": null,
-    "valid_from": null,
-    "expected_quarter": "2026Q3"
-   }
-  ],
+  "components": "2 от 2",
+  "stale_or_missing": [],
   "parts": [
    {
     "key": "s1",
@@ -89,8 +80,13 @@
    {
     "key": "capex",
     "label": "капексът на петте хайпърскейлъра към продажбите им, %",
-    "state": "липсва",
-    "why": "няма стойност към петъка",
+    "quarter": "2026Q3",
+    "valid_from": "2026-11-14",
+    "value": 35.83398284258437,
+    "base_quarter": "2023Q1",
+    "base_value": 13.022298360104337,
+    "index": 275.17402728512866,
+    "state": "свежа",
     "expected_quarter": "2026Q3",
     "source": "app/data/v2/facts (SEC XBRL companyfacts: капекс и продажби за 12 месеца, по дата на подаване)"
    }
@@ -111,8 +107,8 @@
      "revenue_to": "2026-09-30"
     },
     "AMZN": {
-     "capex_12m": 7417000000,
-     "capex_to": "2017-03-31",
+     "capex_12m": 215192000000,
+     "capex_to": "2026-09-30",
      "revenue_12m": 797455000000,
      "revenue_to": "2026-09-30"
     },
@@ -129,29 +125,27 @@
      "revenue_to": "2026-08-31"
     }
    },
-   "missing": [
-    "AMZN"
-   ]
+   "capex_12m_sum": 691015000000.0,
+   "revenue_12m_sum": 1928379000000.0
   }
  },
  "segments": [
   {
    "segment": "AI Software",
-   "median_ps": 5.89,
-   "n_names": 3,
+   "median_ps": 11.22,
+   "n_names": 4,
    "names": {
     "AI": null,
     "CRM": 3.3832,
     "NOW": 5.8933,
-    "PLTR": null,
+    "PLTR": 47.431,
     "SNOW": 16.5421
    },
    "without_data": [
-    "AI",
-    "PLTR"
+    "AI"
    ],
-   "vs_4_weeks_pct": -47.2,
-   "vs_52_weeks_pct": -55.9,
+   "vs_4_weeks_pct": -30.5,
+   "vs_52_weeks_pct": -31.2,
    "note": null
   },
   {
@@ -160,7 +154,7 @@
    "n_names": 8,
    "names": {
     "AMD": 15.3191,
-    "ARM": 29.6393,
+    "ARM": 29.8049,
     "AVGO": 16.3084,
     "CDNS": 12.5992,
     "MRVL": 11.3464,
@@ -175,39 +169,34 @@
   },
   {
    "segment": "Hyperscalers",
-   "median_ps": 4.26,
-   "n_names": 3,
+   "median_ps": 5.97,
+   "n_names": 5,
    "names": {
     "AMZN": 3.3468,
-    "GOOGL": null,
-    "META": null,
+    "GOOGL": 6.9231,
+    "META": 5.9727,
     "MSFT": 10.3859,
     "ORCL": 4.2629
    },
-   "without_data": [
-    "GOOGL",
-    "META"
-   ],
-   "vs_4_weeks_pct": -19.8,
-   "vs_52_weeks_pct": -55.5,
+   "without_data": [],
+   "vs_4_weeks_pct": -12.7,
+   "vs_52_weeks_pct": -36.4,
    "note": null
   },
   {
    "segment": "Infrastructure & Power",
-   "median_ps": 3.02,
-   "n_names": 4,
+   "median_ps": 2.26,
+   "n_names": 5,
    "names": {
-    "DELL": null,
+    "DELL": 1.1768,
     "ETN": 3.7816,
     "PWR": 2.2589,
     "SMCI": 0.2643,
     "VRT": 4.8803
    },
-   "without_data": [
-    "DELL"
-   ],
-   "vs_4_weeks_pct": -16.5,
-   "vs_52_weeks_pct": -16.1,
+   "without_data": [],
+   "vs_4_weeks_pct": -9.5,
+   "vs_52_weeks_pct": -4.2,
    "note": null
   },
   {
@@ -264,7 +253,15 @@
    "ps": null,
    "price": 9.13,
    "price_date": "2026-11-20",
-   "missing": "no shares in facts"
+   "shares": 3499992,
+   "shares_tag": "us-gaap:CommonStockSharesOutstanding",
+   "shares_period_end": "2021-04-30",
+   "shares_known_at": "2021-06-25",
+   "ttm_revenue": 232382000,
+   "ttm_known_at": "2026-09-09",
+   "ttm_method": "identity",
+   "ttm_period_end": "2026-07-31",
+   "missing": "shares older than 490 days (2021-04-30)"
   },
   {
    "ticker": "AMAT",
@@ -333,13 +330,13 @@
   {
    "ticker": "ARM",
    "segment": "Chip Design",
-   "ps": 29.6393,
+   "ps": 29.8049,
    "price": 152.2,
    "price_date": "2026-11-20",
-   "shares": 1064055252,
-   "shares_tag": "dei:EntityCommonStockSharesOutstanding",
-   "shares_period_end": "2026-03-31",
-   "shares_known_at": "2026-05-26",
+   "shares": 1070000000,
+   "shares_tag": "us-gaap:CommonStockSharesOutstanding",
+   "shares_period_end": "2026-09-30",
+   "shares_known_at": "2026-11-04",
    "ttm_revenue": 5464000000,
    "ttm_known_at": "2026-11-04",
    "ttm_method": "identity",
@@ -445,10 +442,18 @@
   {
    "ticker": "DELL",
    "segment": "Infrastructure & Power",
-   "ps": null,
+   "ps": 1.1768,
    "price": 278.019989,
    "price_date": "2026-11-20",
-   "missing": "no shares in facts"
+   "shares": 640000000,
+   "shares_tag": "us-gaap:CommonStockSharesOutstanding",
+   "shares_period_end": "2026-07-31",
+   "shares_known_at": "2026-09-08",
+   "ttm_revenue": 151197000000,
+   "ttm_known_at": "2026-09-08",
+   "ttm_method": "identity",
+   "ttm_period_end": "2026-07-31",
+   "split_adj": 1.0
   },
   {
    "ticker": "ETN",
@@ -485,10 +490,18 @@
   {
    "ticker": "GOOGL",
    "segment": "Hyperscalers",
-   "ps": null,
+   "ps": 6.9231,
    "price": 265.290009,
    "price_date": "2026-11-20",
-   "missing": "no shares in facts"
+   "shares": 12294000000,
+   "shares_tag": "us-gaap:CommonStockSharesOutstanding",
+   "shares_period_end": "2026-09-30",
+   "shares_known_at": "2026-10-29",
+   "ttm_revenue": 471098000000,
+   "ttm_known_at": "2026-10-29",
+   "ttm_method": "identity",
+   "ttm_period_end": "2026-09-30",
+   "split_adj": 1.0
   },
   {
    "ticker": "KLAC",
@@ -541,10 +554,18 @@
   {
    "ticker": "META",
    "segment": "Hyperscalers",
-   "ps": null,
+   "ps": 5.9727,
    "price": 560.840027,
    "price_date": "2026-11-20",
-   "missing": "no shares in facts"
+   "shares": 2573000000,
+   "shares_tag": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+   "shares_period_end": "2026-09-30",
+   "shares_known_at": "2026-10-22",
+   "ttm_revenue": 241605000000,
+   "ttm_known_at": "2026-10-22",
+   "ttm_method": "identity",
+   "ttm_period_end": "2026-09-30",
+   "split_adj": 1.0
   },
   {
    "ticker": "MRVL",
@@ -661,10 +682,18 @@
   {
    "ticker": "PLTR",
    "segment": "AI Software",
-   "ps": null,
+   "ps": 47.431,
    "price": 143.490005,
    "price_date": "2026-11-20",
-   "missing": "no shares in facts"
+   "shares": 2409153000,
+   "shares_tag": "us-gaap:CommonStockSharesOutstanding",
+   "shares_period_end": "2026-09-30",
+   "shares_known_at": "2026-11-03",
+   "ttm_revenue": 7288260000,
+   "ttm_known_at": "2026-11-03",
+   "ttm_method": "identity",
+   "ttm_period_end": "2026-09-30",
+   "split_adj": 1.0
   },
   {
    "ticker": "PWR",

@@ -109,3 +109,11 @@ def test_ttm_identity_tries_every_ytd_candidate(monkeypatch):
     ])
     r = fs.ttm_asof("X", C, "2026-11-20")
     assert r is not None and r["value"] == 1005 + 1045 - 738
+
+
+def test_diluted_fallback_only_for_meta(monkeypatch):
+    """Избор 2 на Ц.: разводнените акции са резерва само за META; AI остава вън (27.11.2026)."""
+    recs = [_rec("shares", WAD, "2026-07-31", "2026-07-31", 155, "2026-09-09")]  # събирачът я пази като точка
+    _with(monkeypatch, recs)
+    assert fs.get_asof("AI", "shares", "2026-11-20") is None
+    assert fs.get_asof("META", "shares", "2026-11-20")["value"] == 155

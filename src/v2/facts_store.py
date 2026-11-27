@@ -21,11 +21,11 @@ from functools import lru_cache
 from pathlib import Path
 
 try:  # работи и като модул (src.v2), и standalone
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS, TAG_ONLY_FOR
 except ImportError:  # pragma: no cover
     import sys
     sys.path.insert(0, str(Path(__file__).resolve().parent))
-    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS
+    from concepts import tag_priority, period_type, period_days, CONCEPT_KIND, INSTANT_TAG_FRESH_DAYS, TAG_ONLY_FOR
 
 FACTS_DIR = Path(__file__).resolve().parents[2] / "app" / "data" / "v2" / "facts"
 
@@ -47,7 +47,8 @@ def records(ticker: str, concept: str = None) -> list:
     facts = load(ticker).get("facts", [])
     if concept is not None:
         facts = [r for r in facts if r["concept"] == concept]
-    return facts
+    # Таг, позволен само за някои имена (concepts.TAG_ONLY_FOR), не съществува за другите.
+    return [r for r in facts if ticker in TAG_ONLY_FOR.get(r.get("xbrl_tag"), {ticker})]
 
 
 def _ptype(r: dict) -> str:

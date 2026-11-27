@@ -35,6 +35,10 @@ OUT_TICKERS = ROOT / "app" / "data" / "v2" / "ps_by_ticker.json"
 MIN_TICKERS = 8      # минимум компании за валидна кръстосана медиана
 MIN_WEEKS = 52       # ~1г седмична база за робастния z (аналог на "кратка база")
 WEEK_START = "2023-01-06"   # петък
+# Най-старият брой акции или край на 12-те месеца продажби, който още се ползва: година между
+# годишните отчети плюс четирите месеца срок за 20-F, с една седмица отгоре. По-старото е липса,
+# не цена (ПРОЛЕТР9, 27.11.2026: AI взимаше броя акции от април 2021 г., само клас B).
+MAX_FACT_AGE_DAYS = 490
 
 
 def load_universe():
@@ -100,6 +104,11 @@ def ticker_ps(series, t, d):
         return None, det
     det.update(ttm_revenue=ttm["value"], ttm_known_at=ttm["known_at"], ttm_method=ttm["method"],
                ttm_period_end=max(c["period_end"] for c in ttm["derived_from"]))
+    dd = date.fromisoformat(d)
+    for what, pe in (("shares", sh["period_end"]), ("TTM revenue", det["ttm_period_end"])):
+        if (dd - date.fromisoformat(pe)).days > MAX_FACT_AGE_DAYS:
+            det["missing"] = f"{what} older than {MAX_FACT_AGE_DAYS} days ({pe})"
+            return None, det
     if sh["value"] <= 0 or ttm["value"] <= 0:
         det["missing"] = "non-positive shares or revenue"
         return None, det
